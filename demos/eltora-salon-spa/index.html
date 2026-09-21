@@ -1,0 +1,610 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ELTORA Salon &amp; Spa — Beauty, Wellness &amp; You.</title>
+<meta name="description" content="ELTORA Salon & Spa — a premium beauty studio and day spa offering hair, skin, nails, bridal beauty and wellness rituals. Beauty, Wellness & You.">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,500;0,9..144,600;1,9..144,500&family=Jost:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="style.css">
+
+<!-- favicon -->
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E%F0%9F%8C%BF%3C/text%3E%3C/svg%3E">
+</head>
+<body>
+
+<!-- ================= NAVIGATION ================= -->
+<nav class="nav" id="site-nav">
+  <div class="container">
+    <a href="#top" class="nav-logo">ELTORA<span>.</span></a>
+    <ul class="nav-links">
+      <li><a href="#top">Home</a></li>
+      <li><a href="#services">Services</a></li>
+      <li><a href="#treatments">Treatments</a></li>
+      <li><a href="#studio">Our Studio</a></li>
+      <li><a href="#team">Team</a></li>
+      <li><a href="#lookbook">Gallery</a></li>
+      <li><a href="#testimonials">Testimonials</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+    <div class="nav-right">
+      <a href="#booking" class="btn btn-primary magnetic">Book Now</a>
+      <button class="nav-toggle" id="nav-toggle" aria-label="Open menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+</nav>
+
+<div class="mobile-panel" id="mobile-panel">
+  <a href="#top">Home</a>
+  <a href="#services">Services</a>
+  <a href="#treatments">Treatments</a>
+  <a href="#studio">Our Studio</a>
+  <a href="#team">Team</a>
+  <a href="#lookbook">Gallery</a>
+  <a href="#testimonials">Testimonials</a>
+  <a href="#contact">Contact</a>
+  <a href="#booking" class="btn btn-gold">Book Now</a>
+</div>
+
+<div class="particles-layer" id="leaf-layer" aria-hidden="true"></div>
+
+<!-- ================= HERO ================= -->
+<header class="hero" id="top">
+  <canvas id="hero-canvas"></canvas>
+  <div class="hero-veil"></div>
+  <div class="hero-grain"></div>
+
+  <div class="hero-content">
+    <div class="hero-inner">
+      <span class="hero-eyebrow">Beauty &amp; Wellness Studio · Chennai</span>
+      <h1 class="hero-title">ELTORA<small>Salon &amp; Spa</small></h1>
+      <p class="hero-tagline">“Beauty, Wellness &amp; You.”</p>
+      <p class="hero-sub">Where modern beauty meets restorative wellness — thoughtfully designed rituals for hair, skin, nails and calm, in the heart of Chennai.</p>
+      <div class="hero-actions">
+        <a href="#booking" class="btn btn-gold magnetic">Book an Appointment</a>
+        <a href="#services" class="btn btn-light magnetic">Explore Services</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="hero-scroll"><span>Scroll</span><i class="line"></i></div>
+</header>
+
+<!-- ================= SIGNATURE SERVICES ================= -->
+<section class="pad" id="services">
+  <div class="container">
+    <div class="section-head center reveal">
+      <span class="eyebrow">What We Offer</span>
+      <h2>Signature Services</h2>
+      <p>Thoughtfully designed rituals for beauty, confidence and calm.</p>
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="services-grid reveal">
+      <article class="service-card">
+        <div class="img-wrap"><img src="https://plus.unsplash.com/premium_photo-1664048712492-9d395c204e37?auto=format&fit=crop&w=1200&q=80" alt="Luxury hairstyling chair and mirror at ELTORA salon"></div>
+        <span class="service-num">01</span>
+        <div class="service-body">
+          <h3>Hair</h3>
+          <p>Cut, colour and styling rituals tailored to your texture and lifestyle.</p>
+          <a href="#treatments" class="service-link">View Treatment →</a>
+        </div>
+      </article>
+
+      <article class="service-card">
+        <div class="img-wrap"><img src="https://plus.unsplash.com/premium_photo-1683134300303-7ab756d66bcc?auto=format&fit=crop&w=1200&q=80" alt="Facial skincare treatment at ELTORA spa"></div>
+        <span class="service-num">02</span>
+        <div class="service-body">
+          <h3>Skin</h3>
+          <p>Facials and skin therapy that restore clarity and natural radiance.</p>
+          <a href="#treatments" class="service-link">View Treatment →</a>
+        </div>
+      </article>
+
+      <article class="service-card">
+        <div class="img-wrap"><img src="https://images.unsplash.com/photo-1706448703260-2ad13853602c?auto=format&fit=crop&w=1200&q=80" alt="Premium hand and nail care ritual"></div>
+        <span class="service-num">03</span>
+        <div class="service-body">
+          <h3>Nails</h3>
+          <p>Precision manicures and hand rituals finished with lasting polish.</p>
+          <a href="#treatments" class="service-link">View Treatment →</a>
+        </div>
+      </article>
+
+      <article class="service-card">
+        <div class="img-wrap"><img src="https://plus.unsplash.com/premium_photo-1683134294916-473fc738750b?auto=format&fit=crop&w=1200&q=80" alt="Relaxing spa massage treatment"></div>
+        <span class="service-num">04</span>
+        <div class="service-body">
+          <h3>Spa</h3>
+          <p>Full-body massage and spa therapy for deep, restorative relaxation.</p>
+          <a href="#treatments" class="service-link">View Treatment →</a>
+        </div>
+      </article>
+
+      <article class="service-card">
+        <div class="img-wrap"><img src="https://images.unsplash.com/photo-1588842867976-fd084ca2c87b?auto=format&fit=crop&w=1200&q=80" alt="Bridal makeup and hairstyle campaign"></div>
+        <span class="service-num">05</span>
+        <div class="service-body">
+          <h3>Bridal Beauty</h3>
+          <p>Complete bridal styling — hair, makeup and glow for your day.</p>
+          <a href="#bridal" class="service-link">View Treatment →</a>
+        </div>
+      </article>
+
+      <article class="service-card">
+        <div class="img-wrap"><img src="https://plus.unsplash.com/premium_photo-1683134302817-0d6ecfd05e7a?auto=format&fit=crop&w=1200&q=80" alt="Wellness hot stone therapy"></div>
+        <span class="service-num">06</span>
+        <div class="service-body">
+          <h3>Wellness</h3>
+          <p>Mindful therapies designed to slow the pace and restore balance.</p>
+          <a href="#treatments" class="service-link">View Treatment →</a>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ================= SIGNATURE TREATMENTS ================= -->
+<section class="pad" id="treatments" style="background:var(--ivory-deep);">
+  <div class="container">
+    <div class="section-head reveal">
+      <span class="eyebrow">Curated Rituals</span>
+      <h2>Rituals Worth Remembering</h2>
+      <p>Four signature treatments, designed to be experienced slowly.</p>
+    </div>
+
+    <div class="treat-list reveal">
+      <div class="treat-row">
+        <div class="treat-thumb"><img src="https://plus.unsplash.com/premium_photo-1683134300303-7ab756d66bcc?auto=format&fit=crop&w=500&q=80" alt="Sage Renewal Facial treatment"></div>
+        <div class="treat-info">
+          <h3>Sage Renewal Facial</h3>
+          <span class="treat-meta">90 min · Deep cleanse, enzyme mask &amp; facial massage</span>
+        </div>
+        <div class="treat-actions">
+          <span class="treat-price">₹3,500</span>
+          <a href="#booking" class="btn btn-ghost">Book Now</a>
+        </div>
+      </div>
+
+      <div class="treat-row">
+        <div class="treat-thumb"><img src="https://plus.unsplash.com/premium_photo-1683134294916-473fc738750b?auto=format&fit=crop&w=500&q=80" alt="Willow Signature Massage treatment"></div>
+        <div class="treat-info">
+          <h3>Willow Signature Massage</h3>
+          <span class="treat-meta">75 min · Full-body aromatherapy massage</span>
+        </div>
+        <div class="treat-actions">
+          <span class="treat-price">₹3,000</span>
+          <a href="#booking" class="btn btn-ghost">Book Now</a>
+        </div>
+      </div>
+
+      <div class="treat-row">
+        <div class="treat-thumb"><img src="https://plus.unsplash.com/premium_photo-1664048712492-9d395c204e37?auto=format&fit=crop&w=500&q=80" alt="Silk Hair Ritual treatment"></div>
+        <div class="treat-info">
+          <h3>Silk Hair Ritual</h3>
+          <span class="treat-meta">90 min · Wash, deep-condition &amp; blow-dry finish</span>
+        </div>
+        <div class="treat-actions">
+          <span class="treat-price">₹2,800</span>
+          <a href="#booking" class="btn btn-ghost">Book Now</a>
+        </div>
+      </div>
+
+      <div class="treat-row">
+        <div class="treat-thumb"><img src="https://plus.unsplash.com/premium_photo-1683134297492-cce5fc6dae31?auto=format&fit=crop&w=500&q=80" alt="Glow and Restore treatment"></div>
+        <div class="treat-info">
+          <h3>Glow &amp; Restore Treatment</h3>
+          <span class="treat-meta">60 min · Body polish &amp; hydrating wrap</span>
+        </div>
+        <div class="treat-actions">
+          <span class="treat-price">₹2,500</span>
+          <a href="#booking" class="btn btn-ghost">Book Now</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= CINEMATIC SPA BANNER ================= -->
+<section class="banner">
+  <div class="banner-bg">
+    <img data-parallax="0.25" src="https://plus.unsplash.com/premium_photo-1683134302817-0d6ecfd05e7a?auto=format&fit=crop&w=1920&q=80" alt="Warm ambient spa scene with candles and towels">
+  </div>
+  <div class="banner-content reveal">
+    <span class="eyebrow">The ELTORA Spa</span>
+    <h2>Slow Down. Breathe.<br>Restore.</h2>
+    <a href="#studio" class="btn btn-light magnetic">Discover The Spa</a>
+  </div>
+</section>
+
+<!-- ================= FEATURED EXPERIENCE ================= -->
+<section class="pad">
+  <div class="container">
+    <div class="experience">
+      <div class="experience-text reveal">
+        <span class="eyebrow">The Experience</span>
+        <h2>The ELTORA Ritual</h2>
+        <p>A carefully curated experience combining beauty treatments, calming rituals and restorative care — designed so every visit feels unhurried.</p>
+        <a href="#booking" class="btn btn-primary magnetic" style="margin-top:30px;">Reserve Your Ritual</a>
+      </div>
+      <div class="experience-grid">
+        <div class="cell reveal-img"><img src="https://images.unsplash.com/photo-1560185127-6ed189bf02f4?auto=format&fit=crop&w=1000&q=80" alt="Peaceful ELTORA salon interior"></div>
+        <div class="cell reveal-img"><img src="https://plus.unsplash.com/premium_photo-1683134297492-cce5fc6dae31?auto=format&fit=crop&w=800&q=80" alt="Spa treatment ritual in progress"></div>
+        <div class="cell reveal-img"><img src="https://plus.unsplash.com/premium_photo-1683134300303-7ab756d66bcc?auto=format&fit=crop&w=800&q=80" alt="Skincare ritual close up"></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= 3D BEAUTY EXPERIENCE ================= -->
+<section class="pad beauty3d">
+  <div class="container">
+    <div class="section-head center reveal">
+      <span class="eyebrow">Interactive</span>
+      <h2>Beauty In Every Detail</h2>
+      <p>Drag, scroll or pinch to explore — a closer look at the botanical formulas behind our rituals.</p>
+    </div>
+
+    <div class="beauty3d-stage">
+      <canvas id="beauty-canvas"></canvas>
+      <div class="floating-label fl-1"><i></i><span>Natural Botanicals</span></div>
+      <div class="floating-label fl-2"><span>Signature Rituals</span><i></i></div>
+      <div class="floating-label fl-3"><i></i><span>Mindful Beauty</span></div>
+    </div>
+    <p class="beauty3d-hint">Drag to rotate · Scroll or pinch to zoom</p>
+  </div>
+</section>
+
+<!-- ================= OUR STUDIO ================= -->
+<section class="pad" id="studio">
+  <div class="container">
+    <div class="section-head reveal">
+      <span class="eyebrow">Our Studio</span>
+      <h2>A Space Designed To Exhale</h2>
+      <p>Every detail of our studio is designed to make you feel at ease — warm textures, soft light, and calm from the moment you arrive.</p>
+    </div>
+
+    <div class="studio-grid reveal">
+      <div class="cell tall wide"><img src="https://images.unsplash.com/photo-1560185127-6ed189bf02f4?auto=format&fit=crop&w=1200&q=80" alt="ELTORA salon reception and lounge"></div>
+      <div class="cell tall"><img src="https://plus.unsplash.com/premium_photo-1664048712492-9d395c204e37?auto=format&fit=crop&w=800&q=80" alt="Styling area with mirrors and chairs"></div>
+      <div class="cell"><img src="https://plus.unsplash.com/premium_photo-1683134300303-7ab756d66bcc?auto=format&fit=crop&w=800&q=80" alt="Private treatment room"></div>
+      <div class="cell"><img src="https://plus.unsplash.com/premium_photo-1683134302817-0d6ecfd05e7a?auto=format&fit=crop&w=800&q=80" alt="Relaxation lounge area"></div>
+      <div class="cell wide"><img src="https://plus.unsplash.com/premium_photo-1683134294916-473fc738750b?auto=format&fit=crop&w=1000&q=80" alt="Beauty treatment station"></div>
+    </div>
+
+    <div class="studio-cta reveal">
+      <a href="#lookbook" class="btn btn-ghost magnetic">Explore The Studio</a>
+    </div>
+  </div>
+</section>
+
+<!-- ================= MEET THE TEAM ================= -->
+<section class="pad-sm" id="team" style="background:var(--ivory-deep);">
+  <div class="container">
+    <div class="section-head center reveal">
+      <span class="eyebrow">The Studio</span>
+      <h2>Meet The Team</h2>
+      <p>The artists and therapists behind every ELTORA ritual.</p>
+    </div>
+
+    <div class="team-grid reveal">
+      <div class="team-card">
+        <div class="team-photo"><img src="https://images.unsplash.com/photo-1758518727888-ffa196002e59?auto=format&fit=crop&w=600&q=80" alt="Maya, Creative Director at ELTORA"></div>
+        <div class="team-info">
+          <h3>Maya</h3>
+          <span class="team-role">Creative Director</span>
+          <p class="team-spec">Colour &amp; editorial styling</p>
+        </div>
+      </div>
+      <div class="team-card">
+        <div class="team-photo"><img src="https://plus.unsplash.com/premium_photo-1702058573021-60cc8604edf3?auto=format&fit=crop&w=600&q=80" alt="Anika, Senior Stylist at ELTORA"></div>
+        <div class="team-info">
+          <h3>Anika</h3>
+          <span class="team-role">Senior Stylist</span>
+          <p class="team-spec">Precision cutting &amp; bridal hair</p>
+        </div>
+      </div>
+      <div class="team-card">
+        <div class="team-photo"><img src="https://plus.unsplash.com/premium_photo-1702058573151-4fd8050b3aff?auto=format&fit=crop&w=600&q=80" alt="Rhea, Skin Specialist at ELTORA"></div>
+        <div class="team-info">
+          <h3>Rhea</h3>
+          <span class="team-role">Skin Specialist</span>
+          <p class="team-spec">Facials &amp; advanced skincare</p>
+        </div>
+      </div>
+      <div class="team-card">
+        <div class="team-photo"><img src="https://plus.unsplash.com/premium_photo-1683134300303-7ab756d66bcc?auto=format&fit=crop&w=600&q=80&crop=faces" alt="Tara, Wellness Therapist at ELTORA"></div>
+        <div class="team-info">
+          <h3>Tara</h3>
+          <span class="team-role">Wellness Therapist</span>
+          <p class="team-spec">Massage &amp; mindful therapy</p>
+        </div>
+      </div>
+    </div>
+    <p class="team-note reveal">Demo team profiles — for illustration purposes</p>
+  </div>
+</section>
+
+<!-- ================= BRIDAL BEAUTY ================= -->
+<section class="pad bridal" id="bridal">
+  <div class="container">
+    <div class="bridal-inner">
+      <div class="bridal-text reveal">
+        <span class="eyebrow">Bridal Campaign</span>
+        <h2>Your Day. Your Glow.</h2>
+        <p>A premium bridal experience — hair, makeup, nails and finishing details, styled so every photograph feels effortless.</p>
+        <a href="#booking" class="btn btn-gold magnetic" style="margin-top:30px;">Explore Bridal Services</a>
+      </div>
+      <div class="bridal-grid">
+        <div class="cell reveal-img"><img class="parallax-el" src="https://images.unsplash.com/photo-1588842867976-fd084ca2c87b?auto=format&fit=crop&w=900&q=80" alt="Bridal hairstyle and jewellery detail"></div>
+        <div class="cell reveal-img"><img src="https://images.unsplash.com/photo-1588842867976-fd084ca2c87b?auto=format&fit=crop&w=700&q=80&crop=top" alt="Bridal makeup detail"></div>
+        <div class="cell reveal-img"><img src="https://plus.unsplash.com/premium_photo-1683134297492-cce5fc6dae31?auto=format&fit=crop&w=700&q=80" alt="Bridal glow ritual"></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= LOOKBOOK / GALLERY ================= -->
+<section class="pad" id="lookbook">
+  <div class="container">
+    <div class="section-head center reveal">
+      <span class="eyebrow">Editorial</span>
+      <h2>ELTORA Lookbook</h2>
+      <p>A closer look at hair, skin, nails, spa and bridal beauty at ELTORA.</p>
+    </div>
+
+    <div class="lookbook-grid reveal">
+      <div class="lookbook-item"><img src="https://plus.unsplash.com/premium_photo-1664048712492-9d395c204e37?auto=format&fit=crop&w=700&q=80" alt="Hair styling"><div class="overlay"><span>Hair</span></div></div>
+      <div class="lookbook-item"><img src="https://images.unsplash.com/photo-1706448703260-2ad13853602c?auto=format&fit=crop&w=700&q=80" alt="Nail and hand ritual"><div class="overlay"><span>Nails</span></div></div>
+      <div class="lookbook-item"><img src="https://plus.unsplash.com/premium_photo-1683134294916-473fc738750b?auto=format&fit=crop&w=700&q=80" alt="Spa massage"><div class="overlay"><span>Spa</span></div></div>
+      <div class="lookbook-item"><img src="https://plus.unsplash.com/premium_photo-1683134302817-0d6ecfd05e7a?auto=format&fit=crop&w=700&q=80" alt="Hot stone therapy"><div class="overlay"><span>Wellness</span></div></div>
+      <div class="lookbook-item"><img src="https://plus.unsplash.com/premium_photo-1683134300303-7ab756d66bcc?auto=format&fit=crop&w=700&q=80" alt="Facial treatment"><div class="overlay"><span>Skin</span></div></div>
+      <div class="lookbook-item"><img src="https://images.unsplash.com/photo-1560185127-6ed189bf02f4?auto=format&fit=crop&w=700&q=80" alt="Salon interior"><div class="overlay"><span>Studio</span></div></div>
+      <div class="lookbook-item"><img src="https://images.unsplash.com/photo-1588842867976-fd084ca2c87b?auto=format&fit=crop&w=700&q=80" alt="Bridal beauty"><div class="overlay"><span>Bridal</span></div></div>
+      <div class="lookbook-item"><img src="https://plus.unsplash.com/premium_photo-1683134297492-cce5fc6dae31?auto=format&fit=crop&w=700&q=80" alt="Lifestyle beauty portrait"><div class="overlay"><span>Lifestyle</span></div></div>
+      <div class="lookbook-item"><img src="https://plus.unsplash.com/premium_photo-1702058573021-60cc8604edf3?auto=format&fit=crop&w=700&q=80" alt="Beauty portrait"><div class="overlay"><span>Portrait</span></div></div>
+      <div class="lookbook-item"><img src="https://plus.unsplash.com/premium_photo-1702058573151-4fd8050b3aff?auto=format&fit=crop&w=700&q=80" alt="Beauty lifestyle portrait"><div class="overlay"><span>Editorial</span></div></div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= TESTIMONIALS ================= -->
+<section class="pad-sm" id="testimonials" style="background:var(--ivory-deep);">
+  <div class="container">
+    <div class="section-head center reveal">
+      <span class="eyebrow">Client Words</span>
+      <h2>Loved, Gently</h2>
+    </div>
+    <div class="testi-grid reveal">
+      <div class="testi-card">
+        <span class="testi-mark">“</span>
+        <p>Beautiful space, thoughtful service and such a calming experience.</p>
+        <div class="testi-name">— Demo Testimonial</div>
+      </div>
+      <div class="testi-card">
+        <span class="testi-mark">“</span>
+        <p>The attention to detail made the entire visit feel special.</p>
+        <div class="testi-name">— Demo Testimonial</div>
+      </div>
+      <div class="testi-card">
+        <span class="testi-mark">“</span>
+        <p>Everything from the treatment to the atmosphere felt beautifully considered.</p>
+        <div class="testi-name">— Demo Testimonial</div>
+      </div>
+    </div>
+    <p class="testi-flag">Demo testimonials — for illustration purposes</p>
+  </div>
+</section>
+
+<!-- ================= SERVICE MENU ================= -->
+<section class="pad">
+  <div class="container">
+    <div class="section-head center reveal">
+      <span class="eyebrow">Price List</span>
+      <h2>Service Menu</h2>
+      <p>A selection from our full menu. Ask our studio for the complete list of rituals.</p>
+    </div>
+
+    <div class="menu-tabs reveal">
+      <button class="menu-tab active" data-target="menu-hair">Hair</button>
+      <button class="menu-tab" data-target="menu-skin">Skin</button>
+      <button class="menu-tab" data-target="menu-spa">Spa</button>
+      <button class="menu-tab" data-target="menu-nails">Nails</button>
+    </div>
+
+    <div class="menu-content reveal" style="max-width:760px; margin:0 auto;">
+      <div class="menu-panel active" id="menu-hair">
+        <div class="menu-item"><div class="mi-left"><h4>Signature Haircut</h4><span class="mi-time">60 min</span></div><span class="mi-price">₹1,500</span></div>
+        <div class="menu-item"><div class="mi-left"><h4>Silk Hair Ritual</h4><span class="mi-time">90 min</span></div><span class="mi-price">₹2,800</span></div>
+        <div class="menu-item"><div class="mi-left"><h4>Root Touch-Up Colour</h4><span class="mi-time">75 min</span></div><span class="mi-price">₹2,200</span></div>
+      </div>
+      <div class="menu-panel" id="menu-skin">
+        <div class="menu-item"><div class="mi-left"><h4>Glow Facial</h4><span class="mi-time">60 min</span></div><span class="mi-price">₹2,000</span></div>
+        <div class="menu-item"><div class="mi-left"><h4>Sage Renewal Facial</h4><span class="mi-time">90 min</span></div><span class="mi-price">₹3,500</span></div>
+        <div class="menu-item"><div class="mi-left"><h4>Express Cleanse &amp; Glow</h4><span class="mi-time">30 min</span></div><span class="mi-price">₹1,200</span></div>
+      </div>
+      <div class="menu-panel" id="menu-spa">
+        <div class="menu-item"><div class="mi-left"><h4>Relaxation Massage</h4><span class="mi-time">60 min</span></div><span class="mi-price">₹2,500</span></div>
+        <div class="menu-item"><div class="mi-left"><h4>Willow Signature Massage</h4><span class="mi-time">75 min</span></div><span class="mi-price">₹3,000</span></div>
+        <div class="menu-item"><div class="mi-left"><h4>Glow &amp; Restore Treatment</h4><span class="mi-time">60 min</span></div><span class="mi-price">₹2,500</span></div>
+      </div>
+      <div class="menu-panel" id="menu-nails">
+        <div class="menu-item"><div class="mi-left"><h4>Classic Manicure</h4><span class="mi-time">45 min</span></div><span class="mi-price">₹900</span></div>
+        <div class="menu-item"><div class="mi-left"><h4>Classic Pedicure</h4><span class="mi-time">50 min</span></div><span class="mi-price">₹1,100</span></div>
+        <div class="menu-item"><div class="mi-left"><h4>Gel Polish Finish</h4><span class="mi-time">30 min</span></div><span class="mi-price">₹700</span></div>
+      </div>
+    </div>
+
+    <div class="menu-actions reveal">
+      <a href="#booking" class="btn btn-ghost magnetic">View Full Menu</a>
+      <a href="#booking" class="btn btn-primary magnetic">Book Service</a>
+    </div>
+  </div>
+</section>
+
+<!-- ================= BOOKING ================= -->
+<section class="pad booking" id="booking">
+  <div class="container">
+    <div class="booking-inner">
+      <div class="booking-text reveal">
+        <span class="eyebrow">Reserve</span>
+        <h2>Your Time Starts Here.</h2>
+        <p>Tell us what you're dreaming of, and our studio will confirm your appointment shortly.</p>
+        <ul class="booking-points">
+          <li>Personal consultation with every booking</li>
+          <li>Flexible rescheduling up to 24 hours prior</li>
+          <li>Complimentary refreshments during your visit</li>
+        </ul>
+      </div>
+
+      <form class="booking-form reveal" id="booking-form" novalidate>
+        <div class="form-grid">
+          <div class="form-field">
+            <label for="f-name">Name</label>
+            <input type="text" id="f-name" name="name" placeholder="Your full name">
+            <span class="form-error" id="err-name"></span>
+          </div>
+          <div class="form-field">
+            <label for="f-email">Email</label>
+            <input type="email" id="f-email" name="email" placeholder="you@email.com">
+            <span class="form-error" id="err-email"></span>
+          </div>
+          <div class="form-field">
+            <label for="f-phone">Phone</label>
+            <input type="tel" id="f-phone" name="phone" placeholder="+91 00000 00000">
+            <span class="form-error" id="err-phone"></span>
+          </div>
+          <div class="form-field">
+            <label for="f-service">Service</label>
+            <select id="f-service" name="service">
+              <option value="">Choose a service</option>
+              <option>Sage Renewal Facial</option>
+              <option>Willow Signature Massage</option>
+              <option>Silk Hair Ritual</option>
+              <option>Glow &amp; Restore Treatment</option>
+              <option>Bridal Beauty</option>
+              <option>Wellness Therapy</option>
+            </select>
+            <span class="form-error" id="err-service"></span>
+          </div>
+          <div class="form-field">
+            <label for="f-date">Preferred Date</label>
+            <input type="date" id="f-date" name="date">
+            <span class="form-error" id="err-date"></span>
+          </div>
+          <div class="form-field">
+            <label for="f-time">Preferred Time</label>
+            <input type="time" id="f-time" name="time">
+            <span class="form-error" id="err-time"></span>
+          </div>
+          <div class="form-field full">
+            <label for="f-message">Message</label>
+            <textarea id="f-message" name="message" placeholder="Anything we should know before your visit?"></textarea>
+          </div>
+        </div>
+        <button type="submit" class="btn btn-primary booking-submit magnetic">Book Appointment</button>
+        <div class="booking-confirm" id="booking-confirm"></div>
+      </form>
+    </div>
+  </div>
+</section>
+
+<!-- ================= MEMBERSHIP ================= -->
+<section class="pad membership">
+  <div class="container">
+    <div class="section-head center reveal">
+      <span class="eyebrow">ELTORA Circle</span>
+      <h2>Become An ELTORA Member</h2>
+      <p>Join our circle for priority access and exclusive rituals throughout the year.</p>
+    </div>
+
+    <div class="member-grid reveal">
+      <div class="member-item"><span class="mi-num">01</span><h4>Priority Bookings</h4><p>First access to preferred stylists and peak-time slots.</p></div>
+      <div class="member-item"><span class="mi-num">02</span><h4>Member-Only Treatments</h4><p>Seasonal rituals reserved exclusively for members.</p></div>
+      <div class="member-item"><span class="mi-num">03</span><h4>Monthly Wellness Rituals</h4><p>A complimentary wellness add-on, every month.</p></div>
+      <div class="member-item"><span class="mi-num">04</span><h4>Exclusive Beauty Offers</h4><p>Member pricing on select treatments and products.</p></div>
+    </div>
+
+    <a href="#booking" class="btn btn-gold magnetic">Explore Membership</a>
+  </div>
+</section>
+
+<!-- ================= VISIT ELTORA ================= -->
+<section class="visit" id="contact">
+  <div class="visit-media">
+    <img src="https://images.unsplash.com/photo-1560185127-6ed189bf02f4?auto=format&fit=crop&w=1400&q=80" alt="ELTORA salon interior, Chennai">
+  </div>
+  <div class="visit-info">
+    <span class="eyebrow">Visit Us</span>
+    <h2>ELTORA Salon &amp; Spa</h2>
+    <div class="visit-block">
+      <h5>Location</h5>
+      <p>Beauty &amp; Wellness Studio · Chennai, Tamil Nadu</p>
+    </div>
+    <div class="visit-block">
+      <h5>Hours</h5>
+      <p>Monday – Saturday · 9:00 AM – 8:00 PM<br>Sunday · 10:00 AM – 6:00 PM</p>
+    </div>
+    <div class="visit-actions">
+      <a href="https://www.google.com/maps/search/?api=1&query=Chennai%20Tamil%20Nadu" target="_blank" rel="noopener" class="btn btn-gold magnetic">Get Directions</a>
+      <a href="tel:+910000000000" class="btn btn-light magnetic">Call Us</a>
+    </div>
+  </div>
+</section>
+
+<!-- ================= FOOTER ================= -->
+<footer class="footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div>
+        <div class="footer-logo">ELTORA<span>.</span></div>
+        <p class="footer-tagline">Beauty, Wellness &amp; You. A premium salon and day spa studio in Chennai, Tamil Nadu.</p>
+      </div>
+      <div class="footer-col">
+        <h5>Explore</h5>
+        <ul>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#treatments">Treatments</a></li>
+          <li><a href="#studio">Our Studio</a></li>
+          <li><a href="#lookbook">Gallery</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h5>Studio</h5>
+        <ul>
+          <li><a href="#team">Our Team</a></li>
+          <li><a href="#bridal">Bridal Beauty</a></li>
+          <li><a href="#testimonials">Testimonials</a></li>
+          <li><a href="#booking">Membership</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h5>Contact</h5>
+        <ul>
+          <li><a href="#contact">Chennai, Tamil Nadu</a></li>
+          <li><a href="tel:+910000000000">+91 00000 00000</a></li>
+          <li><a href="mailto:hello@eltorasalon.com">hello@eltorasalon.com</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 ELTORA Salon &amp; Spa. All rights reserved.</span>
+      <span>Demo website — built for presentation purposes.</span>
+    </div>
+  </div>
+</footer>
+
+<button class="back-to-top" id="back-to-top" aria-label="Back to top">↑</button>
+
+<!-- Three.js (r128 UMD) -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
