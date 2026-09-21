@@ -1,0 +1,680 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>ELTORA FITNESS — Train Strong. Live Stronger.</title>
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="description" content="ELTORA FITNESS is a performance training studio in Chennai. Strength, muscle building, fat loss, functional and personal training led by expert coaches. (Demo website.)">
+<meta name="theme-color" content="#050506">
+<meta property="og:title" content="ELTORA FITNESS — Train Strong. Live Stronger.">
+<meta property="og:description" content="Performance-driven training built for strength, discipline and lasting results.">
+<meta property="og:type" content="website">
+<link rel="icon" href="assets/icons/favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="style.css">
+<script>document.documentElement.classList.add('js');</script>
+</head>
+<body>
+
+<a class="skip-link" href="#programs">Skip to content</a>
+
+<!-- ============ PAGE-LOAD SEQUENCE ============ -->
+<div class="loader" id="loader" aria-hidden="true">
+  <div class="loader__word">ELTORA</div>
+  <div class="loader__bar"><i></i></div>
+</div>
+
+<!-- ============ NAVIGATION ============ -->
+<header class="nav" id="nav">
+  <div class="nav__inner">
+    <a class="logo" href="#home" aria-label="ELTORA FITNESS — home">
+      <svg class="logo__mark" viewBox="0 0 40 40" aria-hidden="true">
+        <path d="M20 2 36 11v18L20 38 4 29V11z" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linejoin="round"/>
+        <path d="M13 14h14M13 20h10M13 26h14M13 14v12" fill="none" stroke="#c6ff1a" stroke-width="2.6" stroke-linecap="square"/>
+      </svg>
+      <span class="logo__text">ELTORA<em>FITNESS</em></span>
+    </a>
+
+    <nav class="nav__links" id="navLinks" aria-label="Primary">
+      <a href="#home">Home</a>
+      <a href="#programs">Programs</a>
+      <a href="#coaches">Coaches</a>
+      <a href="#membership">Membership</a>
+      <a href="#studio">Studio</a>
+      <a href="#results">Results</a>
+      <a href="#gallery">Gallery</a>
+      <a href="#contact">Contact</a>
+    </nav>
+
+    <a class="btn btn--lime btn--sm nav__join magnetic" href="#membership"><span>JOIN NOW</span></a>
+
+    <button class="burger" id="burger" aria-label="Open menu" aria-expanded="false" aria-controls="mobileMenu">
+      <span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<div class="mmenu" id="mobileMenu" aria-hidden="true">
+  <nav aria-label="Mobile">
+    <a href="#home">Home</a>
+    <a href="#programs">Programs</a>
+    <a href="#coaches">Coaches</a>
+    <a href="#membership">Membership</a>
+    <a href="#studio">Studio</a>
+    <a href="#results">Results</a>
+    <a href="#gallery">Gallery</a>
+    <a href="#contact">Contact</a>
+  </nav>
+  <a class="btn btn--lime" href="#membership"><span>JOIN NOW</span></a>
+  <p class="mmenu__note">Train Strong. Live Stronger.</p>
+</div>
+
+<main>
+
+<!-- ============ 1 — HERO ============ -->
+<section class="hero" id="home">
+  <div class="hero__photo" data-slot="hero-athlete" data-optional>
+    <!-- Optional hero backdrop: place an image element for a photo here; it is shown dimmed and greyscale behind the headline. -->
+  </div>
+  <div class="hero__light" aria-hidden="true"></div>
+
+  <h1 class="hero__title">
+    <span class="hero__word" data-hero-word>ELTORA</span>
+    <span class="hero__outline" data-hero-word>FITNESS</span>
+  </h1>
+
+  <canvas class="hero__canvas" id="heroCanvas" aria-hidden="true"></canvas>
+
+  <div class="hero__content">
+    <p class="hero__tag" data-hero-in>Train Strong. Live Stronger.</p>
+    <p class="hero__sub" data-hero-in>Performance-driven training built for strength, discipline and lasting results.</p>
+    <div class="hero__cta" data-hero-in>
+      <a class="btn btn--lime magnetic" href="#contact"><span>START TRAINING</span></a>
+      <a class="btn btn--ghost magnetic" href="#programs"><span>EXPLORE PROGRAMS</span></a>
+    </div>
+  </div>
+
+  <a class="scroll-cue" href="#programs" aria-label="Scroll to programs" data-hero-in>
+    <span class="scroll-cue__text">Scroll</span>
+    <span class="scroll-cue__track"><i></i></span>
+  </a>
+</section>
+
+<!-- ============ 2 — PROGRAMS ============ -->
+<section class="section programs" id="programs">
+  <div class="wrap">
+    <header class="section__head">
+      <h2 class="display">Train With Purpose.</h2>
+      <p class="lede">Structured programs designed around your goals.</p>
+    </header>
+
+    <div class="programs__grid">
+      <article class="pcard">
+        <figure class="img pcard__img" data-slot="program-strength" data-reveal>
+          <img src="assets/images/eltora-19-strength-deadlift-program.jpg" alt="Athlete setting up a heavy barbell deadlift" class="crop" style="width:112.0%;height:112.0%;left:-6.00%;top:0.00%;object-position:29.9% 50.0%" width="1536" height="1024" loading="lazy" decoding="async">
+        </figure>
+        <div class="pcard__body">
+          <span class="pcard__no">01</span>
+          <h3>Strength</h3>
+          <p>Heavy compound lifting, coached progression and the technique to hold it.</p>
+          <span class="pcard__meta">60 min · Small group</span>
+        </div>
+      </article>
+
+      <article class="pcard">
+        <figure class="img pcard__img" data-slot="program-muscle" data-reveal>
+          <img src="assets/images/eltora-18-muscle-building-program.jpg" alt="Bodybuilder curling a 10 kg dumbbell" style="object-position:61.4% 50.0%" width="1536" height="1024" loading="lazy" decoding="async">
+        </figure>
+        <div class="pcard__body">
+          <span class="pcard__no">02</span>
+          <h3>Muscle Building</h3>
+          <p>Volume-driven hypertrophy blocks with tracked overload week to week.</p>
+          <span class="pcard__meta">75 min · Coached floor</span>
+        </div>
+      </article>
+
+      <article class="pcard">
+        <figure class="img pcard__img" data-slot="program-fatloss" data-reveal>
+          <img src="assets/images/eltora-17-fat-loss-program.jpg" alt="Woman driving through an intense high-knee conditioning drill" style="object-position:51.9% 50.0%" width="1536" height="1024" loading="lazy" decoding="async">
+        </figure>
+        <div class="pcard__body">
+          <span class="pcard__no">03</span>
+          <h3>Fat Loss</h3>
+          <p>Conditioning circuits and strength work built around sustainable output.</p>
+          <span class="pcard__meta">45 min · Interval format</span>
+        </div>
+      </article>
+
+      <article class="pcard">
+        <figure class="img pcard__img" data-slot="program-functional" data-reveal>
+          <img src="assets/images/eltora-12-battle-rope-male.jpg" alt="Man pulling battle ropes in the functional training zone" style="object-position:28.9% 50.0%" width="1672" height="941" loading="lazy" decoding="async">
+        </figure>
+        <div class="pcard__body">
+          <span class="pcard__no">04</span>
+          <h3>Functional Training</h3>
+          <p>Movement quality, mobility and real-world strength for everyday life.</p>
+          <span class="pcard__meta">50 min · Small group</span>
+        </div>
+      </article>
+
+      <article class="pcard">
+        <figure class="img pcard__img" data-slot="program-personal" data-reveal>
+          <img src="assets/images/eltora-16-personal-training-program.jpg" alt="Coach guiding a client through a bodyweight squat" style="object-position:60.6% 50.0%" width="1536" height="1024" loading="lazy" decoding="async">
+        </figure>
+        <div class="pcard__body">
+          <span class="pcard__no">05</span>
+          <h3>Personal Training</h3>
+          <p>One coach, one plan. Every session is built around you.</p>
+          <span class="pcard__meta">60 min · One-to-one</span>
+        </div>
+      </article>
+
+      <article class="pcard">
+        <figure class="img pcard__img" data-slot="program-athletic" data-reveal>
+          <img src="assets/images/eltora-10-sprint-athletic.jpg" alt="Athlete sprinting off the line on the turf track" style="object-position:50.0% 50.0%" width="1672" height="941" loading="lazy" decoding="async">
+        </figure>
+        <div class="pcard__body">
+          <span class="pcard__no">06</span>
+          <h3>Athletic Performance</h3>
+          <p>Power, speed and agility development for competitive athletes.</p>
+          <span class="pcard__meta">75 min · By assessment</span>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 3 — PERFORMANCE STATS ============ -->
+<section class="stats" id="stats" aria-label="Performance statistics">
+  <div class="wrap">
+    <ul class="stats__list">
+      <li>
+        <span class="stat__num" data-count="5000" data-suffix="+">0</span>
+        <span class="stat__label">Workouts completed</span>
+      </li>
+      <li>
+        <span class="stat__num" data-count="12" data-suffix="+">0</span>
+        <span class="stat__label">Expert coaches</span>
+      </li>
+      <li>
+        <span class="stat__num" data-count="8" data-suffix="+">0</span>
+        <span class="stat__label">Training programs</span>
+      </li>
+      <li>
+        <span class="stat__num" data-static="24/7">24/7</span>
+        <span class="stat__label">Member access <small>online booking</small></span>
+      </li>
+    </ul>
+    <p class="demo-note">Demo statistics for presentation purposes only.</p>
+  </div>
+</section>
+
+<!-- ============ 4 — CINEMATIC BANNER ============ -->
+<section class="banner" id="banner">
+  <div class="banner__media" data-slot="banner-discipline" data-parallax="0.18">
+    <img src="assets/images/eltora-15-discipline-barbell-banner.jpg" alt="Woman chalking her hands over a loaded barbell" style="object-position:100.0% 50.0%" width="1536" height="1024" loading="lazy" decoding="async">
+  </div>
+  <div class="banner__shade" aria-hidden="true"></div>
+  <div class="wrap banner__inner">
+    <h2 class="display display--xl">Discipline<br>Creates<br>Results.</h2>
+    <a class="btn btn--lime magnetic" href="#contact"><span>START YOUR JOURNEY</span></a>
+  </div>
+</section>
+
+<!-- ============ 5 — FEATURED WORKOUT ============ -->
+<section class="section perf" id="performance">
+  <div class="wrap">
+    <header class="section__head section__head--split">
+      <h2 class="display">Built For<br>Performance.</h2>
+      <p class="lede">Five ways we train: barbell, dumbbell, strength, cardio and functional. Coached, tracked and progressed.</p>
+    </header>
+
+    <div class="perf__grid">
+      <figure class="img perf__a" data-slot="edit-barbell" data-reveal>
+        <img src="assets/images/eltora-09-barbell-plates.jpg" alt="Loaded barbell with 20 kg plates on the gym floor" style="object-position:50.0% 83.2%" width="1672" height="941" loading="lazy" decoding="async">
+        <figcaption>Barbell</figcaption>
+      </figure>
+      <figure class="img perf__b" data-slot="edit-dumbbell" data-reveal>
+        <img src="assets/images/eltora-11-personal-training-session.jpg" alt="Coach and client during a dumbbell lunge session" style="object-position:61.0% 50.0%" width="1672" height="941" loading="lazy" decoding="async">
+        <figcaption>Dumbbell</figcaption>
+      </figure>
+      <figure class="img perf__c" data-slot="edit-strength" data-reveal>
+        <img src="assets/images/eltora-20-arjun-strength-coach.jpg" alt="Coach Arjun in the ELTORA gym with arms crossed" class="crop" style="width:180.0%;height:180.0%;left:-40.00%;top:-3.10%;object-position:50.0% 50.0%" width="1145" height="1374" loading="lazy" decoding="async">
+        <figcaption>Strength</figcaption>
+      </figure>
+      <figure class="img perf__d" data-slot="edit-cardio" data-reveal>
+        <img src="assets/images/eltora-05-battle-rope-female.jpg" alt="Woman training with battle ropes" style="object-position:50.0% 50.0%" width="1672" height="941" loading="lazy" decoding="async">
+        <figcaption>Cardio</figcaption>
+      </figure>
+      <figure class="img perf__e" data-slot="edit-functional" data-reveal>
+        <img src="assets/images/eltora-10-sprint-athletic.jpg" alt="Athlete sprinting through cones beside a weighted sled" style="object-position:50.0% 50.0%" width="1672" height="941" loading="lazy" decoding="async">
+        <figcaption>Functional</figcaption>
+      </figure>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 6 — 3D EQUIPMENT ============ -->
+<section class="section equip" id="equipment">
+  <div class="wrap">
+    <header class="section__head section__head--split">
+      <h2 class="display">Experience<br>The Equipment.</h2>
+      <p class="lede">Drag to rotate. Use the buttons to zoom, or hold Ctrl / ⌘ and scroll. Pick a piece below.</p>
+    </header>
+
+    <div class="equip__stage">
+      <canvas id="equipCanvas" aria-label="Interactive 3D view of ELTORA training equipment" role="img"></canvas>
+
+      <span class="etag etag--1"><b>Precision</b><i></i></span>
+      <span class="etag etag--2"><b>Power</b><i></i></span>
+      <span class="etag etag--3"><b>Performance</b><i></i></span>
+
+      <div class="equip__ui">
+        <div class="equip__pick" role="tablist" aria-label="Choose equipment">
+          <button role="tab" aria-selected="true"  data-model="kettlebell">Kettlebell</button>
+          <button role="tab" aria-selected="false" data-model="plate">Plate</button>
+          <button role="tab" aria-selected="false" data-model="dumbbell">Dumbbell</button>
+        </div>
+        <div class="equip__zoom">
+          <button id="zoomOut" aria-label="Zoom out">−</button>
+          <button id="zoomIn" aria-label="Zoom in">+</button>
+        </div>
+      </div>
+      <p class="equip__fallback">3D view needs WebGL. Please try a current browser.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 7 — COACHES ============ -->
+<section class="section coaches" id="coaches">
+  <div class="wrap">
+    <header class="section__head">
+      <h2 class="display">Coaches Who<br>Push You Further.</h2>
+      <p class="lede">Demo profiles. Replace with your real coaching team.</p>
+    </header>
+
+    <div class="coaches__grid">
+      <article class="coach">
+        <figure class="img coach__img" data-slot="coach-elan" data-reveal>
+          <img src="assets/images/eltora-01-elan-strength-coach.jpg" alt="Elan, strength coach at ELTORA Fitness" style="object-position:50.0% 50.0%" width="1145" height="1374" loading="lazy" decoding="async">
+          <span class="badge">Demo profile</span>
+        </figure>
+        <h3>Elan</h3>
+        <p class="coach__role">Strength Coach</p>
+        <p class="coach__bio">Build strength, burn fat and become a stronger version of you.</p>
+      </article>
+      <article class="coach">
+        <figure class="img coach__img" data-slot="coach-rithaniya" data-reveal>
+          <img src="assets/images/eltora-02-rithaniya-wellness-coach.jpg" alt="Rithaniya, wellness coach at ELTORA Fitness" style="object-position:50.0% 50.0%" width="1145" height="1374" loading="lazy" decoding="async">
+          <span class="badge">Demo profile</span>
+        </figure>
+        <h3>Rithaniya</h3>
+        <p class="coach__role">Wellness Coach</p>
+        <p class="coach__bio">Mobility, recovery and habit coaching for long-term consistency.</p>
+      </article>
+      <article class="coach">
+        <figure class="img coach__img" data-slot="coach-ryan" data-reveal>
+          <img src="assets/images/eltora-03-ryan-conditioning-coach.jpg" alt="Ryan, conditioning coach at ELTORA Fitness" style="object-position:50.0% 50.0%" width="1145" height="1374" loading="lazy" decoding="async">
+          <span class="badge">Demo profile</span>
+        </figure>
+        <h3>Ryan</h3>
+        <p class="coach__role">Conditioning Coach</p>
+        <p class="coach__bio">Engine-building intervals and conditioning that holds up under load.</p>
+      </article>
+      <article class="coach">
+        <figure class="img coach__img" data-slot="coach-maya" data-reveal>
+          <img src="assets/images/eltora-04-maya-performance-coach.jpg" alt="Maya, performance coach at ELTORA Fitness" style="object-position:50.0% 50.0%" width="1145" height="1374" loading="lazy" decoding="async">
+          <span class="badge">Demo profile</span>
+        </figure>
+        <h3>Maya</h3>
+        <p class="coach__role">Performance Coach</p>
+        <p class="coach__bio">Speed, power and athletic development built on measured testing.</p>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 8 — MEMBERSHIP ============ -->
+<section class="section member" id="membership">
+  <div class="wrap">
+    <header class="section__head">
+      <h2 class="display">Choose Your Level.</h2>
+      <p class="lede">Three memberships. No joining drama. Demo pricing shown.</p>
+    </header>
+
+    <div class="plans">
+      <article class="plan">
+        <h3>ELTORA START</h3>
+        <p class="plan__price"><span>₹1,499</span> / month</p>
+        <ul>
+          <li>Full gym floor access</li>
+          <li>Locker access</li>
+          <li>Performance assessment at joining</li>
+          <li>Group training as an add-on</li>
+          <li>Personal training as an add-on</li>
+        </ul>
+        <a class="btn btn--ghost magnetic" href="#contact"><span>JOIN NOW</span></a>
+      </article>
+
+      <article class="plan plan--featured">
+        <span class="plan__flag">Recommended</span>
+        <h3>ELTORA PRO</h3>
+        <p class="plan__price"><span>₹2,499</span> / month</p>
+        <ul>
+          <li>Everything in Start</li>
+          <li>Unlimited group training</li>
+          <li>2 personal training sessions a month</li>
+          <li>Quarterly performance assessment</li>
+          <li>Monthly guest pass</li>
+        </ul>
+        <a class="btn btn--lime magnetic" href="#contact"><span>JOIN NOW</span></a>
+      </article>
+
+      <article class="plan">
+        <h3>ELTORA ELITE</h3>
+        <p class="plan__price"><span>₹3,999</span> / month</p>
+        <ul>
+          <li>Everything in Pro</li>
+          <li>6 personal training sessions a month</li>
+          <li>Custom programming</li>
+          <li>Recovery zone access</li>
+          <li>Reserved locker and priority booking</li>
+        </ul>
+        <a class="btn btn--ghost magnetic" href="#contact"><span>JOIN NOW</span></a>
+      </article>
+    </div>
+    <p class="demo-note">Demo pricing and inclusions. Final offers are set by the gym.</p>
+  </div>
+</section>
+
+<!-- ============ 9 — RESULTS ============ -->
+<section class="section results" id="results">
+  <div class="wrap">
+    <header class="section__head">
+      <h2 class="display">Progress Is Earned.</h2>
+      <p class="lede">No shortcuts, no guarantees. Just the work, repeated.</p>
+    </header>
+
+    <div class="results__grid">
+      <figure class="img rcard" data-slot="results-consistency" data-reveal>
+        <img src="assets/images/eltora-12-battle-rope-male.jpg" alt="Man driving battle ropes, representing consistency" class="crop" style="width:150.0%;height:150.0%;left:-25.00%;top:0.00%;object-position:30.8% 50.0%" width="1672" height="941" loading="lazy" decoding="async">
+        <figcaption>Consistency.</figcaption>
+      </figure>
+      <figure class="img rcard" data-slot="results-discipline" data-reveal>
+        <img src="assets/images/eltora-05-battle-rope-female.jpg" alt="Focused woman gripping battle ropes, representing discipline" class="crop" style="width:170.0%;height:170.0%;left:-35.00%;top:-1.00%;object-position:54.8% 50.0%" width="1672" height="941" loading="lazy" decoding="async">
+        <figcaption>Discipline.</figcaption>
+      </figure>
+      <figure class="img rcard" data-slot="results-progress" data-reveal>
+        <img src="assets/images/eltora-13-post-workout-recovery.jpg" alt="Woman resting with a towel after a hard session, representing progress" style="object-position:22.8% 50.0%" width="1672" height="941" loading="lazy" decoding="async">
+        <figcaption>Progress.</figcaption>
+      </figure>
+    </div>
+    <p class="demo-note">Demo imagery. Individual results vary and are never guaranteed.</p>
+  </div>
+</section>
+
+<!-- ============ 10 — STUDIO ============ -->
+<section class="section studio" id="studio">
+  <div class="wrap">
+    <header class="section__head section__head--split">
+      <h2 class="display">Built For<br>Serious Training.</h2>
+      <p class="lede">Every zone is designed to help you train with purpose.</p>
+    </header>
+
+    <div class="studio__grid">
+      <figure class="img s-floor" data-slot="studio-floor" data-reveal>
+        <img src="assets/images/eltora-14-premium-gym-interior.jpg" alt="The ELTORA gym floor with racks and a turf track" style="object-position:50.0% 50.0%" width="1536" height="1024" loading="lazy" decoding="async">
+        <figcaption>Main floor</figcaption>
+      </figure>
+      <figure class="img s-strength" data-slot="studio-strength" data-reveal>
+        <img src="assets/images/eltora-06-back-workout-chalk.jpg" alt="Strength zone with power rack, plates and dumbbells" style="object-position:50.0% 10.3%" width="1672" height="941" loading="lazy" decoding="async">
+        <figcaption>Strength zone</figcaption>
+      </figure>
+      <figure class="img s-free" data-slot="studio-freeweights" data-reveal>
+        <img src="assets/images/eltora-08-dumbbell-rack.jpg" alt="Free weights area with a full dumbbell rack" style="object-position:0.0% 50.0%" width="1672" height="941" loading="lazy" decoding="async">
+        <figcaption>Free weights</figcaption>
+      </figure>
+      <figure class="img s-func" data-slot="studio-functional" data-reveal>
+        <img src="assets/images/eltora-07-functional-training-area.jpg" alt="Functional training zone with plyo boxes, ropes and turf" style="object-position:7.4% 50.0%" width="1672" height="941" loading="lazy" decoding="async">
+        <figcaption>Functional zone</figcaption>
+      </figure>
+      <figure class="img s-cardio" data-slot="studio-cardio" data-reveal>
+        <img src="assets/images/eltora-07-functional-training-area.jpg" alt="Cardio area with air bikes beside the turf" class="crop" style="width:180.0%;height:180.0%;left:-80.00%;top:-40.00%;object-position:50.0% 97.6%" width="1672" height="941" loading="lazy" decoding="async">
+        <figcaption>Cardio</figcaption>
+      </figure>
+      <figure class="img s-recover" data-slot="studio-recovery" data-reveal>
+        <img src="assets/images/eltora-13-post-workout-recovery.jpg" alt="Recovery area: a member resting after training" style="object-position:50.0% 2.4%" width="1672" height="941" loading="lazy" decoding="async">
+        <figcaption>Recovery</figcaption>
+      </figure>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 11 — LOOKBOOK ============ -->
+<section class="section gallery" id="gallery">
+  <div class="wrap">
+    <header class="section__head">
+      <h2 class="display">The Lookbook.</h2>
+      <p class="lede">Strength, sweat and the spaces where it happens. Tap any frame to enlarge.</p>
+    </header>
+
+    <div class="masonry">
+      <figure class="img m m--t" data-slot="lookbook-01" data-reveal data-cat="Strength training">
+        <img src="assets/images/eltora-06-back-workout-chalk.jpg" alt="Strength training: man chalking up at the rack" class="crop" style="width:120.0%;height:120.0%;left:-10.00%;top:-10.00%;object-position:59.4% 50.0%" width="1672" height="941" loading="lazy" decoding="async">
+        <figcaption>Strength training</figcaption>
+      </figure>
+      <figure class="img m m--w" data-slot="lookbook-02" data-reveal data-cat="Dumbbells">
+        <img src="assets/images/eltora-08-dumbbell-rack.jpg" alt="Dumbbells lined up on the rack, 5 kg to 12.5 kg" class="crop" style="width:170.0%;height:170.0%;left:0.00%;top:-55.40%;object-position:0.0% 50.0%" width="1672" height="941" loading="lazy" decoding="async">
+        <figcaption>Dumbbells</figcaption>
+      </figure>
+      <figure class="img m m--s" data-slot="lookbook-03" data-reveal data-cat="Barbell">
+        <img src="assets/images/eltora-09-barbell-plates.jpg" alt="Close-up of a 20 kg ELTORA barbell plate" class="crop" style="width:200.0%;height:200.0%;left:-65.14%;top:-60.00%;object-position:100.0% 50.0%" width="1672" height="941" loading="lazy" decoding="async">
+        <figcaption>Barbell</figcaption>
+      </figure>
+      <figure class="img m m--t" data-slot="lookbook-04" data-reveal data-cat="Athlete">
+        <img src="assets/images/eltora-10-sprint-athletic.jpg" alt="Athlete mid-sprint on the turf" class="crop" style="width:145.0%;height:145.0%;left:-22.50%;top:-10.90%;object-position:50.0% 50.0%" width="1672" height="941" loading="lazy" decoding="async">
+        <figcaption>Athlete</figcaption>
+      </figure>
+      <figure class="img m m--s" data-slot="lookbook-05" data-reveal data-cat="Trainer">
+        <img src="assets/images/eltora-11-personal-training-session.jpg" alt="Coach guiding a client through a dumbbell lunge" class="crop" style="width:160.0%;height:160.0%;left:-30.00%;top:-30.00%;object-position:78.3% 50.0%" width="1672" height="941" loading="lazy" decoding="async">
+        <figcaption>Trainer</figcaption>
+      </figure>
+      <figure class="img m m--w" data-slot="lookbook-06" data-reveal data-cat="Functional training">
+        <img src="assets/images/eltora-12-battle-rope-male.jpg" alt="Functional training with battle ropes" class="crop" style="width:110.0%;height:110.0%;left:-5.00%;top:0.00%;object-position:25.2% 50.0%" width="1672" height="941" loading="lazy" decoding="async">
+        <figcaption>Functional training</figcaption>
+      </figure>
+      <figure class="img m m--t" data-slot="lookbook-07" data-reveal data-cat="Cardio">
+        <img src="assets/images/eltora-17-fat-loss-program.jpg" alt="Woman in a high-knee conditioning drill" class="crop" style="width:170.0%;height:170.0%;left:-35.00%;top:0.00%;object-position:66.6% 50.0%" width="1536" height="1024" loading="lazy" decoding="async">
+        <figcaption>Cardio</figcaption>
+      </figure>
+      <figure class="img m m--s" data-slot="lookbook-08" data-reveal data-cat="Gym interior">
+        <img src="assets/images/eltora-14-premium-gym-interior.jpg" alt="Plate-loaded racks and benches on the gym floor" class="crop" style="width:170.0%;height:170.0%;left:0.00%;top:-35.00%;object-position:0.0% 50.0%" width="1536" height="1024" loading="lazy" decoding="async">
+        <figcaption>Gym interior</figcaption>
+      </figure>
+      <figure class="img m m--w" data-slot="lookbook-09" data-reveal data-cat="Equipment">
+        <img src="assets/images/eltora-08-dumbbell-rack.jpg" alt="Equipment close-up: shaker bottle, towel and plyo boxes" class="crop" style="width:180.0%;height:180.0%;left:-80.00%;top:-76.00%;object-position:100.0% 50.0%" width="1672" height="941" loading="lazy" decoding="async">
+        <figcaption>Equipment</figcaption>
+      </figure>
+      <figure class="img m m--t" data-slot="lookbook-10" data-reveal data-cat="Recovery">
+        <img src="assets/images/eltora-13-post-workout-recovery.jpg" alt="Post-workout recovery close-up" class="crop" style="width:190.0%;height:190.0%;left:-45.00%;top:-26.00%;object-position:33.0% 50.0%" width="1672" height="941" loading="lazy" decoding="async">
+        <figcaption>Recovery</figcaption>
+      </figure>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 12 — MEMBERSHIP CTA ============ -->
+<section class="cta" id="join">
+  <div class="cta__media" data-slot="cta-bg" data-parallax="0.14">
+    <img src="assets/images/eltora-09-barbell-plates.jpg" alt="Loaded barbell on the ELTORA gym floor" style="object-position:100.0% 50.0%" width="1672" height="941" loading="lazy" decoding="async">
+  </div>
+  <div class="cta__shade" aria-hidden="true"></div>
+  <div class="wrap cta__inner">
+    <h2 class="display display--xl">Your Stronger<br>Self Starts Here.</h2>
+    <p class="lede">Step into ELTORA and train with purpose.</p>
+    <div class="cta__buttons">
+      <a class="btn btn--lime magnetic" href="#membership"><span>JOIN ELTORA</span></a>
+      <a class="btn btn--ghost magnetic" href="#contact"><span>BOOK A TOUR</span></a>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 13 — TESTIMONIALS ============ -->
+<section class="section quotes" id="testimonials">
+  <div class="wrap">
+    <header class="section__head">
+      <h2 class="display">In Their Words.</h2>
+      <p class="lede">Demo testimonials. Replace with real, permissioned member feedback.</p>
+    </header>
+    <div class="quotes__grid">
+      <blockquote class="quote">
+        <p>The atmosphere keeps me motivated every session.</p>
+        <footer>Demo testimonial · Sample member</footer>
+      </blockquote>
+      <blockquote class="quote">
+        <p>The coaching approach feels structured and focused.</p>
+        <footer>Demo testimonial · Sample member</footer>
+      </blockquote>
+      <blockquote class="quote">
+        <p>ELTORA makes training feel like a commitment rather than a chore.</p>
+        <footer>Demo testimonial · Sample member</footer>
+      </blockquote>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 14 — FREE TRIAL / CONTACT ============ -->
+<section class="section contact" id="contact">
+  <div class="wrap contact__wrap">
+    <header class="contact__head">
+      <h2 class="display">Start Your<br>First Session.</h2>
+      <p class="lede">Tell us your goal and a date that suits you. A coach will confirm your intro session.</p>
+      <p class="demo-note">Demo form. Nothing is sent anywhere.</p>
+    </header>
+
+    <form class="form" id="leadForm" novalidate>
+      <div class="field">
+        <label for="f-name">Name</label>
+        <input id="f-name" name="name" type="text" autocomplete="name" required>
+        <span class="field__err" data-err></span>
+      </div>
+      <div class="field">
+        <label for="f-email">Email</label>
+        <input id="f-email" name="email" type="email" autocomplete="email" required>
+        <span class="field__err" data-err></span>
+      </div>
+      <div class="field">
+        <label for="f-phone">Phone</label>
+        <input id="f-phone" name="phone" type="tel" autocomplete="tel" inputmode="tel" placeholder="+91" required>
+        <span class="field__err" data-err></span>
+      </div>
+      <div class="field">
+        <label for="f-goal">Goal</label>
+        <select id="f-goal" name="goal" required>
+          <option value="">Choose your goal</option>
+          <option>Build strength</option>
+          <option>Build muscle</option>
+          <option>Lose fat</option>
+          <option>Move and feel better</option>
+          <option>Train for a sport</option>
+          <option>Personal coaching</option>
+        </select>
+        <span class="field__err" data-err></span>
+      </div>
+      <div class="field">
+        <label for="f-date">Preferred date</label>
+        <input id="f-date" name="date" type="date" required>
+        <span class="field__err" data-err></span>
+      </div>
+      <div class="field field--full">
+        <label for="f-msg">Message <small>(optional)</small></label>
+        <textarea id="f-msg" name="message" rows="4"></textarea>
+        <span class="field__err" data-err></span>
+      </div>
+      <button class="btn btn--lime btn--block magnetic" type="submit"><span>BOOK A FREE INTRO SESSION</span></button>
+      <p class="form__status" id="formStatus" role="status" aria-live="polite" tabindex="-1"></p>
+    </form>
+  </div>
+</section>
+
+<!-- ============ 15 — LOCATION ============ -->
+<section class="section loc" id="location">
+  <div class="wrap loc__wrap">
+    <div class="loc__info">
+      <h2 class="display">ELTORA<br>FITNESS</h2>
+      <p class="loc__sub">Performance Training Studio</p>
+      <p class="loc__city">Chennai, Tamil Nadu</p>
+
+      <dl class="hours">
+        <div><dt>Monday – Saturday</dt><dd>5:00 AM – 11:00 PM</dd></div>
+        <div><dt>Sunday</dt><dd>6:00 AM – 10:00 PM</dd></div>
+      </dl>
+      <p class="demo-note">Demo location and hours.</p>
+
+      <div class="loc__buttons">
+        <a class="btn btn--lime magnetic" href="https://www.google.com/maps/search/?api=1&amp;query=Chennai%2C+Tamil+Nadu" target="_blank" rel="noopener"><span>GET DIRECTIONS</span></a>
+        <a class="btn btn--ghost magnetic" href="tel:+910000000000"><span>CALL ELTORA</span></a>
+      </div>
+    </div>
+    <figure class="img loc__img" data-slot="location-interior" data-reveal>
+      <img src="assets/images/eltora-07-functional-training-area.jpg" alt="The turf and rig area inside ELTORA Fitness" style="object-position:60.2% 50.0%" width="1672" height="941" loading="lazy" decoding="async">
+    </figure>
+  </div>
+</section>
+
+</main>
+
+<!-- ============ 16 — FOOTER ============ -->
+<footer class="footer">
+  <div class="wrap">
+    <p class="footer__mark" aria-hidden="true">ELTORA</p>
+    <div class="footer__cols">
+      <div>
+        <a class="logo logo--foot" href="#home" aria-label="ELTORA FITNESS — back to top">
+          <svg class="logo__mark" viewBox="0 0 40 40" aria-hidden="true">
+            <path d="M20 2 36 11v18L20 38 4 29V11z" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linejoin="round"/>
+            <path d="M13 14h14M13 20h10M13 26h14M13 14v12" fill="none" stroke="#c6ff1a" stroke-width="2.6" stroke-linecap="square"/>
+          </svg>
+          <span class="logo__text">ELTORA<em>FITNESS</em></span>
+        </a>
+        <p class="footer__tag">Train Strong. Live Stronger.</p>
+      </div>
+      <nav aria-label="Footer">
+        <a href="#programs">Programs</a>
+        <a href="#coaches">Coaches</a>
+        <a href="#membership">Membership</a>
+        <a href="#studio">Studio</a>
+        <a href="#results">Results</a>
+        <a href="#gallery">Gallery</a>
+        <a href="#contact">Contact</a>
+      </nav>
+      <nav aria-label="Social">
+        <a href="#" rel="noopener">Instagram</a>
+        <a href="#" rel="noopener">YouTube</a>
+        <a href="#" rel="noopener">Facebook</a>
+      </nav>
+    </div>
+    <div class="footer__base">
+      <p>© 2026 ELTORA FITNESS</p>
+      <p><a href="#">Privacy</a> <a href="#">Terms</a></p>
+    </div>
+  </div>
+</footer>
+
+<!-- Lightbox -->
+<dialog class="lightbox" id="lightbox" aria-label="Enlarged photo">
+  <button class="lightbox__close" id="lbClose" aria-label="Close">×</button>
+  <img id="lbImg" alt="">
+  <p id="lbCap"></p>
+</dialog>
+
+<noscript><style>.loader{display:none!important}[data-reveal]::before{display:none!important}</style></noscript>
+
+<script src="vendor/three.min.js"></script>
+<script src="vendor/OrbitControls.js"></script>
+<script src="vendor/RoomEnvironment.js"></script>
+<script src="vendor/gsap.min.js"></script>
+<script src="vendor/ScrollTrigger.min.js"></script>
+<script src="vendor/lenis.min.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
