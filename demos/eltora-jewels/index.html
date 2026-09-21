@@ -1,0 +1,655 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ELTORA JEWELS — Timeless Pieces. Modern Elegance.</title>
+<meta name="description" content="ELTORA JEWELS is a luxury jewellery house crafting timeless diamond, gold, pearl and bridal jewellery. Discover the Signature Collection, book a private consultation, or visit our Chennai studio.">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="style.css">
+
+<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>💎</text></svg>">
+
+</head>
+<body>
+
+<!-- ============================================================
+     PRELOADER
+============================================================ -->
+<div class="preloader">
+  <div class="preloader-mark">ELTORA</div>
+  <div class="preloader-bar"></div>
+</div>
+
+<div class="cursor-glow"></div>
+<div class="toast"></div>
+
+<!-- ============================================================
+     NAVIGATION
+============================================================ -->
+<header class="nav">
+  <div class="container nav-inner">
+    <a href="#top" class="logo">ELTORA<span>.</span></a>
+
+    <nav class="nav-links" aria-label="Primary">
+      <a href="#top">Home</a>
+      <a href="#collection">Collections</a>
+      <a href="#shopby">Jewellery</a>
+      <a href="#bridal">Bridal</a>
+      <a href="#about">About</a>
+      <a href="#lookbook">Journal</a>
+      <a href="#store">Visit Us</a>
+    </nav>
+
+    <div class="nav-actions">
+      <button class="icon-btn" aria-label="Search" id="search-toggle">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4"><circle cx="11" cy="11" r="7"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+      </button>
+      <button class="icon-btn" aria-label="Wishlist">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4"><path d="M12 21s-7.5-4.6-10-9.3C.4 8 2 4.5 5.6 4c2-.3 3.8.7 4.9 2.3.9-1.6 2.9-2.6 4.9-2.3C19 4.5 20.6 8 20 11.7 17.5 16.4 12 21 12 21z"/></svg>
+      </button>
+      <button class="icon-btn" aria-label="Bag">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4"><path d="M6 8h12l-1 12H7L6 8z"/><path d="M9 8V6a3 3 0 016 0v2"/></svg>
+        <span class="bag-count">0</span>
+      </button>
+      <button class="nav-burger" aria-label="Menu"><span></span><span></span><span></span></button>
+    </div>
+  </div>
+</header>
+
+<div class="mobile-panel" aria-hidden="true">
+  <a href="#top">Home</a>
+  <a href="#collection">Collections</a>
+  <a href="#shopby">Jewellery</a>
+  <a href="#bridal">Bridal</a>
+  <a href="#about">About</a>
+  <a href="#lookbook">Journal</a>
+  <a href="#store">Visit Us</a>
+</div>
+
+<main id="top">
+
+<!-- ============================================================
+     SECTION 1 — HERO
+============================================================ -->
+<section class="hero">
+  <img class="hero-bg" src="assets/images/hero-main.jpg" alt="ELTORA JEWELS emerald diamond ring" fetchpriority="high">
+  <canvas id="hero-canvas"></canvas>
+  <div class="hero-vignette"></div>
+  <div class="hero-content container">
+    <div class="hero-eyebrow">ELTORA JEWELS</div>
+    <h1 class="hero-title">
+      <span class="line"><span>Timeless Pieces.</span></span>
+      <span class="line"><span>Modern Elegance.</span></span>
+    </h1>
+    <p class="hero-tag">Fine jewellery, cast in light and made to last generations.</p>
+    <div class="hero-cta">
+      <a href="#collection" class="btn btn-primary magnetic">Explore Collection</a>
+      <a href="#consult" class="btn btn-outline magnetic">Book a Private Consultation</a>
+    </div>
+  </div>
+  <div class="hero-scroll">
+    <span>SCROLL</span>
+    <div class="scroll-line"></div>
+  </div>
+</section>
+
+<!-- ============================================================
+     SECTION 2 — SIGNATURE COLLECTION
+============================================================ -->
+<section class="collection" id="collection">
+  <div class="container">
+    <div class="section-head center" data-reveal>
+      <span class="eyebrow">Signature Collection</span>
+      <h2 class="section-title">Signature Collection</h2>
+      <p class="section-sub">Designed to become part of your story.</p>
+    </div>
+  </div>
+
+  <div class="collection-grid" data-reveal-stagger>
+    <a href="#featured" class="coll-card">
+      <img src="assets/images/solitaire.jpg" alt="The Solitaire — round brilliant diamond engagement ring in a rose gold halo setting" loading="lazy">
+      <span class="coll-num">01</span>
+      <div class="coll-info"><h3>The Solitaire</h3><p>A single diamond, endlessly reconsidered.</p></div>
+    </a>
+    <a href="#featured" class="coll-card">
+      <img src="assets/images/golden-heritage.jpg" alt="Golden Heritage — 18K gold chain necklace" loading="lazy">
+      <span class="coll-num">02</span>
+      <div class="coll-info"><h3>Golden Heritage</h3><p>Warm gold, drawn from old goldsmithing.</p></div>
+    </a>
+    <a href="#featured" class="coll-card">
+      <img src="assets/images/celestial-diamonds.jpg" alt="Celestial Diamonds — layered gold necklace with pendant" loading="lazy">
+      <span class="coll-num">03</span>
+      <div class="coll-info"><h3>Celestial Diamonds</h3><p>Constellations rendered in white gold.</p></div>
+    </a>
+    <a href="#featured" class="coll-card">
+      <img src="assets/images/pearl-elan.jpg" alt="Pearl Élan — freshwater pearl necklace" loading="lazy">
+      <span class="coll-num">04</span>
+      <div class="coll-info"><h3>Pearl Élan</h3><p>Soft luminosity, quietly worn.</p></div>
+    </a>
+  </div>
+</section>
+
+<!-- ============================================================
+     SECTION 3 — SHOP BY JEWELLERY
+============================================================ -->
+<section class="shopby" id="shopby">
+  <div class="container">
+    <div class="section-head center" data-reveal>
+      <span class="eyebrow">Shop By Category</span>
+      <h2 class="section-title">Shop By Jewellery</h2>
+    </div>
+
+    <div class="shopby-grid" data-reveal-stagger>
+      <a href="#featured" class="shopby-item">
+        <img src="assets/images/rings.jpg" alt="Rings category" loading="lazy">
+        <span>Rings</span>
+      </a>
+      <a href="#featured" class="shopby-item">
+        <img src="assets/images/necklaces.jpg" alt="Necklaces category" loading="lazy">
+        <span>Necklaces</span>
+      </a>
+      <a href="#featured" class="shopby-item">
+        <img src="assets/images/earrings.jpg" alt="Earrings category" loading="lazy">
+        <span>Earrings</span>
+      </a>
+      <a href="#featured" class="shopby-item">
+        <img src="assets/images/bracelets.jpg" alt="Bracelets category" loading="lazy">
+        <span>Bracelets</span>
+      </a>
+      <a href="#featured" class="shopby-item">
+        <img src="assets/images/bangles.jpg" alt="Bangles category" loading="lazy">
+        <span>Bangles</span>
+      </a>
+      <a href="#featured" class="shopby-item">
+        <img src="assets/images/pendants.jpg" alt="Pendants category" loading="lazy">
+        <span>Pendants</span>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     SECTION 4 — FEATURED PIECES
+============================================================ -->
+<section class="featured" id="featured">
+  <div class="container">
+    <div class="section-head center" data-reveal>
+      <span class="eyebrow">Curated For You</span>
+      <h2 class="section-title">Curated For You</h2>
+      <p class="section-sub">Six pieces our clients return to, season after season.</p>
+    </div>
+
+    <div class="product-grid" data-reveal-stagger>
+
+      <article class="product-card">
+        <div class="product-media">
+          <img src="assets/images/product-aurora-ring.jpg" alt="Aurora Diamond Ring" loading="lazy">
+          <button class="wishlist-btn" data-name="Aurora Diamond Ring" aria-label="Add Aurora Diamond Ring to wishlist">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M12 21s-7.5-4.6-10-9.3C.4 8 2 4.5 5.6 4c2-.3 3.8.7 4.9 2.3.9-1.6 2.9-2.6 4.9-2.3C19 4.5 20.6 8 20 11.7 17.5 16.4 12 21 12 21z"/></svg>
+          </button>
+        </div>
+        <div class="product-info">
+          <div class="product-cat">Rings</div>
+          <h3 class="product-name">Aurora Diamond Ring</h3>
+          <div class="product-price">₹98,500 <span class="demo">Demo price</span></div>
+          <div class="product-actions"><a href="#" class="view-details" data-add-bag="Aurora Diamond Ring">View Details</a></div>
+        </div>
+      </article>
+
+      <article class="product-card">
+        <div class="product-media">
+          <img src="assets/images/product-heritage-necklace.jpg" alt="Heritage Gold Necklace" loading="lazy">
+          <button class="wishlist-btn" data-name="Heritage Gold Necklace" aria-label="Add Heritage Gold Necklace to wishlist">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M12 21s-7.5-4.6-10-9.3C.4 8 2 4.5 5.6 4c2-.3 3.8.7 4.9 2.3.9-1.6 2.9-2.6 4.9-2.3C19 4.5 20.6 8 20 11.7 17.5 16.4 12 21 12 21z"/></svg>
+          </button>
+        </div>
+        <div class="product-info">
+          <div class="product-cat">Necklaces</div>
+          <h3 class="product-name">Heritage Gold Necklace</h3>
+          <div class="product-price">₹1,25,000 <span class="demo">Demo price</span></div>
+          <div class="product-actions"><a href="#" class="view-details" data-add-bag="Heritage Gold Necklace">View Details</a></div>
+        </div>
+      </article>
+
+      <article class="product-card">
+        <div class="product-media">
+          <img src="assets/images/product-celeste-earrings.jpg" alt="Celeste Drop Earrings" loading="lazy">
+          <button class="wishlist-btn" data-name="Celeste Drop Earrings" aria-label="Add Celeste Drop Earrings to wishlist">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M12 21s-7.5-4.6-10-9.3C.4 8 2 4.5 5.6 4c2-.3 3.8.7 4.9 2.3.9-1.6 2.9-2.6 4.9-2.3C19 4.5 20.6 8 20 11.7 17.5 16.4 12 21 12 21z"/></svg>
+          </button>
+        </div>
+        <div class="product-info">
+          <div class="product-cat">Earrings</div>
+          <h3 class="product-name">Celeste Drop Earrings</h3>
+          <div class="product-price">₹72,000 <span class="demo">Demo price</span></div>
+          <div class="product-actions"><a href="#" class="view-details" data-add-bag="Celeste Drop Earrings">View Details</a></div>
+        </div>
+      </article>
+
+      <article class="product-card">
+        <div class="product-media">
+          <img src="assets/images/product-imperial-bracelet.jpg" alt="Imperial Diamond Bracelet" loading="lazy">
+          <button class="wishlist-btn" data-name="Imperial Diamond Bracelet" aria-label="Add Imperial Diamond Bracelet to wishlist">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M12 21s-7.5-4.6-10-9.3C.4 8 2 4.5 5.6 4c2-.3 3.8.7 4.9 2.3.9-1.6 2.9-2.6 4.9-2.3C19 4.5 20.6 8 20 11.7 17.5 16.4 12 21 12 21z"/></svg>
+          </button>
+        </div>
+        <div class="product-info">
+          <div class="product-cat">Bracelets</div>
+          <h3 class="product-name">Imperial Diamond Bracelet</h3>
+          <div class="product-price">₹1,48,000 <span class="demo">Demo price</span></div>
+          <div class="product-actions"><a href="#" class="view-details" data-add-bag="Imperial Diamond Bracelet">View Details</a></div>
+        </div>
+      </article>
+
+      <article class="product-card">
+        <div class="product-media">
+          <img src="assets/images/product-luna-pendant.jpg" alt="Luna Pearl Pendant" loading="lazy">
+          <button class="wishlist-btn" data-name="Luna Pearl Pendant" aria-label="Add Luna Pearl Pendant to wishlist">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M12 21s-7.5-4.6-10-9.3C.4 8 2 4.5 5.6 4c2-.3 3.8.7 4.9 2.3.9-1.6 2.9-2.6 4.9-2.3C19 4.5 20.6 8 20 11.7 17.5 16.4 12 21 12 21z"/></svg>
+          </button>
+        </div>
+        <div class="product-info">
+          <div class="product-cat">Pendants</div>
+          <h3 class="product-name">Luna Pearl Pendant</h3>
+          <div class="product-price">₹48,500 <span class="demo">Demo price</span></div>
+          <div class="product-actions"><a href="#" class="view-details" data-add-bag="Luna Pearl Pendant">View Details</a></div>
+        </div>
+      </article>
+
+      <article class="product-card">
+        <div class="product-media">
+          <img src="assets/images/product-solara-bangle.jpg" alt="Solara Gold Bangle" loading="lazy">
+          <button class="wishlist-btn" data-name="Solara Gold Bangle" aria-label="Add Solara Gold Bangle to wishlist">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M12 21s-7.5-4.6-10-9.3C.4 8 2 4.5 5.6 4c2-.3 3.8.7 4.9 2.3.9-1.6 2.9-2.6 4.9-2.3C19 4.5 20.6 8 20 11.7 17.5 16.4 12 21 12 21z"/></svg>
+          </button>
+        </div>
+        <div class="product-info">
+          <div class="product-cat">Bangles</div>
+          <h3 class="product-name">Solara Gold Bangle</h3>
+          <div class="product-price">₹82,000 <span class="demo">Demo price</span></div>
+          <div class="product-actions"><a href="#" class="view-details" data-add-bag="Solara Gold Bangle">View Details</a></div>
+        </div>
+      </article>
+
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     SECTION 5 — CINEMATIC PRODUCT SHOWCASE
+============================================================ -->
+<section class="showcase">
+  <div class="showcase-bg">
+    <img src="assets/images/aurelia.jpg" alt="The Aurelia — editorial portrait wearing a gold necklace" loading="lazy">
+  </div>
+  <div class="showcase-content" data-reveal>
+    <span class="eyebrow showcase-eyebrow">Featured Piece</span>
+    <h2 class="showcase-title">THE&nbsp;AURELIA</h2>
+    <p class="showcase-text">Crafted to catch the light. Designed to hold a memory.</p>
+    <a href="#featured" class="btn btn-outline magnetic">Discover The Piece</a>
+  </div>
+</section>
+
+<!-- ============================================================
+     SECTION 6 — 3D JEWELLERY EXPERIENCE
+============================================================ -->
+<section class="experience" id="experience">
+  <div class="container">
+    <div class="section-head center" data-reveal>
+      <span class="eyebrow">Interactive Showroom</span>
+      <h2 class="section-title">See It From Every Angle</h2>
+      <p class="section-sub">Drag to rotate, scroll to zoom — explore our signature setting in real time.</p>
+    </div>
+
+    <div class="experience-grid">
+      <div class="experience-stage" data-reveal>
+        <canvas id="exp-canvas"></canvas>
+        <div class="experience-labels">
+          <div class="exp-label l1">18K GOLD</div>
+          <div class="exp-label l2">VS DIAMOND</div>
+          <div class="exp-label l3">HAND FINISHED</div>
+        </div>
+        <div class="experience-hint">DRAG TO ROTATE · SCROLL TO ZOOM</div>
+      </div>
+
+      <div class="experience-text" data-reveal>
+        <span class="eyebrow">The Solitaire, Reimagined</span>
+        <h3 class="section-title" style="font-size:clamp(26px,3vw,36px);">A showroom in your browser.</h3>
+        <p class="section-sub">Every ELTORA setting is modelled the way it is finished on the bench — facet by facet, prong by prong — so you can study it before you ever hold it.</p>
+        <div class="exp-specs">
+          <div><span>Metal</span><span>18K Yellow / White / Rose Gold</span></div>
+          <div><span>Stone</span><span>VS Clarity, Round Brilliant</span></div>
+          <div><span>Finish</span><span>Hand-polished, high-gloss</span></div>
+          <div><span>Setting</span><span>Four-prong solitaire</span></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     SECTION 7 — BRIDAL COLLECTION
+============================================================ -->
+<section class="bridal" id="bridal">
+  <div class="container">
+    <div class="section-head center" data-reveal>
+      <span class="eyebrow eyebrow-emerald">The Bridal Edit</span>
+      <h2 class="section-title">The Bridal Edit</h2>
+      <p class="section-sub">Sets built to be worn once in a lifetime, and treasured for many more.</p>
+    </div>
+
+    <div class="bridal-grid">
+      <div class="bridal-hero" data-reveal>
+        <div class="bridal-media">
+          <img src="assets/images/bridal-set.jpg" alt="Bridal diamond ring and band set" loading="lazy">
+          <span>Bridal Set — The Vow</span>
+        </div>
+      </div>
+      <div data-reveal>
+        <div class="bridal-media">
+          <img src="assets/images/bridal-necklace.jpg" alt="Bridal necklace with layered gold pendant" loading="lazy">
+          <span>Bridal Necklace</span>
+        </div>
+      </div>
+      <div data-reveal>
+        <div class="bridal-media">
+          <img src="assets/images/bridal-earrings.jpg" alt="Diamond wedding earrings" loading="lazy">
+          <span>Wedding Earrings</span>
+        </div>
+      </div>
+
+      <div class="bridal-copy" data-reveal>
+        <p class="section-sub" style="margin:0;max-width:60ch;">From the first fitting to the final polish, our bridal atelier works with you on sizing, stone selection and engraving — so every piece in the set feels made for the day it's worn.</p>
+        <a href="#consult" class="btn btn-primary magnetic">Explore Bridal Collection</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     SECTION 8 — OUR CRAFT
+============================================================ -->
+<section class="craft" id="craft">
+  <div class="container">
+    <div class="craft-grid">
+      <div class="craft-media" data-reveal>
+        <div class="cm-tall"><img src="assets/images/craft-1.jpg" alt="Goldsmith at work in the ELTORA atelier" loading="lazy"></div>
+        <div class="cm"><img src="assets/images/craft-2.jpg" alt="Finished jewellery box detail" loading="lazy"></div>
+        <div class="cm"><img src="assets/images/craft-3.jpg" alt="Close detail of a hand-finished chain" loading="lazy"></div>
+      </div>
+
+      <div class="craft-text" data-reveal>
+        <span class="eyebrow">Our Craft</span>
+        <h2 class="section-title">Made By Hand.<br>Made To Last.</h2>
+        <p class="section-sub">Every ELTORA piece is shaped through careful craftsmanship, considered design, and attention to the smallest detail — from the first sketch to the final polish.</p>
+        <p class="craft-quote">"A well-made piece should feel inevitable — as though it could not have been made any other way."</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     SECTION 9 — LOOKBOOK
+============================================================ -->
+<section class="lookbook" id="lookbook">
+  <div class="container">
+    <div class="section-head center" data-reveal>
+      <span class="eyebrow">The Journal</span>
+      <h2 class="section-title">Lookbook</h2>
+      <p class="section-sub">Moments from our latest campaign, shot close and unhurried.</p>
+    </div>
+
+    <div class="lookbook-grid">
+      <div class="lb-item"><img src="assets/images/lb-1.jpg" alt="Diamond ring close-up" loading="lazy"></div>
+      <div class="lb-item"><img src="assets/images/lb-2.jpg" alt="Gold necklace on white surface" loading="lazy"></div>
+      <div class="lb-item"><img src="assets/images/lb-3.jpg" alt="Earrings on model" loading="lazy"></div>
+      <div class="lb-item"><img src="assets/images/lb-4.jpg" alt="Bridal jewellery detail" loading="lazy"></div>
+      <div class="lb-item"><img src="assets/images/lb-5.jpg" alt="Luxury gold bracelet" loading="lazy"></div>
+      <div class="lb-item"><img src="assets/images/lb-6.jpg" alt="Gemstone jewellery arrangement" loading="lazy"></div>
+      <div class="lb-item"><img src="assets/images/lb-7.jpg" alt="Gold bangle and necklace tray" loading="lazy"></div>
+      <div class="lb-item"><img src="assets/images/lb-8.jpg" alt="Editorial jewellery portrait" loading="lazy"></div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     SECTION 10 — ABOUT ELTORA
+============================================================ -->
+<section class="about" id="about">
+  <div class="container">
+    <div class="about-grid">
+      <div class="about-media" data-reveal>
+        <img src="assets/images/about.jpg" alt="ELTORA jewellery boutique portrait" loading="lazy">
+      </div>
+      <div class="about-text" data-reveal>
+        <span class="eyebrow">About ELTORA</span>
+        <h2 class="section-title">Jewellery With A Story.</h2>
+        <p>ELTORA JEWELS began as a small design studio with one belief: that fine jewellery should be worn, not just kept. Every collection is built around pieces that move with you — from a Tuesday morning to a wedding day.</p>
+        <p>We work with ethically sourced stones and recycled precious metals wherever possible, and every setting passes through the hands of a master goldsmith before it reaches you. It is a modern approach to an old craft — heritage techniques, contemporary lines.</p>
+        <div class="about-stats">
+          <div><strong>18+</strong><span>Years of Craft</span></div>
+          <div><strong>40k+</strong><span>Pieces Delivered</span></div>
+          <div><strong>100%</strong><span>Hand Finished</span></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     SECTION 11 — TESTIMONIALS
+============================================================ -->
+<section class="testimonials">
+  <div class="container">
+    <div class="section-head center" data-reveal>
+      <span class="eyebrow">What Clients Say</span>
+      <h2 class="section-title">Testimonials</h2>
+    </div>
+
+    <div class="t-track-wrap" data-reveal>
+      <div class="t-slide is-active">
+        <p class="t-quote">"The consultation felt like sitting with a friend who happens to know everything about diamonds. My ring was ready exactly when they said it would be."</p>
+        <div class="t-name">Ananya R.</div>
+        <div class="t-role">Chennai</div>
+        <div class="t-tag">Demo testimonial</div>
+      </div>
+      <div class="t-slide">
+        <p class="t-quote">"I wanted my grandmother's gold reset without losing the character of the piece. ELTORA understood that instantly."</p>
+        <div class="t-name">Meera S.</div>
+        <div class="t-role">Bengaluru</div>
+        <div class="t-tag">Demo testimonial</div>
+      </div>
+      <div class="t-slide">
+        <p class="t-quote">"Our full bridal set arrived a week early, and every piece matched the sketches down to the millimetre. Worth every consultation."</p>
+        <div class="t-name">Kavya M.</div>
+        <div class="t-role">Coimbatore</div>
+        <div class="t-tag">Demo testimonial</div>
+      </div>
+    </div>
+    <div class="t-dots">
+      <button class="is-active" aria-label="Testimonial 1"></button>
+      <button aria-label="Testimonial 2"></button>
+      <button aria-label="Testimonial 3"></button>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     SECTION 12 — PRIVATE CONSULTATION
+============================================================ -->
+<section class="consult" id="consult">
+  <div class="container">
+    <div class="consult-grid">
+      <div class="consult-text" data-reveal>
+        <span class="eyebrow">Book An Appointment</span>
+        <h2 class="section-title">Your Perfect Piece Awaits.</h2>
+        <p class="section-sub">Sit down with our design team — in studio or by video — to talk stones, budgets and timelines before you commit to anything.</p>
+        <ul class="consult-points">
+          <li>One-to-one time with a senior jewellery consultant</li>
+          <li>Hands-on comparison of stones, metals and settings</li>
+          <li>No obligation to purchase after your visit</li>
+        </ul>
+      </div>
+
+      <form class="consult-form" id="consult-form" data-reveal novalidate>
+        <div class="form-grid">
+          <div class="field">
+            <label for="c-name">Name</label>
+            <input type="text" id="c-name" name="name" required>
+            <div class="err"></div>
+          </div>
+          <div class="field">
+            <label for="c-email">Email</label>
+            <input type="email" id="c-email" name="email" required>
+            <div class="err"></div>
+          </div>
+          <div class="field">
+            <label for="c-phone">Phone</label>
+            <input type="tel" id="c-phone" name="phone" required>
+            <div class="err"></div>
+          </div>
+          <div class="field">
+            <label for="c-date">Preferred Date</label>
+            <input type="date" id="c-date" name="date" required>
+            <div class="err"></div>
+          </div>
+          <div class="field full">
+            <label for="c-interest">Jewellery Interest</label>
+            <select id="c-interest" name="interest" required>
+              <option value="">Select an option</option>
+              <option>Engagement Ring</option>
+              <option>Bridal Set</option>
+              <option>Necklace / Pendant</option>
+              <option>Earrings</option>
+              <option>Bracelet / Bangle</option>
+              <option>Custom Design</option>
+            </select>
+            <div class="err"></div>
+          </div>
+          <div class="field full">
+            <label for="c-message">Message</label>
+            <textarea id="c-message" name="message" rows="3"></textarea>
+            <div class="err"></div>
+          </div>
+          <div class="form-submit">
+            <button type="submit" class="btn btn-primary magnetic">Request Private Consultation</button>
+          </div>
+          <p class="form-note">This is a demo form — no data is sent anywhere. In production, connect it to your booking system.</p>
+        </div>
+        <div class="form-success">Thank you — your consultation request has been noted. Our team will be in touch shortly.</div>
+      </form>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     SECTION 13 — STORE / VISIT US
+============================================================ -->
+<section class="store" id="store">
+  <div class="container">
+    <div class="store-grid">
+      <div class="store-media" data-reveal>
+        <img src="assets/images/showroom.jpg" alt="ELTORA JEWELS boutique jewellery display" loading="lazy">
+      </div>
+      <div class="store-info" data-reveal>
+        <h3>Visit Us</h3>
+        <div class="store-name">ELTORA JEWELS</div>
+        <div class="store-block">
+          <div class="label">Luxury Jewellery Studio</div>
+          <p>Address</p>
+          <p>Chennai, Tamil Nadu, India</p>
+        </div>
+        <div class="store-block">
+          <div class="label">Opening Hours</div>
+          <p>Monday – Saturday</p>
+          <p>10:00 AM – 8:00 PM</p>
+        </div>
+        <div class="store-actions">
+          <a href="https://maps.google.com/?q=Chennai,Tamil+Nadu" target="_blank" rel="noopener" class="btn btn-outline magnetic">Get Directions</a>
+          <a href="#consult" class="btn btn-primary magnetic">Book An Appointment</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     SECTION 14 — NEWSLETTER
+============================================================ -->
+<section class="newsletter">
+  <div class="container">
+    <h2 class="newsletter-title">Stay In The Light</h2>
+    <p class="newsletter-sub">Discover new collections, private previews and stories from ELTORA.</p>
+    <form class="newsletter-form">
+      <input type="email" placeholder="Enter your email address" aria-label="Email address" required>
+      <button type="submit" class="magnetic">JOIN ELTORA</button>
+    </form>
+    <p class="newsletter-msg"></p>
+  </div>
+</section>
+
+</main>
+
+<!-- ============================================================
+     FOOTER
+============================================================ -->
+<footer class="footer">
+  <div class="container">
+    <div class="footer-top">
+      <div class="footer-brand">
+        <a href="#top" class="logo">ELTORA<span>.</span></a>
+        <p>Fine jewellery for the moments that matter — crafted in Chennai, worn everywhere.</p>
+        <div class="footer-social">
+          <a href="#" target="_blank" rel="noopener">Instagram</a>
+          <a href="#" target="_blank" rel="noopener">Pinterest</a>
+          <a href="#" target="_blank" rel="noopener">Facebook</a>
+        </div>
+      </div>
+      <div class="footer-col">
+        <h4>Shop</h4>
+        <ul>
+          <li><a href="#collection">Collections</a></li>
+          <li><a href="#shopby">Jewellery</a></li>
+          <li><a href="#bridal">Bridal</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Company</h4>
+        <ul>
+          <li><a href="#about">About</a></li>
+          <li><a href="#lookbook">Journal</a></li>
+          <li><a href="#store">Visit Us</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Support</h4>
+        <ul>
+          <li><a href="#consult">Contact</a></li>
+          <li><a href="#consult">Book Appointment</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>Copyright © 2026 ELTORA JEWELS</span>
+      <div class="footer-legal">
+        <a href="#">Privacy Policy</a>
+        <a href="#">Terms</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+<script type="importmap">
+{
+  "imports": {
+    "three": "https://cdn.jsdelivr.net/npm/three@0.160.0/build/three.module.js"
+  }
+}
+</script>
+<script src="script.js"></script>
+</body>
+</html>
