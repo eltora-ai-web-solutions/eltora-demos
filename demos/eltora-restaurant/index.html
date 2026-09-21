@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>ELTORA Restaurant — Where Every Plate Tells a Story.</title>
+<meta name="description" content="ELTORA Restaurant: an immersive dining experience shaped by fire, flavour and thoughtful craft.">
+<link rel="icon" href="assets/icons/favicon.svg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400&family=Jost:wght@300;400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div id="loader"><span>ELTORA</span></div>
+<div class="grain"></div>
+
+<header id="nav">
+  <a href="#home" class="logo">ELTORA</a>
+  <nav id="menuNav">
+    <a href="#home">Home</a><a href="#story">Our Story</a><a href="#menu">Menu</a><a href="#experience">Experience</a><a href="#gallery">Gallery</a><a href="#reserve">Reservations</a><a href="#contact">Contact</a>
+    <a href="#reserve" class="btn mag navcta">Reserve a Table</a>
+  </nav>
+  <button id="burger" aria-label="Open menu" aria-expanded="false"><i></i><i></i></button>
+</header>
+
+<section id="home" class="hero">
+  <canvas id="heroCanvas" aria-hidden="true"></canvas>
+  <div class="hero-txt">
+    <h1>ELTORA<small>RESTAURANT</small></h1>
+    <p class="tag">Where Every Plate Tells a Story.</p>
+    <p class="sub">An immersive dining experience shaped by fire, flavour and thoughtful craft.</p>
+    <div class="row"><a href="#reserve" class="btn solid mag">Reserve a Table</a><a href="#menu" class="btn mag">Explore the Menu</a></div>
+  </div>
+  <a href="#story" class="scroll" aria-label="Scroll down"><span></span></a>
+</section>
+
+<section id="story" class="split wrap">
+  <div class="img-frame rv"><img data-i="kitchen" alt="Chefs working over an open flame" data-p="0.06"></div>
+  <div class="rv">
+    <h2>Made Around The Fire.</h2>
+    <p class="lead">At ELTORA, every dish begins with a simple belief — exceptional food does not need to be complicated. It needs to be thoughtful.</p>
+    <p>We buy from growers we know and cook what the season gives us. Fresh ingredients are handled lightly, then finished over open fire, where char and smoke do the work of a sauce. Each plate is put together by hand, and every guest is looked after the way a host would look after friends at home.</p>
+  </div>
+</section>
+
+<section id="menu" class="wrap">
+  <div class="head rv"><h2>The ELTORA Menu</h2><p>Thoughtfully crafted dishes for memorable evenings.</p></div>
+  <div class="tabs rv" id="tabs" role="tablist"></div>
+  <ul class="dishes" id="dishes"></ul>
+  <p class="note">Demo menu and prices — replace the <code>MENU</code> list in script.js.</p>
+</section>
+
+<section id="gallery" class="wrap showcase">
+  <div class="head rv"><h2>Crafted To Be Remembered.</h2></div>
+  <div class="show-grid" id="showGrid"></div>
+</section>
+
+<section id="signature" class="sig">
+  <img data-i="lamb" alt="Ember Lamb, slow-cooked over fire" data-p="0.12">
+  <div class="sig-txt rv">
+    <h2>THE ELTORA SIGNATURE</h2>
+    <h3>Ember Lamb</h3>
+    <p>Slow-cooked over gentle fire, finished with seasonal herbs and our signature reduction.</p>
+    <a href="#menu" class="btn mag">Discover the Dish</a>
+  </div>
+</section>
+
+<section id="craft" class="craft">
+  <div class="head rv"><h2>See The Craft From Every Angle.</h2><p>Drag to rotate. Hold Ctrl and scroll to zoom.</p></div>
+  <div class="stage rv">
+    <canvas id="craftCanvas" aria-label="Interactive 3D plate"></canvas>
+    <span class="lab l1">Fresh Ingredients</span><span class="lab l2">Open Fire</span><span class="lab l3">Hand Finished</span>
+  </div>
+</section>
+
+<section id="experience" class="wrap">
+  <div class="head rv"><h2>More Than A Meal.</h2><p>From the first pour to the final course, every detail is designed around the experience.</p></div>
+  <div class="exp" id="expGrid"></div>
+</section>
+
+<section id="bar" class="split wrap">
+  <div class="rv">
+    <h2>After Dark.</h2>
+    <p class="lead">Amber light, a marble-topped bar and cocktails made with the same care as the kitchen.</p>
+    <p>Arrive early for a drink at the bar, or stay on once dinner is done.</p>
+    <a href="#reserve" class="btn mag">Reserve a Table</a>
+  </div>
+  <div class="duo rv"><div class="img-frame"><img data-i="bar" alt="The ELTORA bar in the evening" data-p="0.05"></div><div class="img-frame"><img data-i="cocktail" alt="Signature cocktail with dried orange" data-p="0.05"></div></div>
+</section>
+
+<section id="chef" class="split wrap rev">
+  <div class="img-frame rv"><img data-i="chef" alt="Demo chef portrait" data-p="0.06"></div>
+  <div class="rv">
+    <h2>Driven By Craft.</h2>
+    <p class="lead">Chef Arjun Rao<br><em>Executive Chef</em></p>
+    <p>Arjun cooks with a short list of ingredients and a long wait for the fire to be right. He trained in busy hotel kitchens before turning to live-fire cooking, and he still tastes every sauce before it leaves the pass.</p>
+    <p class="note">Demo profile. Chef Arjun Rao is a fictional character used for this sample site.</p>
+  </div>
+</section>
+
+<section id="gallery2" class="wrap">
+  <div class="head rv"><h2>The Gallery</h2></div>
+  <div class="masonry" id="masonry"></div>
+</section>
+
+<section id="private" class="split wrap">
+  <div class="rv">
+    <h2>An Evening, Made Yours.</h2>
+    <p class="lead">Private dinners, celebrations, corporate dinners and intimate gatherings, hosted in a room of your own.</p>
+    <p>Our team builds the menu with you, from the first course to the last pour.</p>
+    <a href="#reserve" class="btn mag">Enquire for Private Dining</a>
+  </div>
+  <div class="img-frame rv"><img data-i="private" alt="Private dining table set for an evening" data-p="0.06"></div>
+</section>
+
+<section class="wrap">
+  <div class="head rv"><h2>Kind Words</h2><p class="note">Demo testimonials, not verified customers.</p></div>
+  <div class="quotes" id="quotes"></div>
+</section>
+
+<section id="reserve" class="wrap resv">
+  <div class="head rv"><h2>Reserve Your Table.</h2></div>
+  <form id="resForm" class="form rv" novalidate>
+    <label>Name<input name="name" required autocomplete="name"></label>
+    <label>Email<input name="email" type="email" required autocomplete="email"></label>
+    <label>Phone<input name="phone" type="tel" required autocomplete="tel"></label>
+    <label>Date<input name="date" type="date" required></label>
+    <label>Time<input name="time" type="time" required></label>
+    <label>Number of Guests<select name="guests" required><option value="">Select</option><option>1</option><option>2</option><option>3</option><option>4</option><option>5</option><option>6</option><option>7</option><option>8+</option></select></label>
+    <label>Occasion<select name="occasion"><option>Dinner</option><option>Birthday</option><option>Anniversary</option><option>Corporate</option><option>Other</option></select></label>
+    <label class="full">Message<textarea name="message" rows="3"></textarea></label>
+    <p class="err" id="formErr" role="alert"></p>
+    <button class="btn solid mag full" type="submit">Request a Reservation</button>
+    <p class="ok" id="formOk" role="status"></p>
+  </form>
+</section>
+
+<section id="contact" class="split wrap">
+  <div class="rv">
+    <h2>Find ELTORA.</h2>
+    <p class="lead">ELTORA RESTAURANT<br>42 Heritage Avenue<br>Chennai, Tamil Nadu</p>
+    <p><b>Monday – Thursday</b> 12:00 PM – 10:30 PM<br><b>Friday – Sunday</b> 12:00 PM – 11:30 PM</p>
+    <p>+91 98765 43210</p>
+    <p class="note">Demo contact details.</p>
+    <div class="row"><a class="btn mag" target="_blank" rel="noopener" href="https://www.google.com/maps/search/?api=1&query=42+Heritage+Avenue+Chennai">Get Directions</a><a class="btn solid mag" href="tel:+919876543210">Call ELTORA</a></div>
+  </div>
+  <div class="img-frame rv"><img data-i="interior2" alt="ELTORA dining room" data-p="0.06"></div>
+</section>
+
+<section class="news wrap">
+  <h2>Stay At The Table.</h2>
+  <p>Discover seasonal menus, private dinners and stories from ELTORA.</p>
+  <form id="newsForm" novalidate><input type="email" placeholder="Your email" aria-label="Email" required><button class="btn solid" type="submit">Join the List</button></form>
+  <p class="ok" id="newsMsg" role="status"></p>
+</section>
+
+<footer>
+  <div class="logo">ELTORA</div>
+  <nav><a href="#story">Our Story</a><a href="#menu">Menu</a><a href="#experience">Experience</a><a href="#gallery2">Gallery</a><a href="#reserve">Reservations</a><a href="#contact">Contact</a></nav>
+  <p>Mon–Thu 12:00–22:30 · Fri–Sun 12:00–23:30</p>
+  <nav><a href="#">Instagram</a><a href="#">Facebook</a><a href="#">YouTube</a></nav>
+  <p class="note">© 2026 ELTORA RESTAURANT</p>
+</footer>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
