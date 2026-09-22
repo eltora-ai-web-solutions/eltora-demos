@@ -11,393 +11,1106 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Parisienne&family=Jost:wght@300;400;500&display=swap" rel="stylesheet">
 
-<!-- Fail-safe base styling: guarantees the correct dark burgundy/gold look
-     and fonts the instant the page paints, even for the brief moment
-     before style.css finishes loading. Fully superseded by style.css once
-     it loads (same colours, same font stack) — purely a loading safeguard,
-     not a design change. -->
 <style>
-  html, body{
-    background:#0B0908; color:#F4EEE2;
-    font-family:'Jost','Helvetica Neue',Arial,sans-serif;
-    margin:0;
-  }
+html,
+body {
+  background: #0B0908;
+  color: #F4EEE2;
+  font-family: 'Jost','Helvetica Neue',Arial,sans-serif;
+  margin: 0;
+}
 </style>
 
 <link rel="stylesheet" href="./style.css" />
 </head>
+
 <body>
 
 <!-- ============ NOISE / VIGNETTE OVERLAY ============ -->
 <div class="grain"></div>
 <div class="vignette"></div>
 
-<!-- ============ CURSOR GLOW (desktop) ============ -->
+<!-- ============ CURSOR GLOW ============ -->
 <div class="cursor-glow" id="cursorGlow"></div>
 
-<!-- ============ ELTORA — PREMIUM BRAND WELCOME ============
-     A separate cinematic brand-entry moment, shown before the DUDU & BUBU
-     invitation. Purely a welcome/entry experience for the ELTORA brand —
-     not the couple's hero, and never edited by the invitation content above. -->
-<section id="eltoraWelcome" class="eltora-welcome" aria-label="Welcome to the ELTORA family">
-  <canvas id="eltoraCanvas" class="eltora-canvas" aria-hidden="true"></canvas>
+
+<!-- =========================================================
+     ELTORA PREMIUM BRAND WELCOME
+========================================================= -->
+<section
+  id="eltoraWelcome"
+  class="eltora-welcome"
+  aria-label="Welcome to the ELTORA family"
+>
+
+  <canvas
+    id="eltoraCanvas"
+    class="eltora-canvas"
+    aria-hidden="true"
+  ></canvas>
+
   <div class="eltora-rays" aria-hidden="true"></div>
   <div class="eltora-vignette" aria-hidden="true"></div>
 
   <div class="eltora-content">
-    <div class="eltora-glow" id="eltoraGlow" aria-hidden="true"></div>
 
-    <div class="eltora-mark" id="eltoraMark" aria-hidden="true">
-      <img src="assets/images/eltora-logo.png" alt="ELTORA" class="eltora-mark-logo">
+    <div
+      class="eltora-glow"
+      id="eltoraGlow"
+      aria-hidden="true"
+    ></div>
+
+    <div
+      class="eltora-mark"
+      id="eltoraMark"
+      aria-hidden="true"
+    >
+      <!-- FIXED: images folder -->
+      <img
+        src="./images/eltora-logo.png"
+        alt="ELTORA"
+        class="eltora-mark-logo"
+      >
     </div>
 
-    <p class="eltora-eyebrow" id="eltoraEyebrow">Welcome To</p>
-    <h1 class="eltora-title" id="eltoraTitle">
+    <p
+      class="eltora-eyebrow"
+      id="eltoraEyebrow"
+    >
+      Welcome To
+    </p>
+
+    <h1
+      class="eltora-title"
+      id="eltoraTitle"
+    >
       <span class="eltora-word">ELTORA</span>
       <span class="eltora-word eltora-word-family">FAMILY</span>
     </h1>
+
   </div>
 
-  <div class="eltora-flash" id="eltoraFlash" aria-hidden="true"></div>
+  <div
+    class="eltora-flash"
+    id="eltoraFlash"
+    aria-hidden="true"
+  ></div>
+
 </section>
 
-<!-- ============ INTRO / CINEMATIC OPENING ============ -->
-<section id="intro" class="intro">
-  <canvas id="introCanvas" class="intro-canvas"></canvas>
-  <div class="intro-fog" aria-hidden="true"></div>
 
-  <!-- subtle floral silhouettes — corner accents, very low opacity -->
-  <svg class="intro-floral intro-floral-tl" viewBox="0 0 220 220" aria-hidden="true">
-    <g fill="none" stroke="url(#goldGradFloral)" stroke-width="1">
-      <path d="M10 10 C 60 20, 90 50, 100 100 C 60 90, 20 70, 10 10 Z" opacity="0.55"/>
-      <path d="M10 10 C 30 60, 55 95, 100 100" opacity="0.35"/>
-      <circle cx="14" cy="14" r="4" fill="url(#goldGradFloral)" opacity="0.5"/>
+<!-- =========================================================
+     INTRO / CINEMATIC OPENING
+========================================================= -->
+<section id="intro" class="intro">
+
+  <canvas
+    id="introCanvas"
+    class="intro-canvas"
+  ></canvas>
+
+  <div
+    class="intro-fog"
+    aria-hidden="true"
+  ></div>
+
+
+  <!-- Floral decoration -->
+  <svg
+    class="intro-floral intro-floral-tl"
+    viewBox="0 0 220 220"
+    aria-hidden="true"
+  >
+    <g
+      fill="none"
+      stroke="url(#goldGradFloral)"
+      stroke-width="1"
+    >
+      <path
+        d="M10 10 C 60 20, 90 50, 100 100 C 60 90, 20 70, 10 10 Z"
+        opacity="0.55"
+      />
+
+      <path
+        d="M10 10 C 30 60, 55 95, 100 100"
+        opacity="0.35"
+      />
+
+      <circle
+        cx="14"
+        cy="14"
+        r="4"
+        fill="url(#goldGradFloral)"
+        opacity="0.5"
+      />
     </g>
+
     <defs>
-      <linearGradient id="goldGradFloral" x1="0%" y1="0%" x2="100%" y2="100%">
+      <linearGradient
+        id="goldGradFloral"
+        x1="0%"
+        y1="0%"
+        x2="100%"
+        y2="100%"
+      >
         <stop offset="0%" stop-color="#f7e7c1"/>
         <stop offset="100%" stop-color="#8a6a2f"/>
       </linearGradient>
     </defs>
   </svg>
-  <svg class="intro-floral intro-floral-br" viewBox="0 0 220 220" aria-hidden="true">
-    <g fill="none" stroke="url(#goldGradFloral2)" stroke-width="1">
-      <path d="M210 210 C 160 200, 130 170, 120 120 C 160 130, 200 150, 210 210 Z" opacity="0.55"/>
-      <path d="M210 210 C 190 160, 165 125, 120 120" opacity="0.35"/>
-      <circle cx="206" cy="206" r="4" fill="url(#goldGradFloral2)" opacity="0.5"/>
+
+
+  <svg
+    class="intro-floral intro-floral-br"
+    viewBox="0 0 220 220"
+    aria-hidden="true"
+  >
+    <g
+      fill="none"
+      stroke="url(#goldGradFloral2)"
+      stroke-width="1"
+    >
+      <path
+        d="M210 210 C 160 200, 130 170, 120 120 C 160 130, 200 150, 210 210 Z"
+        opacity="0.55"
+      />
+
+      <path
+        d="M210 210 C 190 160, 165 125, 120 120"
+        opacity="0.35"
+      />
+
+      <circle
+        cx="206"
+        cy="206"
+        r="4"
+        fill="url(#goldGradFloral2)"
+        opacity="0.5"
+      />
     </g>
+
     <defs>
-      <linearGradient id="goldGradFloral2" x1="0%" y1="0%" x2="100%" y2="100%">
+      <linearGradient
+        id="goldGradFloral2"
+        x1="0%"
+        y1="0%"
+        x2="100%"
+        y2="100%"
+      >
         <stop offset="0%" stop-color="#8a6a2f"/>
         <stop offset="100%" stop-color="#f7e7c1"/>
       </linearGradient>
     </defs>
   </svg>
 
+
   <div class="intro-vignette"></div>
 
   <div class="intro-content">
-    <div class="intro-light" id="introLight" aria-hidden="true"></div>
 
-    <!-- Cinematic couple portrait — arched, feathered, ready for a real photo.
-         Drop an image path into CONFIG.heroPhoto in script.js to activate it. -->
-    <div class="intro-photo-frame" id="introPhotoFrame" aria-hidden="true">
+    <div
+      class="intro-light"
+      id="introLight"
+      aria-hidden="true"
+    ></div>
+
+
+    <!-- Couple portrait -->
+    <div
+      class="intro-photo-frame"
+      id="introPhotoFrame"
+      aria-hidden="true"
+    >
       <div class="intro-photo-mask">
-        <div class="intro-photo-img" id="introPhotoImg"></div>
-        <div class="intro-photo-monogram" id="introPhotoMonogram">
-          <span class="script">D</span><span class="intro-photo-amp">&amp;</span><span class="script">B</span>
+
+        <div
+          class="intro-photo-img"
+          id="introPhotoImg"
+        ></div>
+
+        <div
+          class="intro-photo-monogram"
+          id="introPhotoMonogram"
+        >
+          <span class="script">D</span>
+          <span class="intro-photo-amp">&amp;</span>
+          <span class="script">B</span>
         </div>
+
       </div>
     </div>
 
-    <div class="intro-frame" id="introFrame" aria-hidden="true">
-      <svg viewBox="0 0 400 400" class="ornament-svg">
+
+    <!-- Gold ornament -->
+    <div
+      class="intro-frame"
+      id="introFrame"
+      aria-hidden="true"
+    >
+
+      <svg
+        viewBox="0 0 400 400"
+        class="ornament-svg"
+      >
+
         <defs>
-          <linearGradient id="goldGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+          <linearGradient
+            id="goldGrad"
+            x1="0%"
+            y1="0%"
+            x2="100%"
+            y2="100%"
+          >
             <stop offset="0%" stop-color="#f7e7c1"/>
             <stop offset="45%" stop-color="#cfa15e"/>
             <stop offset="100%" stop-color="#8a6a2f"/>
           </linearGradient>
         </defs>
-        <circle cx="200" cy="200" r="150" fill="none" stroke="url(#goldGrad)" stroke-width="1.2" opacity="0.9"/>
-        <circle cx="200" cy="200" r="168" fill="none" stroke="url(#goldGrad)" stroke-width="0.6" opacity="0.55"/>
+
+        <circle
+          cx="200"
+          cy="200"
+          r="150"
+          fill="none"
+          stroke="url(#goldGrad)"
+          stroke-width="1.2"
+          opacity="0.9"
+        />
+
+        <circle
+          cx="200"
+          cy="200"
+          r="168"
+          fill="none"
+          stroke="url(#goldGrad)"
+          stroke-width="0.6"
+          opacity="0.55"
+        />
+
         <g class="ornament-petals">
-          <path d="M200 40 C 215 80, 215 120, 200 150 C 185 120, 185 80, 200 40 Z" fill="url(#goldGrad)" opacity="0.85"/>
-          <path d="M200 360 C 215 320, 215 280, 200 250 C 185 280, 185 320, 200 360 Z" fill="url(#goldGrad)" opacity="0.85"/>
-          <path d="M40 200 C 80 185, 120 185, 150 200 C 120 215, 80 215, 40 200 Z" fill="url(#goldGrad)" opacity="0.85"/>
-          <path d="M360 200 C 320 185, 280 185, 250 200 C 280 215, 320 215, 360 200 Z" fill="url(#goldGrad)" opacity="0.85"/>
+
+          <path
+            d="M200 40 C 215 80, 215 120, 200 150 C 185 120, 185 80, 200 40 Z"
+            fill="url(#goldGrad)"
+            opacity="0.85"
+          />
+
+          <path
+            d="M200 360 C 215 320, 215 280, 200 250 C 185 280, 185 320, 200 360 Z"
+            fill="url(#goldGrad)"
+            opacity="0.85"
+          />
+
+          <path
+            d="M40 200 C 80 185, 120 185, 150 200 C 120 215, 80 215, 40 200 Z"
+            fill="url(#goldGrad)"
+            opacity="0.85"
+          />
+
+          <path
+            d="M360 200 C 320 185, 280 185, 250 200 C 280 215, 320 215, 360 200 Z"
+            fill="url(#goldGrad)"
+            opacity="0.85"
+          />
+
         </g>
+
       </svg>
+
     </div>
 
-    <p class="intro-eyebrow" id="introEyebrow">FAMILY &middot; LOVE &middot; TOGETHERNESS</p>
-    <h1 class="intro-brand" id="introBrand">ELTOR</h1>
 
-    <div class="intro-names" id="introNames">
+    <p
+      class="intro-eyebrow"
+      id="introEyebrow"
+    >
+      FAMILY · LOVE · TOGETHERNESS
+    </p>
+
+    <h1
+      class="intro-brand"
+      id="introBrand"
+    >
+      ELTOR
+    </h1>
+
+
+    <div
+      class="intro-names"
+      id="introNames"
+    >
       <span class="intro-name">DUDU</span>
       <span class="intro-amp">&amp;</span>
       <span class="intro-name">BUBU</span>
     </div>
 
-    <p class="intro-sub" id="introSub">ARE GETTING ENGAGED</p>
-    <p class="intro-date" id="introDate">15 &bull; 03 &bull; 2029</p>
 
-    <button class="intro-enter" id="introEnter">
-      <span class="intro-enter-sheen" aria-hidden="true"></span>
-      <span class="intro-enter-label">Begin the Celebration</span>
-      <span class="intro-enter-arrow">&rarr;</span>
+    <p
+      class="intro-sub"
+      id="introSub"
+    >
+      ARE GETTING ENGAGED
+    </p>
+
+    <p
+      class="intro-date"
+      id="introDate"
+    >
+      15 • 03 • 2029
+    </p>
+
+
+    <button
+      class="intro-enter"
+      id="introEnter"
+    >
+      <span
+        class="intro-enter-sheen"
+        aria-hidden="true"
+      ></span>
+
+      <span class="intro-enter-label">
+        Begin the Celebration
+      </span>
+
+      <span class="intro-enter-arrow">
+        →
+      </span>
     </button>
+
   </div>
 
-  <div class="intro-scroll-hint" id="introScrollHint" aria-hidden="true">
-    <span class="intro-scroll-text">Scroll to Begin</span>
+
+  <div
+    class="intro-scroll-hint"
+    id="introScrollHint"
+    aria-hidden="true"
+  >
+    <span class="intro-scroll-text">
+      Scroll to Begin
+    </span>
+
     <span class="intro-scroll-line"></span>
   </div>
 
-  <div class="intro-flash" id="introFlash" aria-hidden="true"></div>
+
+  <div
+    class="intro-flash"
+    id="introFlash"
+    aria-hidden="true"
+  ></div>
+
 </section>
 
-<!-- ============ FLOATING NAV ============ -->
-<nav class="floatnav" id="floatnav">
-  <span class="floatnav-mark">ELTOR</span>
+
+<!-- =========================================================
+     FLOATING NAV
+========================================================= -->
+<nav
+  class="floatnav"
+  id="floatnav"
+>
+  <span class="floatnav-mark">
+    ELTOR
+  </span>
 </nav>
+
 
 <main id="mainContent">
 
-  <!-- ============ HERO ============ -->
-  <section class="section hero" id="hero">
-    <canvas id="heroCanvas" class="scene-canvas"></canvas>
-    <div class="hero-inner">
-      <p class="eyebrow reveal-up">Two hearts. One beautiful beginning.</p>
-      <h2 class="display-name reveal-up">
+
+<!-- =========================================================
+     HERO
+========================================================= -->
+<section
+  class="section hero"
+  id="hero"
+>
+
+  <canvas
+    id="heroCanvas"
+    class="scene-canvas"
+  ></canvas>
+
+  <div class="hero-inner">
+
+    <p class="eyebrow reveal-up">
+      Two hearts. One beautiful beginning.
+    </p>
+
+    <h2 class="display-name reveal-up">
+      <span class="script">Dudu</span>
+      <span class="amp">&amp;</span>
+      <span class="script">Bubu</span>
+    </h2>
+
+    <p class="hero-copy reveal-up">
+      Together with their families, we invite you to celebrate their engagement.
+    </p>
+
+    <p class="hero-date reveal-up">
+      15 March 2029
+    </p>
+
+  </div>
+
+  <div
+    class="scroll-hint"
+    aria-hidden="true"
+  >
+    <span></span>
+  </div>
+
+</section>
+
+
+<!-- =========================================================
+     SAVE THE DATE
+========================================================= -->
+<section
+  class="section save-date"
+  id="save-the-date"
+>
+
+  <canvas
+    id="dateCanvas"
+    class="scene-canvas"
+  ></canvas>
+
+  <div class="section-inner center">
+
+    <p class="eyebrow reveal">
+      Save the Date
+    </p>
+
+    <div class="date-block reveal">
+      <span class="date-day">15</span>
+      <span class="date-month">March</span>
+      <span class="date-year">2029</span>
+    </div>
+
+    <p class="date-weekday reveal">
+      Friday
+    </p>
+
+    <p class="section-copy reveal">
+      A beautiful beginning deserves a beautiful celebration.
+    </p>
+
+  </div>
+
+</section>
+
+
+<!-- =========================================================
+     CEREMONY
+========================================================= -->
+<section
+  class="section ceremony"
+  id="ceremony"
+>
+
+  <div class="section-inner center">
+
+    <p class="eyebrow reveal">
+      The Engagement Ceremony
+    </p>
+
+    <h3 class="section-title reveal">
+      A beautiful moment where two hearts and two families come together
+    </h3>
+
+
+    <div class="ceremony-card reveal">
+
+      <p class="ceremony-names">
         <span class="script">Dudu</span>
-        <span class="amp">&amp;</span>
-        <span class="script">Bubu</span>
-      </h2>
-      <p class="hero-copy reveal-up">
-        Together with their families, we invite you to celebrate their engagement.
-      </p>
-      <p class="hero-date reveal-up">15 March 2029</p>
-    </div>
-    <div class="scroll-hint" aria-hidden="true">
-      <span></span>
-    </div>
-  </section>
-
-  <!-- ============ SAVE THE DATE ============ -->
-  <section class="section save-date" id="save-the-date">
-    <canvas id="dateCanvas" class="scene-canvas"></canvas>
-    <div class="section-inner center">
-      <p class="eyebrow reveal">Save the Date</p>
-      <div class="date-block reveal">
-        <span class="date-day">15</span>
-        <span class="date-month">March</span>
-        <span class="date-year">2029</span>
-      </div>
-      <p class="date-weekday reveal">Friday</p>
-      <p class="section-copy reveal">A beautiful beginning deserves a beautiful celebration.</p>
-    </div>
-  </section>
-
-  <!-- ============ CEREMONY DETAILS ============ -->
-  <section class="section ceremony" id="ceremony">
-    <div class="section-inner center">
-      <p class="eyebrow reveal">The Engagement Ceremony</p>
-      <h3 class="section-title reveal">A beautiful moment where two hearts and two families come together</h3>
-
-      <div class="ceremony-card reveal">
-        <p class="ceremony-names"><span class="script">Dudu</span> &amp; <span class="script">Bubu</span></p>
-        <p class="ceremony-tag">Engagement Ceremony</p>
-        <p class="ceremony-date">15 March 2029</p>
-        <div class="ceremony-divider"></div>
-        <div class="ceremony-grid">
-          <div>
-            <p class="ceremony-label">Venue</p>
-            <p class="ceremony-value" id="venueValue">ELTOR Home Function</p>
-          </div>
-          <div>
-            <p class="ceremony-label">Time</p>
-            <p class="ceremony-value" id="timeValue">To Be Announced</p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- ============ RING REVEAL ============ -->
-  <section class="section ring-reveal" id="ring-reveal">
-    <canvas id="ringCanvas" class="scene-canvas"></canvas>
-    <div class="section-inner center ring-inner">
-      <p class="eyebrow" id="ringEyebrow">A New Chapter Begins&hellip;</p>
-      <p class="ring-final" id="ringFinal">
-        <span class="script">Dudu</span> <span class="heart">&hearts;</span> <span class="script">Bubu</span>
-      </p>
-      <p class="ring-date" id="ringDate">15.03.2029</p>
-    </div>
-  </section>
-
-  <!-- ============ COUPLE ============ -->
-  <section class="section couple" id="couple">
-    <div class="section-inner center">
-      <p class="eyebrow reveal">The Beginning of Forever</p>
-      <p class="couple-copy reveal">
-        Some stories are written.<br/>
-        Some stories are felt.
-      </p>
-      <p class="couple-copy reveal">
-        And some begin with two hearts<br/>
-        choosing to walk together.
-      </p>
-      <p class="display-name small reveal">
-        <span class="script">Dudu</span>
-        <span class="amp">&amp;</span>
-        <span class="script">Bubu</span>
-      </p>
-    </div>
-  </section>
-
-  <!-- ============ FAMILY ============ -->
-  <section class="section family" id="family">
-    <div class="section-inner center">
-      <p class="eyebrow reveal">With the Blessings of Our Families</p>
-      <h3 class="section-title reveal">Your presence and blessings will make this celebration even more special.</h3>
-      <div class="floral-divider reveal" aria-hidden="true">
-        <svg viewBox="0 0 200 40" class="floral-svg">
-          <path d="M0 20 H80" stroke="currentColor" stroke-width="1" opacity="0.6"/>
-          <circle cx="100" cy="20" r="6" fill="none" stroke="currentColor" stroke-width="1"/>
-          <circle cx="100" cy="20" r="2" fill="currentColor"/>
-          <path d="M120 20 H200" stroke="currentColor" stroke-width="1" opacity="0.6"/>
-        </svg>
-      </div>
-    </div>
-  </section>
-
-  <!-- ============ INVITATION MESSAGE ============ -->
-  <section class="section invite" id="invite">
-    <div class="section-inner center">
-      <p class="eyebrow reveal">You Are Warmly Invited</p>
-      <h3 class="section-title reveal">to celebrate the engagement of</h3>
-      <p class="display-name small reveal">
-        <span class="script">Dudu</span>
-        <span class="amp">&amp;</span>
+        &amp;
         <span class="script">Bubu</span>
       </p>
-      <p class="invite-date reveal">15 March 2029</p>
-      <p class="invite-venue reveal" id="inviteVenue">ELTOR Home Function</p>
-      <p class="section-copy reveal">
-        We would be delighted to celebrate this beautiful beginning with you and your family.
+
+      <p class="ceremony-tag">
+        Engagement Ceremony
       </p>
-    </div>
-  </section>
 
-  <!-- ============ COUNTDOWN ============ -->
-  <section class="section countdown" id="countdown">
-    <div class="section-inner center">
-      <p class="eyebrow reveal">Counting Down to Forever</p>
-      <div class="countdown-grid reveal">
-        <div class="countdown-unit">
-          <span class="countdown-num" id="cdDays">00</span>
-          <span class="countdown-label">Days</span>
-        </div>
-        <div class="countdown-unit">
-          <span class="countdown-num" id="cdHours">00</span>
-          <span class="countdown-label">Hours</span>
-        </div>
-        <div class="countdown-unit">
-          <span class="countdown-num" id="cdMinutes">00</span>
-          <span class="countdown-label">Minutes</span>
-        </div>
-        <div class="countdown-unit">
-          <span class="countdown-num" id="cdSeconds">00</span>
-          <span class="countdown-label">Seconds</span>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- ============ MOMENTS / PHOTOS ============ -->
-  <section class="section moments" id="moments">
-    <div class="section-inner center">
-      <p class="eyebrow reveal">Moments to Remember</p>
-      <h3 class="section-title reveal">A few frames, waiting to be filled</h3>
-      <div class="frame-grid">
-        <div class="photo-frame reveal" data-ph="1"><img class="photo-frame-img" alt="Dudu &amp; Bubu — moment 1" loading="lazy" /></div>
-        <div class="photo-frame reveal tall" data-ph="2"><img class="photo-frame-img" alt="Dudu &amp; Bubu — moment 2" loading="lazy" /></div>
-        <div class="photo-frame reveal" data-ph="3"><img class="photo-frame-img" alt="Dudu &amp; Bubu — moment 3" loading="lazy" /></div>
-        <div class="photo-frame reveal" data-ph="4"><img class="photo-frame-img" alt="Dudu &amp; Bubu — moment 4" loading="lazy" /></div>
-        <div class="photo-frame reveal tall" data-ph="5"><img class="photo-frame-img" alt="Dudu &amp; Bubu — moment 5" loading="lazy" /></div>
-        <div class="photo-frame reveal" data-ph="6"><img class="photo-frame-img" alt="Dudu &amp; Bubu — moment 6" loading="lazy" /></div>
-      </div>
-    </div>
-  </section>
-
-  <!-- ============ LOCATION ============ -->
-  <section class="section location" id="location">
-    <div class="section-inner center">
-      <p class="eyebrow reveal">Celebration Location</p>
-      <h3 class="section-title reveal" id="locationVenue">ELTOR Home Function</h3>
-      <p class="section-copy reveal">Venue details &mdash; to be announced</p>
-      <a href="#" class="cta-outline reveal" id="directionsBtn">
-        <span>Get Directions</span>
-        <span class="cta-arrow">&rarr;</span>
-      </a>
-    </div>
-  </section>
-
-  <!-- ============ FINAL CINEMATIC SCENE ============ -->
-  <section class="section finale" id="finale">
-    <canvas id="finaleCanvas" class="scene-canvas"></canvas>
-    <div class="section-inner center">
-      <p class="display-name small reveal">
-        <span class="script">Dudu</span>
-        <span class="amp">&amp;</span>
-        <span class="script">Bubu</span>
+      <p class="ceremony-date">
+        15 March 2029
       </p>
-      <p class="finale-date reveal">15 March 2029</p>
-      <p class="finale-line reveal">A beautiful beginning.<br/>A lifetime ahead.</p>
-      <p class="finale-thanks reveal">Your presence makes our day more special.</p>
-      <p class="finale-signoff reveal">With love,<br/>ELTOR Family</p>
-      <p class="finale-see reveal">See you there &hearts;</p>
+
+      <div class="ceremony-divider"></div>
+
+
+      <div class="ceremony-grid">
+
+        <div>
+          <p class="ceremony-label">
+            Venue
+          </p>
+
+          <p
+            class="ceremony-value"
+            id="venueValue"
+          >
+            ELTOR Home Function
+          </p>
+        </div>
+
+
+        <div>
+          <p class="ceremony-label">
+            Time
+          </p>
+
+          <p
+            class="ceremony-value"
+            id="timeValue"
+          >
+            To Be Announced
+          </p>
+        </div>
+
+      </div>
+
     </div>
-  </section>
+
+  </div>
+
+</section>
+
+
+<!-- =========================================================
+     RING REVEAL
+========================================================= -->
+<section
+  class="section ring-reveal"
+  id="ring-reveal"
+>
+
+  <canvas
+    id="ringCanvas"
+    class="scene-canvas"
+  ></canvas>
+
+  <div class="section-inner center ring-inner">
+
+    <p
+      class="eyebrow"
+      id="ringEyebrow"
+    >
+      A New Chapter Begins…
+    </p>
+
+    <p
+      class="ring-final"
+      id="ringFinal"
+    >
+      <span class="script">Dudu</span>
+      <span class="heart">♥</span>
+      <span class="script">Bubu</span>
+    </p>
+
+    <p
+      class="ring-date"
+      id="ringDate"
+    >
+      15.03.2029
+    </p>
+
+  </div>
+
+</section>
+
+
+<!-- =========================================================
+     COUPLE
+========================================================= -->
+<section
+  class="section couple"
+  id="couple"
+>
+
+  <div class="section-inner center">
+
+    <p class="eyebrow reveal">
+      The Beginning of Forever
+    </p>
+
+    <p class="couple-copy reveal">
+      Some stories are written.<br/>
+      Some stories are felt.
+    </p>
+
+    <p class="couple-copy reveal">
+      And some begin with two hearts<br/>
+      choosing to walk together.
+    </p>
+
+    <p class="display-name small reveal">
+      <span class="script">Dudu</span>
+      <span class="amp">&amp;</span>
+      <span class="script">Bubu</span>
+    </p>
+
+  </div>
+
+</section>
+
+
+<!-- =========================================================
+     FAMILY
+========================================================= -->
+<section
+  class="section family"
+  id="family"
+>
+
+  <div class="section-inner center">
+
+    <p class="eyebrow reveal">
+      With the Blessings of Our Families
+    </p>
+
+    <h3 class="section-title reveal">
+      Your presence and blessings will make this celebration even more special.
+    </h3>
+
+
+    <div
+      class="floral-divider reveal"
+      aria-hidden="true"
+    >
+
+      <svg
+        viewBox="0 0 200 40"
+        class="floral-svg"
+      >
+
+        <path
+          d="M0 20 H80"
+          stroke="currentColor"
+          stroke-width="1"
+          opacity="0.6"
+        />
+
+        <circle
+          cx="100"
+          cy="20"
+          r="6"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="1"
+        />
+
+        <circle
+          cx="100"
+          cy="20"
+          r="2"
+          fill="currentColor"
+        />
+
+        <path
+          d="M120 20 H200"
+          stroke="currentColor"
+          stroke-width="1"
+          opacity="0.6"
+        />
+
+      </svg>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+<!-- =========================================================
+     INVITATION
+========================================================= -->
+<section
+  class="section invite"
+  id="invite"
+>
+
+  <div class="section-inner center">
+
+    <p class="eyebrow reveal">
+      You Are Warmly Invited
+    </p>
+
+    <h3 class="section-title reveal">
+      to celebrate the engagement of
+    </h3>
+
+    <p class="display-name small reveal">
+      <span class="script">Dudu</span>
+      <span class="amp">&amp;</span>
+      <span class="script">Bubu</span>
+    </p>
+
+    <p class="invite-date reveal">
+      15 March 2029
+    </p>
+
+    <p
+      class="invite-venue reveal"
+      id="inviteVenue"
+    >
+      ELTOR Home Function
+    </p>
+
+    <p class="section-copy reveal">
+      We would be delighted to celebrate this beautiful beginning with you and your family.
+    </p>
+
+  </div>
+
+</section>
+
+
+<!-- =========================================================
+     COUNTDOWN
+========================================================= -->
+<section
+  class="section countdown"
+  id="countdown"
+>
+
+  <div class="section-inner center">
+
+    <p class="eyebrow reveal">
+      Counting Down to Forever
+    </p>
+
+    <div class="countdown-grid reveal">
+
+      <div class="countdown-unit">
+        <span
+          class="countdown-num"
+          id="cdDays"
+        >
+          00
+        </span>
+
+        <span class="countdown-label">
+          Days
+        </span>
+      </div>
+
+
+      <div class="countdown-unit">
+        <span
+          class="countdown-num"
+          id="cdHours"
+        >
+          00
+        </span>
+
+        <span class="countdown-label">
+          Hours
+        </span>
+      </div>
+
+
+      <div class="countdown-unit">
+        <span
+          class="countdown-num"
+          id="cdMinutes"
+        >
+          00
+        </span>
+
+        <span class="countdown-label">
+          Minutes
+        </span>
+      </div>
+
+
+      <div class="countdown-unit">
+        <span
+          class="countdown-num"
+          id="cdSeconds"
+        >
+          00
+        </span>
+
+        <span class="countdown-label">
+          Seconds
+        </span>
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+<!-- =========================================================
+     MOMENTS / PHOTOS
+========================================================= -->
+<section
+  class="section moments"
+  id="moments"
+>
+
+  <div class="section-inner center">
+
+    <p class="eyebrow reveal">
+      Moments to Remember
+    </p>
+
+    <h3 class="section-title reveal">
+      A few frames, waiting to be filled
+    </h3>
+
+
+    <div class="frame-grid">
+
+      <div
+        class="photo-frame reveal"
+        data-ph="1"
+      >
+        <img
+          class="photo-frame-img"
+          alt="Dudu &amp; Bubu — moment 1"
+          loading="lazy"
+        />
+      </div>
+
+
+      <div
+        class="photo-frame reveal tall"
+        data-ph="2"
+      >
+        <img
+          class="photo-frame-img"
+          alt="Dudu &amp; Bubu — moment 2"
+          loading="lazy"
+        />
+      </div>
+
+
+      <div
+        class="photo-frame reveal"
+        data-ph="3"
+      >
+        <img
+          class="photo-frame-img"
+          alt="Dudu &amp; Bubu — moment 3"
+          loading="lazy"
+        />
+      </div>
+
+
+      <div
+        class="photo-frame reveal"
+        data-ph="4"
+      >
+        <img
+          class="photo-frame-img"
+          alt="Dudu &amp; Bubu — moment 4"
+          loading="lazy"
+        />
+      </div>
+
+
+      <div
+        class="photo-frame reveal tall"
+        data-ph="5"
+      >
+        <img
+          class="photo-frame-img"
+          alt="Dudu &amp; Bubu — moment 5"
+          loading="lazy"
+        />
+      </div>
+
+
+      <div
+        class="photo-frame reveal"
+        data-ph="6"
+      >
+        <img
+          class="photo-frame-img"
+          alt="Dudu &amp; Bubu — moment 6"
+          loading="lazy"
+        />
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+<!-- =========================================================
+     LOCATION
+========================================================= -->
+<section
+  class="section location"
+  id="location"
+>
+
+  <div class="section-inner center">
+
+    <p class="eyebrow reveal">
+      Celebration Location
+    </p>
+
+    <h3
+      class="section-title reveal"
+      id="locationVenue"
+    >
+      ELTOR Home Function
+    </h3>
+
+    <p class="section-copy reveal">
+      Venue details — to be announced
+    </p>
+
+    <a
+      href="#"
+      class="cta-outline reveal"
+      id="directionsBtn"
+    >
+      <span>Get Directions</span>
+      <span class="cta-arrow">→</span>
+    </a>
+
+  </div>
+
+</section>
+
+
+<!-- =========================================================
+     FINAL CINEMATIC SCENE
+========================================================= -->
+<section
+  class="section finale"
+  id="finale"
+>
+
+  <canvas
+    id="finaleCanvas"
+    class="scene-canvas"
+  ></canvas>
+
+  <div class="section-inner center">
+
+    <p class="display-name small reveal">
+      <span class="script">Dudu</span>
+      <span class="amp">&amp;</span>
+      <span class="script">Bubu</span>
+    </p>
+
+    <p class="finale-date reveal">
+      15 March 2029
+    </p>
+
+    <p class="finale-line reveal">
+      A beautiful beginning.<br/>
+      A lifetime ahead.
+    </p>
+
+    <p class="finale-thanks reveal">
+      Your presence makes our day more special.
+    </p>
+
+    <p class="finale-signoff reveal">
+      With love,<br/>
+      ELTOR Family
+    </p>
+
+    <p class="finale-see reveal">
+      See you there ♥
+    </p>
+
+  </div>
+
+</section>
 
 </main>
 
-<!-- Hidden audio element -->
-<audio id="bgAudio" loop preload="none"></audio>
 
-<!-- ============ SCRIPTS ============ -->
-<!-- Bundled locally in assets/vendor/ so the invitation works fully offline
-     and never breaks due to a CDN being blocked, slow, or unreachable. -->
-<script src="./assets/vendor/three.min.js"></script>
-<script src="./assets/vendor/gsap.min.js"></script>
-<script src="./assets/vendor/ScrollTrigger.min.js"></script>
+<!-- =========================================================
+     AUDIO
+     First landing page remains silent.
+     Music starts from the Begin the Celebration click.
+========================================================= -->
+<audio
+  id="bgAudio"
+  loop
+  preload="none"
+  src="./audio/Radhimaa.mp3"
+></audio>
+
+
+<!-- =========================================================
+     LOCAL LIBRARIES
+     FIXED PATHS
+========================================================= -->
+
+<script src="./vendor/three.min.js"></script>
+
+<script src="./vendor/gsap.min.js"></script>
+
+<script src="./vendor/ScrollTrigger.min.js"></script>
+
+
+<!-- Main application -->
 <script src="./script.js"></script>
 
-<!-- ============ SAFETY NET ============ -->
-<!-- If, for any reason, a script fails to execute (corrupted download,
-     browser extension blocking canvas/JS, etc.), this guarantees the
-     invitation text is still fully readable instead of staying invisible. -->
+
+<!-- =========================================================
+     SAFETY NET
+========================================================= -->
 <script>
-  window.addEventListener("load", function () {
-    setTimeout(function () {
-      document.querySelectorAll(".reveal, .reveal-up").forEach(function (el) {
+window.addEventListener("load", function () {
+
+  setTimeout(function () {
+
+    document
+      .querySelectorAll(".reveal, .reveal-up")
+      .forEach(function (el) {
+
         var style = window.getComputedStyle(el);
+
         if (parseFloat(style.opacity) < 1) {
+
           el.style.opacity = "1";
           el.style.transform = "none";
+
         }
+
       });
-      var intro = document.getElementById("intro");
-      if (intro && typeof gsap === "undefined") {
-        intro.style.display = "none";
-        document.body.style.overflow = "";
-        var nav = document.getElementById("floatnav");
-        if (nav) nav.classList.add("visible");
+
+
+    var intro = document.getElementById("intro");
+
+    if (
+      intro &&
+      typeof gsap === "undefined"
+    ) {
+
+      intro.style.display = "none";
+      document.body.style.overflow = "";
+
+      var nav =
+        document.getElementById("floatnav");
+
+      if (nav) {
+        nav.classList.add("visible");
       }
-    }, 4000);
-  });
+
+    }
+
+  }, 4000);
+
+});
 </script>
+
 
 </body>
 </html>
