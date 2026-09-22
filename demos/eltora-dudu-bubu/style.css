@@ -1,0 +1,716 @@
+/* =========================================================
+   ELTOR — DUDU & BUBU ENGAGEMENT
+   Design tokens
+========================================================= */
+:root{
+  --ivory:        #F4EEE2;
+  --champagne:    #C9A46B;
+  --champagne-lt: #F1DDB0;
+  --rose:         #D9A6A0;
+  --burgundy:     #3E0E1D;
+  --burgundy-dp:  #240711;
+  --emerald:      #0C2E24;
+  --black:        #0B0908;
+
+  --gold-grad: linear-gradient(120deg, #f7e7c1 0%, #d9b579 30%, #b5893f 65%, #8a6a2f 100%);
+
+  --serif: 'Cormorant Garamond', 'Georgia', serif;
+  --script: 'Parisienne', cursive;
+  --sans: 'Jost', 'Helvetica Neue', Arial, sans-serif;
+
+  --container: 640px;
+  --pad: 24px;
+
+  --ease-lux: cubic-bezier(.22,.61,.2,1);
+
+  box-sizing: border-box;
+}
+
+*, *::before, *::after{ box-sizing: inherit; }
+
+html{
+  scroll-behavior: smooth;
+  scroll-padding-top: env(safe-area-inset-top, 0px);
+}
+
+body{
+  margin: 0;
+  background: var(--black);
+  color: var(--ivory);
+  font-family: var(--sans);
+  font-weight: 300;
+  overflow-x: hidden;
+  -webkit-font-smoothing: antialiased;
+  padding-top: env(safe-area-inset-top, 0px);
+  padding-bottom: env(safe-area-inset-bottom, 0px);
+}
+
+@media (prefers-reduced-motion: reduce){
+  *{ animation-duration: 0.001ms !important; animation-iteration-count: 1 !important; transition-duration: 0.001ms !important; scroll-behavior: auto !important; }
+}
+
+/* =========================================================
+   Texture layers
+========================================================= */
+.grain{
+  position: fixed; inset: 0; z-index: 5; pointer-events: none;
+  opacity: 0.05; mix-blend-mode: overlay;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='120' height='120'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='2' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+}
+.vignette{
+  position: fixed; inset: 0; z-index: 4; pointer-events: none;
+  background: radial-gradient(ellipse at center, transparent 45%, rgba(0,0,0,0.55) 100%);
+}
+.cursor-glow{
+  position: fixed; width: 420px; height: 420px; border-radius: 50%;
+  background: radial-gradient(circle, rgba(201,164,107,0.14), transparent 70%);
+  pointer-events: none; z-index: 3; transform: translate(-50%,-50%);
+  left: 50%; top: 50%; opacity: 0; transition: opacity .4s var(--ease-lux);
+  display: none;
+}
+@media (hover:hover) and (pointer:fine){
+  .cursor-glow{ display: block; }
+}
+
+/* =========================================================
+   ELTORA — premium brand welcome / entry experience
+   (shown first, above the DUDU & BUBU intro; independent of it)
+========================================================= */
+.eltora-welcome{
+  position: fixed; inset: 0; z-index: 200;
+  display: flex; align-items: center; justify-content: center;
+  overflow: hidden;
+  background:
+    radial-gradient(ellipse 60% 50% at 50% 46%, rgba(247,231,193,0.10), transparent 70%),
+    radial-gradient(ellipse 46% 40% at 50% 44%, rgba(201,164,107,0.22), transparent 74%),
+    radial-gradient(ellipse 120% 100% at 50% 48%, #4a1526 0%, var(--burgundy-dp) 48%, var(--black) 88%);
+}
+.eltora-canvas{ position: absolute; inset: 0; width: 100%; height: 100%; z-index: 0; }
+
+/* Slow-rotating, very faint light rays for a premium studio-lighting feel */
+.eltora-rays{
+  position: absolute; inset: -20%; z-index: 1; pointer-events: none;
+  background: repeating-conic-gradient(
+    from 0deg at 50% 46%,
+    rgba(247,231,193,0.05) 0deg 3deg,
+    transparent 3deg 18deg
+  );
+  mix-blend-mode: screen;
+  opacity: 0.55;
+  animation: eltoraRaysSpin 90s linear infinite;
+}
+@keyframes eltoraRaysSpin{
+  from{ transform: rotate(0deg); }
+  to{ transform: rotate(360deg); }
+}
+
+.eltora-vignette{
+  position: absolute; inset: 0; z-index: 1; pointer-events: none;
+  background: radial-gradient(ellipse at 50% 46%, transparent 34%, rgba(0,0,0,0.68) 100%);
+}
+
+.eltora-content{
+  position: relative; z-index: 3; text-align: center;
+  padding: 0 28px; max-width: 560px;
+  display: flex; flex-direction: column; align-items: center;
+}
+
+.eltora-glow{
+  position: absolute; z-index: -1; top: 48%; left: 50%;
+  width: min(120vw, 820px); height: min(120vw, 820px);
+  transform: translate(-50%,-50%) scale(0.6);
+  background: radial-gradient(circle, rgba(255,241,205,0.32) 0%, rgba(201,164,107,0.14) 34%, transparent 68%);
+  filter: blur(6px);
+  opacity: 0;
+  pointer-events: none;
+}
+
+.eltora-mark{
+  position: relative; width: min(220px, 52vw); margin: 0 0 26px;
+  display: flex; align-items: center; justify-content: center;
+  opacity: 0; transform: scale(0.8);
+}
+.eltora-mark-logo{
+  width: 100%; height: auto; display: block;
+  filter: drop-shadow(0 0 18px rgba(201,164,107,0.45)) drop-shadow(0 0 42px rgba(201,164,107,0.22));
+}
+
+.eltora-eyebrow{
+  font-family: var(--sans); font-size: 12px; letter-spacing: 0.38em;
+  text-transform: uppercase; color: var(--champagne-lt); font-weight: 400;
+  margin: 0 0 16px; opacity: 0; transform: translateY(8px);
+  text-shadow: 0 0 16px rgba(201,164,107,0.35);
+}
+
+.eltora-title{
+  margin: 0; display: flex; flex-direction: column; align-items: center; gap: 2px;
+}
+.eltora-word{
+  font-family: var(--serif); font-weight: 600; letter-spacing: 0.1em;
+  font-size: clamp(38px, 12vw, 72px); line-height: 1.12;
+  opacity: 0; transform: translateY(22px);
+  background: linear-gradient(120deg, #fff6df 0%, #f7e7c1 22%, #e9c98a 48%, #cfa15e 74%, #a9803f 100%);
+  -webkit-background-clip: text; background-clip: text; color: transparent;
+  filter:
+    drop-shadow(0 0 2px rgba(255,248,230,0.5))
+    drop-shadow(0 0 24px rgba(247,225,175,0.5))
+    drop-shadow(0 0 58px rgba(201,164,107,0.38));
+}
+.eltora-word-family{
+  font-size: clamp(30px, 9vw, 54px); letter-spacing: 0.24em; font-weight: 500;
+}
+
+.eltora-flash{
+  position: fixed; inset: 0; z-index: 210; pointer-events: none;
+  background: radial-gradient(ellipse at 50% 46%, rgba(255,244,214,0.95), rgba(201,164,107,0.5) 55%, rgba(11,9,8,0) 100%);
+  opacity: 0;
+}
+.eltora-welcome.leaving{
+  transition: opacity .6s var(--ease-lux), visibility .6s;
+  opacity: 0; visibility: hidden; pointer-events: none;
+}
+
+@media (max-width: 420px){
+  .eltora-mark{ width: min(170px, 60vw); margin-bottom: 20px; }
+}
+
+/* =========================================================
+   Intro / Cinematic opening
+========================================================= */
+.intro{
+  position: fixed; inset: 0; z-index: 100;
+  background:
+    radial-gradient(ellipse 70% 60% at 50% 38%, rgba(247,231,193,0.14), transparent 68%),
+    radial-gradient(ellipse 55% 46% at 50% 34%, rgba(201,164,107,0.28), transparent 72%),
+    radial-gradient(ellipse 120% 95% at 50% 42%, #5c1b30 0%, var(--burgundy) 42%, var(--burgundy-dp) 72%, #170208 100%);
+  display: flex; align-items: center; justify-content: center;
+  overflow: hidden;
+}
+/* A large, soft, ever-present bloom sitting behind the title so the centre
+   of the frame always reads brighter than the corners — independent of the
+   JS-driven pinpoint glow, which blooms outward on top of this base layer. */
+.intro-content::before{
+  content: ""; position: absolute; z-index: -1;
+  top: 46%; left: 50%; width: min(140vw, 980px); height: min(140vw, 980px);
+  transform: translate(-50%, -50%);
+  background: radial-gradient(circle, rgba(255,241,205,0.22) 0%, rgba(201,164,107,0.12) 32%, transparent 68%);
+  filter: blur(4px);
+  pointer-events: none;
+}
+.intro-canvas{ position: absolute; inset: 0; width: 100%; height: 100%; }
+
+/* Layer: soft atmospheric fog / volumetric haze, drifting extremely slowly */
+.intro-fog{
+  position: absolute; inset: -10%; z-index: 1; pointer-events: none;
+  background:
+    radial-gradient(ellipse 45% 30% at 30% 70%, rgba(201,164,107,0.08), transparent 70%),
+    radial-gradient(ellipse 50% 35% at 75% 25%, rgba(217,166,160,0.07), transparent 70%);
+  filter: blur(6px);
+  animation: fogDrift 34s ease-in-out infinite alternate;
+  mix-blend-mode: screen;
+}
+@keyframes fogDrift{
+  0%{ transform: translate(0,0) scale(1); }
+  100%{ transform: translate(-2%, 1.5%) scale(1.06); }
+}
+
+/* Layer: subtle corner floral silhouettes */
+.intro-floral{
+  position: absolute; width: min(34vw, 220px); height: min(34vw, 220px);
+  z-index: 1; opacity: 0.16; pointer-events: none; color: var(--champagne);
+}
+.intro-floral-tl{ top: -6px; left: -6px; }
+.intro-floral-br{ bottom: -6px; right: -6px; transform: rotate(0deg); }
+
+.intro-vignette{
+  position: absolute; inset: 0; z-index: 1;
+  background: radial-gradient(ellipse at 50% 40%, transparent 38%, rgba(0,0,0,0.6) 100%);
+  pointer-events: none;
+}
+
+.intro-content{
+  position: relative; z-index: 3; text-align: center;
+  padding: 0 28px; max-width: 520px;
+  display: flex; flex-direction: column; align-items: center;
+}
+
+.intro-light{
+  position: absolute; top: 50%; left: 50%; z-index: 0;
+  width: 6px; height: 6px; border-radius: 50%;
+  background: radial-gradient(circle, #fff8e6 0%, var(--champagne-lt) 30%, rgba(201,164,107,0) 72%);
+  transform: translate(-50%,-50%) scale(1);
+  opacity: 0;
+  filter: blur(0.5px);
+}
+
+/* ---------------------------------------------------------
+   Cinematic couple portrait — arched, feathered luxury frame
+--------------------------------------------------------- */
+.intro-photo-frame{
+  position: absolute; top: 46%; left: 50%; z-index: 0;
+  width: min(30vw, 190px); aspect-ratio: 3 / 4;
+  transform: translate(-50%,-50%) scale(0.94);
+  opacity: 0; pointer-events: none; will-change: transform, opacity;
+  filter: blur(0.5px);
+}
+.intro-photo-mask{
+  position: relative; width: 100%; height: 100%; overflow: hidden;
+  border-radius: 50% 50% 46% 46% / 62% 62% 38% 38%;
+  -webkit-mask-image: radial-gradient(ellipse 78% 86% at 50% 46%, black 58%, transparent 100%);
+  mask-image: radial-gradient(ellipse 78% 86% at 50% 46%, black 58%, transparent 100%);
+  box-shadow:
+    0 0 0 1px rgba(201,164,107,0.45),
+    0 0 50px rgba(201,164,107,0.28),
+    inset 0 0 40px rgba(0,0,0,0.5);
+  background: radial-gradient(ellipse at 50% 40%, rgba(62,14,29,0.5), rgba(11,9,8,0.85));
+}
+.intro-photo-img{
+  position: absolute; inset: -6%; width: 112%; height: 112%;
+  background-size: cover; background-position: center;
+  filter: saturate(0.85) brightness(0.82) sepia(0.06);
+  opacity: 0; transition: opacity .6s ease;
+  animation: introKenBurns 26s ease-in-out infinite alternate;
+}
+.intro-photo-frame.has-photo .intro-photo-img{ opacity: 1; }
+.intro-photo-frame.has-photo .intro-photo-monogram{ opacity: 0; }
+@keyframes introKenBurns{
+  0%{ transform: scale(1) translate(0,0); }
+  100%{ transform: scale(1.14) translate(-1.5%, -2.5%); }
+}
+.intro-photo-monogram{
+  position: absolute; inset: 0; display: flex; align-items: center; justify-content: center;
+  gap: 6px; font-size: clamp(30px, 8vw, 44px);
+  background: var(--gold-grad); -webkit-background-clip: text; background-clip: text; color: transparent;
+  opacity: 0.4; transition: opacity .6s ease;
+}
+.intro-photo-amp{ font-family: var(--script); font-size: 0.7em; color: var(--rose); -webkit-text-fill-color: var(--rose); }
+
+.intro-frame{
+  position: absolute; top: 50%; left: 50%; z-index: 0;
+  width: min(92vw, 460px); height: min(92vw, 460px);
+  transform: translate(-50%,-50%) scale(0.4) rotate(0deg);
+  opacity: 0; pointer-events: none;
+}
+.ornament-svg{ width: 100%; height: 100%; }
+.ornament-petals{ transform-origin: 200px 200px; }
+
+.intro-eyebrow{
+  font-family: var(--sans); letter-spacing: 0.32em; font-size: 11px;
+  color: var(--champagne-lt); opacity: 0; margin: 0 0 18px;
+  font-weight: 400;
+}
+.intro-brand{
+  font-family: var(--serif); font-weight: 500; letter-spacing: 0.22em;
+  font-size: clamp(34px, 11vw, 58px);
+  margin: 0 0 34px; opacity: 0;
+  background: var(--gold-grad); -webkit-background-clip: text; background-clip: text; color: transparent;
+}
+.intro-names{
+  display: flex; align-items: baseline; justify-content: center; gap: 14px;
+  margin: 0 0 14px;
+}
+.intro-name{
+  font-family: var(--serif); font-weight: 600;
+  font-size: clamp(40px, 13vw, 76px); letter-spacing: 0.07em;
+  opacity: 0; transform: translateY(14px);
+  background: linear-gradient(120deg, #fff6df 0%, #f7e7c1 22%, #e9c98a 48%, #cfa15e 74%, #a9803f 100%);
+  -webkit-background-clip: text; background-clip: text; color: transparent;
+  filter:
+    drop-shadow(0 0 2px rgba(255,248,230,0.55))
+    drop-shadow(0 0 26px rgba(247,225,175,0.55))
+    drop-shadow(0 0 60px rgba(201,164,107,0.4));
+}
+.intro-amp{
+  font-family: var(--script); font-size: clamp(28px, 8.5vw, 46px);
+  color: var(--champagne-lt); opacity: 0;
+  filter: drop-shadow(0 0 14px rgba(201,164,107,0.4));
+}
+.intro-sub{
+  font-size: 13px; letter-spacing: 0.34em; color: var(--champagne-lt);
+  margin: 10px 0 12px; opacity: 0; font-weight: 500;
+  text-shadow: 0 0 18px rgba(201,164,107,0.3);
+}
+.intro-date{
+  font-family: var(--serif); font-size: clamp(17px, 4vw, 21px);
+  letter-spacing: 0.2em; color: var(--champagne-lt); opacity: 0; margin: 0 0 40px;
+  text-shadow: 0 0 16px rgba(201,164,107,0.28);
+}
+
+/* ---------------------------------------------------------
+   Premium "Begin the Celebration" button — glass + gold sweep
+--------------------------------------------------------- */
+.intro-enter{
+  position: relative; display: inline-flex; align-items: center; gap: 10px;
+  font-family: var(--sans); font-size: 12px; letter-spacing: 0.22em;
+  background: rgba(244,238,226,0.04);
+  -webkit-backdrop-filter: blur(8px); backdrop-filter: blur(8px);
+  border: 1px solid rgba(201,164,107,0.5);
+  color: var(--champagne-lt); padding: 16px 36px; border-radius: 999px;
+  cursor: pointer; opacity: 0; overflow: hidden;
+  transition: border-color .5s var(--ease-lux), box-shadow .5s var(--ease-lux), background .5s var(--ease-lux);
+  text-transform: uppercase;
+}
+.intro-enter-sheen{
+  position: absolute; top: 0; left: -60%; width: 45%; height: 100%;
+  background: linear-gradient(100deg, transparent, rgba(255,246,224,0.55), transparent);
+  transform: skewX(-18deg); transition: left 1s var(--ease-lux);
+  pointer-events: none;
+}
+.intro-enter{
+  box-shadow: 0 0 22px rgba(201,164,107,0.18);
+  transition: border-color .5s var(--ease-lux), box-shadow .5s var(--ease-lux), background .5s var(--ease-lux), transform .35s var(--ease-lux);
+}
+.intro-enter:hover, .intro-enter:focus-visible{
+  background: rgba(201,164,107,0.16);
+  box-shadow: 0 0 38px rgba(201,164,107,0.5);
+  border-color: var(--champagne);
+  transform: translateY(-3px);
+}
+.intro-enter:hover .intro-enter-sheen{ left: 120%; }
+.intro-enter-arrow{ display: inline-block; transition: transform .4s var(--ease-lux); }
+.intro-enter:hover .intro-enter-arrow{ transform: translateX(5px); }
+
+/* ---------------------------------------------------------
+   Scroll-to-begin indicator
+--------------------------------------------------------- */
+.intro-scroll-hint{
+  position: absolute; bottom: 30px; left: 50%; transform: translateX(-50%);
+  z-index: 3; display: flex; flex-direction: column; align-items: center; gap: 10px;
+  opacity: 0; pointer-events: none;
+}
+.intro-scroll-text{
+  font-size: 10px; letter-spacing: 0.3em; text-transform: uppercase; color: var(--champagne-lt);
+  text-shadow: 0 0 10px rgba(201,164,107,0.35);
+}
+.intro-scroll-line{
+  display: block; width: 1.5px; height: 36px;
+  background: linear-gradient(to bottom, var(--champagne-lt), var(--champagne), transparent);
+  box-shadow: 0 0 8px rgba(201,164,107,0.5);
+  animation: scrollhint 2.2s ease-in-out infinite;
+}
+
+/* Full-screen gold flash used for the cinematic hand-off into the main site */
+.intro-flash{
+  position: fixed; inset: 0; z-index: 120; pointer-events: none;
+  background: radial-gradient(ellipse at 50% 45%, rgba(255,244,214,0.95), rgba(201,164,107,0.5) 55%, rgba(11,9,8,0) 100%);
+  opacity: 0;
+}
+
+.intro.leaving{
+  transition: opacity .6s var(--ease-lux), visibility .6s;
+  opacity: 0; visibility: hidden; pointer-events: none;
+}
+
+/* =========================================================
+   Floating nav
+========================================================= */
+.floatnav{
+  position: fixed; top: 0; left: 0; right: 0; z-index: 50;
+  display: flex; align-items: center; justify-content: space-between;
+  padding: calc(16px + env(safe-area-inset-top, 0px)) 20px 16px;
+  opacity: 0; transform: translateY(-12px);
+  transition: opacity .6s var(--ease-lux), transform .6s var(--ease-lux), background .4s ease;
+  pointer-events: none;
+}
+.floatnav.visible{ opacity: 1; transform: translateY(0); pointer-events: auto; }
+.floatnav.scrolled{ background: linear-gradient(to bottom, rgba(11,9,8,0.75), transparent); backdrop-filter: blur(6px); }
+
+.floatnav-mark{
+  font-family: var(--serif); letter-spacing: 0.28em; font-size: 13px;
+  color: var(--champagne-lt); font-weight: 500;
+  text-shadow: 0 1px 8px rgba(0,0,0,0.5);
+}
+
+/* =========================================================
+   Section shell
+========================================================= */
+.section{
+  position: relative;
+  min-height: 100vh;
+  display: flex; align-items: center; justify-content: center;
+  padding: 110px var(--pad);
+  overflow: hidden;
+}
+.scene-canvas{
+  position: absolute; inset: 0; width: 100%; height: 100%;
+  z-index: 0;
+}
+.section-inner{
+  position: relative; z-index: 2; max-width: var(--container); width: 100%;
+}
+.section-inner.center{ text-align: center; margin: 0 auto; }
+
+.eyebrow{
+  font-size: 11px; letter-spacing: 0.3em; color: var(--champagne);
+  text-transform: uppercase; margin: 0 0 18px; font-weight: 400;
+}
+.section-title{
+  font-family: var(--serif); font-weight: 500; font-size: clamp(24px, 6vw, 34px);
+  line-height: 1.35; margin: 0 0 28px; color: var(--ivory);
+}
+.section-copy{
+  font-size: 16px; line-height: 1.8; color: rgba(244,238,226,0.78);
+  max-width: 440px; margin: 0 auto;
+}
+
+/* =========================================================
+   Hero
+========================================================= */
+.hero{
+  background: radial-gradient(ellipse at 50% 20%, rgba(62,14,29,0.5), var(--black) 70%);
+}
+.hero-inner{ position: relative; z-index: 2; text-align: center; }
+.hero .eyebrow{ font-family: var(--serif); font-style: italic; font-size: 16px; letter-spacing: 0.04em; color: var(--rose); text-transform: none; }
+.display-name{
+  font-family: var(--serif); font-weight: 500; font-size: clamp(48px, 16vw, 96px);
+  margin: 6px 0 22px; display: flex; align-items: center; justify-content: center; gap: 0.3em;
+  color: var(--ivory);
+}
+.display-name.small{ font-size: clamp(34px, 10vw, 56px); margin: 10px 0; }
+.display-name .script, .ceremony-names .script, .ring-final .script{
+  font-family: var(--script); font-weight: 400;
+  background: var(--gold-grad); -webkit-background-clip: text; background-clip: text; color: transparent;
+}
+.display-name .amp{ font-family: var(--script); color: var(--rose); font-size: 0.6em; }
+
+.hero-copy{
+  font-size: 16px; line-height: 1.8; color: rgba(244,238,226,0.75);
+  max-width: 380px; margin: 0 auto 18px;
+}
+.hero-date{
+  font-family: var(--serif); font-size: 18px; letter-spacing: 0.16em;
+  color: var(--champagne-lt); margin: 0 0 36px;
+}
+
+.cta-gold{
+  display: inline-flex; align-items: center; gap: 10px;
+  background: var(--gold-grad); color: var(--burgundy-dp);
+  padding: 16px 32px; border-radius: 999px; text-decoration: none;
+  font-size: 12px; letter-spacing: 0.18em; text-transform: uppercase; font-weight: 500;
+  box-shadow: 0 0 0 rgba(201,164,107,0); transition: box-shadow .4s var(--ease-lux), transform .3s var(--ease-lux);
+}
+.cta-gold:hover{ box-shadow: 0 0 34px rgba(201,164,107,0.55); transform: translateY(-2px); }
+.cta-arrow{ transition: transform .3s ease; }
+.cta-gold:hover .cta-arrow{ transform: translateX(4px); }
+
+.cta-outline{
+  display: inline-flex; align-items: center; gap: 10px;
+  border: 1px solid rgba(201,164,107,0.5); color: var(--champagne-lt);
+  padding: 15px 30px; border-radius: 999px; text-decoration: none;
+  font-size: 12px; letter-spacing: 0.18em; text-transform: uppercase;
+  transition: all .35s var(--ease-lux);
+}
+.cta-outline:hover{ background: rgba(201,164,107,0.12); border-color: var(--champagne); }
+
+.scroll-hint{
+  position: absolute; bottom: 34px; left: 50%; transform: translateX(-50%);
+  z-index: 2;
+}
+.scroll-hint span{
+  display: block; width: 1px; height: 42px;
+  background: linear-gradient(to bottom, var(--champagne), transparent);
+  animation: scrollhint 2s ease-in-out infinite;
+}
+@keyframes scrollhint{ 0%{ transform: scaleY(0); transform-origin: top; opacity: 0.3; } 50%{ transform: scaleY(1); transform-origin: top; opacity: 1;} 100%{ transform: scaleY(0); transform-origin: bottom; opacity: 0.3; } }
+
+/* =========================================================
+   Save the date
+========================================================= */
+.save-date{
+  background: radial-gradient(ellipse at 50% 50%, rgba(12,46,36,0.55), var(--black) 75%);
+}
+.date-block{
+  display: flex; flex-direction: column; align-items: center; gap: 2px; margin-bottom: 12px;
+}
+.date-day{
+  font-family: var(--serif); font-size: clamp(70px, 26vw, 130px); line-height: 0.9;
+  background: var(--gold-grad); -webkit-background-clip: text; background-clip: text; color: transparent;
+  font-weight: 500;
+}
+.date-month{
+  font-family: var(--script); font-size: clamp(28px, 9vw, 44px); color: var(--rose);
+}
+.date-year{
+  font-size: 14px; letter-spacing: 0.4em; color: var(--champagne-lt); margin-top: 6px;
+}
+.date-weekday{
+  font-size: 11px; letter-spacing: 0.3em; text-transform: uppercase; color: var(--champagne);
+  margin: 6px 0 26px;
+}
+
+/* =========================================================
+   Ceremony
+========================================================= */
+.ceremony{ background: var(--black); }
+.ceremony-card{
+  border: 1px solid rgba(201,164,107,0.3);
+  border-radius: 18px; padding: 40px 28px; margin-top: 8px;
+  background: linear-gradient(180deg, rgba(201,164,107,0.06), transparent);
+}
+.ceremony-names{ font-family: var(--serif); font-size: clamp(26px, 8vw, 38px); margin: 0 0 8px; color: var(--ivory); }
+.ceremony-tag{ font-size: 11px; letter-spacing: 0.28em; text-transform: uppercase; color: var(--rose); margin: 0 0 4px; }
+.ceremony-date{ font-family: var(--serif); font-size: 16px; letter-spacing: 0.1em; color: var(--champagne-lt); margin: 0; }
+.ceremony-divider{ width: 60px; height: 1px; background: rgba(201,164,107,0.4); margin: 26px auto; }
+.ceremony-grid{
+  display: grid; grid-template-columns: 1fr 1fr; gap: 20px;
+}
+.ceremony-label{ font-size: 10px; letter-spacing: 0.24em; text-transform: uppercase; color: var(--champagne); margin: 0 0 8px; }
+.ceremony-value{ font-family: var(--serif); font-size: 17px; color: var(--ivory); margin: 0; line-height: 1.4; }
+
+/* =========================================================
+   Ring reveal
+========================================================= */
+.ring-reveal{
+  background: radial-gradient(ellipse at 50% 50%, rgba(62,14,29,0.6), var(--black) 78%);
+  min-height: 130vh;
+}
+.ring-inner{ pointer-events: none; }
+.ring-final{ font-size: clamp(30px, 9vw, 46px); margin: 18px 0 10px; }
+.ring-final .heart{ color: var(--rose); }
+.ring-date{ font-family: var(--serif); letter-spacing: 0.18em; color: var(--champagne-lt); font-size: 16px; }
+
+/* =========================================================
+   Couple / Family
+========================================================= */
+.couple{ background: var(--black); }
+.couple-copy{
+  font-family: var(--serif); font-style: italic; font-size: clamp(19px, 5vw, 24px);
+  line-height: 1.7; color: rgba(244,238,226,0.85); margin: 0 0 22px;
+}
+
+.family{ background: radial-gradient(ellipse at 50% 50%, rgba(12,46,36,0.5), var(--black) 75%); }
+.floral-divider{ display: flex; justify-content: center; margin-top: 30px; color: var(--champagne); }
+.floral-svg{ width: 200px; height: 36px; }
+
+/* =========================================================
+   Invite
+========================================================= */
+.invite{ background: var(--black); }
+.invite-date{ font-family: var(--serif); font-size: 18px; letter-spacing: 0.14em; color: var(--champagne-lt); margin: 6px 0 4px; }
+.invite-venue{ font-size: 13px; letter-spacing: 0.2em; text-transform: uppercase; color: var(--rose); margin: 0 0 26px; }
+
+/* =========================================================
+   Countdown
+========================================================= */
+.countdown{ background: radial-gradient(ellipse at 50% 50%, rgba(62,14,29,0.4), var(--black) 75%); }
+.countdown-grid{
+  display: grid; grid-template-columns: repeat(4, 1fr); gap: 10px; margin-top: 20px;
+}
+.countdown-unit{
+  border: 1px solid rgba(201,164,107,0.3); border-radius: 14px;
+  padding: 18px 6px; background: rgba(201,164,107,0.04);
+}
+.countdown-num{
+  display: block; font-family: var(--serif); font-size: clamp(26px, 7vw, 40px);
+  color: var(--champagne-lt); font-weight: 500; font-variant-numeric: tabular-nums;
+}
+.countdown-label{
+  display: block; font-size: 9px; letter-spacing: 0.2em; text-transform: uppercase;
+  color: rgba(244,238,226,0.55); margin-top: 6px;
+}
+
+/* =========================================================
+   Moments / photo frames
+========================================================= */
+.moments{ background: var(--black); }
+.frame-grid{
+  display: grid; grid-template-columns: repeat(3, 1fr); gap: 10px; margin-top: 30px;
+}
+.photo-frame{
+  aspect-ratio: 1 / 1.1; border-radius: 8px;
+  background:
+    linear-gradient(145deg, rgba(201,164,107,0.14), rgba(201,164,107,0.03)),
+    repeating-linear-gradient(135deg, rgba(244,238,226,0.03) 0 2px, transparent 2px 8px);
+  border: 1px solid rgba(201,164,107,0.32);
+  position: relative; overflow: hidden;
+  box-shadow: 0 10px 24px rgba(0,0,0,0.28);
+}
+.photo-frame.tall{ aspect-ratio: 1 / 1.5; }
+.photo-frame::after{
+  content: "✦";
+  position: absolute; inset: 0; display: flex; align-items: center; justify-content: center;
+  color: rgba(201,164,107,0.4); font-size: 20px;
+  transition: opacity 0.4s ease;
+}
+/* Each frame holds exactly one <img>, sized with object-fit so the photo
+   is never stretched, distorted, tiled, or combined with another image. */
+.photo-frame-img{
+  position: absolute; inset: 0; width: 100%; height: 100%;
+  object-fit: cover; object-position: center;
+  opacity: 0;
+  transform: scale(1.04);
+  transition: opacity 0.6s ease, transform 0.7s cubic-bezier(0.22,0.61,0.36,1), box-shadow 0.4s ease;
+}
+.photo-frame.has-photo{
+  box-shadow: 0 10px 24px rgba(0,0,0,0.28);
+}
+.photo-frame.has-photo .photo-frame-img{
+  opacity: 1;
+  animation: photoFadeIn 0.6s ease both;
+}
+.photo-frame.has-photo::after{ opacity: 0; }
+.photo-frame.has-photo:hover .photo-frame-img,
+.photo-frame.has-photo:focus-within .photo-frame-img{
+  transform: scale(1.1);
+}
+.photo-frame.has-photo:hover,
+.photo-frame.has-photo:focus-within{
+  box-shadow: 0 14px 32px rgba(0,0,0,0.4);
+}
+@keyframes photoFadeIn{
+  from{ opacity: 0; filter: saturate(0.7); }
+  to{ opacity: 1; filter: saturate(1); }
+}
+@media (prefers-reduced-motion: reduce){
+  .photo-frame.has-photo .photo-frame-img{ animation: none; transition: none; }
+  .photo-frame.has-photo:hover .photo-frame-img{ transform: scale(1.04); }
+}
+.frame-note{
+  font-size: 12px; color: rgba(244,238,226,0.45); margin-top: 24px;
+}
+.frame-note code{
+  background: rgba(201,164,107,0.12); padding: 2px 6px; border-radius: 4px; color: var(--champagne-lt);
+}
+
+/* =========================================================
+   Location
+========================================================= */
+.location{ background: radial-gradient(ellipse at 50% 50%, rgba(12,46,36,0.45), var(--black) 75%); }
+
+/* =========================================================
+   Finale
+========================================================= */
+.finale{
+  background: radial-gradient(ellipse at 50% 40%, var(--burgundy-dp) 0%, var(--black) 80%);
+  min-height: 130vh;
+}
+.finale-date{ font-family: var(--serif); letter-spacing: 0.16em; color: var(--champagne-lt); font-size: 17px; margin-bottom: 26px; }
+.finale-line{ font-family: var(--serif); font-style: italic; font-size: clamp(19px, 5vw, 24px); line-height: 1.7; color: rgba(244,238,226,0.9); margin-bottom: 30px; }
+.finale-thanks{ font-size: 14px; letter-spacing: 0.04em; color: rgba(244,238,226,0.65); margin-bottom: 34px; }
+.finale-signoff{ font-family: var(--serif); font-size: 16px; color: var(--champagne-lt); line-height: 1.6; margin-bottom: 18px; }
+.finale-see{ font-size: 13px; letter-spacing: 0.2em; text-transform: uppercase; color: var(--rose); }
+
+/* =========================================================
+   Reveal-on-scroll base states (GSAP controls the animation)
+========================================================= */
+.reveal, .reveal-up{
+  opacity: 0;
+}
+.reveal-up{ transform: translateY(24px); }
+
+/* =========================================================
+   Responsive — desktop refinements
+========================================================= */
+@media (min-width: 860px){
+  :root{ --container: 780px; --pad: 40px; }
+  .ceremony-grid{ grid-template-columns: 1fr 1fr; max-width: 420px; margin: 0 auto; }
+  .frame-grid{ grid-template-columns: repeat(3, 1fr); max-width: 640px; margin: 30px auto 0; }
+  .section{ padding: 140px var(--pad); }
+}
+
+@media (min-width: 1200px){
+  :root{ --container: 860px; }
+}
+
+/* Guard against any accidental horizontal overflow */
+html, body{ max-width: 100%; }
