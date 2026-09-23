@@ -1,0 +1,647 @@
+/* =========================================================
+   THE SECRET — cinematic birthday surprise
+   Design tokens
+   ========================================================= */
+:root{
+  --black:        #0a0608;
+  --plum:         #1c0a10;
+  --burgundy:     #3a0f18;
+  --wine:         #6e1c26;
+  --gold:         #caa15a;
+  --gold-bright:  #f0cf8a;
+  --champagne:    #f3e2c2;
+  --blush:        #e9c6c9;
+  --ink:          #f6ecd9;
+  --serif: 'Cormorant Garamond', serif;
+  --display: 'Playfair Display', serif;
+  --script: 'Parisienne', cursive;
+  --ease-cinema: cubic-bezier(.22,.61,.36,1);
+}
+
+*{ box-sizing:border-box; }
+html{ scroll-behavior:smooth; }
+body{
+  margin:0;
+  background:var(--black);
+  color:var(--ink);
+  font-family:var(--serif);
+  font-size:19px;
+  line-height:1.6;
+  overflow-x:hidden;
+}
+img{ max-width:100%; display:block; }
+a{ color:inherit; }
+h1,h2,h3{ font-family:var(--display); font-weight:600; margin:0; }
+.script{ font-family:var(--script); font-weight:400; }
+
+::selection{ background:var(--wine); color:var(--champagne); }
+
+/* focus visibility */
+a:focus-visible, button:focus-visible, [role="button"]:focus-visible{
+  outline:2px solid var(--gold-bright);
+  outline-offset:4px;
+}
+
+@media (prefers-reduced-motion: reduce){
+  *{ animation-duration:.001ms !important; animation-iteration-count:1 !important; transition-duration:.001ms !important; scroll-behavior:auto !important; }
+}
+
+/* =========================================================
+   NAV
+   ========================================================= */
+.site-nav{
+  position:fixed; top:0; left:0; right:0; z-index:500;
+  display:flex; align-items:center; justify-content:space-between;
+  padding:22px clamp(20px,5vw,64px);
+  background:linear-gradient(to bottom, rgba(10,6,8,.75), transparent);
+  transition:background .4s var(--ease-cinema), padding .4s var(--ease-cinema);
+}
+.site-nav.is-scrolled{
+  background:rgba(10,6,8,.82);
+  backdrop-filter:blur(10px);
+  padding-top:14px; padding-bottom:14px;
+  border-bottom:1px solid rgba(202,161,90,.15);
+}
+.nav-mark{
+  font-family:var(--script); font-size:1.6rem; color:var(--gold-bright);
+  letter-spacing:.5px; text-decoration:none;
+}
+.nav-links{
+  display:flex; gap:clamp(18px,3vw,42px); list-style:none; margin:0; padding:0;
+}
+.nav-links a{
+  text-decoration:none; font-family:var(--serif); font-size:1.02rem;
+  letter-spacing:.06em; color:var(--champagne); opacity:.85;
+  position:relative; padding-bottom:4px;
+}
+.nav-links a::after{
+  content:''; position:absolute; left:0; bottom:0; width:0; height:1px;
+  background:var(--gold-bright); transition:width .35s var(--ease-cinema);
+}
+.nav-links a:hover::after,
+.nav-links a:focus-visible::after{ width:100%; }
+.nav-links a:hover{ opacity:1; }
+
+.nav-toggle{
+  display:none; background:none; border:1px solid var(--gold); color:var(--champagne);
+  width:42px; height:42px; border-radius:50%; cursor:pointer;
+  font-size:1.1rem; line-height:1;
+}
+
+@media (max-width:760px){
+  .nav-links{
+    position:fixed; inset:0 0 0 auto; height:100dvh; width:min(78vw,320px);
+    background:rgba(12,7,10,.97); flex-direction:column; justify-content:center;
+    gap:32px; padding:0 40px; transform:translateX(100%);
+    transition:transform .5s var(--ease-cinema);
+  }
+  .nav-links.is-open{ transform:translateX(0); }
+  .nav-links a{ font-size:1.3rem; }
+  .nav-toggle{ display:block; z-index:600; }
+}
+
+/* =========================================================
+   SHARED SECTION FRAME
+   ========================================================= */
+section{
+  position:relative; min-height:100vh; width:100%;
+  display:flex; align-items:center; justify-content:center;
+  padding:calc(100px + env(safe-area-inset-top,0px)) clamp(20px,6vw,80px) 90px;
+  overflow:hidden;
+}
+.section-canvas{ position:absolute; inset:0; z-index:0; }
+.section-inner{ position:relative; z-index:2; width:100%; max-width:1240px; }
+.eyebrow{
+  font-family:var(--script); color:var(--blush); font-size:1.3rem; opacity:.85;
+}
+.grain{
+  position:absolute; inset:0; z-index:3; pointer-events:none; opacity:.05; mix-blend-mode:overlay;
+  background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='120' height='120'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='2' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+}
+
+/* =========================================================
+   01 — THE SECRET
+   ========================================================= */
+#secret{
+  background:
+    radial-gradient(ellipse 60% 40% at 50% 14%, rgba(240,207,138,.22), transparent 60%),
+    radial-gradient(ellipse 80% 60% at 50% 55%, rgba(122,30,42,.28), transparent 70%),
+    radial-gradient(ellipse 120% 80% at 50% 100%, rgba(0,0,0,.7), transparent 60%),
+    linear-gradient(to bottom, #0f0a14 0%, #1c0d14 40%, #170a10 70%, #0a0608 100%);
+}
+#secret::before{
+  content:''; position:absolute; inset:0; z-index:1; pointer-events:none;
+  background:radial-gradient(ellipse 70% 50% at 50% 0%, rgba(240,207,138,.14), transparent 65%);
+}
+.secret-layout{
+  display:grid; grid-template-columns:1fr auto 1fr; align-items:center; gap:28px;
+}
+.secret-text{ font-family:var(--script); font-size:clamp(1.4rem,2.4vw,2rem); color:var(--champagne); line-height:1.35; opacity:.92; }
+.secret-text.right{ text-align:right; }
+.secret-text p{ margin:0 0 18px; }
+.secret-text .small{ font-family:var(--serif); font-size:1rem; opacity:.7; letter-spacing:.03em; }
+
+.envelope-wrap{ display:flex; flex-direction:column; align-items:center; gap:34px; }
+.envelope{
+  --w:min(46vw,380px); --h:calc(var(--w) * .64);
+  width:var(--w); height:var(--h); position:relative;
+  filter:drop-shadow(0 30px 60px rgba(0,0,0,.65)) drop-shadow(0 0 55px rgba(202,161,90,.28));
+  animation:hover 5.5s ease-in-out infinite;
+}
+@keyframes hover{ 0%,100%{ transform:translateY(0) rotateZ(0deg); } 50%{ transform:translateY(-14px) rotateZ(.4deg); } }
+.envelope .ambient-glow{
+  position:absolute; inset:-55%; border-radius:50%; z-index:0; pointer-events:none;
+  background:radial-gradient(circle, rgba(240,207,138,.22), rgba(122,20,32,.12) 45%, transparent 70%);
+  animation:ambientPulse 4.5s ease-in-out infinite;
+}
+@keyframes ambientPulse{ 0%,100%{ opacity:.7; transform:scale(1); } 50%{ opacity:1; transform:scale(1.08); } }
+.envelope .body{
+  position:absolute; inset:0; border-radius:6px; z-index:1;
+  background:
+    linear-gradient(115deg, rgba(255,255,255,.06) 0%, transparent 18%),
+    linear-gradient(155deg,#4a141d,#250a10 60%,#1a070c 100%);
+  border:1px solid var(--gold);
+  box-shadow:
+    inset 0 0 0 1px rgba(202,161,90,.25),
+    inset 0 1px 18px rgba(240,207,138,.08),
+    0 0 0 1px rgba(0,0,0,.3);
+}
+.envelope .body::after{
+  content:''; position:absolute; inset:5px; border-radius:4px;
+  border:1px solid rgba(202,161,90,.3); pointer-events:none;
+}
+.envelope .flap{
+  position:absolute; top:0; left:0; right:0; height:58%; z-index:2;
+  background:
+    linear-gradient(115deg, rgba(255,255,255,.08), transparent 30%),
+    linear-gradient(160deg,#5a1a24,#2c0b12 60%,#1a070c 100%);
+  clip-path:polygon(0 0,100% 0,50% 100%);
+  transform-origin:top center; transition:transform 1.1s var(--ease-cinema);
+  border-bottom:1px solid var(--gold);
+}
+.envelope .flap::before{
+  content:''; position:absolute; top:6px; left:8%; right:8%; height:1px;
+  background:linear-gradient(90deg, transparent, rgba(202,161,90,.55), transparent);
+}
+.envelope.is-open .flap{ transform:rotateX(178deg); }
+.envelope .seal{
+  position:absolute; top:52%; left:50%; transform:translate(-50%,-50%);
+  width:56px; height:56px; border-radius:50%; z-index:3;
+  background:
+    radial-gradient(circle at 32% 28%,#e0525f,#a8202c 55%,#5c0f18 100%);
+  box-shadow:0 6px 18px rgba(0,0,0,.55), inset 0 0 10px rgba(0,0,0,.45), 0 0 24px rgba(196,60,70,.4);
+  display:flex; align-items:center; justify-content:center;
+  color:var(--gold-bright); font-size:1.3rem;
+  transition:opacity .5s ease .3s, transform .5s ease .3s;
+}
+.envelope.is-open .seal{ opacity:0; transform:translate(-50%,-50%) scale(.4); }
+.envelope .glow{
+  position:absolute; inset:-30%; border-radius:50%; z-index:0;
+  background:radial-gradient(circle, rgba(240,207,138,.45), transparent 60%);
+  opacity:0; transition:opacity .8s ease; pointer-events:none;
+}
+.envelope.is-open .glow{ opacity:1; }
+
+.open-btn{
+  font-family:var(--serif); letter-spacing:.14em; font-size:1rem;
+  color:var(--champagne); background:transparent;
+  border:1px solid var(--gold); padding:16px 34px; border-radius:999px;
+  cursor:pointer; text-transform:uppercase;
+  transition:background .4s ease, color .4s ease, box-shadow .4s ease, transform .3s ease;
+}
+.open-btn:hover, .open-btn:focus-visible{
+  background:var(--gold); color:#1c0a10;
+  box-shadow:0 0 40px rgba(202,161,90,.45);
+  transform:translateY(-2px);
+}
+.open-btn:disabled{ opacity:.4; cursor:default; transform:none; box-shadow:none; }
+
+.made-with-love{
+  position:absolute; top:28px; right:clamp(20px,5vw,64px); z-index:3;
+  font-family:var(--script); color:var(--blush); opacity:.7; font-size:1rem;
+}
+
+@media (max-width:900px){
+  .secret-layout{ grid-template-columns:1fr; text-align:center; gap:34px; }
+  .secret-text.right{ text-align:center; }
+  .made-with-love{ display:none; }
+}
+
+/* =========================================================
+   02 — BIRTHDAY REVEAL
+   ========================================================= */
+#reveal{
+  background:
+    radial-gradient(ellipse 60% 45% at 85% 15%, rgba(240,207,138,.10), transparent 60%),
+    radial-gradient(ellipse 70% 50% at 15% 85%, rgba(196,60,70,.16), transparent 65%),
+    linear-gradient(160deg,#170a10 0%,#2c0f16 55%,#170a10 100%);
+}
+.reveal-grid{
+  display:grid; grid-template-columns:1.05fr 1fr; gap:clamp(30px,5vw,70px); align-items:center;
+}
+.reveal-photo{
+  position:relative; border-radius:4px; overflow:hidden;
+  aspect-ratio:4/5;
+  box-shadow:0 40px 80px rgba(0,0,0,.55), 0 0 0 1px rgba(202,161,90,.2);
+  padding:14px;
+  background:linear-gradient(160deg,#2a0f16,#1a0a0f);
+}
+.reveal-photo img{ width:100%; height:100%; object-fit:cover; object-position:center 20%; border-radius:2px; }
+.reveal-photo::after{
+  content:''; position:absolute; inset:14px;
+  border:1px solid rgba(202,161,90,.4); border-radius:2px; pointer-events:none; z-index:2;
+}
+.reveal-photo::before{
+  content:''; position:absolute; inset:14px; z-index:1;
+  background:linear-gradient(to top, rgba(10,6,8,.5), transparent 45%);
+  border-radius:2px;
+}
+.reveal-copy .eyebrow{ display:block; margin-bottom:10px; }
+.reveal-copy h2{
+  font-size:clamp(1.1rem,2vw,1.3rem); letter-spacing:.28em; text-transform:uppercase;
+  color:var(--blush); font-family:var(--serif); font-weight:500;
+}
+.reveal-name{
+  font-family:var(--display); font-size:clamp(2.6rem,7vw,4.6rem);
+  color:var(--gold-bright); margin:6px 0 4px; line-height:1;
+}
+.reveal-date{
+  font-family:var(--serif); letter-spacing:.3em; color:var(--champagne); opacity:.75; font-size:1rem;
+}
+.reveal-divider{
+  width:64px; height:1px; margin:24px 0;
+  background:linear-gradient(90deg, var(--gold), transparent);
+}
+.reveal-message{ margin-top:0; font-size:1.2rem; color:var(--champagne); max-width:46ch; opacity:.92; }
+
+/* -----------------------------------------------------------
+   Premium 3-tier luxury birthday cake (pure CSS, layered 3D look)
+   ----------------------------------------------------------- */
+.cake{
+  position:relative; isolation:isolate; z-index:1;
+  margin-top:48px; display:flex; flex-direction:column; align-items:center;
+  width:max-content;
+}
+
+/* soft ambient golden glow behind the whole cake */
+.cake-glow{
+  position:absolute; z-index:0; left:50%; top:52%;
+  width:300px; height:300px; transform:translate(-50%,-50%);
+  background:radial-gradient(circle, rgba(240,207,138,.32), transparent 68%);
+  filter:blur(22px); pointer-events:none;
+  animation:cake-glow-pulse 5.5s ease-in-out infinite;
+}
+@keyframes cake-glow-pulse{
+  0%,100%{ opacity:.55; }
+  50%{ opacity:.95; }
+}
+
+/* glowing "Happy Birthday" topper */
+.cake-topper{ position:relative; z-index:5; margin-bottom:10px; transform:rotate(-2deg); }
+.cake-topper::after{
+  content:''; position:absolute; left:50%; bottom:-14px; width:2px; height:14px;
+  background:linear-gradient(var(--gold-bright), var(--gold)); transform:translateX(-50%);
+}
+.topper-text{
+  display:inline-block; padding:4px 12px; font-size:1rem; letter-spacing:.03em;
+  color:var(--gold-bright); background:rgba(20,8,12,.4);
+  border:1px solid rgba(240,207,138,.55); border-radius:3px;
+  animation:topper-glow 3.2s ease-in-out infinite;
+}
+@keyframes topper-glow{
+  0%,100%{ text-shadow:0 0 8px rgba(240,207,138,.6), 0 0 16px rgba(240,207,138,.35); }
+  50%{ text-shadow:0 0 14px rgba(240,207,138,1), 0 0 28px rgba(240,207,138,.7); }
+}
+
+/* candles */
+.cake-candles{ position:relative; z-index:4; display:flex; align-items:flex-end; justify-content:center; gap:12px; margin-bottom:-6px; }
+.candle{ position:relative; width:6px; height:40px; background:linear-gradient(var(--champagne),var(--gold)); border-radius:2px; }
+.candle::before{
+  content:''; position:absolute; bottom:-2px; left:-2px; right:-2px; height:4px;
+  background:linear-gradient(90deg, var(--gold), var(--gold-bright), var(--gold)); border-radius:2px;
+}
+.candle:nth-child(2){ height:50px; } .candle:nth-child(4){ height:50px; } .candle:nth-child(3){ height:60px; }
+.flame{
+  position:absolute; top:-16px; left:50%; transform:translateX(-50%);
+  width:10px; height:16px; border-radius:50% 50% 50% 50% / 60% 60% 40% 40%;
+  background:radial-gradient(circle at 50% 70%, #fff3c4, #f2a33c 60%, transparent 75%);
+  filter:blur(.2px); animation:flicker 3s ease-in-out infinite;
+  box-shadow:0 0 14px 4px rgba(242,163,60,.5);
+}
+.candle:nth-child(odd) .flame{ animation-delay:.6s; }
+@keyframes flicker{
+  0%,100%{ transform:translateX(-50%) scale(1) rotate(0deg); opacity:1; }
+  30%{ transform:translateX(-52%) scale(.94,1.05) rotate(-3deg); }
+  60%{ transform:translateX(-48%) scale(1.05,.95) rotate(3deg); opacity:.92; }
+}
+
+/* the 3 tiers */
+.cake-tiers{ position:relative; z-index:2; display:flex; flex-direction:column; align-items:center; }
+.tier{
+  position:relative;
+  background:linear-gradient(100deg, #2a060d 0%, #5c1520 32%, #7c1f2c 52%, #4a0f18 78%, #2f0910 100%);
+  box-shadow:inset 6px 0 14px rgba(0,0,0,.35), inset -8px 0 16px rgba(0,0,0,.45), 0 14px 26px rgba(0,0,0,.45);
+  border-radius:50% 50% 6px 6px / 20% 20% 8% 8%;
+}
+.tier-top{ width:96px; height:40px; margin-top:26px; }
+.tier-mid{ width:136px; height:46px; margin-top:-6px; }
+.tier-base{ width:180px; height:54px; margin-top:-6px; }
+
+/* cream frosting cap with drips, on top of each tier */
+.tier-icing{
+  position:absolute; top:-9px; left:50%; transform:translateX(-50%);
+  width:104%; height:20px; border-radius:50%;
+  background:linear-gradient(180deg, #fffdf7, #f3e6c9);
+  box-shadow:0 3px 6px rgba(0,0,0,.28), inset 0 -3px 5px rgba(120,90,40,.15);
+  z-index:2;
+}
+.tier-icing .drip{
+  position:absolute; bottom:-9px; width:9px; border-radius:0 0 50% 50%;
+  background:linear-gradient(180deg, #f3e6c9, #fffdf7);
+}
+.tier-icing .drip:nth-child(1){ left:6%;  height:10px; }
+.tier-icing .drip:nth-child(2){ left:26%; height:16px; }
+.tier-icing .drip:nth-child(3){ left:48%; height:20px; }
+.tier-icing .drip:nth-child(4){ left:70%; height:13px; }
+.tier-icing .drip:nth-child(5){ left:90%; height:17px; }
+
+/* thin gold decorative band + pearls near the base of each tier */
+.tier-band{
+  position:absolute; left:0; right:0; bottom:14%; height:2px;
+  background:linear-gradient(90deg, transparent, var(--gold-bright), var(--gold), var(--gold-bright), transparent);
+  opacity:.85; z-index:1;
+}
+.tier-pearls{
+  position:absolute; left:2%; right:2%; bottom:6%; height:5px;
+  background-image:repeating-radial-gradient(circle at 7px 2.5px, var(--gold-bright) 0 1.6px, transparent 2.2px 14px);
+  opacity:.9; z-index:1;
+}
+
+/* small edible flowers, made from 5 CSS dots */
+.flower{
+  position:absolute; width:6px; height:6px; border-radius:50%;
+  background:radial-gradient(circle, var(--gold-bright), var(--gold) 75%);
+  box-shadow:
+    0 -8px 0 -1px var(--blush),
+    7px -2.5px 0 -1px var(--blush),
+    4px 6.5px 0 -1px var(--blush),
+    -4px 6.5px 0 -1px var(--blush),
+    -7px -2.5px 0 -1px var(--blush);
+  z-index:2;
+}
+.flower-1{ top:8px;  left:14%; }
+.flower-2{ top:10px; right:14%; }
+.flower-3{ top:10px; left:10%; }
+.flower-4{ top:6px;  right:16%; }
+.flower-5{ bottom:10px; left:50%; transform:translateX(-50%); }
+
+/* gold-rimmed plate beneath the base tier */
+.cake-plate{
+  position:relative; z-index:1; margin-top:-2px;
+  width:206px; height:14px; border-radius:50%;
+  background:linear-gradient(180deg, var(--gold-bright), var(--gold) 45%, #7a5a2a);
+  box-shadow:0 22px 34px rgba(0,0,0,.5), 0 0 0 1px rgba(202,161,90,.25);
+}
+
+@media (max-width:860px){
+  .reveal-grid{ grid-template-columns:1fr; text-align:center; }
+  .reveal-message{ margin-inline:auto; }
+  .reveal-divider{ margin-inline:auto; }
+  .cake{ margin-inline:auto; }
+}
+
+@media (max-width:480px){
+  .tier-top{ width:78px; height:34px; }
+  .tier-mid{ width:112px; height:40px; }
+  .tier-base{ width:150px; height:46px; }
+  .cake-plate{ width:172px; }
+  .cake-glow{ width:240px; height:240px; }
+}
+
+/* =========================================================
+   03 — OUR LITTLE STORY
+   ========================================================= */
+#story{
+  background:
+    radial-gradient(ellipse 70% 40% at 20% 10%, rgba(202,161,90,.08), transparent 60%),
+    radial-gradient(ellipse 70% 40% at 80% 90%, rgba(196,60,70,.10), transparent 60%),
+    linear-gradient(180deg,#0a0608 0%,#170a10 50%,#0a0608 100%);
+  padding-top:calc(120px + env(safe-area-inset-top,0px));
+}
+.story-head{ text-align:center; margin-bottom:clamp(40px,7vw,80px); }
+.story-title{
+  font-family:var(--script); font-size:clamp(2.4rem,6vw,4rem); color:var(--gold-bright);
+}
+.story-sub{ color:var(--champagne); opacity:.75; margin-top:10px; font-size:1.1rem; }
+
+.gallery-line{
+  position:relative; height:2px; background:linear-gradient(90deg,transparent,rgba(202,161,90,.5) 8%,rgba(202,161,90,.5) 92%,transparent);
+  max-width:1100px; margin:0 auto 0; display:none;
+}
+@media (min-width:760px){ .gallery-line{ display:block; } }
+
+.gallery{
+  display:flex; flex-wrap:wrap; justify-content:center; gap:0 clamp(6px,2vw,18px);
+  max-width:1200px; margin:0 auto; padding-top:10px;
+}
+.polaroid{
+  --rot:-4deg;
+  width:min(46vw,220px); background:#f4ede0; padding:14px 14px 46px; margin:14px 6px 0;
+  border-radius:2px; box-shadow:0 22px 40px rgba(0,0,0,.5);
+  transform:rotate(var(--rot)); transition:transform .4s var(--ease-cinema), box-shadow .4s ease;
+  position:relative;
+}
+.polaroid:nth-child(2n){ --rot:3deg; margin-top:38px; }
+.polaroid:nth-child(3n){ --rot:-2deg; }
+.polaroid:nth-child(4n){ --rot:5deg; margin-top:6px; }
+.polaroid:hover, .polaroid:active{
+  transform:rotate(0deg) translateY(-8px) scale(1.03);
+  box-shadow:0 30px 60px rgba(0,0,0,.6), 0 0 30px rgba(202,161,90,.25);
+  z-index:5;
+}
+.polaroid img{ width:100%; aspect-ratio:3/3.7; object-fit:cover; background:#111; }
+.polaroid .clip{
+  position:absolute; top:-12px; left:50%; transform:translateX(-50%) rotate(-2deg);
+  width:26px; height:14px; border-radius:3px;
+  background:linear-gradient(160deg,var(--gold-bright),var(--gold));
+  box-shadow:0 4px 8px rgba(0,0,0,.4);
+}
+.polaroid .cap{
+  position:absolute; bottom:10px; left:0; right:0; text-align:center;
+  font-family:var(--script); font-size:1.3rem; color:#3a0f18;
+}
+
+@media (max-width:600px){
+  .polaroid{ width:44vw; }
+}
+
+/* =========================================================
+   04 — FOREVER
+   ========================================================= */
+#forever{
+  background:
+    radial-gradient(ellipse 55% 40% at 50% 35%, rgba(196,60,70,.22), transparent 65%),
+    radial-gradient(ellipse at 50% 40%, #2c0810 0%, #0a0405 70%);
+  text-align:center; flex-direction:column;
+}
+.forever-inner{ display:flex; flex-direction:column; align-items:center; gap:26px; }
+
+/* -- Heart hero: reserves its own viewport-sized band so the heart stays
+   dead-center in the first screenful, regardless of the (initially hidden)
+   reveal content that follows it below, and regardless of the eyebrow /
+   hint text heights above and below it. -- */
+.heart-hero{
+  position:relative; width:100%; min-height:calc(100vh - 190px);
+}
+.heart-hero .eyebrow{
+  position:absolute; top:0; left:0; right:0; text-align:center;
+}
+.heart-stage{
+  position:absolute; top:50%; left:50%; transform:translate(-50%,-50%);
+  width:min(70vw,340px); aspect-ratio:1; cursor:pointer;
+}
+.heart-hero .heart-hint{
+  position:absolute; bottom:0; left:0; right:0; text-align:center;
+}
+.heart-stage::before{
+  content:''; position:absolute; inset:-18%; border-radius:50%; z-index:0; pointer-events:none;
+  background:radial-gradient(circle, rgba(196,60,70,.28), rgba(202,161,90,.08) 55%, transparent 75%);
+  animation:ambientPulse 3.6s ease-in-out infinite;
+}
+.heart-stage canvas{ position:relative; z-index:1; width:100% !important; height:100% !important; }
+.heart-stage.is-tapped::before{
+  animation:ambientPulseTapped 1.8s ease-in-out 2;
+}
+
+/* -- Golden light blast: a quick elegant bloom flash from the heart,
+   triggered the instant the heart is clicked/tapped -- */
+.heart-blast{
+  position:absolute; inset:-45%; z-index:2; border-radius:50%;
+  pointer-events:none; opacity:0; transform:scale(.4);
+  background:radial-gradient(circle,
+    rgba(255,250,232,1) 0%,
+    rgba(250,224,160,.95) 16%,
+    rgba(240,207,138,.55) 38%,
+    rgba(240,207,138,0) 70%);
+  mix-blend-mode:screen;
+}
+.heart-blast.is-blasting{
+  animation:heartBlastFlash 950ms var(--ease-cinema) forwards;
+}
+@keyframes heartBlastFlash{
+  0%{   opacity:0;    transform:scale(.35); }
+  10%{  opacity:1;    transform:scale(.9); }
+  38%{  opacity:.9;   transform:scale(1.3); }
+  100%{ opacity:0;    transform:scale(1.85); }
+}
+
+/* -- Golden confetti burst: fixed full-viewport canvas the heart-click
+   script draws celebration papers onto, then clears when finished -- */
+#confetti-canvas{
+  position:fixed; inset:0; width:100vw; height:100vh;
+  z-index:9999; pointer-events:none;
+}
+@keyframes ambientPulseTapped{
+  0%{ transform:scale(1); opacity:1; }
+  50%{ transform:scale(1.35); opacity:.85; }
+  100%{ transform:scale(1); opacity:1; }
+}
+.heart-hint{
+  font-family:var(--script); color:var(--blush); opacity:.7; font-size:1.05rem;
+  transition:opacity .6s ease;
+}
+.heart-hint.is-hidden{ opacity:0; }
+
+/* -- Heart-tap photo reveal: sits in normal document flow directly
+   below the WebGL heart canvas, so it is never covered by it. -- */
+.heart-reveal{
+  position:relative; z-index:2;
+  display:flex; flex-direction:column; align-items:center; gap:22px;
+  margin-top:4px;
+  opacity:0; transform:scale(.92) translateY(24px);
+  pointer-events:none;
+  transition:opacity 1.15s var(--ease-cinema), transform 1.15s var(--ease-cinema);
+}
+.heart-reveal.is-visible{ opacity:1; transform:scale(1) translateY(0); pointer-events:auto; }
+
+.heart-reveal-photo{
+  position:relative; width:min(78vw,360px); border-radius:20px; overflow:hidden;
+  box-shadow:
+    0 30px 70px rgba(0,0,0,.55),
+    0 0 50px rgba(202,161,90,.3),
+    0 0 90px rgba(196,60,70,.2);
+  border:1px solid rgba(202,161,90,.45);
+}
+.heart-reveal-photo img{
+  width:100%; height:100%; display:block; object-fit:cover;
+  aspect-ratio:3/4; object-position:center 15%;
+}
+.heart-reveal-photo::after{
+  content:''; position:absolute; inset:0; border-radius:20px; pointer-events:none;
+  box-shadow:inset 0 0 50px rgba(240,207,138,.18);
+  background:linear-gradient(to top, rgba(10,6,8,.35), transparent 40%);
+}
+.spark{
+  position:absolute; width:5px; height:5px; border-radius:50%;
+  background:radial-gradient(circle, rgba(255,224,170,.95), rgba(255,224,170,0));
+  animation:sparkle 3.2s ease-in-out infinite; pointer-events:none;
+}
+.spark-1{ top:8%;  left:10%; animation-delay:0s; }
+.spark-2{ top:20%; right:12%; animation-delay:.6s; }
+.spark-3{ bottom:24%; left:8%; animation-delay:1.1s; }
+.spark-4{ bottom:12%; right:16%; animation-delay:1.7s; }
+.spark-5{ top:46%; left:50%; animation-delay:2.2s; }
+.spark-6{ top:64%; right:8%; animation-delay:.3s; }
+@keyframes sparkle{
+  0%,100%{ opacity:0; transform:translateY(0) scale(.6); }
+  50%{ opacity:1; transform:translateY(-10px) scale(1.2); }
+}
+
+.heart-reveal-line{
+  font-size:clamp(1.3rem,3vw,1.8rem); color:var(--champagne);
+  text-align:center; max-width:32ch; line-height:1.45;
+  text-shadow:0 2px 18px rgba(0,0,0,.5);
+}
+
+/* -- Closing message: gated behind the heart-tap reveal -- */
+.forever-final{
+  display:flex; flex-direction:column; align-items:center; gap:4px;
+  opacity:0; transform:translateY(20px);
+  transition:opacity 1s ease, transform 1s ease;
+}
+.forever-final.is-visible{ opacity:1; transform:translateY(0); }
+
+.forever-message{
+  max-width:52ch; font-size:1.25rem; color:var(--champagne); opacity:.94; margin:0 auto;
+}
+.forever-signoff{ font-family:var(--script); font-size:clamp(2rem,5vw,3.2rem); color:var(--gold-bright); margin-top:8px; }
+.forever-name{ font-family:var(--display); font-size:clamp(1.6rem,4vw,2.4rem); color:var(--champagne); }
+.forever-date{ letter-spacing:.3em; opacity:.7; font-size:.95rem; }
+.forever-tag{
+  margin-top:18px; letter-spacing:.4em; text-transform:uppercase; font-size:.85rem; color:var(--gold);
+  border-top:1px solid rgba(202,161,90,.35); padding-top:18px;
+}
+
+@media (max-width:600px){
+  .heart-reveal-photo{ width:min(84vw,320px); }
+}
+
+/* =========================================================
+   FOOTER
+   ========================================================= */
+footer{
+  background:var(--black); text-align:center; padding:40px 20px;
+  font-family:var(--script); color:var(--blush); opacity:.6; font-size:1.05rem;
+}
+
+/* =========================================================
+   AUDIO INDICATOR (no visible volume panel — just a subtle note)
+   ========================================================= */
+.audio-note{
+  position:fixed; bottom:18px; left:50%; transform:translateX(-50%) translateY(120%);
+  z-index:400; font-family:var(--script); font-size:.95rem; color:var(--blush);
+  background:rgba(20,10,13,.55); backdrop-filter:blur(6px);
+  padding:8px 18px; border-radius:999px; border:1px solid rgba(202,161,90,.25);
+  opacity:0; transition:opacity .6s ease, transform .6s ease; pointer-events:none;
+}
+.audio-note.is-visible{ opacity:1; transform:translateX(-50%) translateY(0); }

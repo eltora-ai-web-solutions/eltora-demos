@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>The Secret — A Birthday Surprise</title>
+<meta name="description" content="A cinematic birthday surprise.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600;700&family=Cormorant+Garamond:wght@400;500;600&family=Parisienne&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<nav class="site-nav">
+  <a href="#secret" class="nav-mark">The Secret</a>
+  <ul class="nav-links">
+    <li><a href="#secret">Home</a></li>
+    <li><a href="#reveal">A Special Day</a></li>
+    <li><a href="#story">Our Story</a></li>
+    <li><a href="#story">Memories</a></li>
+    <li><a href="#forever">Forever</a></li>
+  </ul>
+  <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false">☰</button>
+</nav>
+
+<!-- ============================================================
+     01 — THE SECRET / OPENING
+     ============================================================ -->
+<section id="secret">
+  <canvas id="secret-canvas" class="section-canvas"></canvas>
+  <div class="grain"></div>
+  <span class="made-with-love script">Made with love ♡</span>
+
+  <div class="section-inner secret-layout">
+    <div class="secret-text">
+      <p>Someone<br>has been waiting<br>for this day…</p>
+      <p class="small">A little surprise<br>for someone very special…</p>
+    </div>
+
+    <div class="envelope-wrap">
+      <div class="envelope" id="envelope">
+        <div class="ambient-glow"></div>
+        <div class="glow"></div>
+        <div class="body"></div>
+        <div class="flap"></div>
+        <div class="seal">♡</div>
+      </div>
+      <p class="script" style="font-size:1.3rem;color:var(--champagne);opacity:.9;">Are you ready?</p>
+      <button class="open-btn" id="open-surprise">Open Your Surprise →</button>
+    </div>
+
+    <div class="secret-text right">
+      <p>Some stories<br>don't need words…<br>just a feeling. ♡</p>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     02 — BIRTHDAY REVEAL
+     ============================================================ -->
+<section id="reveal">
+  <div class="section-inner reveal-grid">
+    <div class="reveal-photo">
+      <img src="assets/images/memory-08.jpg" alt="A photo of the two of you" loading="lazy">
+    </div>
+    <div class="reveal-copy">
+      <span class="eyebrow script">Happy Birthday</span>
+      <h2>To The One Who Makes Every Day Brighter</h2>
+      <div class="reveal-name" data-name>My Love</div>
+      <div class="reveal-date" data-date>MARCH 15 · 2027</div>
+      <div class="reveal-divider" aria-hidden="true"></div>
+      <p class="reveal-message">Today isn't just another day… it's the day my favourite person was born. Here's to celebrating you, exactly as you are. ♡</p>
+
+      <div class="cake" aria-hidden="true">
+        <div class="cake-glow"></div>
+
+        <div class="cake-topper">
+          <span class="topper-text script">Happy Birthday</span>
+        </div>
+
+        <div class="cake-candles">
+          <div class="candle"><span class="flame"></span></div>
+          <div class="candle"><span class="flame"></span></div>
+          <div class="candle"><span class="flame"></span></div>
+          <div class="candle"><span class="flame"></span></div>
+          <div class="candle"><span class="flame"></span></div>
+        </div>
+
+        <div class="cake-tiers">
+          <div class="tier tier-top">
+            <div class="tier-icing">
+              <i class="drip"></i><i class="drip"></i><i class="drip"></i><i class="drip"></i><i class="drip"></i>
+            </div>
+            <div class="tier-band"></div>
+            <div class="tier-pearls"></div>
+          </div>
+
+          <div class="tier tier-mid">
+            <div class="tier-icing">
+              <i class="drip"></i><i class="drip"></i><i class="drip"></i><i class="drip"></i><i class="drip"></i>
+            </div>
+            <div class="tier-band"></div>
+            <div class="tier-pearls"></div>
+            <span class="flower flower-1"></span>
+            <span class="flower flower-2"></span>
+          </div>
+
+          <div class="tier tier-base">
+            <div class="tier-icing">
+              <i class="drip"></i><i class="drip"></i><i class="drip"></i><i class="drip"></i><i class="drip"></i>
+            </div>
+            <div class="tier-band"></div>
+            <div class="tier-pearls"></div>
+            <span class="flower flower-3"></span>
+            <span class="flower flower-4"></span>
+            <span class="flower flower-5"></span>
+          </div>
+        </div>
+
+        <div class="cake-plate"></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     03 — OUR LITTLE STORY
+     ============================================================ -->
+<section id="story">
+  <div class="section-inner">
+    <div class="story-head">
+      <h2 class="story-title script">Our Little Story</h2>
+      <p class="story-sub">Every moment with you became a little piece of my happiness.</p>
+    </div>
+    <div class="gallery-line" aria-hidden="true"></div>
+    <div class="gallery">
+      <figure class="polaroid"><span class="clip"></span><img src="assets/images/memory-01.jpg" alt="Memory together" loading="lazy"><figcaption class="cap">First Look ♡</figcaption></figure>
+      <figure class="polaroid"><span class="clip"></span><img src="assets/images/memory-02.jpg" alt="Memory together" loading="lazy"><figcaption class="cap">Your Smile</figcaption></figure>
+      <figure class="polaroid"><span class="clip"></span><img src="assets/images/memory-03.jpg" alt="Memory together" loading="lazy"><figcaption class="cap">Together Always</figcaption></figure>
+      <figure class="polaroid"><span class="clip"></span><img src="assets/images/memory-04.jpg" alt="Memory together" loading="lazy"><figcaption class="cap">My Safe Place</figcaption></figure>
+      <figure class="polaroid"><span class="clip"></span><img src="assets/images/memory-05.jpg" alt="Memory together" loading="lazy"><figcaption class="cap">You &amp; Me</figcaption></figure>
+      <figure class="polaroid"><span class="clip"></span><img src="assets/images/memory-06.jpg" alt="Memory together" loading="lazy"><figcaption class="cap">Forever Us</figcaption></figure>
+      <figure class="polaroid"><span class="clip"></span><img src="assets/images/memory-07.jpg" alt="Memory together" loading="lazy"><figcaption class="cap">Little Moments</figcaption></figure>
+      <figure class="polaroid"><span class="clip"></span><img src="assets/images/memory-08.jpg" alt="Memory together" loading="lazy"><figcaption class="cap">Us, Always</figcaption></figure>
+      <figure class="polaroid"><span class="clip"></span><img src="assets/images/memory-09.jpg" alt="Memory together" loading="lazy"><figcaption class="cap">This Feeling</figcaption></figure>
+      <figure class="polaroid"><span class="clip"></span><img src="assets/images/memory-10.jpg" alt="Memory together" loading="lazy"><figcaption class="cap">Home</figcaption></figure>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     04 — FOREVER
+     ============================================================ -->
+<section id="forever">
+  <div class="grain"></div>
+  <div class="section-inner forever-inner">
+    <div class="heart-hero">
+      <span class="eyebrow script">Touch the heart if you want to stay in my life forever…</span>
+      <div class="heart-stage" tabindex="0" role="button" aria-label="Tap the heart to reveal a surprise">
+        <canvas id="heart-canvas"></canvas>
+        <div class="heart-blast" aria-hidden="true"></div>
+      </div>
+      <p class="heart-hint" id="heart-hint">tap the heart ♡</p>
+    </div>
+
+    <div class="heart-reveal" id="heart-reveal" aria-live="polite">
+      <div class="heart-reveal-photo">
+        <img src="assets/images/coastal-couple.jpg" alt="A favourite photo of the two of you" loading="lazy">
+        <span class="spark spark-1"></span>
+        <span class="spark spark-2"></span>
+        <span class="spark spark-3"></span>
+        <span class="spark spark-4"></span>
+        <span class="spark spark-5"></span>
+        <span class="spark spark-6"></span>
+      </div>
+      <p class="heart-reveal-line script">With you, every moment feels like home. ♡<br>And every day feels a little more beautiful.</p>
+    </div>
+
+    <div class="forever-final" id="forever-final">
+      <p class="forever-message">Thank you for being you. For making my ordinary days extra special. For always standing by me. For all the love, laughter and memories… Here's to many more beautiful days together. ♡</p>
+      <p class="forever-signoff">Happy Birthday<br>My Love ♡</p>
+      <p class="forever-name" data-name>My Love</p>
+      <p class="forever-date" data-date>MARCH 15 · 2027</p>
+      <p class="forever-tag">Forever Yours</p>
+    </div>
+  </div>
+</section>
+
+<footer>Made with love, just for you ♡</footer>
+
+<div class="audio-note script">the music has begun ♪</div>
+
+<audio id="bgm" src="assets/audio/bigil-unakaga-bgm.mp3" preload="auto" loop></audio>
+
+<canvas id="confetti-canvas" aria-hidden="true"></canvas>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+<script src="js/three-scenes.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>
