@@ -1,0 +1,642 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Eltora Care — Advanced Multi-Specialty Hospital</title>
+<meta name="description" content="Eltora Care — Care Today. A Healthier Tomorrow. Advanced medical technology, experienced specialists and compassionate patient care.">
+
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='22' fill='%230B2138'/%3E%3Cpath d='M46 24h8v22h22v8H54v22h-8V54H24v-8h22z' fill='%2321C7C0'/%3E%3C/svg%3E">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;0,6..72,600;1,6..72,500&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- ============ PRELOADER ============ -->
+<div id="preloader" aria-hidden="true">
+  <div class="preloader-mark">
+    <svg viewBox="0 0 100 100" width="46" height="46"><path d="M46 24h8v22h22v8H54v22h-8V54H24v-8h22z" fill="currentColor"/></svg>
+  </div>
+</div>
+
+<!-- ============ SKIP LINK ============ -->
+<a class="skip-link" href="#main">Skip to content</a>
+
+<!-- ============ NAVIGATION ============ -->
+<header class="site-header" id="siteHeader">
+  <div class="nav-wrap">
+    <a href="#home" class="brand">
+      <span class="brand-mark" aria-hidden="true">
+        <svg viewBox="0 0 100 100"><path d="M46 24h8v22h22v8H54v22h-8V54H24v-8h22z" fill="currentColor"/></svg>
+      </span>
+      <span class="brand-word">Eltora<em>Care</em></span>
+    </a>
+
+    <nav class="primary-nav" id="primaryNav" aria-label="Primary">
+      <a href="#home">Home</a>
+      <a href="#about">About</a>
+      <a href="#departments">Departments</a>
+      <a href="#doctors">Doctors</a>
+      <a href="#services">Services</a>
+      <a href="#facilities">Facilities</a>
+      <a href="#patient-care">Patient Care</a>
+      <a href="#contact">Contact</a>
+    </nav>
+
+    <div class="nav-actions">
+      <button class="icon-btn" id="searchToggle" aria-label="Search" aria-expanded="false" aria-controls="searchPanel">
+        <svg viewBox="0 0 24 24" fill="none"><circle cx="11" cy="11" r="7" stroke="currentColor" stroke-width="1.6"/><path d="m21 21-4.3-4.3" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg>
+      </button>
+      <a href="#emergency" class="pill pill-emergency">Emergency</a>
+      <a href="#appointment" class="btn btn-primary btn-sm">Book Appointment</a>
+      <button class="icon-btn menu-toggle" id="menuToggle" aria-label="Open menu" aria-expanded="false" aria-controls="primaryNav">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+
+  <div class="search-panel" id="searchPanel">
+    <form class="search-form" role="search" onsubmit="return false;">
+      <svg viewBox="0 0 24 24" fill="none"><circle cx="11" cy="11" r="7" stroke="currentColor" stroke-width="1.6"/><path d="m21 21-4.3-4.3" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg>
+      <input type="text" placeholder="Search doctors, departments, services…" aria-label="Search Eltora Care">
+      <button type="button" class="icon-btn" id="searchClose" aria-label="Close search">
+        <svg viewBox="0 0 24 24" fill="none"><path d="M6 6l12 12M18 6 6 18" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg>
+      </button>
+    </form>
+  </div>
+</header>
+
+<!-- ============ FLOATING EMERGENCY CTA ============ -->
+<a href="#emergency" class="floating-emergency" aria-label="24/7 Emergency, call now">
+  <span class="fe-pulse" aria-hidden="true"></span>
+  <span class="fe-copy">
+    <strong>24/7 EMERGENCY</strong>
+    <em>Call Now</em>
+  </span>
+</a>
+
+<main id="main">
+
+<!-- ============ HERO ============ -->
+<section class="hero" id="home">
+  <div class="hero-media" aria-hidden="true"><img src="assets/images/hero/hospital-exterior.jpg" alt="" loading="eager"></div>
+  <div class="hero-scene" id="heroScene" aria-hidden="true"></div>
+  <div class="hero-vignette" aria-hidden="true"></div>
+  <div class="hero-grid" aria-hidden="true"></div>
+
+  <div class="hero-content">
+    <p class="hero-eyebrow">Multi-Specialty Hospital · Chennai</p>
+    <h1 class="hero-title">
+      <span class="line">Care today.</span>
+      <span class="line line-accent">A healthier tomorrow.</span>
+    </h1>
+    <p class="hero-sub">Advanced medical care, experienced specialists and compassionate support — all in one place.</p>
+
+    <div class="hero-actions">
+      <a href="#appointment" class="btn btn-primary">Book Appointment</a>
+      <a href="#departments" class="btn btn-ghost">View Departments</a>
+    </div>
+
+    <div class="hero-scroll-cue" aria-hidden="true">
+      <span></span>
+      <p>Scroll</p>
+    </div>
+  </div>
+
+  <div class="hero-readout" aria-hidden="true">
+    <div class="readout-card">
+      <div class="readout-label">Live Monitoring</div>
+      <svg viewBox="0 0 220 60" class="ecg-line"><polyline points="0,30 30,30 42,10 54,50 66,18 78,30 220,30" /></svg>
+    </div>
+  </div>
+</section>
+
+<!-- ============ TRUST / STATS ============ -->
+<section class="stats-section" aria-label="Hospital statistics">
+  <div class="stats-head">
+    <h2>Trusted healthcare. Advanced technology.</h2>
+    <p class="demo-flag">Sample figures shown for demonstration purposes.</p>
+  </div>
+  <div class="stats-grid">
+    <div class="stat" data-count="25" data-suffix="+">
+      <span class="stat-num">0</span>
+      <span class="stat-label">Expert Doctors</span>
+    </div>
+    <div class="stat" data-count="50" data-suffix="K+">
+      <span class="stat-num">0</span>
+      <span class="stat-label">Patients Served</span>
+    </div>
+    <div class="stat" data-static="24/7">
+      <span class="stat-num">24/7</span>
+      <span class="stat-label">Emergency Care</span>
+    </div>
+    <div class="stat" data-count="10" data-suffix="+">
+      <span class="stat-num">0</span>
+      <span class="stat-label">Years of Service</span>
+    </div>
+  </div>
+</section>
+
+<!-- ============ ABOUT / DEPARTMENTS GRID ============ -->
+<section class="section departments" id="departments">
+  <div class="section-head">
+    <p class="section-kicker">Our Specialties</p>
+    <h2>Twelve specialties. One standard of care.</h2>
+    <p class="section-lede">Every department at Eltora Care is built around the same principle: precise diagnosis, experienced hands and care that treats the whole person.</p>
+  </div>
+
+  <div class="dept-grid">
+
+    <article class="dept-card">
+      <div class="dept-media photo-panel" data-tone="a" data-icon="stethoscope"><img class="pp-photo" src="assets/images/departments/doctor-patient.jpg" alt="" loading="lazy"><span class="pp-tag">General Medicine</span></div>
+      <div class="dept-body">
+        <h3>General Medicine</h3>
+        <p>Everyday illness, chronic conditions and preventive checkups for the whole family.</p>
+        <a href="#appointment" class="link-arrow">View Department</a>
+      </div>
+    </article>
+
+    <article class="dept-card">
+      <div class="dept-media photo-panel" data-tone="b" data-icon="heart-pulse"><img class="pp-photo" src="assets/images/departments/cardiology.jpg" alt="" loading="lazy"><span class="pp-tag">Cardiology</span></div>
+      <div class="dept-body">
+        <h3>Cardiology</h3>
+        <p>Heart screening, interventional cardiology and long-term cardiac care.</p>
+        <a href="#appointment" class="link-arrow">View Department</a>
+      </div>
+    </article>
+
+    <article class="dept-card">
+      <div class="dept-media photo-panel" data-tone="c" data-icon="baby"><img class="pp-photo" src="assets/images/departments/pediatrics.jpg" alt="" loading="lazy"><span class="pp-tag">Pediatrics</span></div>
+      <div class="dept-body">
+        <h3>Pediatrics</h3>
+        <p>Gentle, specialised care for infants, children and adolescents.</p>
+        <a href="#appointment" class="link-arrow">View Department</a>
+      </div>
+    </article>
+
+    <article class="dept-card">
+      <div class="dept-media photo-panel" data-tone="a" data-icon="bone"><img class="pp-photo" src="assets/images/departments/orthopedics.jpg" alt="" loading="lazy"><span class="pp-tag">Orthopedics</span></div>
+      <div class="dept-body">
+        <h3>Orthopedics</h3>
+        <p>Joint, spine and sports injury treatment with modern surgical technique.</p>
+        <a href="#appointment" class="link-arrow">View Department</a>
+      </div>
+    </article>
+
+    <article class="dept-card">
+      <div class="dept-media photo-panel" data-tone="b" data-icon="flower"><img class="pp-photo" src="assets/images/departments/gynecology.jpg" alt="" loading="lazy"><span class="pp-tag">Gynecology</span></div>
+      <div class="dept-body">
+        <h3>Gynecology</h3>
+        <p>Women's health, prenatal care and maternity services in one setting.</p>
+        <a href="#appointment" class="link-arrow">View Department</a>
+      </div>
+    </article>
+
+    <article class="dept-card">
+      <div class="dept-media photo-panel" data-tone="c" data-icon="sparkles"><img class="pp-photo" src="assets/images/departments/dermatology.jpg" alt="" loading="lazy"><span class="pp-tag">Dermatology</span></div>
+      <div class="dept-body">
+        <h3>Dermatology</h3>
+        <p>Skin, hair and cosmetic dermatology for every age.</p>
+        <a href="#appointment" class="link-arrow">View Department</a>
+      </div>
+    </article>
+
+    <article class="dept-card">
+      <div class="dept-media photo-panel" data-tone="a" data-icon="brain"><img class="pp-photo" src="assets/images/departments/ai-neurology.jpg" alt="" loading="lazy"><span class="pp-tag">Neurology</span></div>
+      <div class="dept-body">
+        <h3>Neurology</h3>
+        <p>Diagnosis and treatment for the brain, spine and nervous system.</p>
+        <a href="#appointment" class="link-arrow">View Department</a>
+      </div>
+    </article>
+
+    <article class="dept-card">
+      <div class="dept-media photo-panel" data-tone="b" data-icon="ear"><img class="pp-photo" src="assets/images/departments/ent.jpg" alt="" loading="lazy"><span class="pp-tag">ENT</span></div>
+      <div class="dept-body">
+        <h3>ENT</h3>
+        <p>Ear, nose and throat care from routine visits to surgery.</p>
+        <a href="#appointment" class="link-arrow">View Department</a>
+      </div>
+    </article>
+
+    <article class="dept-card">
+      <div class="dept-media photo-panel" data-tone="c" data-icon="eye"><img class="pp-photo" src="assets/images/departments/ophthalmology.jpg" alt="" loading="lazy"><span class="pp-tag">Ophthalmology</span></div>
+      <div class="dept-body">
+        <h3>Ophthalmology</h3>
+        <p>Complete eye care, from vision correction to cataract surgery.</p>
+        <a href="#appointment" class="link-arrow">View Department</a>
+      </div>
+    </article>
+
+    <article class="dept-card">
+      <div class="dept-media photo-panel" data-tone="a" data-icon="activity"><img class="pp-photo" src="assets/images/departments/gastroenterology.jpg" alt="" loading="lazy"><span class="pp-tag">Gastroenterology</span></div>
+      <div class="dept-body">
+        <h3>Gastroenterology</h3>
+        <p>Digestive health, endoscopy and liver care under one roof.</p>
+        <a href="#appointment" class="link-arrow">View Department</a>
+      </div>
+    </article>
+
+    <article class="dept-card">
+      <div class="dept-media photo-panel" data-tone="b" data-icon="droplet"><img class="pp-photo" src="assets/images/departments/urology.jpg" alt="" loading="lazy"><span class="pp-tag">Urology</span></div>
+      <div class="dept-body">
+        <h3>Urology</h3>
+        <p>Kidney, bladder and urinary tract diagnosis and treatment.</p>
+        <a href="#appointment" class="link-arrow">View Department</a>
+      </div>
+    </article>
+
+    <article class="dept-card">
+      <div class="dept-media photo-panel" data-tone="c" data-icon="wind"><img class="pp-photo" src="assets/images/departments/pulmonology.jpg" alt="" loading="lazy"><span class="pp-tag">Pulmonology</span></div>
+      <div class="dept-body">
+        <h3>Pulmonology</h3>
+        <p>Lung function testing and care for respiratory conditions.</p>
+        <a href="#appointment" class="link-arrow">View Department</a>
+      </div>
+    </article>
+
+  </div>
+</section>
+
+<!-- ============ CINEMATIC STATEMENT ============ -->
+<section class="cinematic" id="about">
+  <div class="cinematic-media photo-panel" data-tone="cinema"><img class="pp-photo" src="assets/images/about/patient-family.jpg" alt="" loading="lazy"></div>
+  <div class="cinematic-overlay"></div>
+  <div class="cinematic-content">
+    <p class="section-kicker light">Our Approach</p>
+    <h2>Advanced care.<br>A human touch.</h2>
+    <ul class="cinematic-list">
+      <li>Modern medical technology</li>
+      <li>Experienced specialists</li>
+      <li>Patient-first care</li>
+      <li>Personalised treatment</li>
+    </ul>
+    <button class="btn btn-outline-light" id="watchStory" type="button">
+      <span class="play-dot" aria-hidden="true"></span> Watch Our Story
+    </button>
+  </div>
+</section>
+
+<!-- ============ DEPARTMENT SHOWCASE ============ -->
+<section class="section showcase">
+  <div class="section-head">
+    <p class="section-kicker">Inside Eltora Care</p>
+    <h2>Built for the moments that matter most.</h2>
+  </div>
+  <div class="showcase-grid">
+    <article class="showcase-card large">
+      <div class="photo-panel" data-tone="d" data-icon="siren"><img class="pp-photo" src="assets/images/facilities/emergency-trauma.jpg" alt="" loading="lazy"></div>
+      <div class="showcase-copy"><h3>Emergency &amp; Trauma</h3><p>Round-the-clock response for critical, time-sensitive care.</p></div>
+    </article>
+    <article class="showcase-card">
+      <div class="photo-panel" data-tone="a" data-icon="activity"><img class="pp-photo" src="assets/images/facilities/hospital-corridor.jpg" alt="" loading="lazy"></div>
+      <div class="showcase-copy"><h3>ICU &amp; Critical Care</h3><p>Continuous monitoring with a specialist-led care team.</p></div>
+    </article>
+    <article class="showcase-card">
+      <div class="photo-panel" data-tone="b" data-icon="flower"><img class="pp-photo" src="assets/images/facilities/fertility.jpg" alt="" loading="lazy"></div>
+      <div class="showcase-copy"><h3>Maternity &amp; Women's Care</h3><p>From prenatal visits to delivery and postnatal recovery.</p></div>
+    </article>
+    <article class="showcase-card">
+      <div class="photo-panel" data-tone="c" data-icon="bone"><img class="pp-photo" src="assets/images/facilities/orthopedics-spine.jpg" alt="" loading="lazy"></div>
+      <div class="showcase-copy"><h3>Orthopedics &amp; Spine</h3><p>Surgical and non-surgical treatment for mobility and pain.</p></div>
+    </article>
+    <article class="showcase-card large">
+      <div class="photo-panel" data-tone="d" data-icon="scan"><img class="pp-photo" src="assets/images/facilities/ultrasound.jpg" alt="" loading="lazy"></div>
+      <div class="showcase-copy"><h3>Radiology &amp; Imaging</h3><p>High-resolution diagnostic imaging read by specialist radiologists.</p></div>
+    </article>
+    <article class="showcase-card">
+      <div class="photo-panel" data-tone="a" data-icon="flask-conical"><img class="pp-photo" src="assets/images/facilities/laboratory-showcase.jpg" alt="" loading="lazy"></div>
+      <div class="showcase-copy"><h3>Laboratory Services</h3><p>Accurate diagnostics with fast, reliable reporting.</p></div>
+    </article>
+  </div>
+</section>
+
+<!-- ============ DOCTORS ============ -->
+<section class="section doctors" id="doctors">
+  <div class="section-head">
+    <p class="section-kicker">Our Specialists</p>
+    <h2>Meet our expert doctors.</h2>
+    <p class="section-lede">Demo profiles shown for illustration — not real physicians.</p>
+  </div>
+
+  <div class="doctors-grid">
+    <article class="doctor-card">
+      <div class="doctor-photo"><img src="assets/images/doctors/doctor-01.jpg" alt="Portrait of Dr. Arjun Mehta" loading="lazy" width="480" height="480"></div>
+      <div class="doctor-body">
+        <h3>Dr. Arjun Mehta</h3>
+        <p class="doctor-role">Cardiologist · MBBS, MD</p>
+        <div class="doctor-actions">
+          <a href="#" class="link-arrow">View Profile</a>
+          <a href="#appointment" class="btn btn-sm btn-outline">Book</a>
+        </div>
+      </div>
+    </article>
+
+    <article class="doctor-card">
+      <div class="doctor-photo"><img src="assets/images/doctors/doctor-02.jpg" alt="Portrait of Dr. Priya Sharma" loading="lazy" width="480" height="480"></div>
+      <div class="doctor-body">
+        <h3>Dr. Priya Sharma</h3>
+        <p class="doctor-role">Gynecologist · MBBS, MD</p>
+        <div class="doctor-actions">
+          <a href="#" class="link-arrow">View Profile</a>
+          <a href="#appointment" class="btn btn-sm btn-outline">Book</a>
+        </div>
+      </div>
+    </article>
+
+    <article class="doctor-card">
+      <div class="doctor-photo"><img src="assets/images/doctors/doctor-03.jpg" alt="Portrait of Dr. Karthik Raj" loading="lazy" width="480" height="480"></div>
+      <div class="doctor-body">
+        <h3>Dr. Karthik Raj</h3>
+        <p class="doctor-role">Orthopedic Surgeon · MBBS, MS</p>
+        <div class="doctor-actions">
+          <a href="#" class="link-arrow">View Profile</a>
+          <a href="#appointment" class="btn btn-sm btn-outline">Book</a>
+        </div>
+      </div>
+    </article>
+
+    <article class="doctor-card">
+      <div class="doctor-photo"><img src="assets/images/doctors/doctor-04.jpg" alt="Portrait of Dr. Nisha Verma" loading="lazy" width="480" height="480"></div>
+      <div class="doctor-body">
+        <h3>Dr. Nisha Verma</h3>
+        <p class="doctor-role">Pediatrician · MBBS, MD</p>
+        <div class="doctor-actions">
+          <a href="#" class="link-arrow">View Profile</a>
+          <a href="#appointment" class="btn btn-sm btn-outline">Book</a>
+        </div>
+      </div>
+    </article>
+  </div>
+</section>
+
+<!-- ============ SERVICES ============ -->
+<section class="section services" id="services">
+  <div class="section-head">
+    <p class="section-kicker">What We Offer</p>
+    <h2>Care, coordinated end to end.</h2>
+  </div>
+  <div class="services-grid">
+    <div class="service-item"><span class="s-icon" data-icon="siren"></span><h3>Emergency Care</h3></div>
+    <div class="service-item"><span class="s-icon" data-icon="scan"></span><h3>Diagnostics</h3></div>
+    <div class="service-item"><span class="s-icon" data-icon="clipboard-check"></span><h3>Health Checkups</h3></div>
+    <div class="service-item"><span class="s-icon" data-icon="scissors"></span><h3>Surgery</h3></div>
+    <div class="service-item"><span class="s-icon" data-icon="pill"></span><h3>Pharmacy</h3></div>
+    <div class="service-item"><span class="s-icon" data-icon="flask-conical"></span><h3>Laboratory</h3></div>
+    <div class="service-item"><span class="s-icon" data-icon="radiation"></span><h3>Radiology</h3></div>
+    <div class="service-item"><span class="s-icon" data-icon="truck"></span><h3>Ambulance</h3></div>
+    <div class="service-item"><span class="s-icon" data-icon="home"></span><h3>Home Healthcare</h3></div>
+    <div class="service-item"><span class="s-icon" data-icon="shield-check"></span><h3>Preventive Care</h3></div>
+  </div>
+</section>
+
+<!-- ============ FACILITIES ============ -->
+<section class="section facilities" id="facilities">
+  <div class="section-head">
+    <p class="section-kicker">Technology</p>
+    <h2>Technology that supports better care.</h2>
+  </div>
+  <div class="facilities-strip">
+    <div class="facility-slide photo-panel" data-tone="a" data-icon="scan-line"><img class="pp-photo" src="assets/images/facilities/mri.jpg" alt="" loading="lazy"><span class="pp-tag">MRI</span></div>
+    <div class="facility-slide photo-panel" data-tone="b" data-icon="circle-dot"><img class="pp-photo" src="assets/images/facilities/ct-scan.jpg" alt="" loading="lazy"><span class="pp-tag">CT Scan</span></div>
+    <div class="facility-slide photo-panel" data-tone="c" data-icon="radiation"><img class="pp-photo" src="assets/images/facilities/radiology.jpg" alt="" loading="lazy"><span class="pp-tag">Digital X-Ray</span></div>
+    <div class="facility-slide photo-panel" data-tone="d" data-icon="scissors"><img class="pp-photo" src="assets/images/facilities/surgery.jpg" alt="" loading="lazy"><span class="pp-tag">Operation Theatre</span></div>
+    <div class="facility-slide photo-panel" data-tone="a" data-icon="activity"><img class="pp-photo" src="assets/images/facilities/icu.jpg" alt="" loading="lazy"><span class="pp-tag">ICU</span></div>
+    <div class="facility-slide photo-panel" data-tone="b" data-icon="flask-conical"><img class="pp-photo" src="assets/images/facilities/laboratory.jpg" alt="" loading="lazy"><span class="pp-tag">Laboratory</span></div>
+    <div class="facility-slide photo-panel" data-tone="c" data-icon="pill"><img class="pp-photo" src="assets/images/facilities/pharmacy.jpg" alt="" loading="lazy"><span class="pp-tag">Pharmacy</span></div>
+    <div class="facility-slide photo-panel" data-tone="d" data-icon="siren"><img class="pp-photo" src="assets/images/facilities/emergency-dept.jpg" alt="" loading="lazy"><span class="pp-tag">Emergency Dept.</span></div>
+  </div>
+</section>
+
+<!-- ============ 3D TECHNOLOGY SECTION ============ -->
+<section class="tech-3d">
+  <div class="tech-3d-canvas" id="techScene" aria-hidden="true"></div>
+  <div class="tech-3d-content">
+    <p class="section-kicker light">Inside Eltora Care</p>
+    <h2>Precision, visualised.</h2>
+    <p>From cardiac rhythm to cellular structure, our diagnostic technology gives specialists a clearer picture — and gives you clearer answers.</p>
+  </div>
+</section>
+
+<!-- ============ APPOINTMENT ============ -->
+<section class="section appointment" id="appointment">
+  <div class="appointment-grid">
+    <div class="appointment-intro">
+      <p class="section-kicker">Book a Visit</p>
+      <h2>Let's get you seen.</h2>
+      <p class="section-lede">Fill in a few details and our care team will confirm your slot. This is a frontend demo — no appointment is actually submitted.</p>
+      <div class="appointment-note">
+        <svg viewBox="0 0 24 24" fill="none"><path d="M12 9v4m0 4h.01M10.3 3.9 2.5 17.5a1.5 1.5 0 0 0 1.3 2.3h16.4a1.5 1.5 0 0 0 1.3-2.3L13.7 3.9a1.5 1.5 0 0 0-2.6 0Z" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/></svg>
+        <span>Demo form — submissions are not processed.</span>
+      </div>
+    </div>
+
+    <form class="appointment-form" id="appointmentForm" novalidate>
+      <div class="form-row">
+        <label>Full Name<input type="text" name="name" required placeholder="Your full name"></label>
+        <label>Phone Number<input type="tel" name="phone" required placeholder="+91 00000 00000"></label>
+      </div>
+      <div class="form-row">
+        <label>Email<input type="email" name="email" required placeholder="you@example.com"></label>
+        <label>Department
+          <select name="department" required>
+            <option value="" disabled selected>Select department</option>
+            <option>General Medicine</option>
+            <option>Cardiology</option>
+            <option>Pediatrics</option>
+            <option>Orthopedics</option>
+            <option>Gynecology</option>
+            <option>Dermatology</option>
+            <option>Neurology</option>
+            <option>ENT</option>
+            <option>Ophthalmology</option>
+            <option>Gastroenterology</option>
+            <option>Urology</option>
+            <option>Pulmonology</option>
+          </select>
+        </label>
+      </div>
+      <div class="form-row">
+        <label>Doctor
+          <select name="doctor">
+            <option value="" selected>No preference</option>
+            <option>Dr. Arjun Mehta</option>
+            <option>Dr. Priya Sharma</option>
+            <option>Dr. Karthik Raj</option>
+            <option>Dr. Nisha Verma</option>
+          </select>
+        </label>
+        <label>Preferred Date<input type="date" name="date" required></label>
+      </div>
+      <div class="form-row">
+        <label>Preferred Time<input type="time" name="time" required></label>
+        <label>Message<input type="text" name="message" placeholder="Optional notes"></label>
+      </div>
+      <button type="submit" class="btn btn-primary btn-block">Book Appointment</button>
+      <p class="form-status" id="formStatus" role="status" aria-live="polite"></p>
+    </form>
+  </div>
+</section>
+
+<!-- ============ EMERGENCY ============ -->
+<section class="emergency" id="emergency">
+  <div class="photo-panel emergency-media" data-tone="d" data-icon="siren"></div>
+  <div class="emergency-overlay"></div>
+  <div class="emergency-content">
+    <h2>Need immediate medical assistance?</h2>
+    <p>24/7 emergency support, staffed and ready.</p>
+    <div class="emergency-actions">
+      <a href="tel:+91XXXXXXXXXX" class="btn btn-primary-light">Call Emergency</a>
+      <a href="#contact" class="btn btn-outline-light">Get Directions</a>
+    </div>
+  </div>
+</section>
+
+<!-- ============ PATIENT EXPERIENCE ============ -->
+<section class="section patient-care" id="patient-care">
+  <div class="section-head">
+    <p class="section-kicker">Patient Experience</p>
+    <h2>Your comfort matters.</h2>
+  </div>
+  <div class="pc-grid">
+    <div class="pc-item"><span class="s-icon" data-icon="bed"></span><h3>Comfortable Rooms</h3><p>Private and semi-private rooms designed for rest.</p></div>
+    <div class="pc-item"><span class="s-icon" data-icon="hand-heart"></span><h3>Patient Support</h3><p>A dedicated coordinator for every admission.</p></div>
+    <div class="pc-item"><span class="s-icon" data-icon="file-digit"></span><h3>Digital Records</h3><p>Secure access to your reports and history online.</p></div>
+    <div class="pc-item"><span class="s-icon" data-icon="pill"></span><h3>Pharmacy</h3><p>In-house pharmacy with round-the-clock service.</p></div>
+    <div class="pc-item"><span class="s-icon" data-icon="file-check-2"></span><h3>Insurance Assistance</h3><p>Cashless claims support with major insurers.</p></div>
+    <div class="pc-item"><span class="s-icon" data-icon="headset"></span><h3>24/7 Support</h3><p>A care line that's always reachable.</p></div>
+  </div>
+</section>
+
+<!-- ============ TESTIMONIALS ============ -->
+<section class="section testimonials">
+  <div class="section-head">
+    <p class="section-kicker">Patient Stories</p>
+    <h2>What patients say.</h2>
+    <p class="section-lede demo-flag">Sample testimonials for demonstration purposes.</p>
+  </div>
+
+  <div class="testi-track" id="testiTrack">
+    <article class="testi-card">
+      <div class="testi-rating" aria-label="5 out of 5 stars">★★★★★</div>
+      <p>“The cardiology team explained every step clearly and made a stressful week feel manageable.”</p>
+      <div class="testi-person">
+        <img src="https://i.pravatar.cc/80?img=12" alt="" loading="lazy" width="44" height="44">
+        <div><strong>Ramesh Iyer</strong><span>Cardiology patient</span></div>
+      </div>
+    </article>
+    <article class="testi-card">
+      <div class="testi-rating" aria-label="5 out of 5 stars">★★★★★</div>
+      <p>“From admission to discharge, the maternity ward staff were attentive and genuinely kind.”</p>
+      <div class="testi-person">
+        <img src="https://i.pravatar.cc/80?img=25" alt="" loading="lazy" width="44" height="44">
+        <div><strong>Sandhya Rao</strong><span>Maternity patient</span></div>
+      </div>
+    </article>
+    <article class="testi-card">
+      <div class="testi-rating" aria-label="5 out of 5 stars">★★★★★</div>
+      <p>“Quick diagnosis, short wait times, and a follow-up call two days later. That's rare.”</p>
+      <div class="testi-person">
+        <img src="https://i.pravatar.cc/80?img=68" alt="" loading="lazy" width="44" height="44">
+        <div><strong>Vikram Nair</strong><span>Orthopedics patient</span></div>
+      </div>
+    </article>
+    <article class="testi-card">
+      <div class="testi-rating" aria-label="5 out of 5 stars">★★★★★</div>
+      <p>“Our son's pediatrician remembered details from our last visit without checking notes. That's real care.”</p>
+      <div class="testi-person">
+        <img src="https://i.pravatar.cc/80?img=5" alt="" loading="lazy" width="44" height="44">
+        <div><strong>Anitha Krishnan</strong><span>Pediatrics parent</span></div>
+      </div>
+    </article>
+  </div>
+  <div class="testi-dots" id="testiDots"></div>
+</section>
+
+<!-- ============ HEALTH INSIGHTS ============ -->
+<section class="section insights">
+  <div class="section-head">
+    <p class="section-kicker">Health Library</p>
+    <h2>Guidance worth reading.</h2>
+  </div>
+  <div class="insights-grid">
+    <article class="insight-card"><div class="photo-panel" data-tone="a" data-icon="heart-pulse"><img class="pp-photo" src="assets/images/insights/heart-health.jpg" alt="" loading="lazy"></div><h3>Heart Health</h3><p>Everyday habits that protect your cardiovascular system.</p></article>
+    <article class="insight-card"><div class="photo-panel" data-tone="b" data-icon="activity"><img class="pp-photo" src="assets/images/insights/healthy-lifestyle.jpg" alt="" loading="lazy"></div><h3>Healthy Lifestyle</h3><p>Small, sustainable changes that compound over time.</p></article>
+    <article class="insight-card"><div class="photo-panel" data-tone="c" data-icon="baby"><img class="pp-photo" src="assets/images/insights/childrens-health.jpg" alt="" loading="lazy"></div><h3>Children's Health</h3><p>Growth milestones and when to see a pediatrician.</p></article>
+    <article class="insight-card"><div class="photo-panel" data-tone="d" data-icon="bone"><img class="pp-photo" src="assets/images/insights/bone-joint-care.jpg" alt="" loading="lazy"></div><h3>Bone &amp; Joint Care</h3><p>Keeping mobile and pain-free at every age.</p></article>
+    <article class="insight-card"><div class="photo-panel" data-tone="a" data-icon="flower"><img class="pp-photo" src="assets/images/insights/womens-health.jpg" alt="" loading="lazy"></div><h3>Women's Health</h3><p>Screenings and care through every life stage.</p></article>
+    <article class="insight-card"><div class="photo-panel" data-tone="b" data-icon="clipboard-check"><img class="pp-photo" src="assets/images/insights/preventive-checkups.jpg" alt="" loading="lazy"></div><h3>Preventive Checkups</h3><p>Why routine screening catches more than symptoms.</p></article>
+  </div>
+</section>
+
+<!-- ============ CONTACT ============ -->
+<section class="section contact" id="contact">
+  <div class="contact-grid">
+    <div class="contact-info">
+      <p class="section-kicker">Visit Us</p>
+      <h2>Eltora Care</h2>
+      <p class="section-lede">Advanced Multi-Specialty Hospital</p>
+
+      <ul class="contact-list">
+        <li><span class="s-icon" data-icon="map-pin"></span><span>Chennai, Tamil Nadu, India <em>(demo address)</em></span></li>
+        <li><span class="s-icon" data-icon="phone"></span><span>+91 XXXXX XXXXX <em>(demo number)</em></span></li>
+        <li><span class="s-icon" data-icon="mail"></span><span>care@eltoracare.com <em>(demo email)</em></span></li>
+        <li><span class="s-icon" data-icon="clock"></span><span>24/7 Emergency · General Consultation: demo hours</span></li>
+      </ul>
+    </div>
+    <div class="contact-map" role="img" aria-label="Map placeholder for Eltora Care location">
+      <div class="map-grid" aria-hidden="true"></div>
+      <span class="map-pin-icon" aria-hidden="true"></span>
+      <p>Map integration area</p>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<!-- ============ FOOTER ============ -->
+<footer class="site-footer">
+  <div class="footer-top">
+    <div class="footer-brand">
+      <span class="brand-word"><span aria-hidden="true">Eltora<em>Care</em></span></span>
+      <p>Care Today.<br>A Healthier Tomorrow.</p>
+    </div>
+
+    <div class="footer-col">
+      <h4>Quick Links</h4>
+      <a href="#departments">Departments</a>
+      <a href="#doctors">Doctors</a>
+      <a href="#services">Services</a>
+      <a href="#facilities">Facilities</a>
+      <a href="#appointment">Appointments</a>
+      <a href="#contact">Contact</a>
+    </div>
+
+    <div class="footer-col">
+      <h4>Act Now</h4>
+      <a href="#emergency">Emergency</a>
+      <a href="#appointment">Book Appointment</a>
+    </div>
+
+    <div class="footer-col">
+      <h4>Legal</h4>
+      <a href="#">Privacy</a>
+      <a href="#">Terms</a>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <p>© <span id="year"></span> Eltora Care. Demo website — all content is for illustration only.</p>
+  </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/lucide@0.451.0/dist/umd/lucide.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/three@0.128.0/build/three.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
