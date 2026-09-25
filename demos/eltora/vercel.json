@@ -1,0 +1,27 @@
+{
+  "outputDirectory": "public",
+  "cleanUrls": true,
+  "trailingSlash": false,
+  "redirects": [
+    {
+      "source": "/services",
+      "destination": "/#services",
+      "permanent": false
+    },
+    {
+      "source": "/work",
+      "destination": "/#work",
+      "permanent": false
+    },
+    {
+      "source": "/about",
+      "destination": "/#about",
+      "permanent": false
+    },
+    {
+      "source": "/contact",
+      "destination": "/#contact",
+      "permanent": false
+    }
+  ]
+}
