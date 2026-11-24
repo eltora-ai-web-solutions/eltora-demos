@@ -1,0 +1,635 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>ELTORA – AI &amp; Web Solutions</title>
+<meta name="description" content="ELTORA builds modern websites, AI solutions and business automation that turn ideas into real business growth.">
+<meta name="theme-color" content="#020f10">
+<link rel="icon" href="/favicon.png">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,400;0,500;0,600;0,700;0,800;1,800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/assets/css/style.css">
+<link rel="stylesheet" href="/assets/css/services-plus.css">
+<link rel="stylesheet" href="/assets/css/fx.css">
+<link rel="stylesheet" href="/assets/css/home.css">
+<link rel="stylesheet" href="/assets/css/hummingbird.css">
+<link rel="stylesheet" href="/assets/css/work.css">
+<link rel="stylesheet" href="/assets/css/about.css">
+<link rel="stylesheet" href="/assets/css/contact.css">
+<link rel="stylesheet" href="/assets/css/onepage.css">
+</head>
+<body data-theme="dark" class="hm-page op-page">
+
+<svg width="0" height="0" style="position:absolute" aria-hidden="true"><defs><linearGradient id="lg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#e9ff4a"/><stop offset="1" stop-color="#b6e600"/></linearGradient></defs><symbol id="i-layers" viewBox="0 0 24 24"><path d="M12.83 2.18a2 2 0 0 0-1.66 0L2.6 6.08a1 1 0 0 0 0 1.83l8.58 3.91a2 2 0 0 0 1.66 0l8.58-3.9a1 1 0 0 0 0-1.83z" />
+  <path d="M2 12a1 1 0 0 0 .58.91l8.6 3.91a2 2 0 0 0 1.65 0l8.58-3.9A1 1 0 0 0 22 12" />
+  <path d="M2 17a1 1 0 0 0 .58.91l8.6 3.91a2 2 0 0 0 1.65 0l8.58-3.9A1 1 0 0 0 22 17" /></symbol><symbol id="i-users" viewBox="0 0 24 24"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2" />
+  <path d="M16 3.128a4 4 0 0 1 0 7.744" />
+  <path d="M22 21v-2a4 4 0 0 0-3-3.87" />
+  <circle cx="9" cy="7" r="4" /></symbol><symbol id="i-zap" viewBox="0 0 24 24"><path d="M15.914 4a1.5 1.5 0 00-2.474-1.561l-9 9A1.5 1.5 0 005.5 14h4.002a.5.5 0 01.471.666L8.086 20a1.5 1.5 0 002.475 1.56l9-9A1.5 1.5 0 0018.5 10h-3.997a.5.5 0 01-.472-.667z" /></symbol><symbol id="i-infinity" viewBox="0 0 24 24"><path d="M6 16c5 0 7-8 12-8a4 4 0 0 1 0 8c-5 0-7-8-12-8a4 4 0 1 0 0 8" /></symbol><symbol id="i-cpu" viewBox="0 0 24 24"><path d="M12 20v2" />
+  <path d="M12 2v2" />
+  <path d="M17 20v2" />
+  <path d="M17 2v2" />
+  <path d="M2 12h2" />
+  <path d="M2 17h2" />
+  <path d="M2 7h2" />
+  <path d="M20 12h2" />
+  <path d="M20 17h2" />
+  <path d="M20 7h2" />
+  <path d="M7 20v2" />
+  <path d="M7 2v2" />
+  <rect x="4" y="4" width="16" height="16" rx="2" />
+  <rect x="8" y="8" width="8" height="8" rx="1" /></symbol><symbol id="i-globe" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10" />
+  <path d="M12 2a14.5 14.5 0 0 0 0 20 14.5 14.5 0 0 0 0-20" />
+  <path d="M2 12h20" /></symbol><symbol id="i-workflow" viewBox="0 0 24 24"><rect width="8" height="8" x="3" y="3" rx="2" />
+  <path d="M7 11v4a2 2 0 0 0 2 2h4" />
+  <rect width="8" height="8" x="13" y="13" rx="2" /></symbol><symbol id="i-chart-no-axes-column" viewBox="0 0 24 24"><path d="M5 21v-6" />
+  <path d="M12 21V3" />
+  <path d="M19 21V9" /></symbol><symbol id="i-target" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10" />
+  <circle cx="12" cy="12" r="6" />
+  <circle cx="12" cy="12" r="2" /></symbol><symbol id="i-eye" viewBox="0 0 24 24"><path d="M2.062 12.348a1 1 0 0 1 0-.696 10.75 10.75 0 0 1 19.876 0 1 1 0 0 1 0 .696 10.75 10.75 0 0 1-19.876 0" />
+  <circle cx="12" cy="12" r="3" /></symbol><symbol id="i-gem" viewBox="0 0 24 24"><path d="M10.5 3 8 9l4 13 4-13-2.5-6" />
+  <path d="M17 3a2 2 0 0 1 1.6.8l3 4a2 2 0 0 1 .013 2.382l-7.99 10.986a2 2 0 0 1-3.247 0l-7.99-10.986A2 2 0 0 1 2.4 7.8l2.998-3.997A2 2 0 0 1 7 3z" />
+  <path d="M2 9h20" /></symbol><symbol id="i-user" viewBox="0 0 24 24"><path d="M19 21v-2a4 4 0 0 0-4-4H9a4 4 0 0 0-4 4v2" />
+  <circle cx="12" cy="7" r="4" /></symbol><symbol id="i-mail" viewBox="0 0 24 24"><path d="m22 7-8.991 5.727a2 2 0 0 1-2.009 0L2 7" />
+  <rect x="2" y="4" width="20" height="16" rx="2" /></symbol><symbol id="i-phone" viewBox="0 0 24 24"><path d="M13.832 16.568a1 1 0 0 0 1.213-.303l.355-.465A2 2 0 0 1 17 15h3a2 2 0 0 1 2 2v3a2 2 0 0 1-2 2A18 18 0 0 1 2 4a2 2 0 0 1 2-2h3a2 2 0 0 1 2 2v3a2 2 0 0 1-.8 1.6l-.468.351a1 1 0 0 0-.292 1.233 14 14 0 0 0 6.392 6.384" /></symbol><symbol id="i-layout-grid" viewBox="0 0 24 24"><rect width="7" height="7" x="3" y="3" rx="1" />
+  <rect width="7" height="7" x="14" y="3" rx="1" />
+  <rect width="7" height="7" x="14" y="14" rx="1" />
+  <rect width="7" height="7" x="3" y="14" rx="1" /></symbol><symbol id="i-file-text" viewBox="0 0 24 24"><path d="M6 22a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h8a2.4 2.4 0 0 1 1.704.706l3.588 3.588A2.4 2.4 0 0 1 20 8v12a2 2 0 0 1-2 2z" />
+  <path d="M14 2v5a1 1 0 0 0 1 1h5" />
+  <path d="M10 9H8" />
+  <path d="M16 13H8" />
+  <path d="M16 17H8" /></symbol><symbol id="i-map-pin" viewBox="0 0 24 24"><path d="M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 14.993 4 10a8 8 0 0 1 16 0" />
+  <circle cx="12" cy="10" r="3" /></symbol><symbol id="i-arrow-up-right" viewBox="0 0 24 24"><path d="M7 7h10v10" />
+  <path d="M7 17 17 7" /></symbol><symbol id="i-arrow-right" viewBox="0 0 24 24"><path d="M5 12h14" />
+  <path d="m12 5 7 7-7 7" /></symbol><symbol id="i-play" viewBox="0 0 24 24"><path d="M5 5a2 2 0 0 1 3.008-1.728l11.997 6.998a2 2 0 0 1 .003 3.458l-12 7A2 2 0 0 1 5 19z" /></symbol><symbol id="i-chevron-down" viewBox="0 0 24 24"><path d="m6 9 6 6 6-6" /></symbol><symbol id="i-chevron-left" viewBox="0 0 24 24"><path d="m15 18-6-6 6-6" /></symbol><symbol id="i-chevron-right" viewBox="0 0 24 24"><path d="m9 18 6-6-6-6" /></symbol><symbol id="i-star" viewBox="0 0 24 24"><path d="M11.525 2.295a.53.53 0 0 1 .95 0l2.31 4.679a2.123 2.123 0 0 0 1.595 1.16l5.166.756a.53.53 0 0 1 .294.904l-3.736 3.638a2.123 2.123 0 0 0-.611 1.878l.882 5.14a.53.53 0 0 1-.771.56l-4.618-2.428a2.122 2.122 0 0 0-1.973 0L6.396 21.01a.53.53 0 0 1-.77-.56l.881-5.139a2.122 2.122 0 0 0-.611-1.879L2.16 9.795a.53.53 0 0 1 .294-.906l5.165-.755a2.122 2.122 0 0 0 1.597-1.16z" /></symbol><symbol id="i-external-link" viewBox="0 0 24 24"><path d="M15 3h6v6" />
+  <path d="M10 14 21 3" />
+  <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6" /></symbol><symbol id="i-instagram" viewBox="0 0 24 24"><path fill="currentColor" stroke="none" d="M7.0301.084c-1.2768.0602-2.1487.264-2.911.5634-.7888.3075-1.4575.72-2.1228 1.3877-.6652.6677-1.075 1.3368-1.3802 2.127-.2954.7638-.4956 1.6365-.552 2.914-.0564 1.2775-.0689 1.6882-.0626 4.947.0062 3.2586.0206 3.6671.0825 4.9473.061 1.2765.264 2.1482.5635 2.9107.308.7889.72 1.4573 1.388 2.1228.6679.6655 1.3365 1.0743 2.1285 1.38.7632.295 1.6361.4961 2.9134.552 1.2773.056 1.6884.069 4.9462.0627 3.2578-.0062 3.668-.0207 4.9478-.0814 1.28-.0607 2.147-.2652 2.9098-.5633.7889-.3086 1.4578-.72 2.1228-1.3881.665-.6682 1.0745-1.3378 1.3795-2.1284.2957-.7632.4966-1.636.552-2.9124.056-1.2809.0692-1.6898.063-4.948-.0063-3.2583-.021-3.6668-.0817-4.9465-.0607-1.2797-.264-2.1487-.5633-2.9117-.3084-.7889-.72-1.4568-1.3876-2.1228C21.2982 1.33 20.628.9208 19.8378.6165 19.074.321 18.2017.1197 16.9244.0645 15.6471.0093 15.236-.005 11.977.0014 8.718.0076 8.31.0215 7.0301.0839m.1402 21.6932c-1.17-.0509-1.8053-.2453-2.2287-.408-.5606-.216-.96-.4771-1.3819-.895-.422-.4178-.6811-.8186-.9-1.378-.1644-.4234-.3624-1.058-.4171-2.228-.0595-1.2645-.072-1.6442-.079-4.848-.007-3.2037.0053-3.583.0607-4.848.05-1.169.2456-1.805.408-2.2282.216-.5613.4762-.96.895-1.3816.4188-.4217.8184-.6814 1.3783-.9003.423-.1651 1.0575-.3614 2.227-.4171 1.2655-.06 1.6447-.072 4.848-.079 3.2033-.007 3.5835.005 4.8495.0608 1.169.0508 1.8053.2445 2.228.408.5608.216.96.4754 1.3816.895.4217.4194.6816.8176.9005 1.3787.1653.4217.3617 1.056.4169 2.2263.0602 1.2655.0739 1.645.0796 4.848.0058 3.203-.0055 3.5834-.061 4.848-.051 1.17-.245 1.8055-.408 2.2294-.216.5604-.4763.96-.8954 1.3814-.419.4215-.8181.6811-1.3783.9-.4224.1649-1.0577.3617-2.2262.4174-1.2656.0595-1.6448.072-4.8493.079-3.2045.007-3.5825-.006-4.848-.0608M16.953 5.5864A1.44 1.44 0 1 0 18.39 4.144a1.44 1.44 0 0 0-1.437 1.4424M5.8385 12.012c.0067 3.4032 2.7706 6.1557 6.173 6.1493 3.4026-.0065 6.157-2.7701 6.1506-6.1733-.0065-3.4032-2.771-6.1565-6.174-6.1498-3.403.0067-6.156 2.771-6.1496 6.1738M8 12.0077a4 4 0 1 1 4.008 3.9921A3.9996 3.9996 0 0 1 8 12.0077"/></symbol><symbol id="i-youtube" viewBox="0 0 24 24"><path fill="currentColor" stroke="none" d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></symbol><symbol id="i-github" viewBox="0 0 24 24"><path fill="currentColor" stroke="none" d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></symbol><symbol id="i-whatsapp" viewBox="0 0 24 24"><path fill="currentColor" stroke="none" d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></symbol><symbol id="i-linkedin" viewBox="0 0 24 24"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-4 0v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></symbol><symbol id="mark" viewBox="0 0 48 48"><g fill="url(#lg)"><polygon points="16,9 39,9 36,18 13,18"/><polygon points="12,21 33,21 30,29 9,29"/><polygon points="8,32 36,32 33,40 5,40"/></g></symbol><symbol id="i-monitor" viewBox="0 0 24 24"><rect width="20" height="14" x="2" y="3" rx="2" />
+  <line x1="8" x2="16" y1="21" y2="21" />
+  <line x1="12" x2="12" y1="17" y2="21" /></symbol><symbol id="i-check" viewBox="0 0 24 24"><path d="M20 6 9 17l-5-5" /></symbol><symbol id="i-code" viewBox="0 0 24 24"><path d="m9 8-3.5 3.5L9 15M15 8l3.5 3.5L15 15"/></symbol><symbol id="i-rocket" viewBox="0 0 24 24"><path d="M12 15v5s3.03-.55 4-2c1.08-1.62 0-5 0-5" />
+  <path d="M4.5 16.5c-1.5 1.26-2 5-2 5s3.74-.5 5-2c.71-.84.7-2.13-.09-2.91a2.18 2.18 0 0 0-2.91-.09" />
+  <path d="M9 12a22 22 0 0 1 2-3.95A12.88 12.88 0 0 1 22 2c0 2.72-.78 7.5-6 11a22.4 22.4 0 0 1-4 2z" />
+  <path d="M9 12H4s.55-3.03 2-4c1.62-1.08 5 .05 5 .05" /></symbol><symbol id="i-headphones" viewBox="0 0 24 24"><path d="M3 14h3a2 2 0 0 1 2 2v3a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-7a9 9 0 0 1 18 0v7a2 2 0 0 1-2 2h-1a2 2 0 0 1-2-2v-3a2 2 0 0 1 2-2h3" /></symbol><symbol id="i-cart" viewBox="0 0 24 24"><circle cx="8" cy="21" r="1"/><circle cx="19" cy="21" r="1"/><path d="M2.05 2.05h2l2.66 12.42a2 2 0 0 0 2 1.58h9.78a2 2 0 0 0 1.95-1.57l1.65-7.43H5.12"/></symbol><symbol id="i-palette" viewBox="0 0 24 24"><circle cx="13.5" cy="6.5" r=".5"/><circle cx="17.5" cy="10.5" r=".5"/><circle cx="6.5" cy="12.5" r=".5"/><circle cx="8.5" cy="7.5" r=".5"/><path d="M12 22a1 1 0 0 1 0-20 10 9 0 0 1 10 9 5 5 0 0 1-5 5h-2.25a1.75 1.75 0 0 0-1.4 2.8l.3.4a1.75 1.75 0 0 1-1.4 2.8z"/></symbol><symbol id="i-cube" viewBox="0 0 24 24"><path d="M21 8 12 3 3 8v8l9 5 9-5z"/><path d="m3 8 9 5 9-5M12 13v8"/></symbol><symbol id="i-mobile" viewBox="0 0 24 24"><rect width="14" height="20" x="5" y="2" rx="2"/><path d="M12 18h.01"/></symbol><symbol id="i-settings" viewBox="0 0 24 24"><path d="M12.22 2h-.44a2 2 0 0 0-2 2v.18a2 2 0 0 1-1 1.73l-.43.25a2 2 0 0 1-2 0l-.15-.08a2 2 0 0 0-2.73.73l-.22.38a2 2 0 0 0 .73 2.73l.15.1a2 2 0 0 1 1 1.72v.51a2 2 0 0 1-1 1.74l-.15.09a2 2 0 0 0-.73 2.73l.22.38a2 2 0 0 0 2.73.73l.15-.08a2 2 0 0 1 2 0l.43.25a2 2 0 0 1 1 1.73V20a2 2 0 0 0 2 2h.44a2 2 0 0 0 2-2v-.18a2 2 0 0 1 1-1.73l.43-.25a2 2 0 0 1 2 0l.15.08a2 2 0 0 0 2.73-.73l.22-.39a2 2 0 0 0-.73-2.73l-.15-.08a2 2 0 0 1-1-1.74v-.5a2 2 0 0 1 1-1.74l.15-.09a2 2 0 0 0 .73-2.73l-.22-.38a2 2 0 0 0-2.73-.73l-.15.08a2 2 0 0 1-2 0l-.43-.25a2 2 0 0 1-1-1.73V4a2 2 0 0 0-2-2z"/><circle cx="12" cy="12" r="3"/></symbol><symbol id="i-shield" viewBox="0 0 24 24"><path d="M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1z"/></symbol></svg>
+
+
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+<symbol id="w-utensils" viewBox="0 0 24 24"><path d="M3 2v7c0 1.1.9 2 2 2h4a2 2 0 0 0 2-2V2"/><path d="M7 2v20"/><path d="M21 15V2a5 5 0 0 0-5 5v6c0 1.1.9 2 2 2h3Zm0 0v7"/></symbol>
+<symbol id="w-crown" viewBox="0 0 24 24"><path d="M11.56 3.27a.5.5 0 0 1 .88 0l2.95 5.6a1 1 0 0 0 1.52.29l4.27-3.66a.5.5 0 0 1 .8.52l-2.83 10.25a1 1 0 0 1-.96.73H5.81a1 1 0 0 1-.96-.73L2.02 6.02a.5.5 0 0 1 .8-.52l4.27 3.66a1 1 0 0 0 1.52-.29z"/><path d="M5 21h14"/></symbol>
+<symbol id="w-dumbbell" viewBox="0 0 24 24"><path d="M14.4 14.4 9.6 9.6"/><path d="M18.66 21.51a2 2 0 1 1-2.83-2.83l-1.77 1.77a2 2 0 1 1-2.83-2.83l6.37-6.37a2 2 0 1 1 2.83 2.83l-1.77 1.77a2 2 0 1 1 2.83 2.83z"/><path d="m21.5 21.5-1.4-1.4"/><path d="M3.9 3.9 2.5 2.5"/><path d="M6.4 12.77a2 2 0 1 1-2.83-2.83l1.77-1.77a2 2 0 1 1-2.83-2.83l2.83-2.83a2 2 0 1 1 2.83 2.83l1.77-1.77a2 2 0 1 1 2.83 2.83z"/></symbol>
+<symbol id="w-hanger" viewBox="0 0 24 24"><path d="M12 2a3 3 0 0 0-3 3"/><path d="M12 2a3 3 0 0 1 3 3c0 1.3-.84 2.4-2 2.82-.6.21-1 .78-1 1.41V10"/><path d="m12 10-9.4 7.05A1 1 0 0 0 3.2 19h17.6a1 1 0 0 0 .6-1.95z"/></symbol>
+<symbol id="w-heart" viewBox="0 0 24 24"><path d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z"/></symbol>
+<symbol id="w-plus" viewBox="0 0 24 24"><path d="M9 3h6v6h6v6h-6v6H9v-6H3V9h6z"/></symbol>
+<symbol id="w-gift" viewBox="0 0 24 24"><rect x="3" y="8" width="18" height="4" rx="1"/><path d="M12 8v13"/><path d="M19 12v7a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2v-7"/><path d="M7.5 8a2.5 2.5 0 0 1 0-5A4.8 8 0 0 1 12 8a4.8 8 0 0 1 4.5-5 2.5 2.5 0 0 1 0 5"/></symbol>
+<symbol id="w-calendar" viewBox="0 0 24 24"><path d="M8 2v4"/><path d="M16 2v4"/><rect width="18" height="18" x="3" y="4" rx="2"/><path d="M3 10h18"/></symbol>
+<symbol id="w-briefcase" viewBox="0 0 24 24"><path d="M16 20V4a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"/><rect width="20" height="14" x="2" y="6" rx="2"/></symbol>
+<symbol id="w-code-monitor" viewBox="0 0 24 24"><rect width="20" height="14" x="2" y="3" rx="2"/><path d="M8 21h8"/><path d="M12 17v4"/><path d="m10 8-2 2 2 2"/><path d="m14 8 2 2-2 2"/></symbol>
+<symbol id="w-check-circle" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="m9 12 2 2 4-4"/></symbol>
+</svg>
+
+
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+<symbol id="c-send" viewBox="0 0 24 24"><path d="M14.54 21.69a.5.5 0 0 0 .94-.03l6.5-19a.5.5 0 0 0-.64-.64l-19 6.5a.5.5 0 0 0-.03.94l7.93 3.18a2 2 0 0 1 1.11 1.11z"/><path d="m21.85 2.15-10.94 10.94"/></symbol>
+<symbol id="c-msg" viewBox="0 0 24 24"><path d="M7.9 20A9 9 0 1 0 4 16.1L2 22Z"/></symbol>
+<symbol id="c-signal" viewBox="0 0 24 24"><path d="M2 20h.01"/><path d="M7 20v-4"/><path d="M12 20v-8"/><path d="M17 20V8"/><path d="M22 4v16"/></symbol>
+</svg>
+<header class="hd">
+  <a class="logo-link" href="#home" aria-label="ELTORA home"><span class="logo"><svg class="mk" aria-hidden="true"><use href="#mark"/></svg><span><b>ELTORA</b><small>AI &amp; Web Solutions</small></span></span></a>
+  <nav class="nv" id="nav" aria-label="Main">
+    <a href="#home" class="on">Home</a><a href="#services">Services</a><a href="#work">Work</a><a href="#about">About</a><a href="#contact">Contact</a>
+    <a href="#contact" class="nv-cta">Start a Project <svg class="ic" aria-hidden="true"><use href="#i-arrow-up-right"/></svg></a>
+  </nav>
+  <a class="hd-cta" href="#contact">Start a Project <svg class="ic" aria-hidden="true"><use href="#i-arrow-up-right"/></svg></a>
+  <button class="ham" id="ham" aria-label="Menu" aria-expanded="false" aria-controls="nav"><i></i><i></i><i></i></button>
+</header>
+
+<main class="op">
+
+<section id="home" class="hero" data-theme="dark">
+  <div class="mtn" aria-hidden="true"><img class="rk l" src="/assets/img/art/rock.webp" alt=""><img class="rk r" src="/assets/img/art/rock.webp" alt=""></div>
+  <div class="wrap hero-grid">
+    <div class="hero-copy">
+      <p class="kick">AI × WEB × AUTOMATION</p>
+      <h1>Build. Automate.<br>Grow with <em>ELTORA.</em></h1>
+      <p class="lead">We craft intelligent digital solutions — from modern websites to AI automation systems that turn your ideas into real business growth.</p>
+      <div class="cta-row">
+        <a class="btn lime" href="#contact">Start a Project <svg class="ic" aria-hidden="true"><use href="#i-arrow-up-right"/></svg></a>
+        <a class="btn ghost" href="#work">Explore Our Work <span class="pl"><svg class="ic" aria-hidden="true"><use href="#i-play"/></svg></span></a>
+      </div>
+    </div>
+    <div class="hero-art">
+      <div class="stage3d hb-stage">
+        <video class="hb-video" id="hb-video" autoplay muted loop playsinline preload="auto" poster="/assets/video/hero-voice-v2-poster.jpg" aria-label="ELTORA video with AI voice assistant: websites and online stores, AI chatbots and voice assistants, business automation, data and analytics, and why clients trust us">
+          <source src="/assets/video/hero-voice-v2-720.mp4" type="video/mp4" media="(max-width: 900px)">
+          <source src="/assets/video/hero-voice-v2.mp4" type="video/mp4">
+        </video>
+        <button class="hb-sound" id="hb-sound" type="button" aria-pressed="false" aria-label="Turn on sound to hear the ELTORA AI assistant"><span class="hb-eq" aria-hidden="true"><i></i><i></i><i></i><i></i></span><b>Tap for sound</b></button>
+      </div>
+    </div>
+    <ul class="hero-feats">
+      <li><span class="ring"><svg class="ic" aria-hidden="true"><use href="#i-cpu"/></svg></span><div><b>AGI Integration</b><small>Multi-agent Automation</small></div></li>
+      <li><span class="ring"><svg class="ic" aria-hidden="true"><use href="#i-globe"/></svg></span><div><b>Web Development</b><small>Modern &amp; Scalable</small></div></li>
+      <li><span class="ring"><svg class="ic" aria-hidden="true"><use href="#i-workflow"/></svg></span><div><b>Business Automation</b><small>Workflow &amp; Productivity</small></div></li>
+      <li><span class="ring"><svg class="ic" aria-hidden="true"><use href="#i-chart-no-axes-column"/></svg></span><div><b>Data &amp; Analytics</b><small>Insights for Growth</small></div></li>
+    </ul>
+  </div>
+  <div class="wrap">
+    <div class="stats">
+      <div><svg class="ic" aria-hidden="true"><use href="#i-monitor"/></svg><p><b>10</b><span>Demo Projects</span></p></div>
+      <div><svg class="ic" aria-hidden="true"><use href="#i-users"/></svg><p><b>1</b><span>Client Project</span><em><svg class="ic" aria-hidden="true"><use href="#i-check"/></svg>Completed</em></p></div>
+      <div><svg class="ic" aria-hidden="true"><use href="#i-layers"/></svg><p><b>11</b><span>Total Projects</span></p></div>
+      <div><svg class="ic" aria-hidden="true"><use href="#i-infinity"/></svg><p><b>24/7</b><span>Support</span></p></div>
+    </div>
+  </div>
+  <a class="hm-cue" href="#services" aria-label="Scroll to explore"><i></i>Scroll</a>
+</section>
+
+<!-- ===== HOME: scroll sections ===== -->
+
+
+
+
+
+
+
+
+
+
+<div class="op-sep" aria-hidden="true"></div>
+
+<section id="services" class="sv sv-page" data-theme="dark">
+  <div class="sv-bg" aria-hidden="true"></div>
+  <div class="wrap sv-top">
+    <div class="sv-copy">
+      <p class="sv-eyebrow">Our Services</p>
+      <h1>Digital Solutions For <em>Modern Businesses</em></h1>
+      <p class="sv-lead">We combine Web, AI, Automation and Data to deliver intelligent digital solutions that help businesses grow, streamline operations and create better customer experiences.</p>
+    </div>
+    <div class="sv-art"><img src="/assets/img/art/sv-hero.webp" width="675" height="360" alt="Glowing AI processor with floating code, analytics, cloud and settings icons" decoding="async"></div>
+  </div>
+  <div class="wrap">
+    <div class="s10" id="svc-grid">
+      <a class="s10c" href="#contact" data-service="Web Development"><span class="n">01</span><svg class="ic" aria-hidden="true"><use href="#i-monitor"/></svg><h3>Web Development</h3><ul><li>Business Websites</li><li>E-Commerce</li><li>Custom Applications</li></ul><i class="ln"></i><span class="go"><svg class="ic" aria-hidden="true"><use href="#i-arrow-right"/></svg></span></a>
+      <a class="s10c" href="#contact" data-service="AI Solutions"><span class="n">02</span><svg class="ic" aria-hidden="true"><use href="#i-cpu"/></svg><h3>AI Solutions</h3><ul><li>Chatbots</li><li>Generative AI</li><li>AI Agents</li><li>Document AI</li></ul><i class="ln"></i><span class="go"><svg class="ic" aria-hidden="true"><use href="#i-arrow-right"/></svg></span></a>
+      <a class="s10c" href="#contact" data-service="Automation"><span class="n">03</span><svg class="ic" aria-hidden="true"><use href="#i-settings"/></svg><h3>Automation</h3><ul><li>Workflow Automation</li><li>WhatsApp Automation</li><li>Email Automation</li><li>Business Process Automation</li></ul><i class="ln"></i><span class="go"><svg class="ic" aria-hidden="true"><use href="#i-arrow-right"/></svg></span></a>
+      <a class="s10c" href="#contact" data-service="Data &amp; Analytics"><span class="n">04</span><svg class="ic" aria-hidden="true"><use href="#i-chart-no-axes-column"/></svg><h3>Data &amp; Analytics</h3><ul><li>Data Cleaning</li><li>Power BI Dashboards</li><li>Business Analytics</li><li>Forecasting</li></ul><i class="ln"></i><span class="go"><svg class="ic" aria-hidden="true"><use href="#i-arrow-right"/></svg></span></a>
+      <a class="s10c" href="#contact" data-service="Custom Software"><span class="n">05</span><svg class="ic" aria-hidden="true"><use href="#i-code"/></svg><h3>Custom Software</h3><ul><li>Business Systems</li><li>Admin Panels</li><li>Booking Systems</li><li>Management Software</li></ul><i class="ln"></i><span class="go"><svg class="ic" aria-hidden="true"><use href="#i-arrow-right"/></svg></span></a>
+      <a class="s10c" href="#contact" data-service="Mobile Apps"><span class="n">06</span><svg class="ic" aria-hidden="true"><use href="#i-mobile"/></svg><h3>Mobile Apps</h3><ul><li>Business Apps</li><li>Customer Apps</li><li>Admin Apps</li></ul><i class="ln"></i><span class="go"><svg class="ic" aria-hidden="true"><use href="#i-arrow-right"/></svg></span></a>
+      <a class="s10c" href="#contact" data-service="E-Commerce"><span class="n">07</span><svg class="ic" aria-hidden="true"><use href="#i-cart"/></svg><h3>E-Commerce</h3><ul><li>Online Stores</li><li>Payment Integration</li><li>Order Management</li><li>Inventory</li></ul><i class="ln"></i><span class="go"><svg class="ic" aria-hidden="true"><use href="#i-arrow-right"/></svg></span></a>
+      <a class="s10c" href="#contact" data-service="UI/UX &amp; Branding"><span class="n">08</span><svg class="ic" aria-hidden="true"><use href="#i-palette"/></svg><h3>UI/UX &amp; Branding</h3><ul><li>Modern UI/UX</li><li>Brand Identity</li><li>Creative Design</li><li>Visual Storytelling</li></ul><i class="ln"></i><span class="go"><svg class="ic" aria-hidden="true"><use href="#i-arrow-right"/></svg></span></a>
+      <a class="s10c" href="#contact" data-service="3D Invitations"><span class="n">09</span><svg class="ic" aria-hidden="true"><use href="#i-cube"/></svg><h3>3D Invitations</h3><ul><li>Event Websites</li><li>Digital Invitations</li><li>3D Experiences</li><li>Motion Visuals</li></ul><i class="ln"></i><span class="go"><svg class="ic" aria-hidden="true"><use href="#i-arrow-right"/></svg></span></a>
+      <a class="s10c" href="#contact" data-service="Maintenance"><span class="n">10</span><svg class="ic" aria-hidden="true"><use href="#i-headphones"/></svg><h3>Maintenance</h3><ul><li>Ongoing Support</li><li>Updates &amp; Security</li><li>Technical Assistance</li><li>Performance Optimization</li></ul><i class="ln"></i><span class="go"><svg class="ic" aria-hidden="true"><use href="#i-arrow-right"/></svg></span></a>
+      </div>
+      <a class="s11-feat" href="#contact" data-service="AI Voice Assistant" aria-label="New service: AI Voice Assistants. Start a project">
+        <span class="s11-new">NEW</span>
+        <span class="s11-ic"><i></i><i></i><svg class="s11-mic" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2a3 3 0 0 0-3 3v7a3 3 0 0 0 6 0V5a3 3 0 0 0-3-3Z"/><path d="M19 10v2a7 7 0 0 1-14 0v-2"/><path d="M12 19v3"/></svg></span>
+        <div class="s11-t"><span class="n">11</span><h3>AI Voice Assistants</h3><p>Human-like voice agents that talk to your customers &mdash; on calls, on your website and on WhatsApp.</p></div>
+        <ul><li>Answer customer calls 24/7</li><li>Book appointments &amp; orders</li><li>Qualify leads automatically</li><li>Natural, human-like voices</li></ul>
+        <span class="s11-wave" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></span>
+        <span class="go"><svg class="ic" aria-hidden="true"><use href="#i-arrow-right"/></svg></span>
+      </a>
+    <div class="s-cta">
+      <div class="s-cta-t"><small>Have a project in mind?</small><b>Let&rsquo;s Build It Together</b></div>
+      <a class="btn lime" href="#contact">Start a Project <svg class="ic" aria-hidden="true"><use href="#i-arrow-up-right"/></svg></a>
+      <ul><li><svg class="ic" aria-hidden="true"><use href="#i-zap"/></svg><span>Fast Response</span></li><li><svg class="ic" aria-hidden="true"><use href="#i-shield"/></svg><span>Reliable Support</span></li><li><svg class="ic" aria-hidden="true"><use href="#i-users"/></svg><span>Expert Guidance</span></li></ul>
+    </div>
+  </div>
+</section>
+
+<div class="op-sep" aria-hidden="true"></div>
+<div class="op-page-work pf">
+<section id="work" class="pf-hero" data-theme="dark">
+  <div class="pf-sky" aria-hidden="true"><i class="pf-beam"></i><img class="pf-rk tl" src="/assets/img/art/rock.webp" alt=""><img class="pf-rk tr" src="/assets/img/art/rock.webp" alt=""></div>
+  <div class="wrap pf-hero-grid">
+    <div class="pf-copy">
+      <p class="pf-eyebrow">Our Portfolio</p>
+      <h1>Our Creative<br>Work <em>Speaks</em></h1>
+      <p class="pf-lead">Explore our latest projects — innovative digital solutions built with design, technology and AI.</p>
+    </div>
+    <div class="pf-art" aria-hidden="true">
+      <svg class="pf-ring" viewBox="-200 -200 400 400"><circle r="186" fill="none" stroke="#c9f600" stroke-opacity=".55" stroke-width="2"/><circle r="170" fill="none" stroke="#c9f600" stroke-opacity=".18" stroke-width="10"/><path d="M-150-110A186 186 0 0 1 60-176" fill="none" stroke="#e3ff55" stroke-width="4" stroke-linecap="round"/></svg>
+      <img class="pf-plat" src="/assets/img/art/platform.webp" width="550" height="160" alt="">
+      <div class="pf-laptop">
+        <div class="pf-scr"><div class="pf-disp"><svg class="pf-mk"><use href="#mark"/></svg><b>ELTORA</b><small>AI &amp; Web Solutions</small></div></div>
+        <div class="pf-base"><i></i></div>
+      </div>
+      <div class="pf-bird"><img src="/assets/img/art/bird-body.webp" width="690" height="560" alt=""><div class="pf-wing"><img src="/assets/img/art/bird-wing.webp" width="690" height="560" alt=""></div></div>
+      <span class="pf-tile t1"><svg class="ic"><use href="#i-code"/></svg></span>
+      <span class="pf-tile t2"><svg class="ic"><use href="#i-chart-no-axes-column"/></svg></span>
+      <span class="pf-tile t3"><svg class="ic"><use href="#i-layers"/></svg></span>
+      <span class="pf-tile t4"><b>AI</b></span>
+      <span class="pf-pt" style="--x:8%;--y:22%;--d:0s"></span><span class="pf-pt" style="--x:92%;--y:12%;--d:-2s"></span><span class="pf-pt" style="--x:84%;--y:78%;--d:-4s"></span><span class="pf-pt" style="--x:20%;--y:70%;--d:-1s"></span><span class="pf-pt" style="--x:56%;--y:4%;--d:-3s"></span><span class="pf-pt" style="--x:98%;--y:46%;--d:-5s"></span>
+    </div>
+  </div>
+
+  <div class="wrap pf-clients" id="client-work">
+    <div class="pf-sec-head">
+      <div><p class="pf-eyebrow">Client Work</p><h2>Trusted by real <em>businesses</em></h2></div>
+      <p class="pf-sec-sub">Websites we have built and delivered for our clients.</p>
+    </div>
+    <article class="pfc">
+      <a class="pfc-shot" href="https://baskarjewellers.in" target="_blank" rel="noopener noreferrer" tabindex="-1" aria-hidden="true">
+        <img src="/assets/img/thumbs/baskar-store.jpg" width="900" height="1187" alt="" loading="lazy" decoding="async">
+        <span class="pfc-badge"><svg class="ic" aria-hidden="true"><use href="#i-check"/></svg>Client Project · Completed</span>
+      </a>
+      <div class="pfc-body">
+        <h3>Baskar Jewellers</h3>
+        <p class="pf-cat"><svg class="ic" aria-hidden="true"><use href="#i-gem"/></svg>Jewellery Retail Website · Pochampalli</p>
+        <p class="pfc-desc">Our first completed client project: a premium jewellery retail website for Baskar Jewellers, designed and built by ELTORA.</p>
+        <div class="pfc-act">
+          <a class="pf-visit" href="https://baskarjewellers.in" target="_blank" rel="noopener noreferrer" aria-label="Visit the Baskar Jewellers website (opens in a new tab)">Visit Website <svg class="ic" aria-hidden="true"><use href="#i-arrow-up-right"/></svg></a>
+          <a class="pf-ext" href="https://baskarjewellers.in" target="_blank" rel="noopener noreferrer" aria-label="Open Baskar Jewellers in a new tab"><svg class="ic" aria-hidden="true"><use href="#i-external-link"/></svg></a>
+        </div>
+      </div>
+      <figure class="pfc-fb">
+        <figcaption><span class="pfc-q" aria-hidden="true">&ldquo;</span>Client Feedback</figcaption>
+        <blockquote><p>Very neat work</p></blockquote>
+        <blockquote><p>Explanation was very clear</p></blockquote>
+        <blockquote><p>Dedication was excellent</p></blockquote>
+        <p class="pfc-who"><span class="pfc-av" aria-hidden="true">BJ</span><span><b>Baskar Jewellers</b><small>Pochampalli</small></span></p>
+      </figure>
+    </article>
+  </div>
+
+  <div class="wrap">
+    <div class="pf-sec-head pf-demo-head" id="demo-projects">
+      <div><p class="pf-eyebrow">Demo Projects</p><h2>Concepts that show <em>what&rsquo;s possible</em></h2></div>
+      <p class="pf-sec-sub">Live demo websites we designed for different industries &mdash; open any of them to try it.</p>
+    </div>
+    <div class="pf-chips" role="group" aria-label="Filter projects by category">
+        <button type="button" class="pf-chip on" data-f="all" aria-pressed="true"><svg class="ic" aria-hidden="true"><use href="#i-layout-grid"/></svg>All Projects</button>
+        <button type="button" class="pf-chip" data-f="websites" aria-pressed="false"><svg class="ic" aria-hidden="true"><use href="#i-monitor"/></svg>Websites</button>
+        <button type="button" class="pf-chip" data-f="ecommerce" aria-pressed="false"><svg class="ic" aria-hidden="true"><use href="#i-cart"/></svg>E-Commerce</button>
+        <button type="button" class="pf-chip" data-f="business" aria-pressed="false"><svg class="ic" aria-hidden="true"><use href="#w-briefcase"/></svg>Business</button>
+        <button type="button" class="pf-chip" data-f="event" aria-pressed="false"><svg class="ic" aria-hidden="true"><use href="#w-calendar"/></svg>Event</button>
+        <button type="button" class="pf-chip" data-f="healthcare" aria-pressed="false"><svg class="ic" aria-hidden="true"><use href="#w-heart"/></svg>Healthcare</button>
+    </div>
+    <div class="pf-grid" id="pf-grid" aria-live="polite">
+      <article class="pf-card" data-tags="websites business">
+        <a class="pf-thumb" href="https://eltora-restaurant.vercel.app/" target="_blank" rel="noopener noreferrer" tabindex="-1" aria-hidden="true"><img src="/assets/img/thumbs/p1.jpg" width="900" height="512" alt="" loading="lazy" decoding="async"></a>
+        <div class="pf-body">
+          <h3>ELTORA Restaurant</h3>
+          <p class="pf-cat"><svg class="ic" aria-hidden="true"><use href="#w-utensils"/></svg>Restaurant Website</p>
+          <p class="pf-desc">A modern, elegant and interactive restaurant website with premium UI.</p>
+          <div class="pf-act">
+            <a class="pf-demo" href="https://eltora-restaurant.vercel.app/" target="_blank" rel="noopener noreferrer" aria-label="View live demo of ELTORA Restaurant (opens in a new tab)">View Live Demo <svg class="ic" aria-hidden="true"><use href="#i-arrow-up-right"/></svg></a>
+            <a class="pf-ext" href="https://eltora-restaurant.vercel.app/" target="_blank" rel="noopener noreferrer" aria-label="Open ELTORA Restaurant in a new tab"><svg class="ic" aria-hidden="true"><use href="#i-external-link"/></svg></a>
+          </div>
+        </div>
+      </article>
+      <article class="pf-card" data-tags="websites business">
+        <a class="pf-thumb" href="https://eltora-salon-spa.vercel.app/" target="_blank" rel="noopener noreferrer" tabindex="-1" aria-hidden="true"><img src="/assets/img/thumbs/p2.jpg" width="900" height="512" alt="" loading="lazy" decoding="async"></a>
+        <div class="pf-body">
+          <h3>ELTORA Salon &amp; Spa</h3>
+          <p class="pf-cat"><svg class="ic" aria-hidden="true"><use href="#w-crown"/></svg>Salon &amp; Spa Website</p>
+          <p class="pf-desc">A stylish and elegant salon &amp; spa website with modern design.</p>
+          <div class="pf-act">
+            <a class="pf-demo" href="https://eltora-salon-spa.vercel.app/" target="_blank" rel="noopener noreferrer" aria-label="View live demo of ELTORA Salon &amp; Spa (opens in a new tab)">View Live Demo <svg class="ic" aria-hidden="true"><use href="#i-arrow-up-right"/></svg></a>
+            <a class="pf-ext" href="https://eltora-salon-spa.vercel.app/" target="_blank" rel="noopener noreferrer" aria-label="Open ELTORA Salon &amp; Spa in a new tab"><svg class="ic" aria-hidden="true"><use href="#i-external-link"/></svg></a>
+          </div>
+        </div>
+      </article>
+      <article class="pf-card" data-tags="websites business">
+        <a class="pf-thumb" href="https://eltora-fitness.vercel.app/" target="_blank" rel="noopener noreferrer" tabindex="-1" aria-hidden="true"><img src="/assets/img/thumbs/p3.jpg" width="900" height="512" alt="" loading="lazy" decoding="async"></a>
+        <div class="pf-body">
+          <h3>ELTORA Fitness</h3>
+          <p class="pf-cat"><svg class="ic" aria-hidden="true"><use href="#w-dumbbell"/></svg>Gym Website</p>
+          <p class="pf-desc">A high-energy fitness website with bold design and animations.</p>
+          <div class="pf-act">
+            <a class="pf-demo" href="https://eltora-fitness.vercel.app/" target="_blank" rel="noopener noreferrer" aria-label="View live demo of ELTORA Fitness (opens in a new tab)">View Live Demo <svg class="ic" aria-hidden="true"><use href="#i-arrow-up-right"/></svg></a>
+            <a class="pf-ext" href="https://eltora-fitness.vercel.app/" target="_blank" rel="noopener noreferrer" aria-label="Open ELTORA Fitness in a new tab"><svg class="ic" aria-hidden="true"><use href="#i-external-link"/></svg></a>
+          </div>
+        </div>
+      </article>
+      <article class="pf-card" data-tags="ecommerce business">
+        <a class="pf-thumb" href="https://eltora-market.vercel.app/" target="_blank" rel="noopener noreferrer" tabindex="-1" aria-hidden="true"><img src="/assets/img/thumbs/p4.jpg" width="900" height="512" alt="" loading="lazy" decoding="async"></a>
+        <div class="pf-body">
+          <h3>ELTORA Market</h3>
+          <p class="pf-cat"><svg class="ic" aria-hidden="true"><use href="#i-cart"/></svg>E-Commerce Website</p>
+          <p class="pf-desc">A modern e-commerce store for daily essentials and products.</p>
+          <div class="pf-act">
+            <a class="pf-demo" href="https://eltora-market.vercel.app/" target="_blank" rel="noopener noreferrer" aria-label="View live demo of ELTORA Market (opens in a new tab)">View Live Demo <svg class="ic" aria-hidden="true"><use href="#i-arrow-up-right"/></svg></a>
+            <a class="pf-ext" href="https://eltora-market.vercel.app/" target="_blank" rel="noopener noreferrer" aria-label="Open ELTORA Market in a new tab"><svg class="ic" aria-hidden="true"><use href="#i-external-link"/></svg></a>
+          </div>
+        </div>
+      </article>
+      <article class="pf-card" data-tags="ecommerce">
+        <a class="pf-thumb" href="https://eltora-fashion.vercel.app/" target="_blank" rel="noopener noreferrer" tabindex="-1" aria-hidden="true"><img src="/assets/img/thumbs/p5.jpg" width="900" height="512" alt="" loading="lazy" decoding="async"></a>
+        <div class="pf-body">
+          <h3>ELTORA Fashion</h3>
+          <p class="pf-cat"><svg class="ic" aria-hidden="true"><use href="#w-hanger"/></svg>Fashion Website</p>
+          <p class="pf-desc">A modern fashion store with premium design and collections.</p>
+          <div class="pf-act">
+            <a class="pf-demo" href="https://eltora-fashion.vercel.app/" target="_blank" rel="noopener noreferrer" aria-label="View live demo of ELTORA Fashion (opens in a new tab)">View Live Demo <svg class="ic" aria-hidden="true"><use href="#i-arrow-up-right"/></svg></a>
+            <a class="pf-ext" href="https://eltora-fashion.vercel.app/" target="_blank" rel="noopener noreferrer" aria-label="Open ELTORA Fashion in a new tab"><svg class="ic" aria-hidden="true"><use href="#i-external-link"/></svg></a>
+          </div>
+        </div>
+      </article>
+      <article class="pf-card" data-tags="websites event">
+        <a class="pf-thumb" href="https://eltora-dudu-bubu.vercel.app/" target="_blank" rel="noopener noreferrer" tabindex="-1" aria-hidden="true"><img src="/assets/img/thumbs/p7.jpg" width="900" height="512" alt="" loading="lazy" decoding="async"></a>
+        <div class="pf-body">
+          <h3>Dudu &amp; Bubu</h3>
+          <p class="pf-cat"><svg class="ic" aria-hidden="true"><use href="#w-heart"/></svg>Engagement Website</p>
+          <p class="pf-desc">A cute and heartwarming engagement website.</p>
+          <div class="pf-act">
+            <a class="pf-demo" href="https://eltora-dudu-bubu.vercel.app/" target="_blank" rel="noopener noreferrer" aria-label="View live demo of Dudu &amp; Bubu (opens in a new tab)">View Live Demo <svg class="ic" aria-hidden="true"><use href="#i-arrow-up-right"/></svg></a>
+            <a class="pf-ext" href="https://eltora-dudu-bubu.vercel.app/" target="_blank" rel="noopener noreferrer" aria-label="Open Dudu &amp; Bubu in a new tab"><svg class="ic" aria-hidden="true"><use href="#i-external-link"/></svg></a>
+          </div>
+        </div>
+      </article>
+      <article class="pf-card" data-tags="websites healthcare">
+        <a class="pf-thumb" href="https://eltora-care.vercel.app/" target="_blank" rel="noopener noreferrer" tabindex="-1" aria-hidden="true"><img src="/assets/img/thumbs/p8.jpg" width="900" height="512" alt="" loading="lazy" decoding="async"></a>
+        <div class="pf-body">
+          <h3>ELTORA CARE</h3>
+          <p class="pf-cat"><svg class="ic" aria-hidden="true"><use href="#w-plus"/></svg>Hospital &amp; Healthcare</p>
+          <p class="pf-desc">A professional healthcare website for modern medical services.</p>
+          <div class="pf-act">
+            <a class="pf-demo" href="https://eltora-care.vercel.app/" target="_blank" rel="noopener noreferrer" aria-label="View live demo of ELTORA CARE (opens in a new tab)">View Live Demo <svg class="ic" aria-hidden="true"><use href="#i-arrow-up-right"/></svg></a>
+            <a class="pf-ext" href="https://eltora-care.vercel.app/" target="_blank" rel="noopener noreferrer" aria-label="Open ELTORA CARE in a new tab"><svg class="ic" aria-hidden="true"><use href="#i-external-link"/></svg></a>
+          </div>
+        </div>
+      </article>
+      <article class="pf-card" data-tags="websites event">
+        <a class="pf-thumb" href="https://the-secret-birthday-surprise.vercel.app/" target="_blank" rel="noopener noreferrer" tabindex="-1" aria-hidden="true"><img src="/assets/img/thumbs/p9.jpg" width="900" height="512" alt="" loading="lazy" decoding="async"></a>
+        <div class="pf-body">
+          <h3>The Secret Birthday Surprise</h3>
+          <p class="pf-cat"><svg class="ic" aria-hidden="true"><use href="#w-gift"/></svg>Event Website</p>
+          <p class="pf-desc">A unique and emotional event website with interactive design.</p>
+          <div class="pf-act">
+            <a class="pf-demo" href="https://the-secret-birthday-surprise.vercel.app/" target="_blank" rel="noopener noreferrer" aria-label="View live demo of The Secret Birthday Surprise (opens in a new tab)">View Live Demo <svg class="ic" aria-hidden="true"><use href="#i-arrow-up-right"/></svg></a>
+            <a class="pf-ext" href="https://the-secret-birthday-surprise.vercel.app/" target="_blank" rel="noopener noreferrer" aria-label="Open The Secret Birthday Surprise in a new tab"><svg class="ic" aria-hidden="true"><use href="#i-external-link"/></svg></a>
+          </div>
+        </div>
+      </article>
+      <article class="pf-card" data-tags="ecommerce">
+        <a class="pf-thumb" href="https://eltora-jewels.vercel.app/" target="_blank" rel="noopener noreferrer" tabindex="-1" aria-hidden="true"><img src="/assets/img/thumbs/p6.jpg" width="900" height="512" alt="" loading="lazy" decoding="async"></a>
+        <div class="pf-body">
+          <h3>ELTORA Jewels</h3>
+          <p class="pf-cat"><svg class="ic" aria-hidden="true"><use href="#i-gem"/></svg>Jewellery Website</p>
+          <p class="pf-desc">An elegant jewellery store with luxurious design and collections.</p>
+          <div class="pf-act">
+            <a class="pf-demo" href="https://eltora-jewels.vercel.app/" target="_blank" rel="noopener noreferrer" aria-label="View live demo of ELTORA Jewels (opens in a new tab)">View Live Demo <svg class="ic" aria-hidden="true"><use href="#i-arrow-up-right"/></svg></a>
+            <a class="pf-ext" href="https://eltora-jewels.vercel.app/" target="_blank" rel="noopener noreferrer" aria-label="Open ELTORA Jewels in a new tab"><svg class="ic" aria-hidden="true"><use href="#i-external-link"/></svg></a>
+          </div>
+        </div>
+      </article>
+    </div>
+    <p class="pf-empty" id="pf-empty" hidden>No projects in this category yet.</p>
+  </div>
+</section>
+
+<div id="work-stats" class="pf-foot">
+  <div class="pf-waves" aria-hidden="true">
+    <svg viewBox="0 0 1440 260" preserveAspectRatio="none"><path d="M0 170C240 90 420 230 720 160S1180 60 1440 120" fill="none" stroke="#c9f600" stroke-opacity=".55" stroke-width="2"/><path d="M0 200C260 130 470 250 780 190S1200 110 1440 160" fill="none" stroke="#9be000" stroke-opacity=".35" stroke-width="1.5"/><path d="M0 230C300 170 520 270 860 220S1230 160 1440 200" fill="none" stroke="#e3ff55" stroke-opacity=".25" stroke-width="1"/></svg>
+    <img class="pf-rk bl" src="/assets/img/art/rock.webp" alt=""><img class="pf-rk br" src="/assets/img/art/rock.webp" alt="">
+  </div>
+  <div class="wrap">
+    <div class="pf-stats">
+      <div><svg class="ic" aria-hidden="true"><use href="#w-code-monitor"/></svg><p><b>10</b><span>Demo Projects</span></p></div>
+      <div><svg class="ic" aria-hidden="true"><use href="#i-users"/></svg><p><b>1</b><span>Client Project</span><em><svg class="ic" aria-hidden="true"><use href="#i-check"/></svg>Completed</em></p></div>
+      <div><svg class="ic" aria-hidden="true"><use href="#i-layers"/></svg><p><b>11</b><span>Total Projects</span></p></div>
+      <div><svg class="ic" aria-hidden="true"><use href="#i-headphones"/></svg><p><b>24/7</b><span>Support</span></p></div>
+    </div>
+    <div class="pf-cta">
+      <div class="pf-cta-t">
+        <h2><i class="ln" aria-hidden="true"></i>Let&rsquo;s Build Something <em>Amazing</em><i class="ln" aria-hidden="true"></i></h2>
+        <p>— Turn your ideas into powerful digital solutions with ELTORA. —</p>
+      </div>
+      <a class="pf-start" href="#contact">Start a Project <svg class="ic" aria-hidden="true"><use href="#i-arrow-up-right"/></svg></a>
+    </div>
+  </div>
+</div>
+</div>
+<div class="op-sep" aria-hidden="true"></div>
+<div class="op-page-about ab2">
+<section id="about" class="ab2-hero" data-theme="dark">
+  <div class="ab2-hq" aria-hidden="true">
+    <img src="/assets/img/art/about-hq.jpg" width="1123" height="350" alt="" fetchpriority="high">
+    <svg class="ab2-halo" viewBox="0 0 800 300" preserveAspectRatio="none"><ellipse cx="400" cy="250" rx="380" ry="46" fill="none" stroke="#c9f600" stroke-width="2" stroke-opacity=".7"/><ellipse cx="400" cy="250" rx="330" ry="34" fill="none" stroke="#e3ff55" stroke-width="1" stroke-opacity=".45" stroke-dasharray="6 10"/></svg>
+    <span class="ab2-pt" style="--x:12%;--y:30%;--d:0s"></span><span class="ab2-pt" style="--x:38%;--y:12%;--d:-2s"></span><span class="ab2-pt" style="--x:66%;--y:20%;--d:-4s"></span><span class="ab2-pt" style="--x:86%;--y:40%;--d:-1s"></span><span class="ab2-pt" style="--x:24%;--y:64%;--d:-3s"></span><span class="ab2-pt" style="--x:94%;--y:14%;--d:-5s"></span><span class="ab2-pt" style="--x:52%;--y:6%;--d:-2.5s"></span>
+  </div>
+  <div class="wrap ab2-hero-in">
+    <div class="ab2-copy">
+      <p class="ab2-eyebrow">About ELTORA</p>
+      <h1>We Build Digital<br>Experiences for<br>the <em>AI&nbsp;Era</em></h1>
+      <p class="ab2-lead">ELTORA is a modern technology studio that helps businesses grow with powerful websites, AI solutions and digital automation.</p>
+      <div class="ab2-btns">
+        <a class="ab2-btn lime" href="#work">Our Work <svg class="ic" aria-hidden="true"><use href="#i-arrow-up-right"/></svg></a>
+        <a class="ab2-btn ghost" href="#story" id="watch-story"><span class="pl"><svg class="ic" aria-hidden="true"><use href="#i-play"/></svg></span>Watch Our Story</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div id="story" class="ab2-mid">
+  <div class="wrap">
+    <div class="ab2-row">
+      <article class="ab2-card ab2-story rv">
+        <div class="ab2-video" id="ab2-video">
+          <video id="story-video" preload="metadata" playsinline poster="/assets/video/eltora-brand-story-poster.jpg" aria-label="ELTORA brand story video">
+            <source src="/assets/video/eltora-brand-story.mp4" type="video/mp4">
+            Your browser can’t play this video. <a href="/assets/video/eltora-brand-story.mp4">Open the video file</a>.
+          </video>
+          <button class="ab2-play" type="button" id="story-play" aria-label="Play the ELTORA brand story video"><svg class="ic" aria-hidden="true"><use href="#i-play"/></svg></button>
+          <span class="ab2-len" aria-hidden="true">0:30</span>
+        </div>
+        <div class="ab2-story-t">
+          <h2>Our <em>Story</em></h2>
+          <p>Started with a passion for technology and design, ELTORA was created to deliver practical, scalable and AI-powered digital solutions for businesses of all sizes.</p>
+        </div>
+      </article>
+      <article class="ab2-card ab2-mvv rv" style="--i:1">
+        <h3><svg class="ic" aria-hidden="true"><use href="#i-target"/></svg>Our Mission</h3>
+        <p>To empower businesses with innovative, reliable and future-ready digital solutions.</p>
+      </article>
+      <article class="ab2-card ab2-mvv rv" style="--i:2">
+        <h3><svg class="ic" aria-hidden="true"><use href="#i-eye"/></svg>Our Vision</h3>
+        <p>To be a trusted technology partner for businesses through web, AI and automation.</p>
+      </article>
+      <article class="ab2-card ab2-mvv rv" style="--i:3">
+        <h3><svg class="ic" aria-hidden="true"><use href="#i-gem"/></svg>Our Values</h3>
+        <ul>
+          <li><svg class="ic" aria-hidden="true"><use href="#i-check"/></svg>Quality &amp; Innovation</li>
+          <li><svg class="ic" aria-hidden="true"><use href="#i-check"/></svg>Client Success</li>
+          <li><svg class="ic" aria-hidden="true"><use href="#i-check"/></svg>Transparency</li>
+          <li><svg class="ic" aria-hidden="true"><use href="#i-check"/></svg>Long-Term Partnership</li>
+        </ul>
+      </article>
+    </div>
+
+    <div class="ab2-stats rv">
+      <div><svg class="ic" aria-hidden="true"><use href="#i-code"/></svg><p><b>10</b><span>Demo Projects</span></p></div>
+      <div><svg class="ic" aria-hidden="true"><use href="#i-users"/></svg><p><b>1</b><span>Client Project</span><em><svg class="ic" aria-hidden="true"><use href="#i-check"/></svg>Completed</em></p></div>
+      <div><svg class="ic" aria-hidden="true"><use href="#i-layers"/></svg><p><b>11</b><span>Total Projects</span></p></div>
+      <div><svg class="ic" aria-hidden="true"><use href="#i-headphones"/></svg><p><b>24/7</b><span>Support</span></p></div>
+    </div>
+  </div>
+</div>
+
+<div id="stack" class="ab2-stack">
+  <div class="ab2-land" aria-hidden="true">
+    <svg class="ab2-waves" viewBox="0 0 1440 300" preserveAspectRatio="none"><path class="w1" d="M0 210C240 120 420 270 720 190S1180 90 1440 150"/><path class="w2" d="M0 240C260 160 470 290 780 220S1200 140 1440 190"/><path class="w3" d="M0 268C300 205 520 300 860 250S1230 190 1440 230"/></svg>
+    <img class="ab2-rk l" src="/assets/img/art/rock.webp" alt=""><img class="ab2-rk r" src="/assets/img/art/rock.webp" alt="">
+  </div>
+  <div class="wrap ab2-stack-in">
+    <div class="ab2-stack-h rv">
+      <p class="ab2-eyebrow">Our Technology Stack</p>
+      <h2>Modern Tools,<br>Powerful <em>Solutions</em></h2>
+    </div>
+    <ul class="ab2-techs" aria-label="Technologies we use">
+        <li class="ab2-tech rv" style="--i:0"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="#4B8BBE" d="M11.858 0c-.978.005-1.913.088-2.736.234C6.7.662 6.26 1.558 6.26 3.21v2.182h5.725v.727H4.111c-1.664 0-3.121 1-3.577 2.903-.526 2.181-.549 3.542 0 5.82.407 1.694 1.379 2.902 3.043 2.902h1.969v-2.616c0-1.89 1.635-3.557 3.576-3.557h5.72c1.591 0 2.862-1.31 2.862-2.91v-5.45c0-1.553-1.309-2.718-2.863-2.977A18 18 0 0 0 11.858 0M8.762 1.755c.591 0 1.074.491 1.074 1.095 0 .601-.483 1.087-1.074 1.087A1.08 1.08 0 0 1 7.688 2.85c0-.604.48-1.095 1.074-1.095m9.656 4.364v2.543c0 1.971-1.671 3.63-3.577 3.63H9.122c-1.566 0-2.862 1.34-2.862 2.91v5.452c0 1.551 1.349 2.464 2.862 2.91 1.813.532 3.55.628 5.72 0 1.44-.418 2.862-1.258 2.862-2.91V18.47h-5.719v-.727h8.582c1.664 0 2.284-1.16 2.862-2.903.598-1.793.573-3.518 0-5.819-.41-1.656-1.196-2.903-2.862-2.903zm-3.216 13.807a1.08 1.08 0 0 1 1.074 1.088c0 .604-.48 1.094-1.074 1.094-.592 0-1.075-.49-1.075-1.094 0-.601.483-1.088 1.075-1.088"/></svg><span>Python</span></li>
+        <li class="ab2-tech rv" style="--i:1"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="#FF4B4B" d="M16.673 11.32l6.862-3.618c.233-.136.554.12.442.387L20.463 17.1zm-8.556-.229l3.473-5.187c.203-.328.578-.316.793-.028l7.886 11.75zm-3.375 7.25c-.28 0-.835-.284-.993-.716l-3.72-9.46c-.118-.331.139-.614.48-.464l19.474 10.306c-.149.147-.453.337-.72.334z"/></svg><span>Streamlit</span></li>
+        <li class="ab2-tech rv" style="--i:2"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="#05C3A8" d="M12 .0387C5.3729.0384.0003 5.3931 0 11.9988c-.001 6.6066 5.372 11.9628 12 11.9625 6.628.0003 12.001-5.3559 12-11.9625-.0003-6.6057-5.3729-11.9604-12-11.96m-.829 5.4153h7.55l-7.5805 5.3284h5.1828L5.279 18.5436q2.9466-6.5444 5.892-13.0896"/></svg><span>FastAPI</span></li>
+        <li class="ab2-tech rv" style="--i:3"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="#6B8FE8" d="M23.5594 14.7228a.5269.5269 0 0 0-.0563-.1191c-.139-.2632-.4768-.3418-1.0074-.2321-1.6533.3411-2.2935.1312-2.5256-.0191 1.342-2.0482 2.445-4.522 3.0411-6.8297.2714-1.0507.7982-3.5237.1222-4.7316a1.5641 1.5641 0 0 0-.1509-.235C21.6931.9086 19.8007.0248 17.5099.0005c-1.4947-.0158-2.7705.3461-3.1161.4794a9.449 9.449 0 0 0-.5159-.0816 8.044 8.044 0 0 0-1.3114-.1278c-1.1822-.0184-2.2038.2642-3.0498.8406-.8573-.3211-4.7888-1.645-7.2219.0788C.9359 2.1526.3086 3.8733.4302 6.3043c.0409.818.5069 3.334 1.2423 5.7436.4598 1.5065.9387 2.7019 1.4334 3.582.553.9942 1.1259 1.5933 1.7143 1.7895.4474.1491 1.1327.1441 1.8581-.7279.8012-.9635 1.5903-1.8258 1.9446-2.2069.4351.2355.9064.3625 1.39.3772a.0569.0569 0 0 0 .0004.0041 11.0312 11.0312 0 0 0-.2472.3054c-.3389.4302-.4094.5197-1.5002.7443-.3102.064-1.1344.2339-1.1464.8115-.0025.1224.0329.2309.0919.3268.2269.4231.9216.6097 1.015.6331 1.3345.3335 2.5044.092 3.3714-.6787-.017 2.231.0775 4.4174.3454 5.0874.2212.5529.7618 1.9045 2.4692 1.9043.2505 0 .5263-.0291.8296-.0941 1.7819-.3821 2.5557-1.1696 2.855-2.9059.1503-.8707.4016-2.8753.5388-4.1012.0169-.0703.0357-.1207.057-.1362.0007-.0005.0697-.0471.4272.0307a.3673.3673 0 0 0 .0443.0068l.2539.0223.0149.001c.8468.0384 1.9114-.1426 2.5312-.4308.6438-.2988 1.8057-1.0323 1.5951-1.6698zM2.371 11.8765c-.7435-2.4358-1.1779-4.8851-1.2123-5.5719-.1086-2.1714.4171-3.6829 1.5623-4.4927 1.8367-1.2986 4.8398-.5408 6.108-.13-.0032.0032-.0066.0061-.0098.0094-2.0238 2.044-1.9758 5.536-1.9708 5.7495-.0002.0823.0066.1989.0162.3593.0348.5873.0996 1.6804-.0735 2.9184-.1609 1.1504.1937 2.2764.9728 3.0892.0806.0841.1648.1631.2518.2374-.3468.3714-1.1004 1.1926-1.9025 2.1576-.5677.6825-.9597.5517-1.0886.5087-.3919-.1307-.813-.5871-1.2381-1.3223-.4796-.839-.9635-2.0317-1.4155-3.5126zm6.0072 5.0871c-.1711-.0428-.3271-.1132-.4322-.1772.0889-.0394.2374-.0902.4833-.1409 1.2833-.2641 1.4815-.4506 1.9143-1.0002.0992-.126.2116-.2687.3673-.4426a.3549.3549 0 0 0 .0737-.1298c.1708-.1513.2724-.1099.4369-.0417.156.0646.3078.26.3695.4752.0291.1016.0619.2945-.0452.4444-.9043 1.2658-2.2216 1.2494-3.1676 1.0128zm2.094-3.988-.0525.141c-.133.3566-.2567.6881-.3334 1.003-.6674-.0021-1.3168-.2872-1.8105-.8024-.6279-.6551-.9131-1.5664-.7825-2.5004.1828-1.3079.1153-2.4468.079-3.0586-.005-.0857-.0095-.1607-.0122-.2199.2957-.2621 1.6659-.9962 2.6429-.7724.4459.1022.7176.4057.8305.928.5846 2.7038.0774 3.8307-.3302 4.7363-.084.1866-.1633.3629-.2311.5454zm7.3637 4.5725c-.0169.1768-.0358.376-.0618.5959l-.146.4383a.3547.3547 0 0 0-.0182.1077c-.0059.4747-.054.6489-.115.8693-.0634.2292-.1353.4891-.1794 1.0575-.11 1.4143-.8782 2.2267-2.4172 2.5565-1.5155.3251-1.7843-.4968-2.0212-1.2217a6.5824 6.5824 0 0 0-.0769-.2266c-.2154-.5858-.1911-1.4119-.1574-2.5551.0165-.5612-.0249-1.9013-.3302-2.6462.0044-.2932.0106-.5909.019-.8918a.3529.3529 0 0 0-.0153-.1126 1.4927 1.4927 0 0 0-.0439-.208c-.1226-.4283-.4213-.7866-.7797-.9351-.1424-.059-.4038-.1672-.7178-.0869.067-.276.1831-.5875.309-.9249l.0529-.142c.0595-.16.134-.3257.213-.5012.4265-.9476 1.0106-2.2453.3766-5.1772-.2374-1.0981-1.0304-1.6343-2.2324-1.5098-.7207.0746-1.3799.3654-1.7088.5321a5.6716 5.6716 0 0 0-.1958.1041c.0918-1.1064.4386-3.1741 1.7357-4.4823a4.0306 4.0306 0 0 1 .3033-.276.3532.3532 0 0 0 .1447-.0644c.7524-.5706 1.6945-.8506 2.802-.8325.4091.0067.8017.0339 1.1742.081 1.939.3544 3.2439 1.4468 4.0359 2.3827.8143.9623 1.2552 1.9315 1.4312 2.4543-1.3232-.1346-2.2234.1268-2.6797.779-.9926 1.4189.543 4.1729 1.2811 5.4964.1353.2426.2522.4522.2889.5413.2403.5825.5515.9713.7787 1.2552.0696.087.1372.1714.1885.245-.4008.1155-1.1208.3825-1.0552 1.717-.0123.1563-.0423.4469-.0834.8148-.0461.2077-.0702.4603-.0994.7662zm.8905-1.6211c-.0405-.8316.2691-.9185.5967-1.0105a2.8566 2.8566 0 0 0 .135-.0406 1.202 1.202 0 0 0 .1342.103c.5703.3765 1.5823.4213 3.0068.1344-.2016.1769-.5189.3994-.9533.6011-.4098.1903-1.0957.333-1.7473.3636-.7197.0336-1.0859-.0807-1.1721-.151zm.5695-9.2712c-.0059.3508-.0542.6692-.1054 1.0017-.055.3576-.112.7274-.1264 1.1762-.0142.4368.0404.8909.0932 1.3301.1066.887.216 1.8003-.2075 2.7014a3.5272 3.5272 0 0 1-.1876-.3856c-.0527-.1276-.1669-.3326-.3251-.6162-.6156-1.1041-2.0574-3.6896-1.3193-4.7446.3795-.5427 1.3408-.5661 2.1781-.463zm.2284 7.0137a12.3762 12.3762 0 0 0-.0853-.1074l-.0355-.0444c.7262-1.1995.5842-2.3862.4578-3.4385-.0519-.4318-.1009-.8396-.0885-1.2226.0129-.4061.0666-.7543.1185-1.0911.0639-.415.1288-.8443.1109-1.3505.0134-.0531.0188-.1158.0118-.1902-.0457-.4855-.5999-1.938-1.7294-3.253-.6076-.7073-1.4896-1.4972-2.6889-2.0395.5251-.1066 1.2328-.2035 2.0244-.1859 2.0515.0456 3.6746.8135 4.8242 2.2824a.908.908 0 0 1 .0667.1002c.7231 1.3556-.2762 6.2751-2.9867 10.5405zm-8.8166-6.1162c-.025.1794-.3089.4225-.6211.4225a.5821.5821 0 0 1-.0809-.0056c-.1873-.026-.3765-.144-.5059-.3156-.0458-.0605-.1203-.178-.1055-.2844.0055-.0401.0261-.0985.0925-.1488.1182-.0894.3518-.1226.6096-.0867.3163.0441.6426.1938.6113.4186zm7.9305-.4114c.0111.0792-.049.201-.1531.3102-.0683.0717-.212.1961-.4079.2232a.5456.5456 0 0 1-.075.0052c-.2935 0-.5414-.2344-.5607-.3717-.024-.1765.2641-.3106.5611-.352.297-.0414.6111.0088.6356.1851z"/></svg><span>PostgreSQL</span></li>
+        <li class="ab2-tech rv" style="--i:4"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="#8C88FF" d="M1.713.002A1.713 1.713 0 0 0 0 1.715a1.713 1.713 0 0 0 1.713 1.713 1.713 1.713 0 0 0 1.714-1.713A1.713 1.713 0 0 0 1.713.002Zm6.861 0a1.713 1.713 0 0 0-1.713 1.713 1.713 1.713 0 0 0 1.713 1.713 1.713 1.713 0 0 0 1.713-1.713A1.713 1.713 0 0 0 8.574.002Zm6.857 0a1.713 1.713 0 0 0-1.714 1.713 1.713 1.713 0 0 0 1.714 1.713 1.713 1.713 0 0 0 1.713-1.713A1.713 1.713 0 0 0 15.431.002zm6.856 0a1.713 1.713 0 0 0-1.713 1.713 1.713 1.713 0 0 0 1.713 1.713A1.713 1.713 0 0 0 24 1.715 1.713 1.713 0 0 0 22.287.002ZM1.713 6.859A1.713 1.713 0 0 0 0 8.572a1.713 1.713 0 0 0 1.713 1.713 1.713 1.713 0 0 0 1.714-1.713A1.713 1.713 0 0 0 1.713 6.86Zm6.861 0c-.948 0-1.713.765-1.713 1.713v13.713c0 .947.765 1.713 1.713 1.713.948 0 1.713-.766 1.713-1.713V8.572c0-.948-.765-1.713-1.713-1.713zm6.857 0a1.713 1.713 0 0 0-1.714 1.713 1.713 1.713 0 0 0 1.714 1.713 1.713 1.713 0 0 0 1.713-1.713 1.713 1.713 0 0 0-1.713-1.713zm6.856 0c-.947 0-1.713.765-1.713 1.713v13.713c0 .947.766 1.713 1.713 1.713.948 0 1.713-.766 1.713-1.713V8.572c0-.948-.765-1.713-1.713-1.713zM1.713 13.715C.766 13.715 0 14.48 0 15.428v6.857c0 .947.766 1.713 1.713 1.713.948 0 1.714-.766 1.714-1.713v-6.857c0-.948-.766-1.713-1.714-1.713zm13.718 0c-.948 0-1.714.765-1.714 1.713v6.857c0 .947.766 1.713 1.714 1.713.947 0 1.713-.766 1.713-1.713v-6.857c0-.948-.766-1.713-1.713-1.713z"/></svg><span>Plotly</span></li>
+        <li class="ab2-tech rv" style="--i:5"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="#FFFFFF" d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></svg><span>GitHub</span></li>
+        <li class="ab2-tech rv" style="--i:6"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="#2496ED" d="M13.983 11.078h2.119a.186.186 0 00.186-.185V9.006a.186.186 0 00-.186-.186h-2.119a.185.185 0 00-.185.185v1.888c0 .102.083.185.185.185m-2.954-5.43h2.118a.186.186 0 00.186-.186V3.574a.186.186 0 00-.186-.185h-2.118a.185.185 0 00-.185.185v1.888c0 .102.082.185.185.185m0 2.716h2.118a.187.187 0 00.186-.186V6.29a.186.186 0 00-.186-.185h-2.118a.185.185 0 00-.185.185v1.887c0 .102.082.185.185.186m-2.93 0h2.12a.186.186 0 00.184-.186V6.29a.185.185 0 00-.185-.185H8.1a.185.185 0 00-.185.185v1.887c0 .102.083.185.185.186m-2.964 0h2.119a.186.186 0 00.185-.186V6.29a.185.185 0 00-.185-.185H5.136a.186.186 0 00-.186.185v1.887c0 .102.084.185.186.186m5.893 2.715h2.118a.186.186 0 00.186-.185V9.006a.186.186 0 00-.186-.186h-2.118a.185.185 0 00-.185.185v1.888c0 .102.082.185.185.185m-2.93 0h2.12a.185.185 0 00.184-.185V9.006a.185.185 0 00-.184-.186h-2.12a.185.185 0 00-.184.185v1.888c0 .102.083.185.185.185m-2.964 0h2.119a.185.185 0 00.185-.185V9.006a.185.185 0 00-.184-.186h-2.12a.186.186 0 00-.186.186v1.887c0 .102.084.185.186.185m-2.92 0h2.12a.185.185 0 00.184-.185V9.006a.185.185 0 00-.184-.186h-2.12a.185.185 0 00-.184.185v1.888c0 .102.082.185.185.185M23.763 9.89c-.065-.051-.672-.51-1.954-.51-.338.001-.676.03-1.01.087-.248-1.7-1.653-2.53-1.716-2.566l-.344-.199-.226.327c-.284.438-.49.922-.612 1.43-.23.97-.09 1.882.403 2.661-.595.332-1.55.413-1.744.42H.751a.751.751 0 00-.75.748 11.376 11.376 0 00.692 4.062c.545 1.428 1.355 2.48 2.41 3.124 1.18.723 3.1 1.137 5.275 1.137.983.003 1.963-.086 2.93-.266a12.248 12.248 0 003.823-1.389c.98-.567 1.86-1.288 2.61-2.136 1.252-1.418 1.998-2.997 2.553-4.4h.221c1.372 0 2.215-.549 2.68-1.009.309-.293.55-.65.707-1.046l.098-.288Z"/></svg><span>Docker</span></li>
+        <li class="ab2-tech rv" style="--i:7"><svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="#c9f600" stroke-width="1.6" stroke-linecap="round"><rect x="5" y="5" width="14" height="14" rx="2.5"/><path d="M9 2v3M12 2v3M15 2v3M9 19v3M12 19v3M15 19v3M2 9h3M2 12h3M2 15h3M19 9h3M19 12h3M19 15h3"/><text x="12" y="15.2" text-anchor="middle" font-size="7.5" font-weight="800" fill="#c9f600" stroke="none" font-family="Plus Jakarta Sans,Arial,sans-serif">AI</text></svg><span>AI / GenAI</span></li>
+    </ul>
+  </div>
+</div>
+</div>
+<div class="op-sep" aria-hidden="true"></div>
+<div class="op-page-contact ct2">
+<section id="contact" class="ct2-hero" data-theme="dark">
+  <div class="ct2-art" aria-hidden="true">
+    <div class="ct2-hq"><img src="/assets/img/art/contact-hq.jpg" width="678" height="304" alt="" fetchpriority="high"></div>
+    <svg class="ct2-arc" viewBox="0 0 600 300"><path d="M560 60C420 -10 120 20 60 150S300 290 470 230" fill="none" stroke="#c9f600" stroke-width="3" stroke-linecap="round"/></svg>
+    <div class="ct2-flight"><div class="ct2-bird"><img src="/assets/img/art/bird-body.webp" width="690" height="560" alt=""><div class="ct2-wing"><img src="/assets/img/art/bird-wing.webp" width="690" height="560" alt=""></div></div></div>
+    <span class="ct2-pt" style="--x:8%;--y:30%;--d:0s"></span><span class="ct2-pt" style="--x:34%;--y:8%;--d:-2s"></span><span class="ct2-pt" style="--x:62%;--y:18%;--d:-4s"></span><span class="ct2-pt" style="--x:90%;--y:36%;--d:-1s"></span><span class="ct2-pt" style="--x:22%;--y:70%;--d:-3s"></span><span class="ct2-pt" style="--x:76%;--y:6%;--d:-5s"></span>
+  </div>
+  <div class="wrap ct2-hero-in">
+    <p class="ct2-eyebrow">Get in Touch</p>
+    <h1>Let&rsquo;s Build<br>Your Next <em>Big Idea</em></h1>
+    <p class="ct2-lead">Have a project in mind? We&rsquo;re here to turn your ideas into a powerful digital reality.</p>
+    <ul class="ct2-badges">
+      <li><svg class="ic" aria-hidden="true"><use href="#i-zap"/></svg><div><b>Quick Response</b><span>Within 24 Hours</span></div></li>
+      <li><svg class="ic" aria-hidden="true"><use href="#i-headphones"/></svg><div><b>Project Discussion</b><span>Free Consultation</span></div></li>
+    </ul>
+  </div>
+</section>
+
+<div id="enquiry" class="ct2-main">
+  <div class="wrap ct2-grid">
+    <!-- contact cards -->
+    <div class="ct2-panel ct2-cards">
+      <a class="ct2-card" href="https://wa.me/919843983376" target="_blank" rel="noopener noreferrer" aria-label="Chat with ELTORA on WhatsApp at +91 98439 83376 (opens WhatsApp)">
+        <span class="ct2-ci"><svg class="ic" aria-hidden="true"><use href="#i-phone"/></svg></span>
+        <span class="ct2-ct"><b>Call / WhatsApp</b><span>+91 98439 83376</span></span>
+        <svg class="ic ct2-go" aria-hidden="true"><use href="#i-external-link"/></svg>
+      </a>
+      <a class="ct2-card" href="mailto:eltora2026@gmail.com" aria-label="Email ELTORA at eltora2026@gmail.com">
+        <span class="ct2-ci"><svg class="ic" aria-hidden="true"><use href="#i-mail"/></svg></span>
+        <span class="ct2-ct"><b>Email Us</b><span>eltora2026@gmail.com</span></span>
+        <svg class="ic ct2-go" aria-hidden="true"><use href="#i-external-link"/></svg>
+      </a>
+      <a class="ct2-card" href="https://www.google.com/maps/search/?api=1&amp;query=Krishnagiri%2C+Tamil+Nadu%2C+India" target="_blank" rel="noopener noreferrer" aria-label="Open Krishnagiri, Tamil Nadu in Google Maps">
+        <span class="ct2-ci"><svg class="ic" aria-hidden="true"><use href="#i-map-pin"/></svg></span>
+        <span class="ct2-ct"><b>Our Location</b><span>Krishnagiri, Tamil Nadu<br>India &ndash; 635001</span></span>
+        <svg class="ic ct2-go" aria-hidden="true"><use href="#i-external-link"/></svg>
+      </a>
+    </div>
+
+    <!-- enquiry form -->
+    <form class="ct2-panel ct2-form" id="contact-form" novalidate aria-labelledby="form-title">
+      <h2 id="form-title"><svg class="ic" aria-hidden="true"><use href="#i-mail"/></svg>Send us a <em>Message</em></h2>
+      <p class="ct2-sub">Fill in the details below and our team will get back to you soon.</p>
+      <div class="ct2-hp" aria-hidden="true"><label for="cf-company">Company website</label><input id="cf-company" type="text" name="company_website" tabindex="-1" autocomplete="off"></div>
+      <div class="ct2-fields">
+        <div class="ct2-f">
+          <label for="cf-name">Your Name <i aria-hidden="true">*</i></label>
+          <div class="ct2-in"><svg class="ic" aria-hidden="true"><use href="#i-user"/></svg><input id="cf-name" name="name" type="text" placeholder="Enter your name" autocomplete="name" maxlength="100" required aria-required="true" aria-describedby="cf-name-err"></div>
+          <p class="ct2-err" id="cf-name-err"></p>
+        </div>
+        <div class="ct2-f">
+          <label for="cf-email">Your Email <i aria-hidden="true">*</i></label>
+          <div class="ct2-in"><svg class="ic" aria-hidden="true"><use href="#i-mail"/></svg><input id="cf-email" name="email" type="email" placeholder="Enter your email" autocomplete="email" maxlength="254" required aria-required="true" aria-describedby="cf-email-err"></div>
+          <p class="ct2-err" id="cf-email-err"></p>
+        </div>
+        <div class="ct2-f">
+          <label for="cf-phone">Phone Number <small>(optional)</small></label>
+          <div class="ct2-in"><svg class="ic" aria-hidden="true"><use href="#i-phone"/></svg><input id="cf-phone" name="phone" type="tel" placeholder="Enter your phone number" autocomplete="tel" maxlength="30" aria-describedby="cf-phone-err"></div>
+          <p class="ct2-err" id="cf-phone-err"></p>
+        </div>
+        <div class="ct2-f">
+          <label for="cf-type">Project Type <i aria-hidden="true">*</i></label>
+          <div class="ct2-in ct2-sel"><svg class="ic" aria-hidden="true"><use href="#i-layers"/></svg><select id="cf-type" name="projectType" required aria-required="true" aria-describedby="cf-type-err"><option value="" selected disabled>Select a project type</option><option>Website Development</option><option>E-Commerce Website</option><option>AI Solutions</option><option>AI Agent Development</option><option>AI Voice Assistant</option><option>Business Automation</option><option>Data Analytics</option><option>Custom Software</option><option>UI/UX &amp; Branding</option><option>Mobile Application</option><option>Other</option></select><svg class="ic ct2-chev" aria-hidden="true"><use href="#i-chevron-down"/></svg></div>
+          <p class="ct2-err" id="cf-type-err"></p>
+        </div>
+        <div class="ct2-f ct2-wide">
+          <label for="cf-msg"><svg class="ic" aria-hidden="true"><use href="#c-msg"/></svg>Your Message <i aria-hidden="true">*</i></label>
+          <div class="ct2-in ct2-ta"><textarea id="cf-msg" name="message" rows="4" placeholder="Tell us about your project, requirements or idea..." maxlength="5000" required aria-required="true" aria-describedby="cf-msg-err"></textarea></div>
+          <p class="ct2-err" id="cf-msg-err"></p>
+        </div>
+      </div>
+      <button class="ct2-submit" type="submit"><span class="ct2-spin" aria-hidden="true"></span><svg class="ic ct2-plane" aria-hidden="true"><use href="#c-send"/></svg><span class="ct2-lbl">Send Message</span><svg class="ic" aria-hidden="true"><use href="#i-arrow-up-right"/></svg></button>
+      <div class="ct2-status" id="cf-status" role="status" aria-live="polite" tabindex="-1" hidden></div>
+    </form>
+
+    <!-- office -->
+    <a class="ct2-panel ct2-office" href="https://www.google.com/maps/search/?api=1&amp;query=Krishnagiri%2C+Tamil+Nadu%2C+India" target="_blank" rel="noopener noreferrer" aria-label="Our office: Krishnagiri, Tamil Nadu. Open in Google Maps">
+      <div class="ct2-office-top">
+        <div class="ct2-map" style="--kx:47.99%;--ky:19.60%"><svg class="ct2-tn" viewBox="0 0 422.4 562.0" role="img" aria-label="Map of Tamil Nadu with Krishnagiri marked in the north-west"><defs><pattern id="tndots" width="7" height="7" patternUnits="userSpaceOnUse"><circle cx="3.5" cy="3.5" r="1.2" fill="#c9f600" fill-opacity=".7"/></pattern><clipPath id="tnclip"><path d="M363.2 281.0 L363.4 286.5 L363.5 302.8 L364.4 306.9 L364.8 324.1 L364.1 332.7 L363.6 333.8 L361.9 334.1 L360.0 334.8 L358.1 335.1 L356.4 334.5 L356.6 332.3 L354.3 331.1 L342.1 329.1 L341.0 329.6 L340.3 331.0 L341.9 331.0 L343.5 331.0 L345.0 331.3 L346.4 331.7 L347.2 332.1 L348.2 332.8 L349.1 333.1 L351.7 333.1 L354.5 333.8 L356.0 334.6 L355.8 335.8 L354.6 336.2 L336.9 332.4 L335.3 332.3 L334.6 332.1 L334.2 331.7 L334.2 330.7 L334.7 330.4 L335.5 330.4 L336.3 330.3 L339.3 329.1 L339.6 328.4 L337.6 327.6 L335.7 328.4 L331.9 328.2 L332.2 329.0 L332.2 329.7 L330.2 330.3 L325.1 331.2 L322.9 331.0 L320.4 329.9 L319.1 329.5 L317.8 330.0 L315.7 331.8 L309.9 335.2 L308.1 336.7 L306.7 338.6 L306.5 339.7 L306.5 341.0 L306.4 342.2 L305.7 342.7 L304.3 343.1 L303.5 344.0 L303.2 345.3 L303.3 346.8 L304.0 353.5 L304.9 356.6 L307.4 358.4 L303.6 360.9 L299.6 365.0 L293.9 372.9 L291.9 377.0 L290.1 379.0 L289.9 379.4 L289.2 381.8 L287.6 383.8 L283.8 387.3 L278.1 395.3 L278.0 396.1 L278.0 397.1 L277.7 398.2 L277.3 398.9 L276.2 399.7 L275.7 400.3 L274.8 401.7 L273.9 403.6 L273.2 405.8 L272.6 410.6 L271.4 414.6 L271.6 416.7 L273.4 420.4 L276.0 423.5 L283.9 430.5 L287.3 432.0 L291.3 432.9 L304.7 433.1 L306.8 432.3 L309.1 430.7 L311.4 429.7 L313.5 430.4 L313.9 431.3 L313.6 432.1 L313.0 433.0 L312.7 434.2 L312.9 435.2 L313.4 435.9 L313.9 436.4 L314.1 437.0 L314.7 437.9 L316.1 439.2 L323.0 444.4 L324.5 446.1 L323.2 446.9 L321.6 446.1 L315.4 440.7 L308.7 437.0 L302.8 436.2 L301.3 435.3 L299.7 435.3 L298.0 434.8 L296.2 434.6 L292.7 436.4 L289.6 436.3 L288.5 436.6 L285.9 435.5 L282.5 434.6 L278.9 434.2 L275.7 434.5 L274.9 435.0 L273.0 436.6 L271.9 436.8 L271.2 436.8 L270.6 436.6 L269.7 436.6 L266.3 437.1 L264.6 437.6 L261.8 439.2 L258.1 440.1 L256.5 441.0 L255.6 441.9 L254.5 442.7 L253.2 443.3 L248.2 443.6 L246.7 444.3 L246.1 445.8 L245.5 446.9 L244.1 447.5 L242.5 447.9 L229.4 449.5 L225.9 450.3 L222.2 452.0 L218.8 454.3 L205.3 465.4 L203.1 468.1 L199.7 474.3 L199.2 475.9 L198.9 482.6 L198.5 484.8 L197.7 486.7 L199.0 485.6 L200.3 485.5 L201.4 485.0 L202.4 483.2 L202.9 485.5 L201.8 486.7 L200.0 487.5 L198.3 488.6 L197.9 489.3 L196.9 492.1 L195.5 493.9 L195.2 495.0 L195.7 496.2 L193.0 496.2 L195.0 499.4 L195.7 502.7 L194.3 513.2 L193.8 514.2 L193.0 515.4 L190.3 518.0 L189.6 518.8 L187.9 524.7 L187.2 525.6 L185.5 525.9 L181.7 527.5 L162.7 539.1 L161.4 540.5 L159.0 543.8 L157.4 544.6 L146.7 546.4 L142.0 548.1 L138.6 550.5 L139.0 553.7 L133.7 554.4 L127.7 553.3 L114.5 549.2 L113.8 548.9 L112.4 547.3 L111.7 546.6 L109.3 545.2 L107.0 544.5 L105.6 543.6 L96.1 534.8 L94.3 533.5 L95.1 532.7 L95.4 532.5 L96.0 532.5 L97.8 532.7 L98.7 532.4 L99.4 531.8 L99.8 531.3 L99.9 530.6 L99.9 529.9 L99.8 528.8 L99.8 528.3 L100.3 527.2 L101.4 525.2 L103.5 522.6 L104.3 521.2 L104.7 520.1 L104.5 519.2 L103.7 516.4 L103.6 515.5 L103.6 514.5 L103.7 514.1 L103.9 513.9 L104.1 514.0 L104.4 514.2 L105.0 514.9 L105.6 515.2 L106.4 515.1 L107.5 514.3 L109.3 512.4 L110.3 510.9 L110.9 509.4 L110.9 508.3 L110.5 507.3 L109.9 506.5 L108.1 504.5 L103.5 500.8 L102.8 499.9 L102.3 499.0 L101.9 498.1 L101.8 497.1 L101.7 495.4 L101.5 494.6 L101.2 493.7 L101.1 492.5 L101.2 491.6 L102.4 490.1 L106.6 483.6 L108.3 478.0 L108.4 476.9 L108.3 476.6 L108.0 476.1 L107.5 475.5 L106.7 474.9 L104.9 473.9 L103.4 472.6 L102.3 469.9 L100.0 463.6 L99.7 461.9 L99.9 461.6 L100.5 461.0 L104.1 458.5 L106.1 455.6 L108.5 449.8 L114.2 431.9 L116.8 427.6 L119.2 420.4 L119.8 419.1 L120.4 418.3 L123.2 415.9 L123.2 413.4 L122.6 412.0 L119.6 408.4 L118.9 407.0 L118.1 405.1 L117.6 404.4 L117.0 404.0 L116.3 403.9 L114.5 404.0 L113.8 404.1 L109.4 406.3 L108.5 406.3 L107.5 406.2 L106.9 405.7 L106.0 404.8 L105.6 404.4 L105.0 404.1 L104.4 403.9 L103.6 403.7 L102.9 403.4 L102.4 403.2 L102.1 402.9 L101.8 402.3 L101.8 401.6 L101.9 400.7 L106.6 385.5 L106.8 384.1 L106.8 382.3 L106.2 380.1 L105.7 376.1 L105.8 374.8 L106.0 373.7 L108.7 368.3 L109.1 366.8 L109.1 365.8 L107.0 359.5 L105.5 356.2 L105.5 355.4 L105.9 354.4 L110.5 344.6 L110.9 342.8 L110.9 341.7 L110.7 341.0 L110.3 340.6 L109.1 339.8 L108.5 338.9 L107.9 337.5 L107.8 335.5 L107.2 333.6 L106.6 332.6 L104.3 328.6 L103.9 328.1 L102.3 326.9 L100.0 327.5 L96.4 329.5 L92.1 331.0 L90.8 331.7 L89.8 332.4 L85.5 336.5 L82.2 338.9 L80.5 339.5 L79.3 339.7 L77.8 338.8 L77.3 338.7 L76.4 338.4 L75.8 338.1 L74.9 337.3 L73.0 335.0 L71.8 333.9 L70.7 333.0 L68.7 331.7 L67.9 330.9 L67.6 329.9 L67.6 328.6 L67.8 325.9 L67.6 324.7 L67.0 323.5 L65.6 321.5 L65.1 320.5 L64.8 319.5 L64.7 318.3 L65.0 315.1 L65.9 312.9 L66.0 312.4 L66.1 312.1 L66.5 306.8 L65.9 298.7 L66.1 297.4 L66.7 296.7 L67.7 296.6 L68.9 296.3 L70.1 295.6 L71.3 294.2 L71.6 292.7 L71.6 289.0 L71.8 287.7 L72.4 286.1 L72.6 285.0 L72.7 284.0 L72.4 282.8 L72.1 282.3 L71.5 281.9 L70.8 281.6 L70.0 281.2 L69.2 280.5 L68.6 279.5 L68.2 278.5 L67.7 276.9 L67.2 275.9 L66.7 275.0 L65.8 274.4 L60.8 272.1 L55.9 270.6 L54.4 269.8 L53.1 268.7 L51.8 266.4 L51.4 264.5 L51.3 263.1 L51.5 261.7 L51.9 260.3 L52.3 259.4 L52.8 258.7 L53.3 258.2 L54.1 257.9 L54.9 257.8 L55.8 258.1 L57.7 259.0 L58.6 259.1 L59.5 258.9 L60.2 258.3 L60.7 257.4 L60.6 256.8 L60.1 256.3 L59.3 256.0 L58.5 254.9 L57.7 253.3 L56.6 249.8 L55.9 248.1 L55.0 247.0 L54.2 246.4 L53.6 245.8 L52.9 244.6 L52.8 243.9 L53.0 243.1 L53.7 242.0 L54.2 240.7 L54.4 238.9 L54.3 238.2 L53.9 238.0 L53.1 238.4 L50.4 240.4 L49.7 240.8 L48.3 241.1 L41.6 241.5 L39.3 242.0 L38.4 242.0 L37.4 241.7 L35.1 240.7 L34.5 240.5 L34.0 240.5 L33.4 240.6 L31.1 241.5 L30.1 241.5 L29.3 241.3 L28.6 240.6 L28.5 239.7 L28.9 238.6 L30.9 235.8 L31.8 234.9 L37.7 230.7 L38.6 228.2 L36.0 226.8 L33.9 223.5 L32.9 222.7 L31.7 222.2 L30.6 221.9 L29.3 221.4 L28.4 220.7 L26.4 218.8 L25.5 218.3 L14.8 215.0 L10.4 214.2 L9.5 213.3 L9.1 212.5 L9.0 212.1 L9.0 212.0 L8.9 211.5 L8.8 211.0 L8.5 210.5 L8.2 209.8 L7.9 209.1 L8.0 208.3 L8.5 206.7 L8.6 206.0 L8.1 204.3 L8.0 203.4 L8.3 202.6 L8.9 201.6 L11.4 201.9 L12.5 202.5 L14.7 203.2 L16.3 203.3 L18.6 202.9 L19.8 202.0 L20.7 200.8 L21.2 199.8 L22.0 198.8 L23.2 198.0 L24.8 197.7 L25.6 197.4 L26.1 197.1 L26.3 196.8 L26.4 196.3 L26.5 196.0 L26.1 195.3 L26.7 194.3 L27.0 193.7 L27.6 193.1 L28.4 192.2 L29.6 191.3 L31.0 190.5 L32.8 190.0 L34.7 190.1 L37.5 191.1 L38.7 192.3 L39.2 193.6 L39.0 195.6 L39.0 196.6 L39.3 197.5 L40.0 198.1 L41.0 198.6 L42.6 198.9 L44.7 198.9 L59.0 197.8 L60.6 198.0 L65.9 199.4 L66.5 198.7 L67.0 197.8 L68.2 191.5 L70.6 187.4 L74.4 182.0 L75.5 181.3 L76.8 180.8 L78.9 180.7 L80.4 180.5 L82.3 179.7 L83.2 179.4 L84.7 179.8 L86.1 180.6 L91.6 186.3 L92.9 187.0 L94.0 186.7 L94.8 185.4 L95.2 183.4 L95.5 182.7 L96.3 182.3 L97.7 182.0 L100.5 181.6 L105.2 181.8 L106.6 181.4 L107.8 180.8 L109.0 180.3 L110.2 180.4 L111.1 180.8 L112.8 181.4 L113.6 181.8 L115.4 183.2 L116.8 183.7 L118.3 183.6 L120.7 182.9 L123.6 182.8 L124.6 182.4 L126.1 180.8 L127.0 179.1 L128.9 173.8 L129.6 172.5 L131.1 170.4 L131.6 169.4 L133.2 168.5 L134.3 168.0 L144.7 167.0 L146.6 166.6 L147.5 166.2 L148.3 165.7 L149.4 164.9 L150.5 162.3 L153.9 158.1 L154.8 156.2 L155.8 155.4 L156.7 154.5 L157.4 153.8 L157.7 153.5 L158.1 153.2 L158.3 152.8 L158.5 152.4 L158.7 151.9 L158.9 151.0 L159.0 150.5 L159.0 150.0 L158.6 149.1 L155.9 144.6 L155.1 144.0 L154.7 143.5 L152.1 142.2 L149.1 141.6 L131.8 141.5 L131.0 141.2 L130.5 140.5 L130.7 138.8 L130.3 137.8 L129.1 137.1 L129.1 135.8 L129.3 135.5 L129.8 134.6 L130.6 133.7 L131.6 133.1 L135.5 131.2 L138.6 128.0 L139.7 126.2 L141.5 124.2 L142.3 123.0 L142.9 121.4 L144.3 115.3 L144.4 113.9 L143.9 112.8 L143.4 112.5 L142.7 112.5 L141.8 112.7 L141.1 112.8 L140.5 112.8 L140.2 112.5 L139.9 112.1 L139.9 112.0 L140.6 110.1 L140.6 109.3 L140.1 108.1 L139.6 107.5 L139.4 106.0 L139.7 103.8 L141.0 99.6 L143.4 94.7 L145.7 93.9 L146.4 93.8 L147.4 93.8 L149.2 94.3 L150.2 94.4 L151.2 94.2 L152.4 93.8 L156.6 91.3 L157.5 91.0 L158.2 90.6 L158.7 90.1 L158.6 89.2 L158.3 88.7 L157.9 88.1 L157.7 87.5 L157.8 86.7 L158.2 85.7 L159.9 83.2 L161.1 80.9 L162.2 76.3 L166.6 74.8 L171.4 74.7 L172.4 74.9 L173.4 75.2 L174.5 75.9 L175.3 76.7 L176.0 77.5 L176.6 78.4 L178.3 80.4 L179.3 81.1 L180.5 81.6 L181.9 81.3 L182.4 80.9 L182.6 80.2 L182.7 79.8 L183.1 79.2 L184.6 77.1 L185.7 77.0 L187.2 77.4 L190.5 79.4 L194.8 82.9 L197.8 84.5 L204.3 86.0 L208.7 92.3 L211.1 94.5 L216.4 97.8 L218.9 98.6 L219.9 98.8 L220.9 98.8 L222.9 98.7 L223.5 98.6 L224.5 98.2 L225.7 97.6 L229.9 93.2 L230.4 91.5 L230.6 90.1 L230.5 88.9 L230.6 88.0 L230.9 87.5 L231.2 87.4 L231.9 87.7 L232.5 88.3 L233.2 88.6 L234.1 88.4 L237.9 85.5 L238.5 85.0 L239.0 84.2 L241.7 77.0 L243.4 70.4 L244.1 68.6 L244.4 67.6 L244.5 64.8 L244.8 63.6 L245.1 62.8 L246.0 61.4 L246.7 60.6 L247.6 60.2 L248.8 60.2 L250.0 60.0 L250.8 59.4 L251.4 58.5 L252.2 56.8 L252.9 56.2 L254.0 55.9 L258.0 55.4 L260.3 54.7 L261.7 54.4 L266.1 54.0 L267.2 54.5 L267.7 55.6 L268.0 56.8 L268.5 57.9 L269.3 58.3 L270.3 58.2 L271.6 57.4 L272.3 56.5 L272.7 55.7 L272.8 54.8 L273.2 53.3 L273.7 52.8 L274.5 52.7 L276.1 52.7 L278.6 53.1 L279.3 53.3 L279.8 53.6 L280.2 53.9 L280.5 54.4 L280.8 55.8 L281.2 56.4 L281.9 56.7 L284.5 57.0 L285.6 57.3 L286.5 57.9 L287.6 58.4 L289.0 58.6 L291.1 58.1 L294.7 57.8 L295.8 57.5 L296.9 56.8 L297.5 56.2 L300.0 53.2 L303.5 48.2 L304.6 47.2 L305.8 46.9 L307.2 47.2 L308.2 48.0 L308.9 48.8 L309.8 49.1 L310.9 48.8 L312.3 47.6 L314.4 45.0 L316.2 43.4 L317.1 42.2 L317.9 41.6 L321.2 40.0 L321.9 38.8 L321.9 37.6 L321.7 36.6 L321.6 35.9 L321.7 35.2 L322.7 33.2 L322.9 32.4 L323.0 30.6 L323.2 29.8 L323.6 29.3 L324.1 28.9 L325.8 28.3 L328.2 28.0 L329.6 28.1 L331.2 28.4 L332.3 28.9 L333.4 29.6 L334.7 31.2 L335.4 32.6 L336.1 33.6 L337.1 34.2 L338.9 34.3 L345.6 32.9 L346.8 33.1 L347.6 33.7 L347.9 35.3 L347.9 36.3 L347.7 37.1 L347.8 37.7 L348.4 38.4 L350.8 39.7 L352.3 39.6 L354.2 39.6 L355.1 39.9 L356.2 39.9 L357.1 39.6 L357.6 38.5 L357.6 37.8 L357.2 37.2 L356.6 36.7 L355.9 36.3 L355.2 35.9 L354.6 35.5 L354.2 35.0 L354.0 34.3 L354.1 33.5 L354.4 32.7 L355.0 32.2 L356.2 32.2 L357.0 32.6 L358.4 32.8 L360.1 32.5 L365.7 30.3 L373.9 25.4 L374.7 24.2 L374.8 23.2 L374.6 22.5 L374.3 21.8 L374.3 21.2 L374.4 20.3 L375.2 19.3 L376.6 17.6 L378.2 16.4 L380.1 15.5 L382.4 14.8 L383.1 14.4 L383.5 13.6 L383.6 12.8 L383.4 12.3 L383.0 11.8 L382.2 11.3 L381.6 10.7 L381.1 10.1 L381.0 9.6 L381.1 9.0 L381.5 8.6 L382.2 8.4 L382.9 8.6 L385.0 10.1 L386.5 10.7 L388.9 10.8 L389.0 11.1 L389.0 12.1 L388.9 12.6 L388.6 13.2 L388.1 14.1 L387.9 14.5 L387.8 15.1 L387.8 15.6 L388.3 16.1 L389.2 16.3 L391.6 16.0 L393.2 16.1 L398.0 17.2 L400.3 16.9 L403.6 15.4 L403.7 15.2 L403.7 15.2 L404.3 15.2 L404.0 16.9 L405.2 18.0 L407.0 19.1 L408.3 20.7 L408.9 19.7 L409.0 19.3 L410.3 19.0 L411.0 20.7 L412.0 24.5 L412.3 27.1 L412.1 29.9 L411.2 34.9 L411.0 37.7 L410.0 37.3 L409.6 37.1 L409.4 38.9 L409.0 40.5 L409.4 40.3 L411.0 39.9 L410.9 42.2 L410.0 44.0 L409.0 45.6 L408.3 47.4 L408.4 48.4 L409.0 51.4 L408.4 52.4 L406.6 54.3 L406.3 55.2 L406.0 59.1 L404.6 66.3 L404.0 78.5 L402.9 85.7 L401.1 90.9 L400.6 94.5 L400.0 96.0 L398.2 98.8 L397.5 100.6 L396.4 105.3 L396.2 107.3 L395.8 108.7 L393.5 114.5 L390.1 120.3 L389.7 121.9 L387.6 125.8 L386.7 126.9 L384.4 128.3 L384.1 128.6 L383.8 128.9 L380.7 134.3 L378.7 136.4 L373.5 139.0 L372.7 140.2 L373.6 140.6 L375.6 139.8 L378.7 137.8 L373.0 146.6 L371.7 148.1 L371.1 149.0 L368.1 155.1 L365.4 158.3 L364.6 159.8 L364.5 160.8 L364.6 164.2 L364.4 164.7 L363.5 166.1 L363.4 166.5 L363.3 166.5 L361.1 167.3 L359.7 168.4 L357.7 170.3 L357.0 170.6 L356.4 170.6 L355.7 169.8 L355.3 169.5 L354.4 168.9 L354.0 168.6 L353.9 168.2 L354.1 167.7 L355.4 166.3 L355.7 165.9 L355.9 165.3 L355.9 164.8 L355.5 164.3 L354.7 164.2 L351.8 164.7 L350.8 164.5 L350.0 163.9 L349.4 163.1 L348.6 162.1 L348.0 161.8 L347.5 161.9 L347.4 162.0 L347.3 162.0 L346.4 163.1 L346.0 163.8 L345.8 164.4 L346.0 165.0 L347.8 166.6 L348.1 167.3 L348.1 167.7 L348.1 168.4 L348.1 169.0 L348.2 169.5 L348.5 169.9 L349.3 170.2 L349.6 170.6 L349.8 171.5 L349.8 172.4 L349.6 173.3 L349.2 174.1 L348.7 175.1 L348.7 175.8 L349.0 176.2 L349.6 176.3 L350.1 176.5 L350.6 176.9 L351.4 177.8 L351.8 178.1 L352.2 178.2 L352.7 178.1 L353.2 178.1 L353.7 178.2 L354.2 178.3 L356.3 178.8 L358.9 178.7 L359.6 178.7 L359.6 178.7 L358.9 182.4 L357.8 183.2 L357.1 185.1 L355.3 194.6 L354.9 198.6 L354.0 202.3 L353.8 204.3 L354.3 208.4 L356.6 215.5 L357.2 219.4 L357.8 219.4 L358.3 218.5 L358.5 217.8 L358.3 217.2 L357.8 216.6 L359.5 216.9 L360.2 217.7 L360.7 222.9 L360.4 223.9 L359.5 224.1 L356.8 224.1 L356.2 224.0 L355.5 223.9 L354.5 224.2 L353.6 224.6 L352.7 225.4 L347.2 230.8 L346.4 232.4 L347.1 232.4 L348.3 231.7 L352.8 228.4 L353.8 227.9 L354.5 226.2 L356.2 225.7 L358.2 226.1 L360.9 227.3 L361.5 227.4 L361.8 227.8 L362.0 235.6 L364.0 246.0 L363.7 261.3 L363.1 264.0 L361.0 263.5 L359.1 263.5 L357.6 264.4 L357.1 264.9 L356.3 264.8 L354.4 263.9 L352.4 263.4 L351.7 263.7 L351.5 264.4 L352.0 264.9 L352.6 265.2 L353.0 266.0 L353.1 267.3 L352.9 267.6 L352.4 267.8 L351.9 267.9 L350.7 266.8 L349.2 266.8 L349.1 267.6 L349.7 268.3 L350.4 268.5 L350.1 269.1 L349.3 269.9 L349.2 271.0 L349.9 271.6 L350.8 272.0 L351.8 272.0 L352.6 272.4 L352.9 273.3 L353.6 273.6 L354.5 273.1 L355.3 273.1 L355.7 273.5 L355.8 273.9 L355.7 274.4 L356.0 274.8 L357.0 274.5 L357.5 274.5 L358.1 274.7 L358.8 274.9 L358.9 275.5 L358.1 276.1 L358.2 276.6 L358.3 276.9 L357.9 277.5 L358.3 278.4 L359.3 279.0 L359.8 279.4 L360.0 280.1 L362.5 281.1 L363.2 281.0Z M406.5 9.3 L408.6 14.1 L409.0 17.9 L408.3 17.9 L405.5 10.7 L405.5 10.6 L406.2 9.7 L406.5 9.3Z"/></clipPath><filter id="tnglow" x="-20%" y="-20%" width="140%" height="140%"><feGaussianBlur stdDeviation="2.4" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter></defs><path d="M363.2 281.0 L363.4 286.5 L363.5 302.8 L364.4 306.9 L364.8 324.1 L364.1 332.7 L363.6 333.8 L361.9 334.1 L360.0 334.8 L358.1 335.1 L356.4 334.5 L356.6 332.3 L354.3 331.1 L342.1 329.1 L341.0 329.6 L340.3 331.0 L341.9 331.0 L343.5 331.0 L345.0 331.3 L346.4 331.7 L347.2 332.1 L348.2 332.8 L349.1 333.1 L351.7 333.1 L354.5 333.8 L356.0 334.6 L355.8 335.8 L354.6 336.2 L336.9 332.4 L335.3 332.3 L334.6 332.1 L334.2 331.7 L334.2 330.7 L334.7 330.4 L335.5 330.4 L336.3 330.3 L339.3 329.1 L339.6 328.4 L337.6 327.6 L335.7 328.4 L331.9 328.2 L332.2 329.0 L332.2 329.7 L330.2 330.3 L325.1 331.2 L322.9 331.0 L320.4 329.9 L319.1 329.5 L317.8 330.0 L315.7 331.8 L309.9 335.2 L308.1 336.7 L306.7 338.6 L306.5 339.7 L306.5 341.0 L306.4 342.2 L305.7 342.7 L304.3 343.1 L303.5 344.0 L303.2 345.3 L303.3 346.8 L304.0 353.5 L304.9 356.6 L307.4 358.4 L303.6 360.9 L299.6 365.0 L293.9 372.9 L291.9 377.0 L290.1 379.0 L289.9 379.4 L289.2 381.8 L287.6 383.8 L283.8 387.3 L278.1 395.3 L278.0 396.1 L278.0 397.1 L277.7 398.2 L277.3 398.9 L276.2 399.7 L275.7 400.3 L274.8 401.7 L273.9 403.6 L273.2 405.8 L272.6 410.6 L271.4 414.6 L271.6 416.7 L273.4 420.4 L276.0 423.5 L283.9 430.5 L287.3 432.0 L291.3 432.9 L304.7 433.1 L306.8 432.3 L309.1 430.7 L311.4 429.7 L313.5 430.4 L313.9 431.3 L313.6 432.1 L313.0 433.0 L312.7 434.2 L312.9 435.2 L313.4 435.9 L313.9 436.4 L314.1 437.0 L314.7 437.9 L316.1 439.2 L323.0 444.4 L324.5 446.1 L323.2 446.9 L321.6 446.1 L315.4 440.7 L308.7 437.0 L302.8 436.2 L301.3 435.3 L299.7 435.3 L298.0 434.8 L296.2 434.6 L292.7 436.4 L289.6 436.3 L288.5 436.6 L285.9 435.5 L282.5 434.6 L278.9 434.2 L275.7 434.5 L274.9 435.0 L273.0 436.6 L271.9 436.8 L271.2 436.8 L270.6 436.6 L269.7 436.6 L266.3 437.1 L264.6 437.6 L261.8 439.2 L258.1 440.1 L256.5 441.0 L255.6 441.9 L254.5 442.7 L253.2 443.3 L248.2 443.6 L246.7 444.3 L246.1 445.8 L245.5 446.9 L244.1 447.5 L242.5 447.9 L229.4 449.5 L225.9 450.3 L222.2 452.0 L218.8 454.3 L205.3 465.4 L203.1 468.1 L199.7 474.3 L199.2 475.9 L198.9 482.6 L198.5 484.8 L197.7 486.7 L199.0 485.6 L200.3 485.5 L201.4 485.0 L202.4 483.2 L202.9 485.5 L201.8 486.7 L200.0 487.5 L198.3 488.6 L197.9 489.3 L196.9 492.1 L195.5 493.9 L195.2 495.0 L195.7 496.2 L193.0 496.2 L195.0 499.4 L195.7 502.7 L194.3 513.2 L193.8 514.2 L193.0 515.4 L190.3 518.0 L189.6 518.8 L187.9 524.7 L187.2 525.6 L185.5 525.9 L181.7 527.5 L162.7 539.1 L161.4 540.5 L159.0 543.8 L157.4 544.6 L146.7 546.4 L142.0 548.1 L138.6 550.5 L139.0 553.7 L133.7 554.4 L127.7 553.3 L114.5 549.2 L113.8 548.9 L112.4 547.3 L111.7 546.6 L109.3 545.2 L107.0 544.5 L105.6 543.6 L96.1 534.8 L94.3 533.5 L95.1 532.7 L95.4 532.5 L96.0 532.5 L97.8 532.7 L98.7 532.4 L99.4 531.8 L99.8 531.3 L99.9 530.6 L99.9 529.9 L99.8 528.8 L99.8 528.3 L100.3 527.2 L101.4 525.2 L103.5 522.6 L104.3 521.2 L104.7 520.1 L104.5 519.2 L103.7 516.4 L103.6 515.5 L103.6 514.5 L103.7 514.1 L103.9 513.9 L104.1 514.0 L104.4 514.2 L105.0 514.9 L105.6 515.2 L106.4 515.1 L107.5 514.3 L109.3 512.4 L110.3 510.9 L110.9 509.4 L110.9 508.3 L110.5 507.3 L109.9 506.5 L108.1 504.5 L103.5 500.8 L102.8 499.9 L102.3 499.0 L101.9 498.1 L101.8 497.1 L101.7 495.4 L101.5 494.6 L101.2 493.7 L101.1 492.5 L101.2 491.6 L102.4 490.1 L106.6 483.6 L108.3 478.0 L108.4 476.9 L108.3 476.6 L108.0 476.1 L107.5 475.5 L106.7 474.9 L104.9 473.9 L103.4 472.6 L102.3 469.9 L100.0 463.6 L99.7 461.9 L99.9 461.6 L100.5 461.0 L104.1 458.5 L106.1 455.6 L108.5 449.8 L114.2 431.9 L116.8 427.6 L119.2 420.4 L119.8 419.1 L120.4 418.3 L123.2 415.9 L123.2 413.4 L122.6 412.0 L119.6 408.4 L118.9 407.0 L118.1 405.1 L117.6 404.4 L117.0 404.0 L116.3 403.9 L114.5 404.0 L113.8 404.1 L109.4 406.3 L108.5 406.3 L107.5 406.2 L106.9 405.7 L106.0 404.8 L105.6 404.4 L105.0 404.1 L104.4 403.9 L103.6 403.7 L102.9 403.4 L102.4 403.2 L102.1 402.9 L101.8 402.3 L101.8 401.6 L101.9 400.7 L106.6 385.5 L106.8 384.1 L106.8 382.3 L106.2 380.1 L105.7 376.1 L105.8 374.8 L106.0 373.7 L108.7 368.3 L109.1 366.8 L109.1 365.8 L107.0 359.5 L105.5 356.2 L105.5 355.4 L105.9 354.4 L110.5 344.6 L110.9 342.8 L110.9 341.7 L110.7 341.0 L110.3 340.6 L109.1 339.8 L108.5 338.9 L107.9 337.5 L107.8 335.5 L107.2 333.6 L106.6 332.6 L104.3 328.6 L103.9 328.1 L102.3 326.9 L100.0 327.5 L96.4 329.5 L92.1 331.0 L90.8 331.7 L89.8 332.4 L85.5 336.5 L82.2 338.9 L80.5 339.5 L79.3 339.7 L77.8 338.8 L77.3 338.7 L76.4 338.4 L75.8 338.1 L74.9 337.3 L73.0 335.0 L71.8 333.9 L70.7 333.0 L68.7 331.7 L67.9 330.9 L67.6 329.9 L67.6 328.6 L67.8 325.9 L67.6 324.7 L67.0 323.5 L65.6 321.5 L65.1 320.5 L64.8 319.5 L64.7 318.3 L65.0 315.1 L65.9 312.9 L66.0 312.4 L66.1 312.1 L66.5 306.8 L65.9 298.7 L66.1 297.4 L66.7 296.7 L67.7 296.6 L68.9 296.3 L70.1 295.6 L71.3 294.2 L71.6 292.7 L71.6 289.0 L71.8 287.7 L72.4 286.1 L72.6 285.0 L72.7 284.0 L72.4 282.8 L72.1 282.3 L71.5 281.9 L70.8 281.6 L70.0 281.2 L69.2 280.5 L68.6 279.5 L68.2 278.5 L67.7 276.9 L67.2 275.9 L66.7 275.0 L65.8 274.4 L60.8 272.1 L55.9 270.6 L54.4 269.8 L53.1 268.7 L51.8 266.4 L51.4 264.5 L51.3 263.1 L51.5 261.7 L51.9 260.3 L52.3 259.4 L52.8 258.7 L53.3 258.2 L54.1 257.9 L54.9 257.8 L55.8 258.1 L57.7 259.0 L58.6 259.1 L59.5 258.9 L60.2 258.3 L60.7 257.4 L60.6 256.8 L60.1 256.3 L59.3 256.0 L58.5 254.9 L57.7 253.3 L56.6 249.8 L55.9 248.1 L55.0 247.0 L54.2 246.4 L53.6 245.8 L52.9 244.6 L52.8 243.9 L53.0 243.1 L53.7 242.0 L54.2 240.7 L54.4 238.9 L54.3 238.2 L53.9 238.0 L53.1 238.4 L50.4 240.4 L49.7 240.8 L48.3 241.1 L41.6 241.5 L39.3 242.0 L38.4 242.0 L37.4 241.7 L35.1 240.7 L34.5 240.5 L34.0 240.5 L33.4 240.6 L31.1 241.5 L30.1 241.5 L29.3 241.3 L28.6 240.6 L28.5 239.7 L28.9 238.6 L30.9 235.8 L31.8 234.9 L37.7 230.7 L38.6 228.2 L36.0 226.8 L33.9 223.5 L32.9 222.7 L31.7 222.2 L30.6 221.9 L29.3 221.4 L28.4 220.7 L26.4 218.8 L25.5 218.3 L14.8 215.0 L10.4 214.2 L9.5 213.3 L9.1 212.5 L9.0 212.1 L9.0 212.0 L8.9 211.5 L8.8 211.0 L8.5 210.5 L8.2 209.8 L7.9 209.1 L8.0 208.3 L8.5 206.7 L8.6 206.0 L8.1 204.3 L8.0 203.4 L8.3 202.6 L8.9 201.6 L11.4 201.9 L12.5 202.5 L14.7 203.2 L16.3 203.3 L18.6 202.9 L19.8 202.0 L20.7 200.8 L21.2 199.8 L22.0 198.8 L23.2 198.0 L24.8 197.7 L25.6 197.4 L26.1 197.1 L26.3 196.8 L26.4 196.3 L26.5 196.0 L26.1 195.3 L26.7 194.3 L27.0 193.7 L27.6 193.1 L28.4 192.2 L29.6 191.3 L31.0 190.5 L32.8 190.0 L34.7 190.1 L37.5 191.1 L38.7 192.3 L39.2 193.6 L39.0 195.6 L39.0 196.6 L39.3 197.5 L40.0 198.1 L41.0 198.6 L42.6 198.9 L44.7 198.9 L59.0 197.8 L60.6 198.0 L65.9 199.4 L66.5 198.7 L67.0 197.8 L68.2 191.5 L70.6 187.4 L74.4 182.0 L75.5 181.3 L76.8 180.8 L78.9 180.7 L80.4 180.5 L82.3 179.7 L83.2 179.4 L84.7 179.8 L86.1 180.6 L91.6 186.3 L92.9 187.0 L94.0 186.7 L94.8 185.4 L95.2 183.4 L95.5 182.7 L96.3 182.3 L97.7 182.0 L100.5 181.6 L105.2 181.8 L106.6 181.4 L107.8 180.8 L109.0 180.3 L110.2 180.4 L111.1 180.8 L112.8 181.4 L113.6 181.8 L115.4 183.2 L116.8 183.7 L118.3 183.6 L120.7 182.9 L123.6 182.8 L124.6 182.4 L126.1 180.8 L127.0 179.1 L128.9 173.8 L129.6 172.5 L131.1 170.4 L131.6 169.4 L133.2 168.5 L134.3 168.0 L144.7 167.0 L146.6 166.6 L147.5 166.2 L148.3 165.7 L149.4 164.9 L150.5 162.3 L153.9 158.1 L154.8 156.2 L155.8 155.4 L156.7 154.5 L157.4 153.8 L157.7 153.5 L158.1 153.2 L158.3 152.8 L158.5 152.4 L158.7 151.9 L158.9 151.0 L159.0 150.5 L159.0 150.0 L158.6 149.1 L155.9 144.6 L155.1 144.0 L154.7 143.5 L152.1 142.2 L149.1 141.6 L131.8 141.5 L131.0 141.2 L130.5 140.5 L130.7 138.8 L130.3 137.8 L129.1 137.1 L129.1 135.8 L129.3 135.5 L129.8 134.6 L130.6 133.7 L131.6 133.1 L135.5 131.2 L138.6 128.0 L139.7 126.2 L141.5 124.2 L142.3 123.0 L142.9 121.4 L144.3 115.3 L144.4 113.9 L143.9 112.8 L143.4 112.5 L142.7 112.5 L141.8 112.7 L141.1 112.8 L140.5 112.8 L140.2 112.5 L139.9 112.1 L139.9 112.0 L140.6 110.1 L140.6 109.3 L140.1 108.1 L139.6 107.5 L139.4 106.0 L139.7 103.8 L141.0 99.6 L143.4 94.7 L145.7 93.9 L146.4 93.8 L147.4 93.8 L149.2 94.3 L150.2 94.4 L151.2 94.2 L152.4 93.8 L156.6 91.3 L157.5 91.0 L158.2 90.6 L158.7 90.1 L158.6 89.2 L158.3 88.7 L157.9 88.1 L157.7 87.5 L157.8 86.7 L158.2 85.7 L159.9 83.2 L161.1 80.9 L162.2 76.3 L166.6 74.8 L171.4 74.7 L172.4 74.9 L173.4 75.2 L174.5 75.9 L175.3 76.7 L176.0 77.5 L176.6 78.4 L178.3 80.4 L179.3 81.1 L180.5 81.6 L181.9 81.3 L182.4 80.9 L182.6 80.2 L182.7 79.8 L183.1 79.2 L184.6 77.1 L185.7 77.0 L187.2 77.4 L190.5 79.4 L194.8 82.9 L197.8 84.5 L204.3 86.0 L208.7 92.3 L211.1 94.5 L216.4 97.8 L218.9 98.6 L219.9 98.8 L220.9 98.8 L222.9 98.7 L223.5 98.6 L224.5 98.2 L225.7 97.6 L229.9 93.2 L230.4 91.5 L230.6 90.1 L230.5 88.9 L230.6 88.0 L230.9 87.5 L231.2 87.4 L231.9 87.7 L232.5 88.3 L233.2 88.6 L234.1 88.4 L237.9 85.5 L238.5 85.0 L239.0 84.2 L241.7 77.0 L243.4 70.4 L244.1 68.6 L244.4 67.6 L244.5 64.8 L244.8 63.6 L245.1 62.8 L246.0 61.4 L246.7 60.6 L247.6 60.2 L248.8 60.2 L250.0 60.0 L250.8 59.4 L251.4 58.5 L252.2 56.8 L252.9 56.2 L254.0 55.9 L258.0 55.4 L260.3 54.7 L261.7 54.4 L266.1 54.0 L267.2 54.5 L267.7 55.6 L268.0 56.8 L268.5 57.9 L269.3 58.3 L270.3 58.2 L271.6 57.4 L272.3 56.5 L272.7 55.7 L272.8 54.8 L273.2 53.3 L273.7 52.8 L274.5 52.7 L276.1 52.7 L278.6 53.1 L279.3 53.3 L279.8 53.6 L280.2 53.9 L280.5 54.4 L280.8 55.8 L281.2 56.4 L281.9 56.7 L284.5 57.0 L285.6 57.3 L286.5 57.9 L287.6 58.4 L289.0 58.6 L291.1 58.1 L294.7 57.8 L295.8 57.5 L296.9 56.8 L297.5 56.2 L300.0 53.2 L303.5 48.2 L304.6 47.2 L305.8 46.9 L307.2 47.2 L308.2 48.0 L308.9 48.8 L309.8 49.1 L310.9 48.8 L312.3 47.6 L314.4 45.0 L316.2 43.4 L317.1 42.2 L317.9 41.6 L321.2 40.0 L321.9 38.8 L321.9 37.6 L321.7 36.6 L321.6 35.9 L321.7 35.2 L322.7 33.2 L322.9 32.4 L323.0 30.6 L323.2 29.8 L323.6 29.3 L324.1 28.9 L325.8 28.3 L328.2 28.0 L329.6 28.1 L331.2 28.4 L332.3 28.9 L333.4 29.6 L334.7 31.2 L335.4 32.6 L336.1 33.6 L337.1 34.2 L338.9 34.3 L345.6 32.9 L346.8 33.1 L347.6 33.7 L347.9 35.3 L347.9 36.3 L347.7 37.1 L347.8 37.7 L348.4 38.4 L350.8 39.7 L352.3 39.6 L354.2 39.6 L355.1 39.9 L356.2 39.9 L357.1 39.6 L357.6 38.5 L357.6 37.8 L357.2 37.2 L356.6 36.7 L355.9 36.3 L355.2 35.9 L354.6 35.5 L354.2 35.0 L354.0 34.3 L354.1 33.5 L354.4 32.7 L355.0 32.2 L356.2 32.2 L357.0 32.6 L358.4 32.8 L360.1 32.5 L365.7 30.3 L373.9 25.4 L374.7 24.2 L374.8 23.2 L374.6 22.5 L374.3 21.8 L374.3 21.2 L374.4 20.3 L375.2 19.3 L376.6 17.6 L378.2 16.4 L380.1 15.5 L382.4 14.8 L383.1 14.4 L383.5 13.6 L383.6 12.8 L383.4 12.3 L383.0 11.8 L382.2 11.3 L381.6 10.7 L381.1 10.1 L381.0 9.6 L381.1 9.0 L381.5 8.6 L382.2 8.4 L382.9 8.6 L385.0 10.1 L386.5 10.7 L388.9 10.8 L389.0 11.1 L389.0 12.1 L388.9 12.6 L388.6 13.2 L388.1 14.1 L387.9 14.5 L387.8 15.1 L387.8 15.6 L388.3 16.1 L389.2 16.3 L391.6 16.0 L393.2 16.1 L398.0 17.2 L400.3 16.9 L403.6 15.4 L403.7 15.2 L403.7 15.2 L404.3 15.2 L404.0 16.9 L405.2 18.0 L407.0 19.1 L408.3 20.7 L408.9 19.7 L409.0 19.3 L410.3 19.0 L411.0 20.7 L412.0 24.5 L412.3 27.1 L412.1 29.9 L411.2 34.9 L411.0 37.7 L410.0 37.3 L409.6 37.1 L409.4 38.9 L409.0 40.5 L409.4 40.3 L411.0 39.9 L410.9 42.2 L410.0 44.0 L409.0 45.6 L408.3 47.4 L408.4 48.4 L409.0 51.4 L408.4 52.4 L406.6 54.3 L406.3 55.2 L406.0 59.1 L404.6 66.3 L404.0 78.5 L402.9 85.7 L401.1 90.9 L400.6 94.5 L400.0 96.0 L398.2 98.8 L397.5 100.6 L396.4 105.3 L396.2 107.3 L395.8 108.7 L393.5 114.5 L390.1 120.3 L389.7 121.9 L387.6 125.8 L386.7 126.9 L384.4 128.3 L384.1 128.6 L383.8 128.9 L380.7 134.3 L378.7 136.4 L373.5 139.0 L372.7 140.2 L373.6 140.6 L375.6 139.8 L378.7 137.8 L373.0 146.6 L371.7 148.1 L371.1 149.0 L368.1 155.1 L365.4 158.3 L364.6 159.8 L364.5 160.8 L364.6 164.2 L364.4 164.7 L363.5 166.1 L363.4 166.5 L363.3 166.5 L361.1 167.3 L359.7 168.4 L357.7 170.3 L357.0 170.6 L356.4 170.6 L355.7 169.8 L355.3 169.5 L354.4 168.9 L354.0 168.6 L353.9 168.2 L354.1 167.7 L355.4 166.3 L355.7 165.9 L355.9 165.3 L355.9 164.8 L355.5 164.3 L354.7 164.2 L351.8 164.7 L350.8 164.5 L350.0 163.9 L349.4 163.1 L348.6 162.1 L348.0 161.8 L347.5 161.9 L347.4 162.0 L347.3 162.0 L346.4 163.1 L346.0 163.8 L345.8 164.4 L346.0 165.0 L347.8 166.6 L348.1 167.3 L348.1 167.7 L348.1 168.4 L348.1 169.0 L348.2 169.5 L348.5 169.9 L349.3 170.2 L349.6 170.6 L349.8 171.5 L349.8 172.4 L349.6 173.3 L349.2 174.1 L348.7 175.1 L348.7 175.8 L349.0 176.2 L349.6 176.3 L350.1 176.5 L350.6 176.9 L351.4 177.8 L351.8 178.1 L352.2 178.2 L352.7 178.1 L353.2 178.1 L353.7 178.2 L354.2 178.3 L356.3 178.8 L358.9 178.7 L359.6 178.7 L359.6 178.7 L358.9 182.4 L357.8 183.2 L357.1 185.1 L355.3 194.6 L354.9 198.6 L354.0 202.3 L353.8 204.3 L354.3 208.4 L356.6 215.5 L357.2 219.4 L357.8 219.4 L358.3 218.5 L358.5 217.8 L358.3 217.2 L357.8 216.6 L359.5 216.9 L360.2 217.7 L360.7 222.9 L360.4 223.9 L359.5 224.1 L356.8 224.1 L356.2 224.0 L355.5 223.9 L354.5 224.2 L353.6 224.6 L352.7 225.4 L347.2 230.8 L346.4 232.4 L347.1 232.4 L348.3 231.7 L352.8 228.4 L353.8 227.9 L354.5 226.2 L356.2 225.7 L358.2 226.1 L360.9 227.3 L361.5 227.4 L361.8 227.8 L362.0 235.6 L364.0 246.0 L363.7 261.3 L363.1 264.0 L361.0 263.5 L359.1 263.5 L357.6 264.4 L357.1 264.9 L356.3 264.8 L354.4 263.9 L352.4 263.4 L351.7 263.7 L351.5 264.4 L352.0 264.9 L352.6 265.2 L353.0 266.0 L353.1 267.3 L352.9 267.6 L352.4 267.8 L351.9 267.9 L350.7 266.8 L349.2 266.8 L349.1 267.6 L349.7 268.3 L350.4 268.5 L350.1 269.1 L349.3 269.9 L349.2 271.0 L349.9 271.6 L350.8 272.0 L351.8 272.0 L352.6 272.4 L352.9 273.3 L353.6 273.6 L354.5 273.1 L355.3 273.1 L355.7 273.5 L355.8 273.9 L355.7 274.4 L356.0 274.8 L357.0 274.5 L357.5 274.5 L358.1 274.7 L358.8 274.9 L358.9 275.5 L358.1 276.1 L358.2 276.6 L358.3 276.9 L357.9 277.5 L358.3 278.4 L359.3 279.0 L359.8 279.4 L360.0 280.1 L362.5 281.1 L363.2 281.0Z M406.5 9.3 L408.6 14.1 L409.0 17.9 L408.3 17.9 L405.5 10.7 L405.5 10.6 L406.2 9.7 L406.5 9.3Z" fill="#0b2a12" fill-opacity=".85"/><rect width="100%" height="100%" fill="url(#tndots)" clip-path="url(#tnclip)"/><path d="M363.2 281.0 L363.4 286.5 L363.5 302.8 L364.4 306.9 L364.8 324.1 L364.1 332.7 L363.6 333.8 L361.9 334.1 L360.0 334.8 L358.1 335.1 L356.4 334.5 L356.6 332.3 L354.3 331.1 L342.1 329.1 L341.0 329.6 L340.3 331.0 L341.9 331.0 L343.5 331.0 L345.0 331.3 L346.4 331.7 L347.2 332.1 L348.2 332.8 L349.1 333.1 L351.7 333.1 L354.5 333.8 L356.0 334.6 L355.8 335.8 L354.6 336.2 L336.9 332.4 L335.3 332.3 L334.6 332.1 L334.2 331.7 L334.2 330.7 L334.7 330.4 L335.5 330.4 L336.3 330.3 L339.3 329.1 L339.6 328.4 L337.6 327.6 L335.7 328.4 L331.9 328.2 L332.2 329.0 L332.2 329.7 L330.2 330.3 L325.1 331.2 L322.9 331.0 L320.4 329.9 L319.1 329.5 L317.8 330.0 L315.7 331.8 L309.9 335.2 L308.1 336.7 L306.7 338.6 L306.5 339.7 L306.5 341.0 L306.4 342.2 L305.7 342.7 L304.3 343.1 L303.5 344.0 L303.2 345.3 L303.3 346.8 L304.0 353.5 L304.9 356.6 L307.4 358.4 L303.6 360.9 L299.6 365.0 L293.9 372.9 L291.9 377.0 L290.1 379.0 L289.9 379.4 L289.2 381.8 L287.6 383.8 L283.8 387.3 L278.1 395.3 L278.0 396.1 L278.0 397.1 L277.7 398.2 L277.3 398.9 L276.2 399.7 L275.7 400.3 L274.8 401.7 L273.9 403.6 L273.2 405.8 L272.6 410.6 L271.4 414.6 L271.6 416.7 L273.4 420.4 L276.0 423.5 L283.9 430.5 L287.3 432.0 L291.3 432.9 L304.7 433.1 L306.8 432.3 L309.1 430.7 L311.4 429.7 L313.5 430.4 L313.9 431.3 L313.6 432.1 L313.0 433.0 L312.7 434.2 L312.9 435.2 L313.4 435.9 L313.9 436.4 L314.1 437.0 L314.7 437.9 L316.1 439.2 L323.0 444.4 L324.5 446.1 L323.2 446.9 L321.6 446.1 L315.4 440.7 L308.7 437.0 L302.8 436.2 L301.3 435.3 L299.7 435.3 L298.0 434.8 L296.2 434.6 L292.7 436.4 L289.6 436.3 L288.5 436.6 L285.9 435.5 L282.5 434.6 L278.9 434.2 L275.7 434.5 L274.9 435.0 L273.0 436.6 L271.9 436.8 L271.2 436.8 L270.6 436.6 L269.7 436.6 L266.3 437.1 L264.6 437.6 L261.8 439.2 L258.1 440.1 L256.5 441.0 L255.6 441.9 L254.5 442.7 L253.2 443.3 L248.2 443.6 L246.7 444.3 L246.1 445.8 L245.5 446.9 L244.1 447.5 L242.5 447.9 L229.4 449.5 L225.9 450.3 L222.2 452.0 L218.8 454.3 L205.3 465.4 L203.1 468.1 L199.7 474.3 L199.2 475.9 L198.9 482.6 L198.5 484.8 L197.7 486.7 L199.0 485.6 L200.3 485.5 L201.4 485.0 L202.4 483.2 L202.9 485.5 L201.8 486.7 L200.0 487.5 L198.3 488.6 L197.9 489.3 L196.9 492.1 L195.5 493.9 L195.2 495.0 L195.7 496.2 L193.0 496.2 L195.0 499.4 L195.7 502.7 L194.3 513.2 L193.8 514.2 L193.0 515.4 L190.3 518.0 L189.6 518.8 L187.9 524.7 L187.2 525.6 L185.5 525.9 L181.7 527.5 L162.7 539.1 L161.4 540.5 L159.0 543.8 L157.4 544.6 L146.7 546.4 L142.0 548.1 L138.6 550.5 L139.0 553.7 L133.7 554.4 L127.7 553.3 L114.5 549.2 L113.8 548.9 L112.4 547.3 L111.7 546.6 L109.3 545.2 L107.0 544.5 L105.6 543.6 L96.1 534.8 L94.3 533.5 L95.1 532.7 L95.4 532.5 L96.0 532.5 L97.8 532.7 L98.7 532.4 L99.4 531.8 L99.8 531.3 L99.9 530.6 L99.9 529.9 L99.8 528.8 L99.8 528.3 L100.3 527.2 L101.4 525.2 L103.5 522.6 L104.3 521.2 L104.7 520.1 L104.5 519.2 L103.7 516.4 L103.6 515.5 L103.6 514.5 L103.7 514.1 L103.9 513.9 L104.1 514.0 L104.4 514.2 L105.0 514.9 L105.6 515.2 L106.4 515.1 L107.5 514.3 L109.3 512.4 L110.3 510.9 L110.9 509.4 L110.9 508.3 L110.5 507.3 L109.9 506.5 L108.1 504.5 L103.5 500.8 L102.8 499.9 L102.3 499.0 L101.9 498.1 L101.8 497.1 L101.7 495.4 L101.5 494.6 L101.2 493.7 L101.1 492.5 L101.2 491.6 L102.4 490.1 L106.6 483.6 L108.3 478.0 L108.4 476.9 L108.3 476.6 L108.0 476.1 L107.5 475.5 L106.7 474.9 L104.9 473.9 L103.4 472.6 L102.3 469.9 L100.0 463.6 L99.7 461.9 L99.9 461.6 L100.5 461.0 L104.1 458.5 L106.1 455.6 L108.5 449.8 L114.2 431.9 L116.8 427.6 L119.2 420.4 L119.8 419.1 L120.4 418.3 L123.2 415.9 L123.2 413.4 L122.6 412.0 L119.6 408.4 L118.9 407.0 L118.1 405.1 L117.6 404.4 L117.0 404.0 L116.3 403.9 L114.5 404.0 L113.8 404.1 L109.4 406.3 L108.5 406.3 L107.5 406.2 L106.9 405.7 L106.0 404.8 L105.6 404.4 L105.0 404.1 L104.4 403.9 L103.6 403.7 L102.9 403.4 L102.4 403.2 L102.1 402.9 L101.8 402.3 L101.8 401.6 L101.9 400.7 L106.6 385.5 L106.8 384.1 L106.8 382.3 L106.2 380.1 L105.7 376.1 L105.8 374.8 L106.0 373.7 L108.7 368.3 L109.1 366.8 L109.1 365.8 L107.0 359.5 L105.5 356.2 L105.5 355.4 L105.9 354.4 L110.5 344.6 L110.9 342.8 L110.9 341.7 L110.7 341.0 L110.3 340.6 L109.1 339.8 L108.5 338.9 L107.9 337.5 L107.8 335.5 L107.2 333.6 L106.6 332.6 L104.3 328.6 L103.9 328.1 L102.3 326.9 L100.0 327.5 L96.4 329.5 L92.1 331.0 L90.8 331.7 L89.8 332.4 L85.5 336.5 L82.2 338.9 L80.5 339.5 L79.3 339.7 L77.8 338.8 L77.3 338.7 L76.4 338.4 L75.8 338.1 L74.9 337.3 L73.0 335.0 L71.8 333.9 L70.7 333.0 L68.7 331.7 L67.9 330.9 L67.6 329.9 L67.6 328.6 L67.8 325.9 L67.6 324.7 L67.0 323.5 L65.6 321.5 L65.1 320.5 L64.8 319.5 L64.7 318.3 L65.0 315.1 L65.9 312.9 L66.0 312.4 L66.1 312.1 L66.5 306.8 L65.9 298.7 L66.1 297.4 L66.7 296.7 L67.7 296.6 L68.9 296.3 L70.1 295.6 L71.3 294.2 L71.6 292.7 L71.6 289.0 L71.8 287.7 L72.4 286.1 L72.6 285.0 L72.7 284.0 L72.4 282.8 L72.1 282.3 L71.5 281.9 L70.8 281.6 L70.0 281.2 L69.2 280.5 L68.6 279.5 L68.2 278.5 L67.7 276.9 L67.2 275.9 L66.7 275.0 L65.8 274.4 L60.8 272.1 L55.9 270.6 L54.4 269.8 L53.1 268.7 L51.8 266.4 L51.4 264.5 L51.3 263.1 L51.5 261.7 L51.9 260.3 L52.3 259.4 L52.8 258.7 L53.3 258.2 L54.1 257.9 L54.9 257.8 L55.8 258.1 L57.7 259.0 L58.6 259.1 L59.5 258.9 L60.2 258.3 L60.7 257.4 L60.6 256.8 L60.1 256.3 L59.3 256.0 L58.5 254.9 L57.7 253.3 L56.6 249.8 L55.9 248.1 L55.0 247.0 L54.2 246.4 L53.6 245.8 L52.9 244.6 L52.8 243.9 L53.0 243.1 L53.7 242.0 L54.2 240.7 L54.4 238.9 L54.3 238.2 L53.9 238.0 L53.1 238.4 L50.4 240.4 L49.7 240.8 L48.3 241.1 L41.6 241.5 L39.3 242.0 L38.4 242.0 L37.4 241.7 L35.1 240.7 L34.5 240.5 L34.0 240.5 L33.4 240.6 L31.1 241.5 L30.1 241.5 L29.3 241.3 L28.6 240.6 L28.5 239.7 L28.9 238.6 L30.9 235.8 L31.8 234.9 L37.7 230.7 L38.6 228.2 L36.0 226.8 L33.9 223.5 L32.9 222.7 L31.7 222.2 L30.6 221.9 L29.3 221.4 L28.4 220.7 L26.4 218.8 L25.5 218.3 L14.8 215.0 L10.4 214.2 L9.5 213.3 L9.1 212.5 L9.0 212.1 L9.0 212.0 L8.9 211.5 L8.8 211.0 L8.5 210.5 L8.2 209.8 L7.9 209.1 L8.0 208.3 L8.5 206.7 L8.6 206.0 L8.1 204.3 L8.0 203.4 L8.3 202.6 L8.9 201.6 L11.4 201.9 L12.5 202.5 L14.7 203.2 L16.3 203.3 L18.6 202.9 L19.8 202.0 L20.7 200.8 L21.2 199.8 L22.0 198.8 L23.2 198.0 L24.8 197.7 L25.6 197.4 L26.1 197.1 L26.3 196.8 L26.4 196.3 L26.5 196.0 L26.1 195.3 L26.7 194.3 L27.0 193.7 L27.6 193.1 L28.4 192.2 L29.6 191.3 L31.0 190.5 L32.8 190.0 L34.7 190.1 L37.5 191.1 L38.7 192.3 L39.2 193.6 L39.0 195.6 L39.0 196.6 L39.3 197.5 L40.0 198.1 L41.0 198.6 L42.6 198.9 L44.7 198.9 L59.0 197.8 L60.6 198.0 L65.9 199.4 L66.5 198.7 L67.0 197.8 L68.2 191.5 L70.6 187.4 L74.4 182.0 L75.5 181.3 L76.8 180.8 L78.9 180.7 L80.4 180.5 L82.3 179.7 L83.2 179.4 L84.7 179.8 L86.1 180.6 L91.6 186.3 L92.9 187.0 L94.0 186.7 L94.8 185.4 L95.2 183.4 L95.5 182.7 L96.3 182.3 L97.7 182.0 L100.5 181.6 L105.2 181.8 L106.6 181.4 L107.8 180.8 L109.0 180.3 L110.2 180.4 L111.1 180.8 L112.8 181.4 L113.6 181.8 L115.4 183.2 L116.8 183.7 L118.3 183.6 L120.7 182.9 L123.6 182.8 L124.6 182.4 L126.1 180.8 L127.0 179.1 L128.9 173.8 L129.6 172.5 L131.1 170.4 L131.6 169.4 L133.2 168.5 L134.3 168.0 L144.7 167.0 L146.6 166.6 L147.5 166.2 L148.3 165.7 L149.4 164.9 L150.5 162.3 L153.9 158.1 L154.8 156.2 L155.8 155.4 L156.7 154.5 L157.4 153.8 L157.7 153.5 L158.1 153.2 L158.3 152.8 L158.5 152.4 L158.7 151.9 L158.9 151.0 L159.0 150.5 L159.0 150.0 L158.6 149.1 L155.9 144.6 L155.1 144.0 L154.7 143.5 L152.1 142.2 L149.1 141.6 L131.8 141.5 L131.0 141.2 L130.5 140.5 L130.7 138.8 L130.3 137.8 L129.1 137.1 L129.1 135.8 L129.3 135.5 L129.8 134.6 L130.6 133.7 L131.6 133.1 L135.5 131.2 L138.6 128.0 L139.7 126.2 L141.5 124.2 L142.3 123.0 L142.9 121.4 L144.3 115.3 L144.4 113.9 L143.9 112.8 L143.4 112.5 L142.7 112.5 L141.8 112.7 L141.1 112.8 L140.5 112.8 L140.2 112.5 L139.9 112.1 L139.9 112.0 L140.6 110.1 L140.6 109.3 L140.1 108.1 L139.6 107.5 L139.4 106.0 L139.7 103.8 L141.0 99.6 L143.4 94.7 L145.7 93.9 L146.4 93.8 L147.4 93.8 L149.2 94.3 L150.2 94.4 L151.2 94.2 L152.4 93.8 L156.6 91.3 L157.5 91.0 L158.2 90.6 L158.7 90.1 L158.6 89.2 L158.3 88.7 L157.9 88.1 L157.7 87.5 L157.8 86.7 L158.2 85.7 L159.9 83.2 L161.1 80.9 L162.2 76.3 L166.6 74.8 L171.4 74.7 L172.4 74.9 L173.4 75.2 L174.5 75.9 L175.3 76.7 L176.0 77.5 L176.6 78.4 L178.3 80.4 L179.3 81.1 L180.5 81.6 L181.9 81.3 L182.4 80.9 L182.6 80.2 L182.7 79.8 L183.1 79.2 L184.6 77.1 L185.7 77.0 L187.2 77.4 L190.5 79.4 L194.8 82.9 L197.8 84.5 L204.3 86.0 L208.7 92.3 L211.1 94.5 L216.4 97.8 L218.9 98.6 L219.9 98.8 L220.9 98.8 L222.9 98.7 L223.5 98.6 L224.5 98.2 L225.7 97.6 L229.9 93.2 L230.4 91.5 L230.6 90.1 L230.5 88.9 L230.6 88.0 L230.9 87.5 L231.2 87.4 L231.9 87.7 L232.5 88.3 L233.2 88.6 L234.1 88.4 L237.9 85.5 L238.5 85.0 L239.0 84.2 L241.7 77.0 L243.4 70.4 L244.1 68.6 L244.4 67.6 L244.5 64.8 L244.8 63.6 L245.1 62.8 L246.0 61.4 L246.7 60.6 L247.6 60.2 L248.8 60.2 L250.0 60.0 L250.8 59.4 L251.4 58.5 L252.2 56.8 L252.9 56.2 L254.0 55.9 L258.0 55.4 L260.3 54.7 L261.7 54.4 L266.1 54.0 L267.2 54.5 L267.7 55.6 L268.0 56.8 L268.5 57.9 L269.3 58.3 L270.3 58.2 L271.6 57.4 L272.3 56.5 L272.7 55.7 L272.8 54.8 L273.2 53.3 L273.7 52.8 L274.5 52.7 L276.1 52.7 L278.6 53.1 L279.3 53.3 L279.8 53.6 L280.2 53.9 L280.5 54.4 L280.8 55.8 L281.2 56.4 L281.9 56.7 L284.5 57.0 L285.6 57.3 L286.5 57.9 L287.6 58.4 L289.0 58.6 L291.1 58.1 L294.7 57.8 L295.8 57.5 L296.9 56.8 L297.5 56.2 L300.0 53.2 L303.5 48.2 L304.6 47.2 L305.8 46.9 L307.2 47.2 L308.2 48.0 L308.9 48.8 L309.8 49.1 L310.9 48.8 L312.3 47.6 L314.4 45.0 L316.2 43.4 L317.1 42.2 L317.9 41.6 L321.2 40.0 L321.9 38.8 L321.9 37.6 L321.7 36.6 L321.6 35.9 L321.7 35.2 L322.7 33.2 L322.9 32.4 L323.0 30.6 L323.2 29.8 L323.6 29.3 L324.1 28.9 L325.8 28.3 L328.2 28.0 L329.6 28.1 L331.2 28.4 L332.3 28.9 L333.4 29.6 L334.7 31.2 L335.4 32.6 L336.1 33.6 L337.1 34.2 L338.9 34.3 L345.6 32.9 L346.8 33.1 L347.6 33.7 L347.9 35.3 L347.9 36.3 L347.7 37.1 L347.8 37.7 L348.4 38.4 L350.8 39.7 L352.3 39.6 L354.2 39.6 L355.1 39.9 L356.2 39.9 L357.1 39.6 L357.6 38.5 L357.6 37.8 L357.2 37.2 L356.6 36.7 L355.9 36.3 L355.2 35.9 L354.6 35.5 L354.2 35.0 L354.0 34.3 L354.1 33.5 L354.4 32.7 L355.0 32.2 L356.2 32.2 L357.0 32.6 L358.4 32.8 L360.1 32.5 L365.7 30.3 L373.9 25.4 L374.7 24.2 L374.8 23.2 L374.6 22.5 L374.3 21.8 L374.3 21.2 L374.4 20.3 L375.2 19.3 L376.6 17.6 L378.2 16.4 L380.1 15.5 L382.4 14.8 L383.1 14.4 L383.5 13.6 L383.6 12.8 L383.4 12.3 L383.0 11.8 L382.2 11.3 L381.6 10.7 L381.1 10.1 L381.0 9.6 L381.1 9.0 L381.5 8.6 L382.2 8.4 L382.9 8.6 L385.0 10.1 L386.5 10.7 L388.9 10.8 L389.0 11.1 L389.0 12.1 L388.9 12.6 L388.6 13.2 L388.1 14.1 L387.9 14.5 L387.8 15.1 L387.8 15.6 L388.3 16.1 L389.2 16.3 L391.6 16.0 L393.2 16.1 L398.0 17.2 L400.3 16.9 L403.6 15.4 L403.7 15.2 L403.7 15.2 L404.3 15.2 L404.0 16.9 L405.2 18.0 L407.0 19.1 L408.3 20.7 L408.9 19.7 L409.0 19.3 L410.3 19.0 L411.0 20.7 L412.0 24.5 L412.3 27.1 L412.1 29.9 L411.2 34.9 L411.0 37.7 L410.0 37.3 L409.6 37.1 L409.4 38.9 L409.0 40.5 L409.4 40.3 L411.0 39.9 L410.9 42.2 L410.0 44.0 L409.0 45.6 L408.3 47.4 L408.4 48.4 L409.0 51.4 L408.4 52.4 L406.6 54.3 L406.3 55.2 L406.0 59.1 L404.6 66.3 L404.0 78.5 L402.9 85.7 L401.1 90.9 L400.6 94.5 L400.0 96.0 L398.2 98.8 L397.5 100.6 L396.4 105.3 L396.2 107.3 L395.8 108.7 L393.5 114.5 L390.1 120.3 L389.7 121.9 L387.6 125.8 L386.7 126.9 L384.4 128.3 L384.1 128.6 L383.8 128.9 L380.7 134.3 L378.7 136.4 L373.5 139.0 L372.7 140.2 L373.6 140.6 L375.6 139.8 L378.7 137.8 L373.0 146.6 L371.7 148.1 L371.1 149.0 L368.1 155.1 L365.4 158.3 L364.6 159.8 L364.5 160.8 L364.6 164.2 L364.4 164.7 L363.5 166.1 L363.4 166.5 L363.3 166.5 L361.1 167.3 L359.7 168.4 L357.7 170.3 L357.0 170.6 L356.4 170.6 L355.7 169.8 L355.3 169.5 L354.4 168.9 L354.0 168.6 L353.9 168.2 L354.1 167.7 L355.4 166.3 L355.7 165.9 L355.9 165.3 L355.9 164.8 L355.5 164.3 L354.7 164.2 L351.8 164.7 L350.8 164.5 L350.0 163.9 L349.4 163.1 L348.6 162.1 L348.0 161.8 L347.5 161.9 L347.4 162.0 L347.3 162.0 L346.4 163.1 L346.0 163.8 L345.8 164.4 L346.0 165.0 L347.8 166.6 L348.1 167.3 L348.1 167.7 L348.1 168.4 L348.1 169.0 L348.2 169.5 L348.5 169.9 L349.3 170.2 L349.6 170.6 L349.8 171.5 L349.8 172.4 L349.6 173.3 L349.2 174.1 L348.7 175.1 L348.7 175.8 L349.0 176.2 L349.6 176.3 L350.1 176.5 L350.6 176.9 L351.4 177.8 L351.8 178.1 L352.2 178.2 L352.7 178.1 L353.2 178.1 L353.7 178.2 L354.2 178.3 L356.3 178.8 L358.9 178.7 L359.6 178.7 L359.6 178.7 L358.9 182.4 L357.8 183.2 L357.1 185.1 L355.3 194.6 L354.9 198.6 L354.0 202.3 L353.8 204.3 L354.3 208.4 L356.6 215.5 L357.2 219.4 L357.8 219.4 L358.3 218.5 L358.5 217.8 L358.3 217.2 L357.8 216.6 L359.5 216.9 L360.2 217.7 L360.7 222.9 L360.4 223.9 L359.5 224.1 L356.8 224.1 L356.2 224.0 L355.5 223.9 L354.5 224.2 L353.6 224.6 L352.7 225.4 L347.2 230.8 L346.4 232.4 L347.1 232.4 L348.3 231.7 L352.8 228.4 L353.8 227.9 L354.5 226.2 L356.2 225.7 L358.2 226.1 L360.9 227.3 L361.5 227.4 L361.8 227.8 L362.0 235.6 L364.0 246.0 L363.7 261.3 L363.1 264.0 L361.0 263.5 L359.1 263.5 L357.6 264.4 L357.1 264.9 L356.3 264.8 L354.4 263.9 L352.4 263.4 L351.7 263.7 L351.5 264.4 L352.0 264.9 L352.6 265.2 L353.0 266.0 L353.1 267.3 L352.9 267.6 L352.4 267.8 L351.9 267.9 L350.7 266.8 L349.2 266.8 L349.1 267.6 L349.7 268.3 L350.4 268.5 L350.1 269.1 L349.3 269.9 L349.2 271.0 L349.9 271.6 L350.8 272.0 L351.8 272.0 L352.6 272.4 L352.9 273.3 L353.6 273.6 L354.5 273.1 L355.3 273.1 L355.7 273.5 L355.8 273.9 L355.7 274.4 L356.0 274.8 L357.0 274.5 L357.5 274.5 L358.1 274.7 L358.8 274.9 L358.9 275.5 L358.1 276.1 L358.2 276.6 L358.3 276.9 L357.9 277.5 L358.3 278.4 L359.3 279.0 L359.8 279.4 L360.0 280.1 L362.5 281.1 L363.2 281.0Z M406.5 9.3 L408.6 14.1 L409.0 17.9 L408.3 17.9 L405.5 10.7 L405.5 10.6 L406.2 9.7 L406.5 9.3Z" fill="none" stroke="#c9f600" stroke-width="1.6" stroke-linejoin="round" filter="url(#tnglow)"/><g class="ct2-pin" transform="translate(202.7 110.1) scale(2.3)"><circle class="ct2-pulse" r="7" fill="none" stroke="#e3ff55" stroke-width="1.5"/><circle r="11" fill="#c9f600" fill-opacity=".18"/><path d="M0 0c-1.2-3.4-7.5-8.4-7.5-14.2a7.5 7.5 0 0 1 15 0C7.5-8.4 1.2-3.4 0 0Z" fill="#e3ff55" stroke="#0b0f0b" stroke-width="1"/><circle cy="-14.2" r="2.8" fill="#0b0f0b"/></g></svg><span class="ct2-tag">Krishnagiri</span></div>
+        <div class="ct2-office-t"><span>Our Office</span><b>Krishnagiri,<br>Tamil Nadu</b><i></i></div>
+      </div>
+      <div class="ct2-land"><img src="/assets/img/art/krishnagiri-landscape.jpg" width="382" height="128" alt="Hills and town of Krishnagiri at sunset" loading="lazy"><span><svg class="ic" aria-hidden="true"><use href="#i-map-pin"/></svg>Krishnagiri</span></div>
+    </a>
+  </div>
+
+  <div class="wrap">
+    <ol class="ct2-steps" aria-label="How we work">
+      <li><svg class="ic" aria-hidden="true"><use href="#i-rocket"/></svg><div><b><span>01</span> Start Your Project</b><small>Tell us your idea.</small></div></li>
+      <li><svg class="ic" aria-hidden="true"><use href="#i-layers"/></svg><div><b><span>02</span> Get a Proposal</b><small>With timeline &amp; cost.</small></div></li>
+      <li><svg class="ic" aria-hidden="true"><use href="#i-code"/></svg><div><b><span>03</span> We Build It</b><small>Design, develop &amp; deploy.</small></div></li>
+      <li><svg class="ic" aria-hidden="true"><use href="#c-signal"/></svg><div><b><span>04</span> Grow Together</b><small>Long-term support.</small></div></li>
+    </ol>
+  </div>
+  <div class="ct2-land-bg" aria-hidden="true">
+    <svg class="ct2-waves" viewBox="0 0 1440 220" preserveAspectRatio="none"><path class="w1" d="M0 120C240 40 420 190 720 110S1180 10 1440 70"/><path class="w2" d="M0 160C260 80 470 210 780 140S1200 60 1440 110"/><path class="w3" d="M0 190C300 130 520 220 860 170S1230 110 1440 150"/></svg>
+    <img class="ct2-rk l" src="/assets/img/art/rock.webp" alt=""><img class="ct2-rk r" src="/assets/img/art/rock.webp" alt="">
+  </div>
+</div>
+</div>
+</main>
+
+<footer class="ft2">
+  <div class="wrap">
+    <div class="ft2-top">
+      <div class="ft2-about">
+        <a href="#home" aria-label="ELTORA home"><span class="logo"><svg class="mk" aria-hidden="true"><use href="#mark"/></svg><span><b>ELTORA</b><small>AI &amp; Web Solutions</small></span></span></a>
+        <p>We craft intelligent digital solutions — modern websites, AI and automation — that turn ideas into real business growth.</p>
+      </div>
+      <div>
+        <h4>Explore</h4>
+        <ul><li><a href="#home">Home</a></li><li><a href="#services">Services</a></li><li><a href="#work">Work</a></li><li><a href="#about">About</a></li><li><a href="#contact">Contact</a></li></ul>
+      </div>
+      <div>
+        <h4>Contact</h4>
+        <ul>
+          <li><a href="https://wa.me/919843983376" target="_blank" rel="noopener noreferrer"><svg class="ic" aria-hidden="true"><use href="#i-phone"/></svg>+91 98439 83376</a></li>
+          <li><a href="mailto:eltora2026@gmail.com"><svg class="ic" aria-hidden="true"><use href="#i-mail"/></svg>eltora2026@gmail.com</a></li>
+          <li><a href="https://www.google.com/maps/search/?api=1&amp;query=Krishnagiri%2C+Tamil+Nadu%2C+India" target="_blank" rel="noopener noreferrer"><svg class="ic" aria-hidden="true"><use href="#i-map-pin"/></svg>Krishnagiri, Tamil Nadu</a></li>
+          <li><a href="https://instagram.com/el_to_ra" target="_blank" rel="noopener noreferrer"><svg class="ic" aria-hidden="true"><use href="#i-instagram"/></svg>@el_to_ra</a></li>
+        </ul>
+      </div>
+      <div class="ft2-cta">
+        <b>Have an idea?<br>Let&rsquo;s make it <em>real.</em></b>
+        <a href="#contact">Start a Project <svg class="ic" aria-hidden="true"><use href="#i-arrow-up-right"/></svg></a>
+      </div>
+    </div>
+    <p class="ft2-big" aria-hidden="true">ELTORA</p>
+    <div class="ft2-bot"><span>© 2026 ELTORA – AI &amp; Web Solutions. All rights reserved.</span><span>Build. Automate. Grow.</span></div>
+  </div>
+</footer>
+
+<script src="/assets/js/main.js" defer></script>
+<script src="/assets/js/fx.js" defer></script>
+<script src="/assets/js/home.js" defer></script>
+<script src="/assets/js/hummingbird.js" defer></script>
+<script src="/assets/js/work.js" defer></script>
+<script src="/assets/js/about.js" defer></script>
+<script src="/assets/js/contact-form.js" defer></script>
+<script src="/assets/js/onepage.js" defer></script>
+</body>
+</html>

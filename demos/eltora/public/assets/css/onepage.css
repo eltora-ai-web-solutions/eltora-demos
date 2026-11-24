@@ -1,0 +1,31 @@
+/* ELTORA – single scrolling page (index.html): Home → Services → Work → About → Contact */
+html{scroll-behavior:smooth}
+.op section[id]{scroll-margin-top:0}
+/* glowing seam between page sections */
+.op-sep{position:relative;z-index:3;height:1px;margin:0 auto;width:min(1240px,92%);background:linear-gradient(90deg,transparent,rgba(201,246,0,.75),transparent);box-shadow:0 0 16px rgba(201,246,0,.55)}
+/* the page sections sit back-to-back, so trim the extra top space each page reserved for the fixed header */
+.op .sv-page{padding-top:clamp(90px,8vw,120px)}
+.op .pf-hero{padding-top:96px}
+.op .ab2-hero{padding-top:92px}
+.op .ct2-hero{padding-top:92px}
+
+/* page-by-page feel: gently settle on a page when you stop scrolling near its start
+   (proximity, not mandatory, so long pages like Work still scroll freely) */
+html{scroll-snap-type:y proximity}
+.op section[id]{scroll-snap-align:start}
+
+/* page dots (right side) */
+.op-dots{position:fixed;right:clamp(10px,1.6vw,26px);top:50%;translate:0 -50%;z-index:45;display:flex;flex-direction:column;gap:14px}
+.op-dots a{position:relative;display:grid;place-items:center;width:30px;height:30px;border-radius:50%;color:#cfd8cc;font:700 11px 'Plus Jakarta Sans',system-ui,sans-serif;
+ background:rgba(4,16,8,.7);border:1.5px solid rgba(201,246,0,.35);backdrop-filter:blur(6px);-webkit-backdrop-filter:blur(6px);transition:background .25s,color .25s,border-color .25s,box-shadow .25s,transform .25s}
+.op-dots a:hover,.op-dots a:focus-visible{border-color:var(--lime);color:#fff;transform:scale(1.08);outline:none}
+.op-dots a.on{background:linear-gradient(180deg,#e9ff6a,#c4f000);color:#0b0f0b;border-color:transparent;box-shadow:0 0 18px rgba(201,246,0,.6);transform:scale(1.12)}
+.op-dots span{position:absolute;right:calc(100% + 10px);top:50%;translate:0 -50%;padding:5px 12px;border-radius:999px;white-space:nowrap;font-size:12.5px;color:#fff;
+ background:rgba(4,16,8,.92);border:1px solid rgba(201,246,0,.5);opacity:0;pointer-events:none;transition:opacity .2s,translate .2s}
+.op-dots a:hover span,.op-dots a:focus-visible span,.op-dots a.on.flash span{opacity:1;translate:-4px -50%}
+.op-dots::before{content:"";position:absolute;left:50%;top:15px;bottom:15px;width:1.5px;translate:-50% 0;z-index:-1;background:linear-gradient(180deg,transparent,rgba(201,246,0,.4),transparent)}
+@media(max-width:700px){.op-dots{right:6px;gap:10px}.op-dots a{width:22px;height:22px;font-size:9px}.op-dots span{display:none}}
+
+/* default text colour for the merged page: white on the dark theme
+   (each separate page sets this on its own <body>; the one-page needs it too) */
+body.op-page{color:#fff}
